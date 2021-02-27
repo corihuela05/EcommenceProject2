@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.sidebar {
+  height: 360px;
+  width: 160px;
+  position: fixed;
+  top: 100px;
+  background-color: dimgray;
+  padding-top: 20px;
+}
+
+.sidebar button {
+  width:160px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: dimgray;
+  
+}
+img{
+  position: fixed;
+  left: 1px;
+  top:1px;
+  width:160px; 
+  height:100px;
+}
