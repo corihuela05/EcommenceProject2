@@ -8,8 +8,6 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 
-@app.route("/insertbuyer")
-
 @app.route("/")
 def my_index():
         return flask.render_template("index.html", token= "Hello")
