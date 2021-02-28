@@ -1,0 +1,48 @@
+body {
+  background-color: #fefbd8;
+}
+
+.tr{
+  position: fixed;
+  left: 5%;
+  height: 250px;
+  background-color: lightblue;
+  width: 85%;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px;
+
+}
+.c1{
+  position: fixed;
+  top:400px;
+  left: 5%;
+  height: 200px;
+  background-color: pink;
+  width: 35%;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px;
+
+}
+.g1{
+  background-color: lightgrey;
+  left: 55%;
+  position: fixed;
+  top:400px;
+  height: 200px;
+  background-color: lightgrey;
+  width: 35%;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px;
+}
+.arrow{
+    position: fixed;
+    left: 51%;
+    top:500px;
+   
+}

@@ -1,0 +1,56 @@
+body {
+  background-color: #fefbd8;
+}
+input[id=insert]{
+  position: fixed;
+  left:30%;
+  width:450px;
+  height: 25px;
+}
+.try{
+  position: fixed;
+  left: 60%;
+
+}
+.s1{
+  position: fixed;
+  top:50px;
+  left: 10%;
+  height: 500px;
+  background-color: white;
+  width: 65%;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px;
+
+}
+.s2{
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 7px;
+  text-align: center;
+}
+.s3{
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 7px;
+  text-align: center;
+}
+.s4{
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 7px;
+  text-align: center;
+}
+p1{
+  position: fixed;
+  left:17%;
+  top:430px;
+}
+.s5{
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 7px;
+  text-align: center;
+}

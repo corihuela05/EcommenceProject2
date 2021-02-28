@@ -17,7 +17,7 @@ body {
 }
 .trackorder{
   position: fixed;
-  left: 630px;
+  left: 680px;
   height: 350px;
   background-color: lightgrey;
   width: 200px;
@@ -30,7 +30,7 @@ body {
 
 .contribution{
   position: fixed;
-  left: 980px;
+  left: 1020px;
   height: 350px;
   background-color: lightgrey;
   width: 200px;

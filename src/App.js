@@ -2,11 +2,21 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import Buyers from "./Buyers";
 import './App.css';
+import Products from "./Products";
+import Analytics from "./Analytics";
 
 
 function App() {
   function handleOrders(){
     ReactDOM.render(<Buyers />,document.getElementById('root'));
+    
+  }
+  function handleAnalytics(){
+    ReactDOM.render(<Analytics />,document.getElementById('root'));
+    
+  }
+  function handleProducts(){
+    ReactDOM.render(<Products />,document.getElementById('root'));
     
   }
   return (
@@ -15,8 +25,14 @@ function App() {
     <h1>Welcome To Ecommerce Fundraising Platform</h1>
     <div className="sidebar">
     <button>Home</button>
+    <form onSubmit={handleProducts}>
+      <button>Products</button>
+    </form>
     <form onSubmit={handleOrders}>
       <button>Orders</button>
+    </form>
+    <form onSubmit={handleAnalytics}>
+      <button>Analytics</button>
     </form>
     </div> 
     </div>
