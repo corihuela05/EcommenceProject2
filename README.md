@@ -16,7 +16,7 @@ Download XMAPP here: https://www.apachefriends.org/download.html
  
  Once app is downloaded, you have to turn on Apache and MYSQL in the application control panel. The control panel can be accessed in the directory folder where XMPP was downloaded. 
 
-[Screenshot](xamppcontrolpanel.png)
+![Screenshot](xmappcontrolpanel.png)
 IMPORTANT: The server has to be able to access the server on the local computer through http://localhost/phpmyadmin. Every-time someone wants to use PHPadmin the servers must be turned on once again to get to the site and view the database tables.
  
  **Repeated Steps 12 times**
