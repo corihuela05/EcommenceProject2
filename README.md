@@ -1,6 +1,8 @@
 # Ecommerce fundraising platform
 Description will go here 
 
+![Screenshot](capture.jpg)
+
 
 # Installations and Technologies.
 a.  Use the command `pip install`
@@ -15,4 +17,4 @@ b. 'add more info as we go here'
 a.'add more info as we go here'
 b. 'add more info as we go here''add more info as we go here'
 c. 'add more info as we go here'
-![Screenshot](capture.jpg)
+
