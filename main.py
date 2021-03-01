@@ -10,28 +10,23 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
 
-'''
-db = MySQL(app)
-db.connect()
-cur = db.connection.cursor()      
-'''
+'''buyers profile table'''
+'''NOTE: change at - to _ in db for classes to work'''
 db = SQLAlchemy(app)
+class buyersprofile(db.Model):
+    Number_BuyerProfile = db.Column(db.Integer, primary_key=True)
+    Name_buyerprofile = db.Column(db.Text, unique=False)
+    Address_buyerprofile = db.Column(db.String(25), unique=True)
+    FirstPhone_buyerprofile = db.Column(db.Integer, unique=False)
+    SecondaryPhone_buyerprofile = db.Column(db.String(14), unique=False)
+    ProfileCreated_buyerprofile = db.Column(db.DateTime, unique=False)
+    MoneyContributed = db.Column(db.Integer, unique=False)
 
-'''
-### adds table, just for testing connection ###
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True)
-    email = db.Column(db.String(120), unique=True)
-
-    def __init__(self, username, email):
-        self.username = username
-        self.email = email
-
-    def __repr__(self):
+    def __repr__(self):                         '''debugging'''
         return '<User %r>' % self.username
-db.create_all()
-'''
+db.create_all() '''adds above info to sql'''
+db.session.add(buyersprofile(Number_BuyerProfile=5 )) '''inserts info to table'''
+db.session.commit() '''commits above insert into table'''
 
 @app.route("/")
 def my_index():
