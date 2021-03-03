@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+ phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
@@ -28,13 +28,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `buyersprofile` (
-  `Id-Number-BuyerProfile` int(4) NOT NULL,
-  `Name-buyerprofile` text NOT NULL,
-  `Address-buyerprofile` varchar(25) NOT NULL,
-  `FirstPhone-buyerprofile` int(12) NOT NULL,
-  `SecondaryPhone-buyerprofile` varchar(14) NOT NULL,
-  `ProfileCreated-buyerprofile` date NOT NULL,
+  `Id-Number_buyer` int(4) NOT NULL,
+  `fName_buyer` text(20) NOT NULL,
+  `lName_buyer` text(20) NOT NULL,
+  `Address_buyer` varchar(50) NOT NULL,
+  `FirstPhone_buyer` int(12) NOT NULL,
+  `SecondaryPhone_buyer` varchar(14) NOT NULL,
+  `ProfileCreated_buyer` date NOT NULL,
   `MoneyContributed` int(5) NOT NULL
+  PRIMARY KEY (`Id-Number-buyer`);
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -49,7 +51,8 @@ CREATE TABLE `cardcreditionals` (
   `CardNum-cardcreditionals` varchar(16) NOT NULL,
   `ExpDate-cardcreditionals` date NOT NULL,
   `CRV-cardcreditionals` int(3) NOT NULL,
-  `Amount` int(4) NOT NULL
+  `Amount-cardcreditionals` int(4) NOT NULL
+  PRIMARY KEY (`ID- MethodType_CardCrediontials`);
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -59,12 +62,14 @@ CREATE TABLE `cardcreditionals` (
 --
 
 CREATE TABLE `gmfprofile` (
-  `Id-Number-gmfprofile` varchar(4) NOT NULL,
-  `Name-gmfprofile` int(20) NOT NULL,
-  `Address-gmfprofile` text NOT NULL,
-  `WorkPhone-gmfprofile` varchar(12) NOT NULL,
-  `SecondaryNumber-gmfprofile` varchar(16) DEFAULT NULL,
-  `Revenue-gmfprofile` int(8) NOT NULL
+  PRIMARY KEY (`Id-Number-gmfprofile`),
+  `Id-Number_gmfprofile` int(4) NOT NULL,
+  `Fname_gmfprofile` text(20) NOT NULL,
+   'lname_gmfprofile' text(20) NOT NULL,
+  `Address_gmfprofile` text(50) NOT NULL,
+  `WorkPhone_gmfprofile` varchar(20) NOT NULL,
+  `SecondaryNumber_gmfprofile` varchar(16) DEFAULT NULL,
+  `Revenue_gmfprofile` int(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -74,17 +79,19 @@ CREATE TABLE `gmfprofile` (
 --
 
 CREATE TABLE `organizationprofile` (
-  `Id-Nunber-OrgPro` varchar(4) NOT NULL,
-  `Name-organizationprofile` text NOT NULL,
-  `PhoneNumber-organizationprofile` varchar(20) NOT NULL,
-  `Address-organizationprofile` varchar(25) NOT NULL,
-  `HomePhone-organizationprofile` varchar(10) NOT NULL,
-  `SecondaryPhone-organizationprofile` varchar(16) NOT NULL,
-  `Email-organizationprofile` varchar(20) NOT NULL,
-  `MTD Revenue-organizationprofile` int(8) NOT NULL,
-  `CatagoryOfService-organizationprofile` text NOT NULL,
-  `Description-organizationprofile` int(11) NOT NULL,
-  `Id-Number` int(11) NOT NULL
+  `Id-Nunber_OrgPro` int(4) NOT NULL,
+  `Name_organizationprofile` text NOT NULL,
+  `PhoneNumber_organizationprofile` varchar(16) NOT NULL,
+  `Address_organizationprofile` varchar(25) NOT NULL,
+  `HomePhone_organizationprofile` varchar(10) NOT NULL,
+  `SecondaryPhone_organizationprofile` varchar(16) NOT NULL,
+  `Email_organizationprofile` varchar(20) NOT NULL,
+  `MTD Revenue_organizationprofile` int(8) NOT NULL,
+  `CatagoryOfService_organizationprofile` text(15) NOT NULL,
+  `Description_organizationprofile` int(11) NOT NULL,
+  `Id-Number` int(8) NOT NULL,
+  PRIMARY KEY (`Id-Nunber-OrgPro`)
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -94,13 +101,14 @@ CREATE TABLE `organizationprofile` (
 --
 
 CREATE TABLE `partnerprofile` (
-  `Id-Number-Partner` int(4) NOT NULL,
-  `FName-partnerprofile` text NOT NULL,
-  `LName-partnerprofile` text NOT NULL,
-  `Telephone-partnerprofile` int(11) NOT NULL,
-  `Address-partnerprofile` int(11) NOT NULL,
-  `Email-partnerprofile` int(11) NOT NULL,
-  `CatagoryOfService-partnerprofile` text NOT NULL
+  `Id_Number_partnerprofile` int(4) NOT NULL,
+  `FName_partnerprofile` text(20) NOT NULL,
+  `LName_partnerprofile` text(20) NOT NULL,
+  `Telephone_partnerprofile` int(11) NOT NULL,
+  `Address_partnerprofile` varchar(50) NOT NULL,
+  `Email_partnerprofile` varchar(20) NOT NULL,
+  `CatagoryOfService-partnerprofile` text NOT NULL,
+  PRIMARY KEY (`Id-Number-partnerprofille`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -110,8 +118,11 @@ CREATE TABLE `partnerprofile` (
 --
 
 CREATE TABLE `paymentmethods` (
-  `Id-MethodType-Pay` varchar(5) NOT NULL,
-  `Description` text NOT NULL
+
+  `Id-MethodType_Pay` varchar(5) NOT NULL,
+  `Description_payment` text(50) NOT NULL
+  PRIMARY KEY (`Id-MethodType-Pay`);
+  FOREIGN KEY (`Id-MethodType-Pay`) REFERENCES `cardcreditionals` (`ID- MethodType_CardCrediontials`);
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -121,12 +132,13 @@ CREATE TABLE `paymentmethods` (
 --
 
 CREATE TABLE `sellerprofile` (
-  `Id-Number-sellerprofile` int(11) NOT NULL,
-  `Revenue-sellerpofile` int(8) NOT NULL,
-  `Category Of Services- -sellerpofile` int(3) NOT NULL,
-  `NumberOfSales-sellerpofile` int(4) NOT NULL,
-  `Conversion-sellerpofile` float NOT NULL,
-  `ID-UserType` int(11) NOT NULL
+  `Id-Number_sellerprofile` int(4) NOT NULL,
+  `Revenue_sellerpofile` int(8) NOT NULL,
+  `Category Of Services_sellerpofile` int(3) NOT NULL,
+  `NumberOfSales_sellerpofile` int(4) NOT NULL,
+  `Conversion_sellerpofile` float NOT NULL,
+  `ID-UserType` varchar(12) NOT NULL,
+   PRIMARY KEY (`Id-Number-sellerprofile`);
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -136,17 +148,19 @@ CREATE TABLE `sellerprofile` (
 --
 
 CREATE TABLE `users` (
-  `ID-UserType-Users` varchar(4) NOT NULL,
-  `Fname_Users` text NOT NULL,
-  `Lname-Users` text NOT NULL,
+  `ID_UserType_Users` varchar(12) NOT NULL,
+  `Fname_Users` text(20) NOT NULL,
+  `Lname_Users` text(20) NOT NULL,
   `DOB_Users` date NOT NULL,
-  `Email-Users` varchar(20) NOT NULL,
-  `Location-Users` text NOT NULL,
-  `Security Question_Users` text NOT NULL,
-  `Telephone-Users` varchar(16) NOT NULL,
-  `SQ_Users` varchar(16) NOT NULL,
-  `Description-User` text DEFAULT NULL,
-  `Id-Users` int(4) NOT NULL
+  `Email_Users` varchar(20) NOT NULL,
+  `Location_Users` text NOT NULL,
+  `SQ_Users` text NOT NULL,
+  `Telephone_Users` varchar(16) NOT NULL,
+  `SQ_Users` varchar(30) NOT NULL,
+  `Description_Users` text(50) text DEFAULT NULL,
+  `Id-Users` int(4) NOT NULL,
+   PRIMARY KEY (`ID-UserType-Users`),
+   FOREIGN KEY (`ID-UserType-Users`) REFERENCES `usertype` (`ID-Type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -156,90 +170,26 @@ CREATE TABLE `users` (
 --
 
 CREATE TABLE `usertype` (
-  `ID-Type` varchar(4) NOT NULL,
-  `Description Type` text NOT NULL
+  `ID-Type` varchar(12) NOT NULL,
+  `Description_Type` text NOT NULL,
+  PRIMARY KEY (`ID-Type`)
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `buyersprofile`
---
-ALTER TABLE `buyersprofile`
-  ADD PRIMARY KEY (`Id-Number-BuyerProfile`);
-
---
--- Indexes for table `cardcreditionals`
---
-ALTER TABLE `cardcreditionals`
-  ADD PRIMARY KEY (`ID- MethodType_CardCrediontials`);
-
---
--- Indexes for table `gmfprofile`
---
-ALTER TABLE `gmfprofile`
-  ADD PRIMARY KEY (`Id-Number-gmfprofile`);
-
---
--- Indexes for table `organizationprofile`
---
-ALTER TABLE `organizationprofile`
-  ADD PRIMARY KEY (`Id-Nunber-OrgPro`);
-
---
--- Indexes for table `partnerprofile`
---
-ALTER TABLE `partnerprofile`
-  ADD PRIMARY KEY (`Id-Number-Partner`);
-
---
--- Indexes for table `paymentmethods`
---
-ALTER TABLE `paymentmethods`
-  ADD PRIMARY KEY (`Id-MethodType-Pay`);
-
---
--- Indexes for table `sellerprofile`
---
-ALTER TABLE `sellerprofile`
-  ADD PRIMARY KEY (`Id-Number-sellerprofile`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`ID-UserType-Users`);
-
---
--- Indexes for table `usertype`
---
-ALTER TABLE `usertype`
-  ADD PRIMARY KEY (`ID-Type`);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `buyersprofile`
---
-ALTER TABLE `buyersprofile`
-  ADD CONSTRAINT `buyersprofile_ibfk_1` FOREIGN KEY (`Id-Number-BuyerProfile`) REFERENCES `sellerprofile` (`Id-Number-sellerprofile`);
-
---
--- Constraints for table `paymentmethods`
---
-ALTER TABLE `paymentmethods`
-  ADD CONSTRAINT `paymentmethods_ibfk_1` FOREIGN KEY (`Id-MethodType-Pay`) REFERENCES `cardcreditionals` (`ID- MethodType_CardCrediontials`);
-
---
--- Constraints for table `users`
---
-ALTER TABLE `users`
-  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`ID-UserType-Users`) REFERENCES `usertype` (`ID-Type`);
-COMMIT;
+CREATE TABLE `shipping` (
+  `Id-Number` int(4) NOT NULL,
+  `fName_shipping` text(20) NOT NULL,
+  `lName_shipping` text(20) NOT NULL,
+  `Address1_shipping` varchar(50) NOT NULL,
+  `Address2__shipping` varchar(50) NOT NULL,
+  `country_shipping` text(20) NOT NULL,
+  `city_shippiing` text(20) NOT NULL,
+   'zip_shipping' int (20) NOT NULL,
+  `Phone_shipping` varchar(14) NOT NULL,
+  'Delivery_shipping' var(20) NOT NULL,
+  PRIMARY KEY (`Id-Number`)
+  FOREIGN KEY ('Id-buyer') REFERENCES (buyersprofile)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
