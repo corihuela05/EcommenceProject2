@@ -20,7 +20,7 @@ db = SQLAlchemy(app)
 '''
 ### adds table, just for testing connection ###
 class paymentmethods (db.Model):
-    ID-methodtype = db.Column(db.varchar(5), primary_key=True)
+    ID_methodtype = db.Column(db.varchar(5), primary_key=True)
     Description_payment = db.Column(db.text(50), unique=True)
     def __init__(self, id-type, Description_usertype):
         self.methodtype = id_type
@@ -29,6 +29,9 @@ db.create_all()
 db.session.add(paymentmethods(id_method_pay= "card" )) 
 b.session.add(paymentmethods(description= "American Express credit card" ))
 '''
+def remove_entry(db.model):
+    db.session.delete(ID_type)
+    db.session.commit()
 
 @app.route("/")
 def my_index():

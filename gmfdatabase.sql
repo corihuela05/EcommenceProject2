@@ -181,12 +181,12 @@ CREATE TABLE `shipping` (
   `fName_shipping` text(20) NOT NULL,
   `lName_shipping` text(20) NOT NULL,
   `Address1_shipping` varchar(50) NOT NULL,
-  `Address2__shipping` varchar(50) NOT NULL,
+  `Address2_shipping` varchar(50) NULL,
   `country_shipping` text(20) NOT NULL,
-  `city_shippiing` text(20) NOT NULL,
+  `city_shipping` text(20) NOT NULL,
    'zip_shipping' int (20) NOT NULL,
-  `Phone_shipping` varchar(14) NOT NULL,
-  'Delivery_shipping' var(20) NOT NULL,
+  `phone_shipping` varchar(14) NOT NULL,
+  'delivery_shipping' text(20) NOT NULL,
   PRIMARY KEY (`Id-Number`)
   FOREIGN KEY ('Id-buyer') REFERENCES (buyersprofile)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

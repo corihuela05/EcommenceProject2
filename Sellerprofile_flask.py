@@ -30,7 +30,9 @@ db.create_all()
 db.session.add(paymentmethods(id_method_pay= "card" )) 
 b.session.add(paymentmethods(description= "American Express credit card" ))
 '''
-
+def remove_entry(db.model):
+    db.session.delete(id_type)
+    db.session.commit()
 @app.route("/")
 def my_index():
         return flask.render_template("index.html", token= "Hello")

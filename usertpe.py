@@ -25,16 +25,21 @@ class userstype (db.Model):
     def __init__(self, id-type, Description_usertype):
         self.ID_type = id_type
         Desciption_type = Description_type
+
 db.create_all()
-''' 
+
 db.session.add(usertype(id_type= "buyer" )) 
 b.session.add(usertype(description= "From Arizona" ))
 db.session.add(usertype(id_type= " partner" )) 
 db.session.add(usertype(description= "lawyer" ))
 db.session.add(usertype(id_type= " organization" )) 
 db.session.add(usertype(description= "lawyer" ))
+db.session.commit()
 
-''' 
+ def remove_entry(db.model):
+    db.session.delete(id_type)
+    db.session.commit()
+        ''''
 @app.route("/")
 def my_index():
         return flask.render_template("index.html", token= "Hello")
