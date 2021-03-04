@@ -10,23 +10,14 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
 
-'''buyers profile table'''
-'''NOTE: change at - to _ in db for classes to work'''
+#'''buyers profile table'''
 db = SQLAlchemy(app)
-class buyersprofile(db.Model):
-    Number_BuyerProfile = db.Column(db.Integer, primary_key=True)
-    Name_buyerprofile = db.Column(db.Text, unique=False)
-    Address_buyerprofile = db.Column(db.String(25), unique=True)
-    FirstPhone_buyerprofile = db.Column(db.Integer, unique=False)
-    SecondaryPhone_buyerprofile = db.Column(db.String(14), unique=False)
-    ProfileCreated_buyerprofile = db.Column(db.DateTime, unique=False)
-    MoneyContributed = db.Column(db.Integer, unique=False)
+from buyersprofile import getbuyersprofile
+buyersprofile=getbuyersprofile(db)
 
-    def __repr__(self):                         '''debugging'''
-        return '<User %r>' % self.username
-db.create_all() '''adds above info to sql'''
-db.session.add(buyersprofile(Number_BuyerProfile=5 )) '''inserts info to table'''
-db.session.commit() '''commits above insert into table'''
+db.create_all() #'''adds above info to sql'''
+db.session.add(buyersprofile(Number_BuyerProfile=25)) #'''inserts info to table'''
+db.session.commit() #'''commits above insert into table'''
 
 @app.route("/")
 def my_index():
