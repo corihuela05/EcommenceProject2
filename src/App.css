@@ -37,27 +37,385 @@
   }
 }
 
-.sidebar {
-  height: 360px;
-  width: 160px;
-  position: fixed;
-  top: 100px;
-  background-color: dimgray;
-  padding-top: 20px;
-}
-
-.sidebar button {
-  width:160px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  background-color: dimgray;
-  
-}
-img{
-  position: fixed;
+.logo{
+  position: absolute;
   left: 1px;
   top:1px;
   width:160px; 
   height:100px;
 }
+
+.flag{
+  position: absolute;
+  left: 1120px;
+  top:5px;
+  width:80px; 
+  height:50px;
+}
+
+input[type=text] {
+  position: absolute;
+  left: 200px;
+  top: 15px;
+  width: 330px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px ;
+}
+.homebutton{
+  position: absolute;
+  left:590px;
+  top: 16px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+.info{
+  position: absolute;
+  left:790px;
+  top: 16px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+.cart{
+  position: absolute;
+  left:990px;
+  top: 16px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+.cart{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.tabs{
+  position: absolute;
+  top:112px;
+  left:93px;
+  background-color: lightgrey;
+  border: 1.5px solid grey;
+}
+
+.tabs button {
+  background-color: lightgrey;
+  border: none;
+  outline: none;
+  padding: 16px 30px;
+  font-size: 17px;
+}
+.menu{
+  position: absolute;
+  top:112px;
+  left:40px;
+  background-color: lightgrey;
+  border: 1.5px solid grey;
+}
+.menu button{
+  background-color: white;
+  border: none;
+  padding: 16px 18px;
+  font-size: 17px;
+}
+  
+/* #Slideshow */
+.images img{
+  position:absolute;
+  top:200px;
+  left:200px;
+  height: 400px;
+  width: 65%;
+  transition: all .15%s ease;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.images input{
+  display:none;
+}
+
+
+.dot{
+  position:absolute;
+  top:600px;
+  left:620px;
+  display:flex;
+  justify-content:center;
+  margin:5px;
+}
+.dot label{
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  border: solid black 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+.dot label:hover{
+  background: black;
+}
+
+#image1:checked ~ .img1{
+  margin-left:0;
+}
+#image2:checked ~ .img2{
+  margin-left:-100%;
+}
+
+
+.church{
+  position: absolute;
+  top:700px;
+  left:320px;
+  width:200px;
+  height:200px;
+  background-color:white;
+  border: solid grey 15px;
+  border-radius: 25px;
+  outline: none;
+}
+  
+.school{
+  position: absolute;
+  top:700px;
+  left:550px;
+  width:200px;
+  height:200px;
+  background-color:white;
+  border: solid grey 15px;
+  border-radius: 25px;
+  outline: none;
+}
+  
+.organization{
+  position: absolute;
+  top:700px;
+  left:780px;
+  width:200px;
+  height:200px;
+  background-color:white;
+  border: solid grey 15px;
+  border-radius: 25px;
+  outline: none;
+}
+.spaces{
+  position: absolute;
+  top:930px;
+  left:300px;
+  width:700px;
+  height:200px;
+  background-color:white;
+  border: solid grey 2px;
+}
+
+.games{
+  position: absolute;
+  top:1200px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.baby{
+  position: absolute;
+  top:1200px;
+  left:560px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.patio{
+  position: absolute;
+  top:1200px;
+  left:760px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.space{
+  position: absolute;
+  top:930px;
+  left:360px;
+  width:700px;
+  height:200px;
+  background-color:white;
+  border: solid grey 2px;
+}
+
+.pets{
+  position: absolute;
+  top:1450px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.pharmacy{
+  position: absolute;
+  top:1450px;
+  left:560px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.beauty{
+  position: absolute;
+  top:1450px;
+  left:760px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.sports{
+  position: absolute;
+  top:1700px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.auto{
+  position: absolute;
+  top:1700px;
+  left:560px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.music{
+  position: absolute;
+  top:1700px;
+  left:760px;
+  width:170px;
+  height:250px;
+  background-color:white;
+  border:none;
+}
+.letterpic{
+  position: absolute;
+  top:2000px;
+  left:280px;
+}
+.email{
+  width:300px;
+  height:35px;
+}
+.subscribe{
+  height:35px;
+  background-color:lightgrey;
+  border:none;
+}
+.newsletter{
+  position: absolute;
+  top:2030px;
+  left:500px;
+}
+.about{
+  position: absolute;
+  top:2200px;
+  left:160px;
+  background-color:white;
+  width:950px;
+  height: 100px;
+  border: 1px solid black;
+}
+.first{
+  position: absolute;
+  top:2301px;
+  left:200px;
+  background-color:white;
+  width: 200px;
+  height: 250px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.buttons1{
+  position: absolute;
+  top:2301px;
+  left:420px;
+  background-color:white;
+  width: 200px;
+  height: 250px;
+  border: 1px solid white;
+  outline: none;
+  padding:19px;
+}
+
+.buttons1 button{
+  border:none;
+  background-color:white;
+}
+
+.buttons2{
+  position: absolute;
+  top:2301px;
+  left:640px;
+  background-color:white;
+  width: 200px;
+  height: 250px;
+  border: 1px solid white;
+  outline: none;
+  padding:19px;
+}
+
+.buttons2 button{
+  border:none;
+  background-color:white;
+}
+
+.buttons3{
+  position: absolute;
+  top:2301px;
+  left:860px;
+  background-color:white;
+  width: 200px;
+  height: 250px;
+  border: 1px solid white;
+  outline: none;
+  padding:19px;
+}
+
+.buttons3 button{
+  border:none;
+  background-color:white;
+}
+
+.copyright{
+  position: absolute;
+  top:2550px;
+  left:160px;
+  background-color:white;
+  width:950px;
+  height: 50px;
+  border: 1px solid white;
+  text-align:left;
+}
+
+
+
