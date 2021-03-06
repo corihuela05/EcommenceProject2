@@ -15,9 +15,17 @@ db = SQLAlchemy(app)
 from buyersprofile import getbuyersprofile
 buyersprofile=getbuyersprofile(db)
 
-db.create_all() #'''adds above info to sql'''
-db.session.add(buyersprofile(Number_BuyerProfile=25)) #'''inserts info to table'''
-db.session.commit() #'''commits above insert into table'''
+
+
+#'''insert function'''
+#buyersprofile.insert(6)
+
+
+#'''delete function'''
+#buyersprofile.delete(0)
+
+#'''edit function'''
+#buyersprofile.edit(21,12)
 
 @app.route("/")
 def my_index():
