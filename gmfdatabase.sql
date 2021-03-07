@@ -1,4 +1,4 @@
- phpMyAdmin SQL Dump
+phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `buyersprofile` (
-  `Id-Number_buyer` int(4) NOT NULL,
+  `Id_Number_buyer` int(4) NOT NULL,
   `fName_buyer` text(20) NOT NULL,
   `lName_buyer` text(20) NOT NULL,
   `Address_buyer` varchar(50) NOT NULL,
@@ -46,13 +46,12 @@ CREATE TABLE `buyersprofile` (
 --
 
 CREATE TABLE `cardcreditionals` (
-  `ID- MethodType_CardCrediontials` varchar(5) NOT NULL,
+  `ID_Number_CardCrediontials` varchar(5) NOT NULL,
   `FullName-cardcreditionals` date NOT NULL,
   `CardNum-cardcreditionals` varchar(16) NOT NULL,
   `ExpDate-cardcreditionals` date NOT NULL,
   `CRV-cardcreditionals` int(3) NOT NULL,
-  `Amount-cardcreditionals` int(4) NOT NULL
-  PRIMARY KEY (`ID- MethodType_CardCrediontials`);
+    PRIMARY KEY (`ID_Number_CardCrediontials`);
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -177,20 +176,22 @@ CREATE TABLE `usertype` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `shipping` (
-  `Id-Number` int(4) NOT NULL,
+  `Id_Number_shipping` int(4) NOT NULL,
   `fName_shipping` text(20) NOT NULL,
   `lName_shipping` text(20) NOT NULL,
   `Address1_shipping` varchar(50) NOT NULL,
-  `Address2_shipping` varchar(50) NULL,
+  `Address2_shipping` varchar(50) NOT NULL,
   `country_shipping` text(20) NOT NULL,
   `city_shipping` text(20) NOT NULL,
-   'zip_shipping' int (20) NOT NULL,
-  `phone_shipping` varchar(14) NOT NULL,
-  'delivery_shipping' text(20) NOT NULL,
-  PRIMARY KEY (`Id-Number`)
-  FOREIGN KEY ('Id-buyer') REFERENCES (buyersprofile)
+   `zip_shipping` int (20) NOT NULL,
+  `Phone_shipping` varchar(14) NOT NULL,
+   `Delivery_shipping` varchar(20) NOT NULL,
+   `Id_Number_b` int (4) NOT NULL,      
+  PRIMARY KEY (`Id_Number_shipping`),
+  FOREIGN KEY (`Id_Number_b`) REFERENCES buyersprofile(`Id_Number_buyer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
