@@ -1,0 +1,332 @@
+.producthome{
+    position: absolute;
+    left:750px;
+    top: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px ;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    border-right: 1px solid grey;
+    outline:none;
+    
+    
+}
+.productabout{
+    position: absolute;
+    left:850px;
+    top: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px ;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    border-right: 1px solid grey;
+    outline:none;
+    
+}
+.productshop{
+    position: absolute;
+    left:950px;
+    top: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px ;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    border-right: 1px solid grey;
+    outline:none;
+    
+}
+.producthelp{
+    position: absolute;
+    left:1050px;
+    top: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px ;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    outline:none;
+}
+
+.boxs{
+    position:absolute;
+    top:130px;
+    width: 550px;
+    height:426px;
+}
+li{
+    list-style:none;
+    width:105px;
+    height:105px;
+    border: 1px solid black;
+}
+
+#active{
+    display:flex;
+}
+
+li:hover ul{
+    display:flex;
+}
+
+ul{
+    position:absolute;
+    top:0px;
+    left:105px;
+    width:428px;
+    height:420px;
+    border:1px solid black;
+    display:none;
+}
+ul img{
+    position:absolute;
+    top:0px;
+    left:0;
+    width:425px;
+    height:418px;
+}
+
+.productname{
+    position:absolute;
+    left:531.5px;
+    top:129.5px;
+    border: 1px solid black;
+    width:817px;
+    height:420px;
+    padding:28px;
+}
+.addtochart{
+    background:grey;
+    color:white;
+    border:none;
+    width:120px;
+    height:50px;
+}
+.addtochart{
+  margin-top: 100px;
+}
+.similarproduct{
+    position:absolute;
+    left:0px;
+    top:548.5px;
+    border:1px solid black;
+    width:100%;
+    height:210px;
+    text-align: center;
+}
+
+.productsimilar {
+  position:absolute;
+  top:80px;
+  left:250px;
+}
+
+.productsimilar button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+
+.productsimilar1 {
+  position:absolute;
+  top:80px;
+  left:550px;
+}
+
+.productsimilar1 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.productsimilar2 {
+  position:absolute;
+  top:80px;
+  left:850px;
+}
+
+.productsimilar2 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+
+.reviews{
+    position:absolute;
+    top:750px;
+}
+    
+.productreview {
+  position:absolute;
+  top:100px;
+  left:50px;
+}
+
+.productreview button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.productreview {
+  position:absolute;
+  top:100px;
+  left:50px;
+}
+
+.productreview button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 120px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.productreview img{
+    border-radius: 90%;
+    width:130px;
+    height:130px;
+}
+.productreview1 {
+  position:absolute;
+  top:240px;
+  left:50px;
+}
+
+.productreview1 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 120px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.productreview1 img{
+    border-radius: 90%;
+    width:130px;
+    height:130px;
+}
+.productreview2 {
+  position:absolute;
+  top:380px;
+  left:50px;
+}
+.productreview2 img{
+    border-radius: 90%;
+    width:130px;
+    height:130px;
+}
+.productreview2 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 120px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+
+.writtenreview{
+  position:absolute;
+  top:100px;
+  left:500px;
+  width: 650px;
+  height:100px;
+  border: 1px solid black;
+  padding-top:10px;
+  padding-left:10px;
+}
+
+.writtenreview1{
+  position:absolute;
+  top:225px;
+  left:500px;
+  width: 650px;
+  height:100px;
+  border: 1px solid black;
+  padding-top:10px;
+  padding-left:10px;
+}
+
+.writtenreview2{
+  position:absolute;
+  top:355px;
+  left:500px;
+  width: 650px;
+  height:100px;
+  border: 1px solid black;
+  padding-top:10px;
+  padding-left:10px;
+}
+
+
+.productfooter{
+  position:absolute;
+  top:1300px;
+  left:0px;
+  width:100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.productfooter button{
+  margin:10px;
+  background:white;
+  border:none;
+}
+
+.productcopyright{
+  position: absolute;
+  top:1340px;
+  left:200px;
+  background-color:white;
+  width:950px;
+  height: 50px;
+  border: 1px solid white;
+  text-align:center;
+}
+
+.aboutPosition{
+  position:absolute;
+  left:577px;
+}
+.helpPosition{
+  position:absolute;
+  top:0px;
+  left:699px;
+}
