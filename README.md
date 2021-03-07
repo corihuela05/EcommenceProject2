@@ -8,9 +8,10 @@ Description will go here
 a.  Use the command `pip install`
 
 b. `npm start`
-c. addded 'pip instal flask'
-d.  Python script 'import flask' 
-c. 'flask_nysqldb import MySQL'
+c. addded `pip instal flask`
+d. install lastest version of python
+e. `import flask`
+f. `flask_nysqldb import MySQL`
 ## Database Setup
 a.Xampp was used to run PHPMYAdmin the local drive making it easier to access, when the code is accessed by my collaborators.  Download your respective operating system and the latest version, and follow the steps on the screen.
  
@@ -35,6 +36,8 @@ Go into structure view-> relation review .
  ![Screenshot](sqltables.png)
  
 b.  make sure the version of python in the system.
+     Download Python here: https://www.python.org/
+  
 c. create classes with the attributes for insert, delete and modify.
 ## API Keys
 a.'add more info as we go here'
