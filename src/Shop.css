@@ -1,0 +1,245 @@
+
+.shopcart{
+  position: absolute;
+  left:1150px;
+  top: 16px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+.shopcart{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.header{
+  background-color: lightgrey;
+  height:350px;
+  padding:10px;
+}
+.position{
+  position: absolute;
+  top:150px;
+  left:400px;
+  text-align: center;
+}
+input[type=shopinput] {
+  width: 400px;
+  height:50px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  font-size: 16px;
+  padding: 10px 20px ;
+}
+.shopsubmit{
+  width:150px;
+  height:50px;
+  background-color: DarkSlateGrey;
+  border: 1px solid grey;
+  color:white;
+  margin:10px;
+  
+}
+.feature{
+  position:absolute;
+  top: 350px;
+  left:0px;
+  background-color: white;
+  border: 1px solid grey;
+  height:350px;
+  width:100%;
+  text-align:center;
+}
+.shopcategory button{
+  width:200px;
+  height:200px;
+  margin:5px;
+  background-color: white;
+  border:none;
+  outline:none;
+}
+.shopcategory img{
+  border: 1px solid black;
+}
+.shopnowbutton{
+  position:absolute;
+  top: 80px;
+  left:1000px;
+  border:1px solid black;
+  background: white;
+  padding:20;
+  width:150px;
+  height:200px;
+  background-color: DarkSlateGrey;
+  color:white;
+}
+
+.advertisement{
+  position:absolute;
+  top:348.5px;
+  left:0px;
+  width:100%;
+  height:100px;
+}
+.shopcategory .shop{
+  background: DarkSlateGrey;
+  width:150px;
+  height:200px;
+  color:white;
+}
+
+.productheader{
+  position:absolute;
+  top: 800px;
+  left:0px;
+  width:280px;
+  background: grey;
+  padding:20px;
+  text-align:left;
+  border:1px solid grey;
+  background: white;
+}
+.productheader button{
+  margin-top: 221px;
+  background: DarkSlateGrey;
+  color:white;
+  border:none;
+  width:100px;
+  height:30px;
+}
+.products {
+  position:absolute;
+  top:820px;
+  left:350px;
+}
+
+.products button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.products1 {
+  position:absolute;
+  top:820px;
+  left:650px;
+}
+.products1 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.products2 {
+  position:absolute;
+  top:820px;
+  left:950px;
+}
+.products2 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.products3 {
+  position:absolute;
+  top:1000px;
+  left:350px;
+}
+.products3 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+
+.products4 {
+  position:absolute;
+  top:0px;
+  left:300px;
+}
+.products4 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+.products5 {
+  position:absolute;
+  top:0px;
+  left:600px;
+}
+.products5 button{
+  position:absolute;
+  top:0px;
+  left:170px;
+  width: 100px;
+  height: 100px;
+  text-align: left; 
+  background: white;
+  border:none;
+  outline:none;
+}
+
+.checked{
+  color:grey;
+}
+
+.footer{
+  position:absolute;
+  top:1200px;
+  left:0px;
+  width:100%;
+  border-top: 1px solid grey;
+  text-align: center;
+}
+.footer button{
+  margin:10px;
+  background:white;
+  border:none;
+}
+
+.shopcopyright{
+  position: absolute;
+  top:1240px;
+  left:200px;
+  background-color:white;
+  width:950px;
+  height: 50px;
+  border: 1px solid white;
+  text-align:center;
+}
+
+.homePosition{
+  position:absolute;
+  left:508px;
+}
