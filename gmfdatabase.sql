@@ -62,7 +62,7 @@ CREATE TABLE `gmfprofile` (
 -- --------------------------------------------------------
 
 --
--- Table structurela tabla `organizationprofile`
+-- Table structure for `organizationprofile`
 --
 
 CREATE TABLE `organizationprofile` (
@@ -149,7 +149,7 @@ CREATE TABLE `shipping` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `users`
+-- table structure `users`
 --
 
 CREATE TABLE `users` (
@@ -248,7 +248,7 @@ ALTER TABLE `gmfprofile`
   ADD CONSTRAINT `gmfprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
 
 --
--- foreign key la tabla `shipping`
+-- foreign key la table `shipping`
 --
 ALTER TABLE `shipping`
   ADD CONSTRAINT `shipping_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
