@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `gmfdatabase`
+-- Database: `gmfdatabase`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `buyersprofile`
+--  table structure `buyersprofile`
 --
 
 CREATE TABLE `buyersprofile` (
@@ -62,7 +62,7 @@ CREATE TABLE `gmfprofile` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `organizationprofile`
+-- Table structurela tabla `organizationprofile`
 --
 
 CREATE TABLE `organizationprofile` (
@@ -100,7 +100,7 @@ CREATE TABLE `partnerprofile` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `paymentmethod`
+-- Table structure `paymentmethod`
 --
 
 CREATE TABLE `paymentmethod` (
@@ -238,7 +238,7 @@ ALTER TABLE `usertype`
   ADD PRIMARY KEY (`ID_Type`);
 
 --
--- Restricciones para tablas volcadas
+
 --
 
 --
