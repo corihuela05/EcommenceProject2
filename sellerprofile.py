@@ -20,11 +20,11 @@ def getsellerprofile(db):
             self.db=db
             class sellerprofile(self.db.Model):
                 Number_SellerProfile = db.Column(db.Integer, primary_key=True)
-                Revenue_sellerprofile = db.Column(db.Text, unique=False)
-                CategoryOfService_sellerprofile = db.Column(db.String(25), unique=True)
+                Revenue_sellerprofile = db.Column(db.Integer, unique=False)
+                CategoryOfService_sellerprofile = db.Column(db.String(25), unique=False)
                 NumberOfSales_sellerprofile = db.Column(db.Integer, unique=False)
                 Revisions_sellerprofile = db.Column(db.String(14), unique=False)
-                UserType = db.Column(db.DateTime, unique=False)
+                UserType = db.Column(db.text, unique=False)
                 
                 def __repr__(self):                         
                     return '<User %r>' % self.Number_SellerProfile
