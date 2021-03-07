@@ -26,8 +26,8 @@ def getcardcreditionals(db):
                 CRV_cardcreditionals = db.Column(db.String(3), primary_key=False)
                 Amount = db.Column(db.Integer, unique=False)
                 
-                def __repr__(self):                         
-                    return '<User %r>' % self.CRV-cardcreditionals
+         def __repr__(self):                         
+            return '<User %r>' % self.CRV-cardcreditionals
             self.sellersprofile=sellersprofile
         def insert(self,id):
             entry=self.sellersprofile(CRV-cardcreditionals=id)
