@@ -27,18 +27,18 @@ def getcardcreditionals(db):
                 Amount = db.Column(db.Integer, unique=False)
                 
          def __repr__(self):                         
-            return '<User %r>' % self.CRV-cardcreditionals
+            return '<User %r>' % self.CRV_cardcreditionals
             self.sellersprofile=sellersprofile
         def insert(self,id):
-            entry=self.sellersprofile(CRV-cardcreditionals=id)
+            entry=self.sellersprofile(CRV_cardcreditionals=id)
             self.db.session.add(entry)
             self.db.session.commit()
         def delete(self,id):
-            entry=self.sellersprofile.query.filter_by(CRV-cardcreditionals=id).delete()
+            entry=self.sellersprofile.query.filter_by(CRV_cardcreditionals=id).delete()
             self.db.session.commit()
         def edit(self,id,to):
-            entry=self.sellersprofile.query.filter_by(CRV-cardcreditionals=id).first()
-            entry.CRV-cardcreditionals=to
+            entry=self.sellersprofile.query.filter_by(CRV_cardcreditionals=id).first()
+            entry.CRV_cardcreditionals=to
             self.db.session.commit()
 
     return cardcreditionalsTable(db)
