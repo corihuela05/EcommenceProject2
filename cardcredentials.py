@@ -19,7 +19,11 @@ def getcardcreditionals(db):
         def __init__(self,db):
             self.db=db
             class cardcreditionals(self.db.Model):
-                CRV-cardcreditionals = db.Column(db.String(3), primary_key=True)
+                MethodType_CardCrediontials = db.Column(db.String(3), primary_key=True)
+	            FullName_cardcreditionals = db.Column(db.text, unique=False)
+	            CardNum_cardcreditionals = db.Column(db.varchar(16), unique=False)
+	            ExpDate_cardcreditionals = db.Column(db.Date, unique=False)
+                CRV_cardcreditionals = db.Column(db.String(3), primary_key=False)
                 Amount = db.Column(db.Integer, unique=False)
                 
                 def __repr__(self):                         
