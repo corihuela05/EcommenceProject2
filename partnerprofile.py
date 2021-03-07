@@ -1,3 +1,18 @@
+import flask
+from flask_mysqldb import MySQL
+from flask_sqlalchemy import SQLAlchemy #import flask SQLAlchemy
+
+app = flask.Flask("__main__")
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL__ER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'gmfdatabase'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
+#app.config['sqlarchemy_track_modifications']=False
+
+db = SQLAlchemy(app)
+
 def getpartnerprofile(db):
     
     class partnerProfileTable:
