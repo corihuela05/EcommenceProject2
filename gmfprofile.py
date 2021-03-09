@@ -5,7 +5,7 @@ def getgmfprofile(db):
             self.db=db
             class gmfprofile(self.db.Model):
                 Number_gmfprofile = db.Column(db.Integer(4), primary_key=True)
-                username_gmfprofile = db.Column(db.String(20), unique=False)
+                username_gmfprofile = db.Column(db.String(20), unique=True)
                 fname_gmfprofile = db.Column(db.String(20), unique=False)
                 lname_gmfprofile = db.Column(db.String(20), unique=False)
                 Password1_gmfprofile = db.Column(db.String(20), unique=False)
