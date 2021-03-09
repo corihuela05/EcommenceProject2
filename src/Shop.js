@@ -2,16 +2,22 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import App from "./App";
 import './Shop.css';
+import Toyourcarts from './Cart';
 
 function Buyers() {
    function handleHome(){
      ReactDOM.render(<App />,document.getElementById('root'));
   }
+     function handleToyourcarts(){
+     ReactDOM.render(<Toyourcarts />,document.getElementById('root'));
+   }
   return (
     <div className="header">
       <img src="logo.jpg" alt='company logo' className="logo" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+      <form onSubmit={handleToyourcarts}>
       <button className="shopcart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+      </form>
       <div className="position">
       <h1>Slogan</h1>
       <input type="shopinput" placeholder="Search..." />
