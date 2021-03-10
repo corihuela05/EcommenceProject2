@@ -1,6 +1,11 @@
-phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 10, 2021 at 05:19 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -19,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
---  table structure `buyersprofile`
+-- Table structure for table `buyersprofile`
 --
 
 CREATE TABLE `buyersprofile` (
@@ -27,18 +32,19 @@ CREATE TABLE `buyersprofile` (
   `username_buyer` varchar(20) NOT NULL,
   `fName_buyer` varchar(20) NOT NULL,
   `lName_buyer` varchar(20) NOT NULL,
-  `Password1_buyerprofile` varchar(20) NOT NULL,
+  `Password_buyer` varchar(20) NOT NULL,
   `Address_buyer` varchar(50) NOT NULL,
   `FirstPhone_buyer` int(12) NOT NULL,
   `SecondaryPhone_buyer` varchar(14) NOT NULL,
   `ProfileCreated_buyer` date NOT NULL,
-  `MoneyContributed` int(5) NOT NULL
+  `MoneyContributed` int(5) NOT NULL,
+  `ID_Number` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table for `gmfprofile`
+-- Table structure for table `gmfprofile`
 --
 
 CREATE TABLE `gmfprofile` (
@@ -46,7 +52,7 @@ CREATE TABLE `gmfprofile` (
   `username_gmfprofile` varchar(20) NOT NULL,
   `Fname_gmfprofile` varchar(20) NOT NULL,
   `lname_gmfprofile` varchar(20) NOT NULL,
-  `Password1_gmfprofile` varchar(20) NOT NULL,
+  `Password_gmfprofile` varchar(20) NOT NULL,
   `Address_gmfprofile` varchar(50) NOT NULL,
   `WorkPhone_gmfprofile` varchar(20) NOT NULL,
   `SecondaryNumber_gmfprofile` varchar(16) NOT NULL,
@@ -57,45 +63,52 @@ CREATE TABLE `gmfprofile` (
 -- --------------------------------------------------------
 
 --
--- Table structure for `organizationprofile`
+-- Table structure for table `organizationprofile`
 --
 
 CREATE TABLE `organizationprofile` (
   `Id_Nunber_OrgPro` int(4) NOT NULL,
-  `Name_organizationprofile` varchar(20) NOT NULL,
-  `username_Organizationprofile` varchar(20) NOT NULL,
-  `PhoneNumber_organizationprofile` varchar(16) NOT NULL,
-  `Password1_organizationprofile` varchar(20) NOT NULL,
-  `Address_organizationprofile` varchar(25) NOT NULL,
-  `HomePhone_organizationprofile` varchar(10) NOT NULL,
-  `SecondaryPhone_organizationprofile` varchar(16) NOT NULL,
-  `Email_organizationprofile` varchar(20) NOT NULL,
-  `Revenue_organizationprofile` int(8) NOT NULL,
-  `CatagoryOfService_organizationprofile` varchar(15) NOT NULL
+  `Name_orgpro` int(11) NOT NULL,
+  `Description_orgprofile` varchar(20) NOT NULL,
+  `Username_organizationprofile` varchar(20) NOT NULL,
+  `Password_organizationprofile` varchar(20) NOT NULL,
+  `Image_orgpro` varbinary(8000) NOT NULL,
+  `Vid_orgprofile` longblob DEFAULT NULL,
+  `Goals` text NOT NULL,
+  `Phone_orgprofile` varchar(16) NOT NULL,
+  `Address_orgpro` varchar(25) NOT NULL,
+  `Homephone_ogpro` varchar(10) NOT NULL,
+  `Secondaryphone_orgpro` varchar(16) NOT NULL,
+  `Email_orgpro` varchar(20) NOT NULL,
+  `Revenue_orgpro` int(8) NOT NULL,
+  `catofservice_orgpro` varchar(50) NOT NULL,
+  `Product_orgpro` text NOT NULL,
+  `ID_Number` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- table structure `partnerprofile`
+-- Table structure for table `partnerprofile`
 --
 
 CREATE TABLE `partnerprofile` (
-  `Id_Number_partnerprofile` int(4) NOT NULL,
-  `username_partnerprofile` varchar(20) NOT NULL,
-  `FName_partnerprofile` varchar(20) NOT NULL,
-  `LName_partnerprofile` varchar(20) NOT NULL,
-  `Password1_partnerprofile` varchar(20) NOT NULL,
-  `Telephone_partnerprofile` varchar(12) NOT NULL,
-  `Address_partnerprofile` varchar(50) NOT NULL,
-  `Email_partnerprofile` varchar(20) NOT NULL,
-  `CatagoryOfService_partnerprofile` varchar(50) NOT NULL
+  `Id_Number_partner` int(4) NOT NULL,
+  `username_partner` varchar(20) NOT NULL,
+  `FName_partner` varchar(20) NOT NULL,
+  `LName_partner` varchar(20) NOT NULL,
+  `Password_partner` varchar(20) NOT NULL,
+  `Telephone_partner` varchar(12) NOT NULL,
+  `Address_partner` varchar(50) NOT NULL,
+  `Email_partner` varchar(20) NOT NULL,
+  `Catofservice_partner` varchar(50) NOT NULL,
+  `ID_Number` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure `paymentmethod`
+-- Table structure for table `paymentmethod`
 --
 
 CREATE TABLE `paymentmethod` (
@@ -109,22 +122,24 @@ CREATE TABLE `paymentmethod` (
 -- --------------------------------------------------------
 
 --
--- Table structure`sellerprofile`
+-- Table structure for table `sellerprofile`
 --
 
 CREATE TABLE `sellerprofile` (
-  `Id_Number_sellerprofile` int(4) NOT NULL,
-  `username_sellerprofile` varchar(20) NOT NULL,
-  `Revenue_sellerpofile` int(8) NOT NULL,
-  `Category_Services_sellerpofile` int(3) NOT NULL,
-  `NumberOfSales_sellerpofile` int(4) NOT NULL,
-  `Conversion_sellerpofile` float DEFAULT NULL
+  `Id_Number_seller` int(4) NOT NULL,
+  `Username_seller` varchar(20) NOT NULL,
+  `Password_seller` int(11) NOT NULL,
+  `Revenue_seller` int(8) NOT NULL,
+  `Catofservice_seller` int(50) NOT NULL,
+  `NumberOfSales_selller` int(4) NOT NULL,
+  `Conversion_seller` float DEFAULT NULL,
+  `ID_Number` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table Structure`shipping`
+-- Table structure for table `shipping`
 --
 
 CREATE TABLE `shipping` (
@@ -144,7 +159,7 @@ CREATE TABLE `shipping` (
 -- --------------------------------------------------------
 
 --
--- table structure `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -164,7 +179,7 @@ CREATE TABLE `users` (
 -- --------------------------------------------------------
 
 --
--- ETable Structure `usertype`
+-- Table structure for table `usertype`
 --
 
 CREATE TABLE `usertype` (
@@ -173,84 +188,110 @@ CREATE TABLE `usertype` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- primary keys for tables
+-- Indexes for dumped tables
 --
 
 --
--- primary keys for tables `buyersprofile`
+-- Indexes for table `buyersprofile`
 --
 ALTER TABLE `buyersprofile`
-  ADD PRIMARY KEY (`Id_Number_buyer`);
+  ADD PRIMARY KEY (`Id_Number_buyer`),
+  ADD KEY `ID_Number` (`ID_Number`);
 
 --
--- primary keys for tables `gmfprofile`
+-- Indexes for table `gmfprofile`
 --
 ALTER TABLE `gmfprofile`
   ADD PRIMARY KEY (`Id_Number_gmfprofile`),
   ADD KEY `ID_Number` (`ID_Number`);
 
 --
--- primary keys for tables `organizationprofile`
+-- Indexes for table `organizationprofile`
 --
 ALTER TABLE `organizationprofile`
-  ADD PRIMARY KEY (`Id_Nunber_OrgPro`);
+  ADD PRIMARY KEY (`Id_Nunber_OrgPro`),
+  ADD KEY `ID_Number` (`ID_Number`);
 
 --
--- primary keys for tables `partnerprofile`
+-- Indexes for table `partnerprofile`
 --
 ALTER TABLE `partnerprofile`
-  ADD PRIMARY KEY (`Id_Number_partnerprofile`);
+  ADD PRIMARY KEY (`Id_Number_partner`),
+  ADD KEY `ID_Number` (`ID_Number`);
 
 --
--- primary keys for tables `paymentmethod`
+-- Indexes for table `paymentmethod`
 --
 ALTER TABLE `paymentmethod`
   ADD PRIMARY KEY (`Id_Number_paymentmethod`);
 
 --
--- primary keys for tables `sellerprofile`
+-- Indexes for table `sellerprofile`
 --
 ALTER TABLE `sellerprofile`
-  ADD PRIMARY KEY (`Id_Number_sellerprofile`);
+  ADD PRIMARY KEY (`Id_Number_seller`),
+  ADD KEY `ID_Number` (`ID_Number`);
 
 --
--- primary keys for tables `shipping`
+-- Indexes for table `shipping`
 --
 ALTER TABLE `shipping`
   ADD PRIMARY KEY (`Id_Number_shipping`),
   ADD KEY `ID_Number` (`ID_Number`);
 
 --
-
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`ID_Number`);
 
 --
---  primary keys  `usertype`
+-- Indexes for table `usertype`
 --
 ALTER TABLE `usertype`
   ADD PRIMARY KEY (`ID_Type`);
 
 --
-
+-- Constraints for dumped tables
 --
 
 --
---  foreign key`gmfprofile`
+-- Constraints for table `buyersprofile`
+--
+ALTER TABLE `buyersprofile`
+  ADD CONSTRAINT `buyersprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
+
+--
+-- Constraints for table `gmfprofile`
 --
 ALTER TABLE `gmfprofile`
   ADD CONSTRAINT `gmfprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
 
 --
--- foreign key table `shipping`
+-- Constraints for table `organizationprofile`
+--
+ALTER TABLE `organizationprofile`
+  ADD CONSTRAINT `organizationprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
+
+--
+-- Constraints for table `partnerprofile`
+--
+ALTER TABLE `partnerprofile`
+  ADD CONSTRAINT `partnerprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
+
+--
+-- Constraints for table `shipping`
 --
 ALTER TABLE `shipping`
   ADD CONSTRAINT `shipping_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
+
+--
+-- Constraints for table `users`
+--
+ALTER TABLE `users`
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `shipping` (`ID_Number`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
