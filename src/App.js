@@ -4,7 +4,7 @@ import Shop from "./Shop";
 import Product from "./Product";
 import Home from "./App"
 import './App.css';
-
+import Cart from './Cart';
 
 function App() {
   function handleHome(){
@@ -15,6 +15,9 @@ function App() {
   }
   function handleShop(){
     ReactDOM.render(<Shop />,document.getElementById('root'));
+  }
+  function handleCart(){
+    ReactDOM.render(<Cart />,document.getElementById('root'));
   }
   return (
     <div className="App">
@@ -28,7 +31,9 @@ function App() {
       <button className="info">Sign In/Account</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    <form onSubmit={handleCart}>
+      <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    </form>
     <div className="menu">
       <button>☰</button>
     </div>
