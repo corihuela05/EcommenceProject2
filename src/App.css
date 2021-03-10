@@ -109,6 +109,56 @@ input[type=text] {
   border-radius: 5px;
 }
 
+/*Sidebar*/
+.sidebar {
+  position: absolute;
+  top:200px;
+  left:-190px;
+  height: 60%;
+  width: 190px;
+  background: lightgrey;
+  transition: all .5s;
+}
+.sidebar button {
+  width:190px;
+  font-size: 25px;
+  background-color: lightgrey;
+  color: black;
+}
+label #openbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left: 40px;
+  top: 111.5px;
+  font-size: 35px;
+  color: black;
+  padding: 10.5px 12px;
+  border: 1px solid grey;
+}
+label #cancelbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  top: 111.5px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  border: 1px solid grey;
+  
+}
+#check{
+  display: none;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #openbutton{
+  left: 250px;
+}
+#check:checked ~ label #cancelbutton{
+  left: 43px;
+}
+
 .tabs{
   position: absolute;
   top:112px;
@@ -136,22 +186,6 @@ input[type=text] {
   border: none;
   padding: 16px 18px;
   font-size: 17px;
-}
-.sidebar {
-  height: 486.5px;
-  width: 200px;
-  position: absolute;
-  top: 170px;
-  background-color: lightgrey;
-  padding-top: 20px;
-}
-
-.sidebar button {
-  width:200px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  background-color: lightgrey;
 }
 /* #Slideshow */
 .images img{
