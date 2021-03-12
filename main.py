@@ -8,7 +8,7 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 
-
+#Homepage
 
 @app.route("/", methods=['GET', 'POST')
 def index():
@@ -16,7 +16,9 @@ def index():
             details = request.form
         return flask.render_template("index.html", token= "Hello")
 
-@app.route("/", methods=['GET', 'POST')
+#Shipping
+
+@app.route("/shipping", methods=['GET', 'POST')
 def shipping():
         if request.method == "POST":
             details = request.form
@@ -39,8 +41,9 @@ def shipping():
 
         return flask.render_template("index.html", token= "Ho")
  
+#Payment
 
-@app.route("/", methods=['GET', 'POST')
+@app.route("/payment", methods=['GET', 'POST')
 def payment():
         if request.method == "POST":
             details = request.form
@@ -58,10 +61,72 @@ def payment():
 
         return flask.render_template("index.html", token= "Hey")
 
+#Product      
+
+@app.route("/product", methods=['GET', 'POST')
+def product():
+        #if request.method == "POST":
+            details = request.form
+            
+            
+            #cur mysql.connection.cursor()
+            #cur.execute("INSERT INTO shipping(FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount) VALUES (%s, %s, %s, %s, %s, %s)", (FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount))
+            #mysql.connection.commit()
+            #cur.close()
+            #return 'success'
+
+        return flask.render_template("index.html", token= "Hey")
+
+#Cart
+
+@app.route("/cart", methods=['GET', 'POST')
+def cart():
+        #if request.method == "POST":
+            details = request.form
+            
+            
+            #cur mysql.connection.cursor()
+            #cur.execute("INSERT INTO shipping(FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount) VALUES (%s, %s, %s, %s, %s, %s)", (FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount))
+            #mysql.connection.commit()
+            #cur.close()
+            #return 'success'
+
+        return flask.render_template("index.html", token= "Hey")
+
+#NonProfit
+@app.route("/nonprofit", methods=['GET', 'POST')
+def nonprofit():
+        #if request.method == "POST":
+            details = request.form
+            
+            
+            #cur mysql.connection.cursor()
+            #cur.execute("INSERT INTO shipping(FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount) VALUES (%s, %s, %s, %s, %s, %s)", (FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount))
+            #mysql.connection.commit()
+            #cur.close()
+            #return 'success'
+
+        return flask.render_template("index.html", token= "Hey")
+
+#Profile
+
+@app.route("/profile", methods=['GET', 'POST')
+def profile():
+        #if request.method == "POST":
+            details = request.form
+            
+            
+            #cur mysql.connection.cursor()
+            #cur.execute("INSERT INTO shipping(FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount) VALUES (%s, %s, %s, %s, %s, %s)", (FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount))
+            #mysql.connection.commit()
+            #cur.close()
+            #return 'success'
+
+        return flask.render_template("index.html", token= "Hey")
+
 @app.route("/test")
 def test():
     return "Heyyyyyy"
 
         
 app.run(debug=True)
-
