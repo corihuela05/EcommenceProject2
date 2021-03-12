@@ -66,7 +66,7 @@ def payment():
 @app.route("/product", methods=['GET', 'POST')
 def product():
         #if request.method == "POST":
-            details = request.form
+            #details = request.form
             #product
             #photo
             #similar products: name, photo, url
@@ -85,7 +85,7 @@ def product():
 @app.route("/cart", methods=['GET', 'POST')
 def cart():
         #if request.method == "POST":
-            details = request.form
+            #details = request.form
             
             
             #cur mysql.connection.cursor()
@@ -100,7 +100,7 @@ def cart():
 @app.route("/nonprofit", methods=['GET', 'POST')
 def nonprofit():
         #if request.method == "POST":
-            details = request.form
+            #details = request.form
             
             
             #cur mysql.connection.cursor()
@@ -115,7 +115,7 @@ def nonprofit():
 
 @app.route("/organizationprofile", methods=['GET', 'POST')
 def organizationprofile():
-        #if request.method == "POST":
+        if request.method == "POST":
             details = request.form
             Id_Nunber_OrgPro = "?"
             Name_orgpro = details[]
@@ -149,7 +149,7 @@ def organizationprofile():
 
 @app.route("/profile", methods=['GET', 'POST')
 def profile():
-        #if request.method == "POST":
+        if request.method == "POST":
             details = request.form
             
             
