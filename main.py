@@ -58,9 +58,6 @@ def payment():
 
         return flask.render_template("index.html", token= "Hey")
 
-        <p><input type="ccnumber" id="ccnum" name="cardnumberss" placeholder="1111-2222-3333-4444" /><i id="visalogo" class="fa fa-cc-visa"></i><input type="expdate" id="expmonth" name="expmonth" placeholder="MM/YY"/><input type="cvv" id="cvv" name="cvv" placeholder="CVV"/></p>
-        <input type="cardholname" id="chn" name="chn" placeholder="Card Holder Name"/>
-
 @app.route("/test")
 def test():
     return "Heyyyyyy"
