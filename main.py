@@ -67,7 +67,10 @@ def payment():
 def product():
         #if request.method == "POST":
             details = request.form
-            
+            #product
+            #photo
+            #similar products: name, photo, url
+            #reviews: title, description, photo(optional), written or product 
             
             #cur mysql.connection.cursor()
             #cur.execute("INSERT INTO shipping(FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount) VALUES (%s, %s, %s, %s, %s, %s)", (FullName-cardcreditionals, CardNum-cardcreditionals, ExpDate-cardcreditionals, CRV-cardcreditionals, Amount))
@@ -108,6 +111,40 @@ def nonprofit():
 
         return flask.render_template("index.html", token= "Hey")
 
+#OrgProfile
+
+@app.route("/organizationprofile", methods=['GET', 'POST')
+def organizationprofile():
+        #if request.method == "POST":
+            details = request.form
+            Id_Nunber_OrgPro = "?"
+            Name_orgpro = details[]
+            Description_orgprofile = details[]
+            Username_organizationprofile = details[]
+            Password_organizationprofile = details[]
+            Goals = details[]
+            Phone_orgprofile = details[]
+            Address_orgpro = details[]
+            Homephone_ogpro = details[]
+            Secondaryphone_orgpro = details[]
+            Email_orgpro = details[]
+            Revenue_orgpro = details[]
+            catofservice_orgpro = details[]
+            Product_orgpro = details[]
+            ID_Number = details[]
+            ID_Number_I = details[]
+            ID_Number_vid = details[]
+
+
+            cur mysql.connection.cursor()
+            cur.execute("INSERT INTO shipping(Id_Nunber_OrgPro, Name_orgpro, Description_orgprofile, Username_organizationprofile, Password_organizationprofile, Goals, Phone_orgprofile, Address_orgpro,Homephone_ogpro, Secondaryphone_orgpro, Email_orgpro, Revenue_orgpro, catofservice_orgpro, Product_orgpro, ID_Number, ID_Number_I,ID_Number_vid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", (Id_Nunber_OrgPro, Name_orgpro, Description_orgprofile, Username_organizationprofile, Password_organizationprofile, Goals, Phone_orgprofile, Address_orgpro,Homephone_ogpro, Secondaryphone_orgpro, Email_orgpro, Revenue_orgpro, catofservice_orgpro, Product_orgpro, ID_Number, ID_Number_I,ID_Number_vid))
+            mysql.connection.commit()
+            cur.close()
+            return 'success'
+
+        return flask.render_template("index.html", token= "Hey")
+
+
 #Profile
 
 @app.route("/profile", methods=['GET', 'POST')
@@ -130,3 +167,4 @@ def test():
 
         
 app.run(debug=True)
+
