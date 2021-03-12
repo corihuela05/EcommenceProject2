@@ -1,9 +1,9 @@
--- phpMyAdmin SQL Dump
+ phpMyAdmin SQL Dump
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2021 at 05:19 PM
+-- Generation Time: Mar 12, 2021 at 02:10 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -63,6 +63,18 @@ CREATE TABLE `gmfprofile` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `Id_Number_images` int(4) NOT NULL,
+  `title_images` varchar(50) NOT NULL,
+  `image_images` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `organizationprofile`
 --
 
@@ -72,8 +84,6 @@ CREATE TABLE `organizationprofile` (
   `Description_orgprofile` varchar(20) NOT NULL,
   `Username_organizationprofile` varchar(20) NOT NULL,
   `Password_organizationprofile` varchar(20) NOT NULL,
-  `Image_orgpro` varbinary(8000) NOT NULL,
-  `Vid_orgprofile` longblob DEFAULT NULL,
   `Goals` text NOT NULL,
   `Phone_orgprofile` varchar(16) NOT NULL,
   `Address_orgpro` varchar(25) NOT NULL,
@@ -83,7 +93,9 @@ CREATE TABLE `organizationprofile` (
   `Revenue_orgpro` int(8) NOT NULL,
   `catofservice_orgpro` varchar(50) NOT NULL,
   `Product_orgpro` text NOT NULL,
-  `ID_Number` int(4) NOT NULL
+  `ID_Number` int(4) NOT NULL,
+  `ID_Number_I` int(4) NOT NULL,
+  `ID_Number_vid` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -187,6 +199,18 @@ CREATE TABLE `usertype` (
   `Description_Type` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `videos_1`
+--
+
+CREATE TABLE `videos_1` (
+  `ID_Number_v` int(4) NOT NULL,
+  `title_videos` text NOT NULL,
+  `videos_videos` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -206,11 +230,21 @@ ALTER TABLE `gmfprofile`
   ADD KEY `ID_Number` (`ID_Number`);
 
 --
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`Id_Number_images`),
+  ADD KEY `image_images` (`image_images`(3072));
+
+--
 -- Indexes for table `organizationprofile`
 --
 ALTER TABLE `organizationprofile`
   ADD PRIMARY KEY (`Id_Nunber_OrgPro`),
-  ADD KEY `ID_Number` (`ID_Number`);
+  ADD KEY `ID_Number` (`ID_Number`),
+  ADD KEY `Id_Number_I` (`ID_Number_I`),
+  ADD KEY `ID_Number_vid` (`ID_Number_vid`),
+  ADD KEY `ID_Number_vid_2` (`ID_Number_vid`);
 
 --
 -- Indexes for table `partnerprofile`
@@ -266,6 +300,12 @@ ALTER TABLE `buyersprofile`
 --
 ALTER TABLE `gmfprofile`
   ADD CONSTRAINT `gmfprofile_ibfk_1` FOREIGN KEY (`ID_Number`) REFERENCES `users` (`ID_Number`);
+
+--
+-- Constraints for table `images`
+--
+ALTER TABLE `images`
+  ADD CONSTRAINT `images_ibfk_1` FOREIGN KEY (`Id_Number_images`) REFERENCES `organizationprofile` (`Id_Number_I`);
 
 --
 -- Constraints for table `organizationprofile`
