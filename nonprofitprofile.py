@@ -4,18 +4,18 @@ def getnonprofitprofile(db):
         def __init__(self,db):
             self.db=db
             class nonprofitprofile(self.db.Model):
-                Id_Number_nonprofit = db.Column(db.Integer(4), primary_key=True)
+                Id_Number_nonprofit = db.Column(db.Integer, primary_key=True)
                 Name_nonprofit = db.Column(db.String(20), unique=False)
                 Description_nonprofit = db.Column(db.String(20), unique=False)
                 User_nonprofit = db.Column(db.String(20), unique=False)
                 Pass_nonprofit = db.Column(db.String(20), unique=False)
                 Goals_nonprofit= db.Column(db.String(20), unique =False) 
-                Phone_nonprofit= db.Column(db.String(20), unique=True) 
-                Address_nonprofit=db.column(db.string 50), unique=True)
-                Homephone_nonprofit=db.column(db.string 50), unique =True)
-                SecondaryPhone_nonprofit=db.column(db.string(16), unique =True)
-                Email_nonprofit=db.column(db.string 50), unique =True)
-                Revenue_nonprofit=db.column(db.Integer(8), unique =True)
+                Phone_nonprofit= db.Column(db.String(20), unique=False) 
+                Address_nonprofit=db.Column(db.String (50), unique=False)
+                Homephone_nonprofit=db.Column(db.String (50), unique=False)
+                SecondaryPhone_nonprofit=db.Column(db.String(16), unique=False)
+                Email_nonprofit=db.Column(db.String (50), unique=False)
+                Revenue_nonprofit=db.Column(db.Integer, unique=False)
                 def __repr__(self):                         
                     return '<User %r>' % self.Number_nonprofitprofile
             self.nonprofitprofile=nonprofitprofile

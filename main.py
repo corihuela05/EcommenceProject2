@@ -15,6 +15,21 @@ db = SQLAlchemy(app)
 from buyersprofile import getbuyersprofile
 buyersprofile=getbuyersprofile(db)
 
+#'''non profit table'''
+from nonprofitprofile import getnonprofitprofile
+nonprofitprofile=getnonprofitprofile(db)
+
+#'''gmf profile table'''
+from gmfprofile import getgmfprofile
+gmfprofile=getgmfprofile(db)
+
+#'''products table'''
+from products import getproducts
+products=getproducts(db)
+
+
+
+
 
 
 #'''insert function'''
@@ -26,6 +41,8 @@ buyersprofile=getbuyersprofile(db)
 
 #'''edit function'''
 #buyersprofile.edit(21,12)
+
+db.create_all()
 
 @app.route("/")
 def my_index():
