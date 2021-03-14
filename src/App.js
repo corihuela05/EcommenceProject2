@@ -7,7 +7,7 @@ import './App.css';
 import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
-import loginpage from './loginpage';
+import FormSignup from './userlogin';
 
 
 function App() {
@@ -31,9 +31,11 @@ function App() {
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
   }
-   function handleloginpage(){
-    ReactDOM.render(<loginpage />,document.getElementById('root'));
+   function handleuserlogin(){
+    ReactDOM.render(<FormSignup />,document.getElementById('root'));
   }
+  
+  
 
   return (
     <div className="App">
@@ -44,12 +46,15 @@ function App() {
       <button className="homebutton">Home</button>
     </form>
    
-    <form onSubmit={handleAccount}>
+
+  <form onSubmit={handleAccount}>
       <button className="info">Sign In/ Sign Up</button>
     </form>
-    <form onSubmit={handleloginpage}>
+    <form onSubmit={handleuserlogin}>
       <button className="info">login</button>
     </form>
+
+    
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
