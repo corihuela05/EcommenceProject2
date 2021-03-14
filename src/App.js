@@ -80,6 +80,30 @@ function App() {
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
     </form>
+    <button>Buy Again</button>
+    <button>List</button>
+    <button>Registry</button>
+    <button>Gift Finder</button>
+    <button>Gift Card</button>
+    <button>Black Owned Businesses</button>
+    <button>Women Owned Businesses</button>
+    <button>Help</button>
+    <button>Departments</button>
+    <button>Electronics & Office</button>
+    <button>Clothing, Shoes, & Accessories</button>
+    <button>Home, Furniture & Appliances</button>
+    <button>Toys, Games and Video Games</button>
+    <button>Home Improvement</button>
+    <button>Movies, Music & Books</button>
+    <button>Patio & Garden</button>
+    <button>Food</button>
+    <button>Pets</button>
+    <button>Pharmacy, Health & Personal Care</button>
+    <button>Beauty</button>
+    <button>Sports, Fitness & Outdoors</button>
+    <button>Auto & Tire</button>
+    <button>Photos</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">

@@ -31,6 +31,7 @@ label #cancelbuttons{
   cursor: pointer;
   background: lightgrey;
   left: 43.5px;
+  height:61px;
   top: 10px;
   font-size: 28px;
   padding: 14.5px 12px;

@@ -197,7 +197,7 @@ function Nonprofit() {
       <h1>Your Closing Argument Headline</h1>
       <button className="nonprofitsignup">Sign Up</button>
     </div>
-     <div className="nonprofitfooter">
+    <div className="nonprofitfooter">
       <button>Term of Service</button>
       <button>Privacy Policy</button>
       <p className="nonprofitfooter1">©2021 Greyson</p>
