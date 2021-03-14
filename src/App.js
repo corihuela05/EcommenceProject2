@@ -5,9 +5,9 @@ import Product from "./Product";
 import Home from "./App"
 import './App.css';
 import Cart from './Cart';
+import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import loginpage from './loginpage';
-
 
 
 function App() {
@@ -23,6 +23,10 @@ function App() {
   function handleCart(){
     ReactDOM.render(<Cart />,document.getElementById('root'));
   }
+   function handleNonprofit(){
+    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+  
   
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
@@ -30,6 +34,7 @@ function App() {
    function handleloginpage(){
     ReactDOM.render(<loginpage />,document.getElementById('root'));
   }
+
   return (
     <div className="App">
     <img src="logo.jpg" alt='company logo' className="logo" />
@@ -38,19 +43,25 @@ function App() {
     <form onSubmit={handleHome}>
       <button className="homebutton">Home</button>
     </form>
+   
     <form onSubmit={handleAccount}>
       <button className="info">Sign In/ Sign Up</button>
     </form>
     <form onSubmit={handleloginpage}>
       <button className="info">login</button>
     </form>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
-    <div className="menu">
-      <button>☰</button>
-    </div>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-bars" id="cancelbutton"></i>
+    </label>
     <div className="sidebar">
       <form onSubmit={handleHome}>
         <button>Home</button>
@@ -61,8 +72,11 @@ function App() {
       <form onSubmit={handleShop}>
         <button>Shop</button>
       </form>
-      
+      <form onSubmit={handleNonprofit}>
+      <button>Non Profits</button>
+    </form>
     </div> 
+    </div>
     <div className="tabs">
       <button>Best Sellers</button>
       <button>Today's Deals</button>
