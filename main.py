@@ -32,6 +32,7 @@ products=getproducts(db)
 
 
 
+
 #'''insert function'''
 #buyersprofile.insert(6)
 
