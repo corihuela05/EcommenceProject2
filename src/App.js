@@ -5,6 +5,10 @@ import Product from "./Product";
 import Home from "./App"
 import './App.css';
 import Cart from './Cart';
+import Account from './Account';
+import loginpage from './loginpage';
+
+
 
 function App() {
   function handleHome(){
@@ -19,6 +23,13 @@ function App() {
   function handleCart(){
     ReactDOM.render(<Cart />,document.getElementById('root'));
   }
+  
+    function handleAccount(){
+    ReactDOM.render(<Account />,document.getElementById('root'));
+  }
+   function handleloginpage(){
+    ReactDOM.render(<loginpage />,document.getElementById('root'));
+  }
   return (
     <div className="App">
     <img src="logo.jpg" alt='company logo' className="logo" />
@@ -27,8 +38,11 @@ function App() {
     <form onSubmit={handleHome}>
       <button className="homebutton">Home</button>
     </form>
-    <form onSubmit={handleShop}>
-      <button className="info">Sign In/Account</button>
+    <form onSubmit={handleAccount}>
+      <button className="info">Sign In/ Sign Up</button>
+    </form>
+    <form onSubmit={handleloginpage}>
+      <button className="info">login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
@@ -47,6 +61,7 @@ function App() {
       <form onSubmit={handleShop}>
         <button>Shop</button>
       </form>
+      
     </div> 
     <div className="tabs">
       <button>Best Sellers</button>
