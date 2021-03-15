@@ -43,10 +43,10 @@ body {
 }
 
 .topright button {
-  border: none;
-  outline: none;
-  padding: 16px 18px;
-  font-size: 17px;
+  border: crimson;
+  outline: darkblue;
+  padding: 16px 23px;
+  font-size: 12;
 }
 
 .threesteps{

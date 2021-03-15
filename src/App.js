@@ -5,6 +5,10 @@ import Product from "./Product";
 import Home from "./App"
 import './App.css';
 import Cart from './Cart';
+import Nonprofit from "./Nonprofit";
+import Account from './Account';
+import FormSignup from './userlogin';
+
 
 function App() {
   function handleHome(){
@@ -19,6 +23,20 @@ function App() {
   function handleCart(){
     ReactDOM.render(<Cart />,document.getElementById('root'));
   }
+   function handleNonprofit(){
+    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+  
+  
+    function handleAccount(){
+    ReactDOM.render(<Account />,document.getElementById('root'));
+  }
+   function handleuserlogin(){
+    ReactDOM.render(<FormSignup />,document.getElementById('root'));
+  }
+  
+  
+
   return (
     <div className="App">
     <img src="logo.jpg" alt='company logo' className="logo" />
@@ -27,16 +45,28 @@ function App() {
     <form onSubmit={handleHome}>
       <button className="homebutton">Home</button>
     </form>
-    <form onSubmit={handleShop}>
-      <button className="info">Sign In/Account</button>
+   
+
+  <form onSubmit={handleAccount}>
+      <button className="info">Sign In/ Sign Up</button>
     </form>
+    <form onSubmit={handleuserlogin}>
+      <button className="info">login</button>
+    </form>
+
+    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
-    <div className="menu">
-      <button>☰</button>
-    </div>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-bars" id="cancelbutton"></i>
+    </label>
     <div className="sidebar">
       <form onSubmit={handleHome}>
         <button>Home</button>
@@ -47,7 +77,35 @@ function App() {
       <form onSubmit={handleShop}>
         <button>Shop</button>
       </form>
+      <form onSubmit={handleNonprofit}>
+      <button>Non Profits</button>
+    </form>
+    <button>Buy Again</button>
+    <button>List</button>
+    <button>Registry</button>
+    <button>Gift Finder</button>
+    <button>Gift Card</button>
+    <button>Black Owned Businesses</button>
+    <button>Women Owned Businesses</button>
+    <button>Help</button>
+    <button>Departments</button>
+    <button>Electronics & Office</button>
+    <button>Clothing, Shoes, & Accessories</button>
+    <button>Home, Furniture & Appliances</button>
+    <button>Toys, Games and Video Games</button>
+    <button>Home Improvement</button>
+    <button>Movies, Music & Books</button>
+    <button>Patio & Garden</button>
+    <button>Food</button>
+    <button>Pets</button>
+    <button>Pharmacy, Health & Personal Care</button>
+    <button>Beauty</button>
+    <button>Sports, Fitness & Outdoors</button>
+    <button>Auto & Tire</button>
+    <button>Photos</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
     </div> 
+    </div>
     <div className="tabs">
       <button>Best Sellers</button>
       <button>Today's Deals</button>

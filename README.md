@@ -39,6 +39,7 @@ b.  make sure the version of python in the system.
      Download Python here: https://www.python.org/
   
 c. create classes with the attributes for insert, delete and modify.
+d.create new tables to add additional feature for videos and images 
 ## API Keys
 a.'add more info as we go here'
 b. 'add more info as we go here''add more info as we go here'

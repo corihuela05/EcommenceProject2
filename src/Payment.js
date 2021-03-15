@@ -52,7 +52,7 @@ function Payment() {
   
     <input  className="option7" type="checkbox" id="vehicle2" name="type 4" value="Paypal"/>
     <label  className="option8" for="type 4">Paypal </label>
-    <img className="pplogo"src="https://sm.pcmag.com/pcmag_in/review/p/paypal/paypal_mb8k.png"/>
+    <img className="pplogo" alt="pplogo"src="https://sm.pcmag.com/pcmag_in/review/p/paypal/paypal_mb8k.png"/>
     
     <div class="verticalline"></div> 
     
