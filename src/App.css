@@ -68,6 +68,7 @@ input[type=text] {
   position: absolute;
   left:590px;
   top: 16px;
+  width:160px;
   background-color: white;
   color: black;
   padding: 10px 20px ;
@@ -75,6 +76,7 @@ input[type=text] {
   text-align: center;
   font-size: 15px;
   outline: none;
+  border-right: 1px solid grey;
 }
 .info{
   position: absolute;
@@ -87,6 +89,7 @@ input[type=text] {
   text-align: center;
   font-size: 15px;
   outline: none;
+  
 }
 .cart{
   position: absolute;
@@ -121,20 +124,57 @@ input[type=text] {
   padding: 16px 30px;
   font-size: 17px;
 }
-.menu{
+/*Sidebar*/
+.sidebar {
   position: absolute;
-  top:112px;
-  left:40px;
+  top:200px;
+  left:-190px;
+  height: 1602px;
+  width: 190px;
+  background: lightgrey;
+  transition: all .5s;
+}
+.sidebar button {
+  width:190px;
+  font-size: 25px;
   background-color: lightgrey;
-  border: 1.5px solid grey;
+  color: black;
 }
-.menu button{
-  background-color: white;
-  border: none;
-  padding: 16px 18px;
-  font-size: 17px;
+label #openbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left: 40px;
+  top: 111.5px;
+  font-size: 35px;
+  color: black;
+  padding: 11px 12px;
+  border: 1px solid grey;
 }
+label #cancelbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left:100px;
+  top: 111.5px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  border: 1px solid grey;
   
+}
+#check{
+  display: none;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #openbutton{
+  left: 40px;
+}
+#check:checked ~ label #cancelbutton{
+  left: 120px;
+}
+
 /* #Slideshow */
 .images img{
   position:absolute;
@@ -364,7 +404,7 @@ input[type=text] {
   height: 250px;
   border: 1px solid white;
   outline: none;
-  padding:19px;
+  padding:22px;
 }
 
 .buttons1 button{
@@ -381,7 +421,7 @@ input[type=text] {
   height: 250px;
   border: 1px solid white;
   outline: none;
-  padding:19px;
+  padding:22px;
 }
 
 .buttons2 button{
@@ -395,10 +435,10 @@ input[type=text] {
   left:860px;
   background-color:white;
   width: 200px;
-  height: 250px;
+  height: 260px;
   border: 1px solid white;
   outline: none;
-  padding:19px;
+  padding: 22px;
 }
 
 .buttons3 button{
@@ -408,7 +448,7 @@ input[type=text] {
 
 .copyright{
   position: absolute;
-  top:2550px;
+  top:2570px;
   left:160px;
   background-color:white;
   width:950px;
@@ -416,6 +456,3 @@ input[type=text] {
   border: 1px solid white;
   text-align:left;
 }
-
-
-

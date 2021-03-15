@@ -1,14 +1,45 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import Buyers from "./App.js";
+import Shop from "./Shop";
+import Product from "./Product";
+import Home from "./App"
 import './App.css';
+import Cart from './Cart';
+import Nonprofit from "./Nonprofit";
+import Account from './Account';
+import FormSignup from './userlogin';
+import Profile from "./Profile";
 
 
 function App() {
   function handleHome(){
-    ReactDOM.render(<Buyers />,document.getElementById('root'));
-    
+    ReactDOM.render(<Home />,document.getElementById('root'));
   }
+  function handleProduct(){
+    ReactDOM.render(<Product />,document.getElementById('root'));
+  }
+  function handleShop(){
+    ReactDOM.render(<Shop />,document.getElementById('root'));
+  }
+  function handleCart(){
+    ReactDOM.render(<Cart />,document.getElementById('root'));
+  }
+   function handleNonprofit(){
+    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+   function handleProfile(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
+    function handleAccount(){
+    ReactDOM.render(<Account />,document.getElementById('root'));
+  }
+   function handleuserlogin(){
+    ReactDOM.render(<FormSignup />,document.getElementById('root'));
+  }
+
+  
+
   return (
     <div className="App">
     <img src="logo.jpg" alt='company logo' className="logo" />
@@ -17,15 +48,69 @@ function App() {
     <form onSubmit={handleHome}>
       <button className="homebutton">Home</button>
     </form>
-    <form onSubmit={handleHome}>
-      <button className="info">Sign In/Account</button>
+   
+
+  <form onSubmit={handleAccount}>
+      <button className="info">Sign In/ Sign Up</button>
     </form>
-    <form onSubmit={handleHome}>
+    <form onSubmit={handleuserlogin}>
+      <button className="info">login</button>
+    </form>
+
+    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    <form onSubmit={handleCart}>
+      <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
-    <div className="menu">
-      <button>☰</button>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-bars" id="cancelbutton"></i>
+    </label>
+    <div className="sidebar">
+      <form onSubmit={handleHome}>
+        <button>Home</button>
+      </form>
+      <form onSubmit={handleProduct}>
+        <button>Products</button>
+      </form>
+      <form onSubmit={handleShop}>
+        <button>Shop</button>
+      </form>
+      <form onSubmit={handleNonprofit}>
+      <button>Non Profits</button>
+    </form>
+    <form onSubmit={handleProfile}>
+      <button>Profile</button>
+    </form>
+    <button>Buy Again</button>
+    <button>List</button>
+    <button>Registry</button>
+    <button>Gift Finder</button>
+    <button>Gift Card</button>
+    <button>Black Owned Businesses</button>
+    <button>Women Owned Businesses</button>
+    <button>Help</button>
+    <button>Departments</button>
+    <button>Electronics & Office</button>
+    <button>Clothing, Shoes, & Accessories</button>
+    <button>Home, Furniture & Appliances</button>
+    <button>Toys, Games and Video Games</button>
+    <button>Home Improvement</button>
+    <button>Movies, Music & Books</button>
+    <button>Patio & Garden</button>
+    <button>Food</button>
+    <button>Pets</button>
+    <button>Pharmacy, Health & Personal Care</button>
+    <button>Beauty</button>
+    <button>Sports, Fitness & Outdoors</button>
+    <button>Auto & Tire</button>
+    <button>Photos</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
+    </div> 
     </div>
     <div className="tabs">
       <button>Best Sellers</button>
@@ -64,7 +149,7 @@ function App() {
       <button className="baby"><img src="http://cdn.shopify.com/s/files/1/1407/3324/articles/Blog-baby-overheating_3_1300x@2x.jpg?v=1542056180"  alt='baby' width="150" height="200"/>BABY</button>
       <button className="patio"><img src="https://i.pinimg.com/originals/2e/8d/a4/2e8da4010d6de97bd29c113c39c8f62b.jpg"  alt='patio' width="150" height="200"/>PATIO</button>
       <button className="pets"><img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/06/02/Photos/Processed/pets1-kYdB--621x414@LiveMint.jpg"  alt='pets' width="150" height="200"/>PETS</button>
-      <button className="pharmacy"><img src="https://hellodoctor.com.pk/wp-content/uploads/2020/06/physical-and-online-pharmacy.jpg"  alt='pharmacy'  width="150" height="200"/>PHARMACY</button>
+      <button className="pharmacy"><img src="https://media3.s-nbcnews.com/i/newscms/2017_33/2120896/170815-pharmacy-mn-1340_88c4085f525919b7a2a081b9552b5ea8.jpg"  alt='pharmacy'  width="150" height="200"/>PHARMACY</button>
       <button className="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty' width="150" height="200"/>BEAUTY</button>
       <button className="sports"><img src="https://pagedesignpro.com/wp-content/uploads/2018/06/Sports.jpg" alt='sports'width="150" height="200"/>SPORTS</button>
       <button className="auto"><img src="https://png.pngtree.com/png-vector/20190511/ourmid/pngtree-car-illustration--mustang--png-image_1023821.jpg" alt='auto' width="150" height="200"/>AUTO</button>
