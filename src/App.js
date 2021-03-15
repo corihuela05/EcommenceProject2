@@ -8,6 +8,7 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
+import Profile from "./Profile";
 
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
   }
-  
+   function handleProfile(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
   
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
@@ -34,7 +37,7 @@ function App() {
    function handleuserlogin(){
     ReactDOM.render(<FormSignup />,document.getElementById('root'));
   }
-  
+
   
 
   return (
@@ -79,6 +82,9 @@ function App() {
       </form>
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
+    </form>
+    <form onSubmit={handleProfile}>
+      <button>Profile</button>
     </form>
     <button>Buy Again</button>
     <button>List</button>
