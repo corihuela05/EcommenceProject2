@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from flask_mysqldb import MySQL
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask("__main__")
 
@@ -7,6 +8,42 @@ app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
+
+#'''buyers profile table'''
+db = SQLAlchemy(app)
+from buyersprofile import getbuyersprofile
+buyersprofile=getbuyersprofile(db)
+
+#'''non profit table'''
+from nonprofitprofile import getnonprofitprofile
+nonprofitprofile=getnonprofitprofile(db)
+
+#'''gmf profile table'''
+from gmfprofile import getgmfprofile
+gmfprofile=getgmfprofile(db)
+
+#'''products table'''
+from products import getproducts
+products=getproducts(db)
+
+
+
+
+
+
+
+#'''insert function'''
+#buyersprofile.insert(6)
+
+
+#'''delete function'''
+#buyersprofile.delete(0)
+
+#'''edit function'''
+#buyersprofile.edit(21,12)
+
+db.create_all()
 
 #Homepage
 
@@ -16,6 +53,13 @@ def index():
         if request.method == "POST":
             details = request.form
         return flask.render_template("index.html", token= "Hello")
+<<<<<<< HEAD
+<<<<<<< HEAD
+app.run(debug=True)
+=======
+=======
+app.run(debug=True)
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 
 #Shipping
 
@@ -169,3 +213,7 @@ def test():
         
 app.run(debug=True)
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
