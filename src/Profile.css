@@ -1,0 +1,280 @@
+.pthree1{
+  position: absolute;
+  top:0px;
+  left:40%;
+}
+
+.pthree2{
+  position: absolute;
+  top:0px;
+  left:50%;
+}
+
+.pthree3{
+  position: absolute;
+  top:0px;
+  left:80%;
+  background-color: black;
+  color: white;
+}
+
+.profilethree button {
+  border: none;
+  outline: none;
+  padding: 16px 18px;
+  font-size: 17px;
+}
+
+.linetopthree {
+  position: absolute;
+  border-bottom: 3px solid gray;
+  width: 99%;
+  top:65px;
+  left:.5%;
+}
+
+.midlinetopthree {
+  position: absolute;
+  border-bottom: 3px solid lightgrey;
+  width: 99%;
+  top:380px;
+  left:.5%;
+}
+
+.secondmidlinetopthree {
+  position: absolute;
+  border-bottom: 3px solid lightgrey;
+  width: 99%;
+  top:620px;
+  left:.5%;
+}
+
+.thirdmidlinetopthree {
+  position: absolute;
+  border-bottom: 3px solid lightgrey;
+  width: 99%;
+  top:1140px;
+  left:.5%;
+}
+
+.lastmidlinetopthree {
+  position: absolute;
+  border-bottom: 3px solid lightgrey;
+  width: 99%;
+  top:1535px;
+  left:.5%;
+}
+
+.nonp{
+  position:absolute;
+  top:100px;
+  width:600px;
+  height: 200px;
+  left:3%;
+  font-size: 22px;
+}
+
+.nonp p1{
+  position: absolute;
+  top:82px;
+  left:1px;
+}
+
+.gmflogo{
+  position: absolute;
+  top:90px;
+  left:48%;
+  height:250px;
+  width:700px;
+  border:3px solid black;
+  border-radius: 40px;
+}
+
+.nonpmission1{
+  position: absolute;
+  top: 420px;
+  left:3%;
+  width:400px;
+  height: 200px;
+
+}
+.nonpmission1 i{
+  font-size:50px;
+  position: absolute;
+  left:40%;
+}
+
+.nonpmission1 h3{
+  position: absolute;
+  top:45px;
+  position: absolute;
+  left:20%;
+}
+
+.nonpmission1 p1{
+  position: absolute;
+  top:100px;
+  left:0px;
+}
+
+/**/
+.nonpmission2{
+  position: absolute;
+  top: 420px;
+  left:38%;
+  width:400px;
+  height: 200px;
+
+}
+.nonpmission2 i{
+  font-size:50px;
+  position: absolute;
+  left:40%;
+}
+
+.nonpmission2 h3{
+  position: absolute;
+  top:45px;
+  position: absolute;
+  left:20%;
+}
+
+.nonpmission2 p1{
+  position: absolute;
+  top:100px;
+  left:0px;
+}
+
+/**/
+.nonpmission3{
+  position: absolute;
+  top: 420px;
+  left:73%;
+  width:400px;
+  height: 200px;
+
+}
+.nonpmission3 i{
+  font-size:50px;
+  position: absolute;
+  left:40%;
+}
+
+.nonpmission3 h3{
+  position: absolute;
+  top:45px;
+  position: absolute;
+  left:20%;
+}
+
+.nonpmission3 p1{
+  position: absolute;
+  top:100px;
+  left:0px;
+}
+
+
+.videofile{
+  position: absolute;
+  top:660px;
+  left:280px;
+}
+
+.similarnearyou{
+  position: absolute;
+  top:1140px;
+  width: 100%;
+}
+
+.similarnearyou h2{
+  position: absolute;
+  left:40%;
+}
+
+.similarnearyou p1{
+  position: absolute;
+  left:36.5%;
+  top:70px;
+}
+
+.bottomimages img{
+  position:absolute;
+  top:1270px;
+  left:370px;
+  height: 200px;
+  width: 45%;
+  transition: all .15%s ease;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.bottomimages input{
+  display:none;
+}
+
+.sdot{
+  position:absolute;
+  top:1480px;
+  left:660px;
+  display:flex;
+  justify-content:center;
+  margin:5px;
+}
+.sdot label{
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  border: solid black 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+.sdot label:hover{
+  background: black;
+}
+
+#simage1:checked ~ .simg1{
+  margin-left:0;
+}
+#simage2:checked ~ .simg2{
+  margin-left:-100%;
+}
+
+.profilecopyright{
+  position: absolute;
+  top:1560px;
+  left:80%;
+  background-color:white;
+  width:120px;
+  height: 50px;
+  border: 1px solid white;
+}
+
+.profilefooter {
+  position: absolute;
+  top:1560px;
+  padding: 20px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  font-size: 28px;
+}
+.profilefooter a{
+  margin-right: 10px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
