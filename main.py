@@ -54,8 +54,12 @@ def index():
             details = request.form
         return flask.render_template("index.html", token= "Hello")
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.run(debug=True)
 =======
+=======
+app.run(debug=True)
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 
 #Shipping
 
@@ -209,4 +213,7 @@ def test():
         
 app.run(debug=True)
 
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682

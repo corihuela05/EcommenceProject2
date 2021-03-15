@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 
 def getbuyersprofile(db):
     
@@ -29,7 +32,10 @@ def getbuyersprofile(db):
             self.db.session.commit()
 
     return buyerProfileTable(db)
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 from flask_mysqldb import MySQL
 from flask_sqlalchemy import SQLAlchemy #import flask SQLAlchemy
 
@@ -78,4 +84,7 @@ def getbuyerprofile(db):
             self.db.session.commit()
 
     return buyerProfileTable(db)
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
