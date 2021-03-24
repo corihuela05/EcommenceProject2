@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: space-around;
+            }
+            /* Split the screen in half */
+            .split {
+              height: 100%;
+              width: 50%;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              overflow-x: hidden;
+              padding-top: 20px;
+            }
+
+            /* Control the left side */
+            .signin {
+              left: 0;
+              background-color: #111;
+            }
+
+            /* Control the right side */
+            .signup {
+              right: 0;
+              background-color: red;
+            }
+
+            /* If you want the content centered horizontally and vertically */
+            .centered {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            /* Style the image inside the centered container, if needed */
+            .centered img {
+              width: 150px;
+              border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="">
+            <div class="">
+                <h1>Sign Up for Free</h1>
+
+                <form action="/" method="post">
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>
+                                First Name<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Last Name<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Email Address<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Set A Password<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+
+                    <button onclick="redirect()" type="submit" class="button button-block" />Get Started</button>
+                </form>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <h1>Welcome Back!</h1>
+
+                <form action="/" method="post">
+
+                    <div class="field-wrap">
+                        <label>
+                            Email Address<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Password<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+
+                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                    <button onclick="redirect()" type="submit" class="button button-block">Log In</button>
+
+                </form>
+
+            </div>
+
+
+        </div>
+        <script>
+            function redirect(){
+                email = document.getElementById('projectId').email;
+                if (email == "admin@admin.com") {
+                    document.location = '/index.js';
+                } else if (email == "buyer@buyer.com") {
+                    document.location = '/Profile.js';
+                } else if (email == "nonprofit@nonprofit.com") {
+                    document.location = '/Nonprofit';
+                }
+                else {
+                    alert("Wrong email!");
+                }
+            }
+        </script>
+    </body>
+</html>
