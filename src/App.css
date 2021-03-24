@@ -3,7 +3,16 @@
   background-color:#ffeac0;
   position:absolute;
   width:100%;
-  height:2630px;
+  height:100%;
+  overflow:hidden;
+}
+
+.companylogo{
+  position: fixed;
+  left: 1px;
+  top:-20px;
+  width:180px; 
+  height:125px;
 }
 
 .logo{
@@ -15,9 +24,9 @@
 }
 
 input[type=text] {
-  position: absolute;
+  position: fixed;
   left: 200px;
-  top: 32px;
+  top: 10px;
   width: 550px;
   height: 55px;
   box-sizing: border-box;
@@ -28,9 +37,9 @@ input[type=text] {
 }
 
 .homebutton{
-  position: absolute;
+  position: fixed;
   left:760px;
-  top: 37px;
+  top: 15px;
   width:120px;
   background-color: #ffeac0;
   color: black;
@@ -42,9 +51,9 @@ input[type=text] {
   
 }
 .info{
-  position: absolute;
+  position: fixed;
   left:880px;
-  top: 37px;
+  top: 15px;
   width:120px;
   background-color: #ffeac0;
   color: black;
@@ -57,9 +66,9 @@ input[type=text] {
 }
 
 .info1{
-  position: absolute;
+  position: fixed;
   left:1000px;
-  top: 37px;
+  top: 15px;
   width:120px;
   background-color: #ffeac0;
   color: black;
@@ -71,9 +80,9 @@ input[type=text] {
   border-left: 1px solid black;
 }
 .cart{
-  position: absolute;
+  position: fixed;
   left:1130px;
-  top: 37px;
+  top: 15px;
   background-color: white;
   color: black;
   padding: 10px 20px ;
@@ -87,16 +96,16 @@ input[type=text] {
 }
 
 .flag{
-  position: absolute;
+  position: fixed;
   left: 1248px;
-  top:38px;
+  top:16px;
   width:65px; 
   height:40px;
 }
 
 .tabs{
-  position: absolute;
-  top:112px;
+  position: fixed;
+  top:75px;
   left:120px;
   background-color: lightblue;
   border: 1.5px solid lightblue;
@@ -113,15 +122,18 @@ input[type=text] {
 }
 /*Sidebar*/
 .sidebar {
-  position: absolute;
-  top:200px;
-  left:-250px;
-  height: 1602px;
-  width: 190px;
+  position: fixed;
+  top:150px;
+  left:-270px;
+  height: 77%;
+  width: 225px;
   transition: all .5s;
+  overflow:scroll;
+  overflow-x:hidden;
+
 }
 .sidebar button {
-  width:250px;
+  width:210px;
   font-size: 18px;
   background-color: lightblue;
   color: black;
@@ -129,11 +141,11 @@ input[type=text] {
 
 }
 label #openbutton{
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   background: lightblue;
   left: 82px;
-  top: 111.5px;
+  top: 75px;
   font-size: 35px;
   color: black;
   padding: 11px 12px;
@@ -141,15 +153,13 @@ label #openbutton{
   border-radius: 10px;
 }
 label #cancelbutton{
-  position: absolute;
+  position: fixed;
   cursor: pointer;
-  background: lightblue;
   left:160px;
   height:5px;
-  top: 111.5px;
+  top: 90px;
   font-size: 28px;
   padding: 14.5px 12px;
-  border: 1px solid lightblue;
   
 }
 #check{
@@ -162,16 +172,26 @@ label #cancelbutton{
   left: 82px;
 }
 #check:checked ~ label #cancelbutton{
-  left: 120px;
+  left: 250px;
+  top:90px;
 }
 
+.sliderslide{
+  position:absolute;
+  top:150px;
+  width:83%;
+  height:77%;
+  left:17%;
+  overflow:scroll;
+  overflow-x:hidden;
+}
 /* #Slideshow */
 .images img{
   position:absolute;
-  top:200px;
-  left:260px;
+  top:0px;
+  left:20px;
   height: 400px;
-  width: 65%;
+  width: 75%;
   transition: all .15%s ease;
   border: 2px solid black;
   border-radius: 25px;
@@ -184,8 +204,8 @@ label #cancelbutton{
 
 .dot{
   position:absolute;
-  top:600px;
-  left:670px;
+  top:400px;
+  left:400px;
   display:flex;
   justify-content:center;
   margin:5px;
@@ -211,8 +231,8 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:690px;
-  left:360px;
+  top:470px;
+  left:90px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -224,8 +244,8 @@ label #cancelbutton{
   
 .school{
   position: absolute;
-  top:690px;
-  left:590px;
+  top:470px;
+  left:330px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -237,8 +257,8 @@ label #cancelbutton{
   
 .organization{
   position: absolute;
-  top:690px;
-  left:820px;
+  top:470px;
+  left:570px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -249,9 +269,9 @@ label #cancelbutton{
 }
 .spaces{
   position: absolute;
-  top:930px;
-  left:270px;
-  width:860px;
+  top:730px;
+  left:0px;
+  width:872px;
   height:250px;
   background-color:white;
   border: solid black 2px;
@@ -260,8 +280,8 @@ label #cancelbutton{
 
 .games{
   position: absolute;
-  top:1200px;
-  left:400px;
+  top:1000px;
+  left:150px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -270,11 +290,14 @@ label #cancelbutton{
 }
 .games img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
+
 .baby{
   position: absolute;
-  top:1200px;
-  left:600px;
+  top:1000px;
+  left:350px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -283,11 +306,13 @@ label #cancelbutton{
 }
 .baby img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .patio{
   position: absolute;
-  top:1200px;
-  left:800px;
+  top:1000px;
+  left:550px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -296,14 +321,14 @@ label #cancelbutton{
 }
 .patio img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
-
-
 
 .pets{
   position: absolute;
-  top:1450px;
-  left:400px;
+  top:1250px;
+  left:150px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -312,11 +337,13 @@ label #cancelbutton{
 }
 .pets img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .pharmacy{
   position: absolute;
-  top:1450px;
-  left:600px;
+  top:1250px;
+  left:350px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -325,11 +352,13 @@ label #cancelbutton{
 }
 .pharmacy img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .beauty{
   position: absolute;
-  top:1450px;
-  left:800px;
+  top:1250px;
+  left:550px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -338,11 +367,13 @@ label #cancelbutton{
 }
 .beauty img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .sports{
   position: absolute;
-  top:1700px;
-  left:400px;
+  top:1500px;
+  left:150px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -351,24 +382,29 @@ label #cancelbutton{
 }
 .sports img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .auto{
   position: absolute;
-  top:1700px;
-  left:600px;
+  top:1500px;
+  left:350px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
   border:none;
   outline:none;
+  
 }
 .auto img{
   border-radius: 20px;
+  border:none;
+  background:none;
 }
 .music{
   position: absolute;
-  top:1700px;
-  left:800px;
+  top:1500px;
+  left:550px;
   width:170px;
   height:250px;
   background-color:#ffeac0;
@@ -377,11 +413,22 @@ label #cancelbutton{
 }
 .music img{
   border-radius: 20px;
+  border:none;
+  background:none;
+}
+.thumbnail:hover {
+    position:relative;
+    top:10px;
+    left:0px;
+    width:160px;
+    height:200px;
+    display:block;
+    z-index:999;
 }
 .letterpic{
   position: absolute;
-  top:2000px;
-  left:280px;
+  top:1800px;
+  left:50px;
   border:1px solid black;
   border-radius: 20px;
   width:250px;
@@ -405,13 +452,13 @@ label #cancelbutton{
 }
 .newsletter{
   position: absolute;
-  top:2030px;
-  left:500px;
+  top:1830px;
+  left:250px;
 }
 .about{
   position: absolute;
-  top:2200px;
-  left:230px;
+  top:2000px;
+  left:0px;
   background-color:#ffeac0;
   width:950px;
   height: 100px;
@@ -419,10 +466,10 @@ label #cancelbutton{
 }
 .first{
   position: absolute;
-  top:2301px;
-  left:260px;
+  top:2101px;
+  left:90px;
   background-color:#ffeac0;
-  width: 200px;
+  width: 194px;
   height: 250px;
   border: 1px solid #ffeac0;
   outline: none;
@@ -430,10 +477,10 @@ label #cancelbutton{
 
 .buttons1{
   position: absolute;
-  top:2301px;
-  left:490px;
+  top:2101px;
+  left:290px;
   background-color:#ffeac0;
-  width: 200px;
+  width: 194px;
   height: 250px;
   border: 1px solid #ffeac0;
   outline: none;
@@ -447,10 +494,10 @@ label #cancelbutton{
 
 .buttons2{
   position: absolute;
-  top:2301px;
-  left:710px;
+  top:2101px;
+  left:490px;
   background-color:#ffeac0;
-  width: 200px;
+  width: 194px;
   height: 250px;
   border: 1px solid #ffeac0;
   outline: none;
@@ -464,10 +511,10 @@ label #cancelbutton{
 
 .buttons3{
   position: absolute;
-  top:2301px;
-  left:930px;
+  top:2101px;
+  left:690px;
   background-color:#ffeac0;
-  width: 200px;
+  width: 194px;
   height: 260px;
   border: 1px solid #ffeac0;
   outline: none;
@@ -481,8 +528,8 @@ label #cancelbutton{
 
 .copyright{
   position: absolute;
-  top:2540px;
-  left:230px;
+  top:2340px;
+  left:30px;
   background-color:#ffeac0;
   width:950px;
   height: 50px;

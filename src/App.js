@@ -37,7 +37,7 @@ function App() {
   
   return (
     <div className="App">
-    <img src="logo.jpg" alt='company logo' className="logo" />
+    <img src="logo.jpg" alt='company logo' className="companylogo" />
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
     <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
@@ -111,6 +111,7 @@ function App() {
       <button>Gift Cards</button>
     </div>
     
+    <div className="sliderslide">
     <div className="slider">
       <div className="images">
         <input type="radio" name="slide" id="image1" checked/>
@@ -125,7 +126,7 @@ function App() {
       </div>
     </div>
     <div className="threebox">
-      <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg" alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
+      <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg"  alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
       <button className="school"><img src="https://media2.giphy.com/media/1etn2BmiW0nOgoZHTL/source.gif" alt='school' width="150" height="100"/>School<p>1,023 videos</p></button>
       <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100"/>Non-Profits<p>2,416 videos</p></button>
     </div>
@@ -133,15 +134,15 @@ function App() {
       <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
     </div>
     <div className="category">
-      <button className="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' width="150" height="200"/>VIDEO GAMES</button>
-      <button className="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' width="150" height="200"/>BABY</button>
-      <button className="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif"  alt='patio' width="150" height="200"/>PATIO</button>
-      <button className="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' width="150" height="200"/>PETS</button>
-      <button className="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy'  width="150" height="200"/>PHARMACY</button>
-      <button className="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty' width="150" height="200"/>BEAUTY</button>
-      <button className="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports'width="150" height="200"/>SPORTS</button>
-      <button className="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' width="150" height="200"/>AUTO</button>
-      <button className="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' width="150" height="200"/>MUSIC</button>
+      <button className="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif" class="thumbnail"  alt='games' width="150" height="200"/>VIDEO GAMES</button>
+      <button className="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif" class="thumbnail"  alt='baby' width="150" height="200"/>BABY</button>
+      <button className="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
+      <button className="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif" class="thumbnail"  alt='pets' width="150" height="200"/>PETS</button>
+      <button className="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif" class="thumbnail"  alt='pharmacy'  width="150" height="200"/>PHARMACY</button>
+      <button className="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" class="thumbnail" alt='beauty' width="150" height="200"/>BEAUTY</button>
+      <button className="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" class="thumbnail" alt='sports'width="150" height="200"/>SPORTS</button>
+      <button className="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" class="thumbnail" alt='auto' width="150" height="200"/>AUTO</button>
+      <button className="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" class="thumbnail" alt='music' width="150" height="200"/>MUSIC</button>
     </div>
     <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150"/>
     <div className="newsletter">
@@ -183,6 +184,7 @@ function App() {
       <div className="copyright">
         <p>© Greyson</p>
       </div>
+    </div>
     </div>
     </div>
   );
