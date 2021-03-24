@@ -125,11 +125,12 @@
                 e.preventDefault();
                 console.log("hllo")
                 let email = document.getElementById('signinemail').value;
-                if (email === "admin@admin.com") {
+                let password = document.getElemendById('password').value;
+                if (email === "admin@admin.com" && passowrd ==="admin") {
                     location.replace('/public/index.html');
-                } else if (email === "buyer@buyer.com") {
+                } else if (email === "buyer@buyer.com" && passowrd === "buyer") {
                     location.replace('/Profile.js');
-                } else if (email === "nonprofit@nonprofit.com") {
+                } else if (email === "nonprofit@nonprofit.com" && passowrd === "nonprofit") {
                     location.replace('/Nonprofit');
                 }
                 else {
