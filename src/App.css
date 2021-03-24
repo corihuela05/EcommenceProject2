@@ -1,88 +1,38 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color:#ffeac0;
+  position:absolute;
+  width:100%;
+  height:2630px;
 }
 
 .logo{
   position: absolute;
   left: 1px;
   top:1px;
-  width:160px; 
-  height:100px;
-}
-
-.flag{
-  position: absolute;
-  left: 1120px;
-  top:5px;
-  width:80px; 
-  height:50px;
+  width:180px; 
+  height:125px;
 }
 
 input[type=text] {
   position: absolute;
   left: 200px;
-  top: 15px;
-  width: 330px;
+  top: 32px;
+  width: 550px;
+  height: 55px;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid #ffeac0;
   border-radius: 5px;
   font-size: 16px;
   padding: 10px 20px ;
 }
+
 .homebutton{
   position: absolute;
-  left:590px;
-  top: 16px;
-  width:160px;
-  background-color: white;
-  color: black;
-  padding: 10px 20px ;
-  border:none;
-  text-align: center;
-  font-size: 15px;
-  outline: none;
-  border-right: 1px solid grey;
-}
-.info{
-  position: absolute;
-  left:790px;
-  top: 16px;
-  background-color: white;
+  left:760px;
+  top: 37px;
+  width:120px;
+  background-color: #ffeac0;
   color: black;
   padding: 10px 20px ;
   border:none;
@@ -91,10 +41,39 @@ input[type=text] {
   outline: none;
   
 }
+.info{
+  position: absolute;
+  left:880px;
+  top: 37px;
+  width:120px;
+  background-color: #ffeac0;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  border-left: 1px solid black;
+}
+
+.info1{
+  position: absolute;
+  left:1000px;
+  top: 37px;
+  width:120px;
+  background-color: #ffeac0;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  border-left: 1px solid black;
+}
 .cart{
   position: absolute;
-  left:990px;
-  top: 16px;
+  left:1130px;
+  top: 37px;
   background-color: white;
   color: black;
   padding: 10px 20px ;
@@ -102,64 +81,75 @@ input[type=text] {
   text-align: center;
   font-size: 15px;
   outline: none;
-}
-.cart{
-  background-color: black;
+  background-color: #4d94ff;
   color: white;
   border-radius: 5px;
+}
+
+.flag{
+  position: absolute;
+  left: 1248px;
+  top:38px;
+  width:65px; 
+  height:40px;
 }
 
 .tabs{
   position: absolute;
   top:112px;
-  left:93px;
-  background-color: lightgrey;
-  border: 1.5px solid grey;
+  left:120px;
+  background-color: lightblue;
+  border: 1.5px solid lightblue;
+  border-radius: 10px;
 }
 
 .tabs button {
-  background-color: lightgrey;
+  background-color: lightblue;
   border: none;
   outline: none;
   padding: 16px 30px;
   font-size: 17px;
+  border-radius: 10px;
 }
 /*Sidebar*/
 .sidebar {
   position: absolute;
   top:200px;
-  left:-190px;
+  left:-250px;
   height: 1602px;
   width: 190px;
-  background: lightgrey;
   transition: all .5s;
 }
 .sidebar button {
-  width:190px;
-  font-size: 25px;
-  background-color: lightgrey;
+  width:250px;
+  font-size: 18px;
+  background-color: lightblue;
   color: black;
+  border-top:2px solid lightblue;
+
 }
 label #openbutton{
   position: absolute;
   cursor: pointer;
-  background: lightgrey;
-  left: 40px;
+  background: lightblue;
+  left: 82px;
   top: 111.5px;
   font-size: 35px;
   color: black;
   padding: 11px 12px;
-  border: 1px solid grey;
+  border: 1px solid lightblue;
+  border-radius: 10px;
 }
 label #cancelbutton{
   position: absolute;
   cursor: pointer;
-  background: lightgrey;
-  left:100px;
+  background: lightblue;
+  left:160px;
+  height:5px;
   top: 111.5px;
   font-size: 28px;
   padding: 14.5px 12px;
-  border: 1px solid grey;
+  border: 1px solid lightblue;
   
 }
 #check{
@@ -169,7 +159,7 @@ label #cancelbutton{
   left: 0;
 }
 #check:checked ~ label #openbutton{
-  left: 40px;
+  left: 82px;
 }
 #check:checked ~ label #cancelbutton{
   left: 120px;
@@ -179,7 +169,7 @@ label #cancelbutton{
 .images img{
   position:absolute;
   top:200px;
-  left:200px;
+  left:260px;
   height: 400px;
   width: 65%;
   transition: all .15%s ease;
@@ -195,7 +185,7 @@ label #cancelbutton{
 .dot{
   position:absolute;
   top:600px;
-  left:620px;
+  left:670px;
   display:flex;
   justify-content:center;
   margin:5px;
@@ -219,155 +209,198 @@ label #cancelbutton{
   margin-left:-100%;
 }
 
-
 .church{
   position: absolute;
-  top:700px;
-  left:320px;
+  top:690px;
+  left:360px;
   width:200px;
   height:200px;
-  background-color:white;
-  border: solid grey 15px;
+  background-color:lightblue;
+  border: solid black 5px;
   border-radius: 25px;
   outline: none;
+  padding-top:10px;
 }
   
 .school{
   position: absolute;
-  top:700px;
-  left:550px;
+  top:690px;
+  left:590px;
   width:200px;
   height:200px;
-  background-color:white;
-  border: solid grey 15px;
+  background-color:lightblue;
+  border: solid black 5px;
   border-radius: 25px;
   outline: none;
+  padding-top:10px;
 }
   
 .organization{
   position: absolute;
-  top:700px;
-  left:780px;
+  top:690px;
+  left:820px;
   width:200px;
   height:200px;
-  background-color:white;
-  border: solid grey 15px;
+  background-color:lightblue;
+  border: solid black 5px;
   border-radius: 25px;
   outline: none;
+  padding-top:10px;
 }
 .spaces{
   position: absolute;
   top:930px;
-  left:300px;
-  width:700px;
-  height:200px;
+  left:270px;
+  width:860px;
+  height:250px;
   background-color:white;
-  border: solid grey 2px;
+  border: solid black 2px;
+  font-size:45px;
 }
 
 .games{
   position: absolute;
   top:1200px;
-  left:360px;
+  left:400px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.games img{
+  border-radius: 20px;
 }
 .baby{
   position: absolute;
   top:1200px;
-  left:560px;
+  left:600px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.baby img{
+  border-radius: 20px;
 }
 .patio{
   position: absolute;
   top:1200px;
-  left:760px;
+  left:800px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
 }
-.space{
-  position: absolute;
-  top:930px;
-  left:360px;
-  width:700px;
-  height:200px;
-  background-color:white;
-  border: solid grey 2px;
+.patio img{
+  border-radius: 20px;
 }
+
+
 
 .pets{
   position: absolute;
   top:1450px;
-  left:360px;
+  left:400px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.pets img{
+  border-radius: 20px;
 }
 .pharmacy{
   position: absolute;
   top:1450px;
-  left:560px;
+  left:600px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.pharmacy img{
+  border-radius: 20px;
 }
 .beauty{
   position: absolute;
   top:1450px;
-  left:760px;
+  left:800px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.beauty img{
+  border-radius: 20px;
 }
 .sports{
   position: absolute;
   top:1700px;
-  left:360px;
+  left:400px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.sports img{
+  border-radius: 20px;
 }
 .auto{
   position: absolute;
   top:1700px;
-  left:560px;
+  left:600px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.auto img{
+  border-radius: 20px;
 }
 .music{
   position: absolute;
   top:1700px;
-  left:760px;
+  left:800px;
   width:170px;
   height:250px;
-  background-color:white;
+  background-color:#ffeac0;
   border:none;
+  outline:none;
+}
+.music img{
+  border-radius: 20px;
 }
 .letterpic{
   position: absolute;
   top:2000px;
   left:280px;
+  border:1px solid black;
+  border-radius: 20px;
+  width:250px;
+  height:150px;
 }
+
 .email{
+  position:absolute;
+  top:25px;
+  left:90px;
   width:300px;
   height:35px;
 }
 .subscribe{
+  position:absolute;
+  top:25px;
+  left:390px;
   height:35px;
-  background-color:lightgrey;
+  background-color:lightgreen;
   border:none;
 }
 .newsletter{
@@ -378,8 +411,8 @@ label #cancelbutton{
 .about{
   position: absolute;
   top:2200px;
-  left:160px;
-  background-color:white;
+  left:230px;
+  background-color:#ffeac0;
   width:950px;
   height: 100px;
   border: 1px solid black;
@@ -387,72 +420,72 @@ label #cancelbutton{
 .first{
   position: absolute;
   top:2301px;
-  left:200px;
-  background-color:white;
+  left:260px;
+  background-color:#ffeac0;
   width: 200px;
   height: 250px;
-  border: 1px solid white;
+  border: 1px solid #ffeac0;
   outline: none;
 }
 
 .buttons1{
   position: absolute;
   top:2301px;
-  left:420px;
-  background-color:white;
+  left:490px;
+  background-color:#ffeac0;
   width: 200px;
   height: 250px;
-  border: 1px solid white;
+  border: 1px solid #ffeac0;
   outline: none;
   padding:22px;
 }
 
 .buttons1 button{
   border:none;
-  background-color:white;
+  background-color:#ffeac0;
 }
 
 .buttons2{
   position: absolute;
   top:2301px;
-  left:640px;
-  background-color:white;
+  left:710px;
+  background-color:#ffeac0;
   width: 200px;
   height: 250px;
-  border: 1px solid white;
+  border: 1px solid #ffeac0;
   outline: none;
   padding:22px;
 }
 
 .buttons2 button{
   border:none;
-  background-color:white;
+  background-color:#ffeac0;
 }
 
 .buttons3{
   position: absolute;
   top:2301px;
-  left:860px;
-  background-color:white;
+  left:930px;
+  background-color:#ffeac0;
   width: 200px;
   height: 260px;
-  border: 1px solid white;
+  border: 1px solid #ffeac0;
   outline: none;
   padding: 22px;
 }
 
 .buttons3 button{
   border:none;
-  background-color:white;
+  background-color:#ffeac0;
 }
 
 .copyright{
   position: absolute;
-  top:2570px;
-  left:160px;
-  background-color:white;
+  top:2540px;
+  left:230px;
+  background-color:#ffeac0;
   width:950px;
   height: 50px;
-  border: 1px solid white;
+  border: 1px solid #ffeac0;
   text-align:left;
 }
