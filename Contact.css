@@ -1,0 +1,211 @@
+.homepagesidebar{
+  color: lightgrey;
+  border: none;
+  position: absolute;
+  top: 200px;
+  left: -190px;
+  height: 1602px;
+  width: 190px;
+  transition: all .5s;
+
+}
+.sidebar button {
+  position: absolute;
+  top: 200px;
+  left: -190px;
+  height: 1602px;
+  width: 190px;
+  background: lightgray;
+  color: black;
+
+.cart{
+    position: absolute;
+    backgroud-color: black;
+    border-radius: 5px;
+    left:990px;
+    top: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px ;
+    border:none;
+    text-align: center;
+    font-size:15px;
+    outline: none;
+}
+.u-section-1 .u-sheet-1 {
+  min-height: 502px;
+}
+
+.u-section-1 .u-text-1 {
+  width: 550px;
+  font-weight: 700;
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  width: 570px;
+  margin: 30px auto 60px;
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+}
+.flag{
+  position: absolute;
+  left: 1120px;
+  top:5px;
+  width:80px;
+  height:50px;
+}
+.footer {
+  color: black;
+  column-count: 3;
+  padding: 8px 70px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+
+}
+/*Sidebar*/
+.sidebar {
+  position: absolute;
+  top:200px;
+  left:-190px;
+  height: 1602px;
+  width: 190px;
+  background: lightgrey;
+  transition: all .5s;
+}
+.sidebar button {
+  width:190px;
+  font-size: 25px;
+  background-color: lightgrey;
+  color: black;
+}
+label #openbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left: 40px;
+  top: 111.5px;
+  font-size: 35px;
+  color: black;
+  padding: 11px 12px;
+  border: 1px solid grey;
+}
+label #cancelbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left:100px;
+  top: 111.5px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  border: 1px solid grey;
+
+}
+#check{
+  display: none;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #openbutton{
+  left: 40px;
+}
+#check:checked ~ label #cancelbutton{
+  left: 120px;
+}
+.flag{
+  position: absolute;
+  left: 1120px;
+  top:5px;
+  width:80px;
+  height:50px;
+}
+
+.cart{
+  position: absolute;
+  left:990px;
+  top: 16px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+}
+/*Sidebar*/
+.sidebar {
+  position: absolute;
+  top:200px;
+  left:-190px;
+  height: 1602px;
+  width: 190px;
+  background: lightgrey;
+  transition: all .5s;
+}
+.sidebar button {
+  width:190px;
+  font-size: 25px;
+  background-color: lightgrey;
+  color: black;
+}
+label #openbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left: 40px;
+  top: 111.5px;
+  font-size: 35px;
+  color: black;
+  padding: 11px 12px;
+  border: 1px solid grey;
+}
+label #cancelbutton{
+  position: absolute;
+  cursor: pointer;
+  background: lightgrey;
+  left:100px;
+  top: 111.5px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  border: 1px solid grey;
+
+}
+#check{
+  display: none;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #openbutton{
+  left: 40px;
+}
+#check:checked ~ label #cancelbutton{
+  left: 120px;
+}
+.tabs{
+position: absolute;
+top:112px;
+left:93px;
+background-color: lightgrey;
+border: 1.5px solid grey;
+}
