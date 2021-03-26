@@ -2,7 +2,7 @@
   text-align: center;
   background-color:#dfe1ed;
   position:absolute;
-  width:1365.5px;
+  width:100%;
   height:100%;
   overflow:hidden;
 }
@@ -201,7 +201,7 @@ label #cancelbutton{
 .images img{
   position:absolute;
   top:10px;
-  left:17%;
+  left:220px;
   height: 400px;
   width: 900px;
   transition: all .15%s ease;
@@ -217,7 +217,7 @@ label #cancelbutton{
 .dot{
   position:absolute;
   top:410px;
-  left:47.5%;
+  left:640px;
   display:flex;
   justify-content:center;
   margin:5px;
@@ -282,7 +282,7 @@ label #cancelbutton{
 .spaces{
   position: absolute;
   top:730px;
-  left:230px;
+  left:225px;
   width:900px;
   height:250px;
   background-color:white;
@@ -472,14 +472,20 @@ label #cancelbutton{
 {
   position:absolute;
   top:2100px;
-  width:1365.5px;
+  width:100%;
   height:430px;
   background-color:#26272b;
   color:white;
   padding:15px;
-  text-align:center;
+  
   
 }
+
+.site-footer h1{
+  position:absolute;
+  left:555px;
+}
+  
 
 .site-footer .footer1 button{
   position:absolute;
