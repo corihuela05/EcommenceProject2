@@ -48,10 +48,9 @@ input[type=text] {
   background-color: #26272b;
   color: white;
   padding: 10px 20px ;
-  border:none;
   text-align: center;
   font-size: 15px;
-  outline: none;
+  border:none;
   
 }
 .info{
@@ -97,6 +96,7 @@ input[type=text] {
   background-color: #4d94ff;
   color: white;
   border-radius: 5px;
+  
 }
 
 .flag{
@@ -142,6 +142,7 @@ input[type=text] {
   background-color: #3e3d45;
   color: white;
   border-top:2px solid #3e3d45;
+  outline:none;
 }
 label #openbutton{
   position: fixed;
@@ -201,7 +202,9 @@ label #cancelbutton{
 .images img{
   position:absolute;
   top:10px;
+
   left:220px;
+
   height: 400px;
   width: 900px;
   transition: all .15%s ease;
@@ -218,6 +221,7 @@ label #cancelbutton{
   position:absolute;
   top:410px;
   left:640px;
+
   display:flex;
   justify-content:center;
   margin:5px;
@@ -243,7 +247,7 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:470px;
+  top:475px;
   left:330px;
   width:200px;
   height:200px;
@@ -257,7 +261,7 @@ label #cancelbutton{
 .school{
   position: absolute;
   top:470px;
-  left:570px;
+  left:575px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -270,7 +274,7 @@ label #cancelbutton{
 .organization{
   position: absolute;
   top:470px;
-  left:810px;
+  left:815px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -478,8 +482,12 @@ label #cancelbutton{
   color:white;
   padding:15px;
   
-  
 }
+.site-footer h1{
+  position:absolute;
+  left:560px;
+}
+
 
 .site-footer h1{
   position:absolute;
@@ -500,7 +508,7 @@ label #cancelbutton{
 .site-footer .footer2 {
   position:absolute;
   top:110px;
-  left:500px;
+  left:450px;
   width:180px;
 }
 .site-footer .footer2 button{
@@ -514,7 +522,7 @@ label #cancelbutton{
 .site-footer .footer3 {
   position:absolute;
   top:110px;
-  left:700px;
+  left:650px;
   width:180px;
 }
 .site-footer .footer3 button{
@@ -528,7 +536,7 @@ label #cancelbutton{
 .site-footer .footer4 {
   position:absolute;
   top:110px;
-  left:900px;
+  left:850px;
   width:180px;
 }
 .site-footer .footer4 button{
@@ -542,7 +550,7 @@ label #cancelbutton{
 .site-footer .footer5 {
   position:absolute;
   top:350px;
-  left:150px;
+  left:142px;
   width:1050px;
   text-align:left;
 }

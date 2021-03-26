@@ -1,40 +1,56 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const useForm = (callback, validate) => {
-  const [values, setValues] = useState({
-    username: '',
-    email: '',
-    password: '',
-    password2: ''
-  });
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = e => {
-    const { name, value } = e.target;
-    setValues({
-      ...values,
-      [name]: value
+    const [values, setValues] = useState({
+        username: "",
+        email: "",
+        password: "",
+        password2: "",
     });
-  };
+    const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = e => {
-    e.preventDefault();
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setValues({
+            ...values,
+            [name]: value,
+        });
+    };
 
-    setErrors(validate(values));
-    setIsSubmitting(true);
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-  useEffect(
-    () => {
-      if (Object.keys(errors).length === 0 && isSubmitting) {
-        callback();
-      }
-    },
-    [errors]
-  );
+        let userType;
 
-  return { handleChange, handleSubmit, values, errors };
+        switch (values.email) {
+            case "admin@admin.com":
+                userType = "admin";
+                break;
+            case "buyer@buyer.com":
+                userType = "buyer";
+                break;
+            case "nonprofit@nonprofit.com":
+                userType = "nonprofit";
+                break;
+            default:
+                break;
+        }
+
+        localStorage.setItem("userType", userType);
+
+        setErrors(validate(values));
+        setIsSubmitting(true);
+        // Store the user type in local storage
+    };
+
+    useEffect(() => {
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            callback();
+        }
+    }, [errors]);
+
+    return { handleChange, handleSubmit, values, errors };
 };
 
 export default useForm;
