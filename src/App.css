@@ -48,10 +48,9 @@ input[type=text] {
   background-color: #26272b;
   color: white;
   padding: 10px 20px ;
-  border:none;
   text-align: center;
   font-size: 15px;
-  outline: none;
+  border:none;
   
 }
 .info{
@@ -97,6 +96,7 @@ input[type=text] {
   background-color: #4d94ff;
   color: white;
   border-radius: 5px;
+  
 }
 
 .flag{
@@ -142,6 +142,7 @@ input[type=text] {
   background-color: #3e3d45;
   color: white;
   border-top:2px solid #3e3d45;
+  outline:none;
 }
 label #openbutton{
   position: fixed;
@@ -201,7 +202,7 @@ label #cancelbutton{
 .images img{
   position:absolute;
   top:10px;
-  left:17%;
+  left:230px;
   height: 400px;
   width: 900px;
   transition: all .15%s ease;
@@ -217,7 +218,7 @@ label #cancelbutton{
 .dot{
   position:absolute;
   top:410px;
-  left:47.5%;
+  left:645px;
   display:flex;
   justify-content:center;
   margin:5px;
@@ -243,7 +244,7 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:470px;
+  top:475px;
   left:330px;
   width:200px;
   height:200px;
@@ -257,7 +258,7 @@ label #cancelbutton{
 .school{
   position: absolute;
   top:470px;
-  left:570px;
+  left:575px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -270,7 +271,7 @@ label #cancelbutton{
 .organization{
   position: absolute;
   top:470px;
-  left:810px;
+  left:815px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -477,9 +478,13 @@ label #cancelbutton{
   background-color:#26272b;
   color:white;
   padding:15px;
-  text-align:center;
   
 }
+.site-footer h1{
+  position:absolute;
+  left:560px;
+}
+
 
 .site-footer .footer1 button{
   position:absolute;
@@ -494,7 +499,7 @@ label #cancelbutton{
 .site-footer .footer2 {
   position:absolute;
   top:110px;
-  left:500px;
+  left:450px;
   width:180px;
 }
 .site-footer .footer2 button{
@@ -536,8 +541,8 @@ label #cancelbutton{
 .site-footer .footer5 {
   position:absolute;
   top:350px;
-  left:60px;
-  width:1220px;
+  left:142px;
+  width:1050px;
   text-align:left;
 }
 .site-footer .footer5 button{
