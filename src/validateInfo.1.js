@@ -14,17 +14,6 @@ export default function validateInfo(values) {
     errors.password = 'Password needs to be 6 characters or more';
   }
 
-  if (values.email === "admin@admin.com" && !values.password === "admin1"){
-     errors.password = "Password is incorrect."; 
-  }
-  
-  if (values.email === "buyer@buyer.com" && !values.password === "buyer1"){
-     errors.password = "Password is incorrect."; 
-  }
-  
-  if (values.email === "nonprofit@nonprofit.com" && !values.password === "nonprofit"){
-     errors.password = "Password is incorrect."; 
-  }
 
   return errors;
 }
