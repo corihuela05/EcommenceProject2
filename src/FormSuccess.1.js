@@ -10,4 +10,23 @@ const FormSuccess = () => {
   );
 };
 
+ function handlenonprofit(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+}
+  
+function handlebuyer(){
+    ReactDOM.render(<index />,document.getElementById('root'));
+}
+function handleseller(){
+    ReactDOM.render(<Seller />,document.getElementById('root'));
+}
+
+if(values.email === "admin@admin.com"){
+  handleseller(); 
+}else if(values.email === "buyer@buyer.com"){
+  handlebuyer(); 
+}else if(values.email === "nonprofit@nonprofit.com"){
+  handlenonprofit(); 
+}
+
 export default FormSuccess;
