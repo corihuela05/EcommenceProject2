@@ -202,7 +202,9 @@ label #cancelbutton{
 .images img{
   position:absolute;
   top:10px;
-  left:230px;
+
+  left:220px;
+
   height: 400px;
   width: 900px;
   transition: all .15%s ease;
@@ -218,7 +220,8 @@ label #cancelbutton{
 .dot{
   position:absolute;
   top:410px;
-  left:645px;
+  left:640px;
+
   display:flex;
   justify-content:center;
   margin:5px;
@@ -283,7 +286,7 @@ label #cancelbutton{
 .spaces{
   position: absolute;
   top:730px;
-  left:230px;
+  left:225px;
   width:900px;
   height:250px;
   background-color:white;
@@ -485,6 +488,12 @@ label #cancelbutton{
   left:560px;
 }
 
+
+.site-footer h1{
+  position:absolute;
+  left:555px;
+}
+  
 
 .site-footer .footer1 button{
   position:absolute;
