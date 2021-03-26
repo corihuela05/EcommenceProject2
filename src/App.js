@@ -9,6 +9,7 @@ import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products'
+import Profile from './Profile'
 
 function App() {
   function handlebeautyProducts(){
@@ -37,6 +38,10 @@ function App() {
    function handleuserlogin(){
     ReactDOM.render(<FormSignup />,document.getElementById('root'));
   }
+  function handleProfile(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
   
   return (
     <div className="App">
@@ -71,6 +76,9 @@ function App() {
       </form>
       <form onSubmit={handleProduct}>
         <button>Products</button>
+      </form>
+      <form onSubmit={handleProfile}>
+        <button>Profile</button>
       </form>
       <form onSubmit={handleShop}>
         <button>Shop</button>
