@@ -37,7 +37,8 @@ function App() {
   
   return (
     <div className="App">
-    <img src="logo.jpg" alt='company logo' className="companylogo" />
+    <div className="Appheader">
+    <img src="logo.png" alt='company logo' className="companylogo" />
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
     <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
@@ -48,7 +49,7 @@ function App() {
       <button className="info1">Sign Up</button>
     </form>
     <form onSubmit={handleuserlogin}>
-      <button className="info">login</button>
+      <button className="info">Login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
@@ -59,7 +60,7 @@ function App() {
     <input type="checkbox" id="check"/>
     <label for="check">
       <i class="fa fa-bars" id="openbutton"></i>
-      <i class="fa fa-bars" id="cancelbutton"></i>
+      <i class="fa fa-close" id="cancelbutton"></i>
     </label>
     <div className="sidebar">
       <form onSubmit={handleHome}>
@@ -110,7 +111,7 @@ function App() {
       <button>Fashion</button>
       <button>Gift Cards</button>
     </div>
-    
+    </div>
     <div className="sliderslide">
     <div className="slider">
       <div className="images">
@@ -149,42 +150,45 @@ function App() {
       <input type="input" className="email" placeholder="Email Address"/>
       <button className="subscribe">Subscribe</button>
     </div>
-    <div className="about">
-      <h1>About Greyson</h1>
+    
+    
+    <footer class="site-footer">
+    <h1>About Greyson</h1>
+    <div className="footer1">
+      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
-    <div className="end">
-      <button className="first"><img src="logo.jpg" className="logo" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
-      <div className="buttons1">
-        <button>GET TO KNOW US</button>
-        <button>OUR COMPANY</button>
-        <button>DIRECTORY</button>
-        <button>OUR SUPPLIERS</button>
-        <button>ADVERTISE WITH US</button>
-        <button>OUR SUPPLIERS</button>
-        <button>CONTACT US</button>
-      </div>
-      <div className="buttons2">
-        <button>CUSTOMER SERVICE</button>
-        <button>HELP CENTER</button>
-        <button>RETURNS</button>
-        <button>PRODUCT RECALLS</button>
-        <button>ACCESSIBILTY</button>
-        <button>CONTACT US</button>
-      </div>
-      <div className="buttons3">
-        <button>GREYSON'S</button>
-        <button>OUR ADS</button>
-        <button>TERMS OF SERVICE</button>
-        <button>PRIVACY & SECURITY</button>
-        <button>CA Privacy Rights</button>
-        <button>Do Not Sell My information</button>
-        <button>Request My information</button>
-        <button>Tax Exempt Program</button>
-      </div>
-      <div className="copyright">
-        <p>© Greyson</p>
-      </div>
+    <div className="footer2">
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
     </div>
+    <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
+      <button>RETURNS</button>
+      <button>PRODUCT RECALLS</button>
+      <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
+    </div>
+    <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
+      <button>TERMS OF SERVICE</button>
+      <button>PRIVACY & SECURITY</button>
+      <button>CA Privacy Rights</button>
+      <button>Do Not Sell My information</button>
+      <button>Request My information</button>
+      <button>Tax Exempt Program</button>
+    </div>
+    <div className="footer5">
+      <hr/>
+      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
+    </div>
+    </footer>
     </div>
     </div>
   );
