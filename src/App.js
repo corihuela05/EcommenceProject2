@@ -8,8 +8,10 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products';
-import Profile from './Profile';
+import BeautyProducts from './beauty_products'
+import Profile from './Profile'
+import Videog from './Videogame';
+
 
 function App() {
   function handlebeautyProducts(){
@@ -40,6 +42,10 @@ function App() {
   }
   function handleProfile(){
     ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
+    function handlevideogame(){
+     ReactDOM.render(<Videog />,document.getElementById('root'));
   }
   
   
@@ -146,7 +152,9 @@ function App() {
       <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
     </div>
     <div className="category">
+      <form onSubmit={handlevideogame}>
       <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' class="thumbnail" width="150" height="200"/>VIDEO GAMES</button>
+      </form>
       <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' class="thumbnail" width="150" height="200"/>BABY</button>
       <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
       <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>

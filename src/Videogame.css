@@ -1,0 +1,457 @@
+.videogcard1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard1 button:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.Videogameadjust{
+  position:absolute;
+  top:150px;
+  width:100%;
+  height:77%;
+  left:0%;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.videogcard2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard2 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard3 button:hover {
+  opacity: 0.7;
+}
+
+
+.videogcard4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard4 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard5 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard6 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard6 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard7 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard7 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard8 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard8 button:hover {
+  opacity: 0.7;
+}
+
+
+.videogcard9 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard9 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard10 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard10 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard11 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard11 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard11 button:hover {
+  opacity: 0.7;
+}
+
+.videogcard12 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.videogcard12 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.videogcard12 button:hover {
+  opacity: 0.7;
+}
+
+
+.videogame-site-footer1
+{
+  position:absolute;
+  top:1350px;
+  width:100%;
+  height:430px;
+  background-color:#26272b;
+  color:white;
+  padding:15px;
+  text-align:center;
+  
+}
+
+.videogame-site-footer1 .footer1 button{
+  position:absolute;
+  left:250px;
+  top:80px;
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer2 {
+  position:absolute;
+  top:110px;
+  left:500px;
+  width:180px;
+}
+.videogame-site-footer1 .footer2 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer3 {
+  position:absolute;
+  top:110px;
+  left:650px;
+  width:180px;
+}
+.videogame-site-footer1 .footer3 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer4 {
+  position:absolute;
+  top:110px;
+  left:850px;
+  width:180px;
+}
+.videogame-site-footer1 .footer4 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer5 {
+  position:absolute;
+  top:350px;
+  left:60px;
+  width:1220px;
+  text-align:left;
+}
+.videogame-site-footer1 .footer5 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
