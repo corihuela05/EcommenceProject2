@@ -10,6 +10,8 @@ import Account from './Account';
 import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products'
 import Profile from './Profile'
+import Videog from './Videogame';
+
 
 function App() {
   function handlebeautyProducts(){
@@ -40,6 +42,10 @@ function App() {
   }
   function handleProfile(){
     ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
+    function handlevideogame(){
+     ReactDOM.render(<Videog />,document.getElementById('root'));
   }
   
   
@@ -146,7 +152,9 @@ function App() {
       <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
     </div>
     <div className="category">
+      <form onSubmit={handlevideogame}>
       <button className="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' width="150" height="200"/>VIDEO GAMES</button>
+      </form>
       <button className="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' width="150" height="200"/>BABY</button>
       <button className="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif"  alt='patio' width="150" height="200"/>PATIO</button>
       <button className="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' width="150" height="200"/>PETS</button>
