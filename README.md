@@ -45,13 +45,13 @@ a.'add more info as we go here'
 b. 'add more info as we go here''add more info as we go here'
 c. 'add more info as we go here'
 
-##Sign In Info
+## Sign In Info
 Sellers: 
  email: admin@admin.com
- password: admin
+ password: admin1
 Buyer:
  email: buyer@buyer.com
- password: buyer
+ password: buyer1
 Nonprofit:
  email: nonprofit@nonprofit.com
  password: nonprofit
