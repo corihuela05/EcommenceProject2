@@ -56,18 +56,18 @@ function App() {
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
     <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
-      <button className="homebutton">Home</button>
+      <button id="homebutton">Home</button>
     </form>
    
   <form onSubmit={handleAccount}>
-      <button className="info1">Sign Up</button>
+      <button id="info1">Sign Up</button>
     </form>
     <form onSubmit={handleuserlogin}>
-      <button className="info">Login</button>
+      <button id="info">Login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
-      <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+      <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
     <div className="homepagesidebar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -153,22 +153,22 @@ function App() {
     </div>
     <div className="category">
       <form onSubmit={handlevideogame}>
-      <button className="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' width="150" height="200"/>VIDEO GAMES</button>
+      <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' class="thumbnail" width="150" height="200"/>VIDEO GAMES</button>
       </form>
-      <button className="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' width="150" height="200"/>BABY</button>
-      <button className="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif"  alt='patio' width="150" height="200"/>PATIO</button>
-      <button className="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' width="150" height="200"/>PETS</button>
-      <button className="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy'  width="150" height="200"/>PHARMACY</button>
-      <button className="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty' width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
-      <button className="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports'width="150" height="200"/>SPORTS</button>
-      <button className="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' width="150" height="200"/>AUTO</button>
-      <button className="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' width="150" height="200"/>MUSIC</button>
+      <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' class="thumbnail" width="150" height="200"/>BABY</button>
+      <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
+      <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>
+      <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
+      <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+      <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
+      <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
+      <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
 
     </div>
     <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150"/>
     <div className="newsletter">
-      <input type="input" className="email" placeholder="Email Address"/>
-      <button className="subscribe">Subscribe</button>
+      <input type="input" id="email" placeholder="Email Address"/>
+      <button id="subscribe">Subscribe</button>
     </div>
     
     

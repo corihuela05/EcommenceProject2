@@ -56,18 +56,18 @@ function Videogame() {
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
     <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
-      <button className="homebutton">Home</button>
+      <button id="homebutton">Home</button>
     </form>
    
   <form onSubmit={handleAccount}>
-      <button className="info1">Sign Up</button>
+      <button id="info1">Sign Up</button>
     </form>
     <form onSubmit={handleuserlogin}>
-      <button className="info">Login</button>
+      <button id="info">Login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
-      <button className="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+      <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
     <div className="homepagesidebar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>

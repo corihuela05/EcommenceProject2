@@ -38,9 +38,10 @@ input[type=text] {
   border-radius: 5px;
   font-size: 16px;
   padding: 10px 20px ;
+  outline:none;
 }
 
-.homebutton{
+#homebutton{
   position: fixed;
   left:760px;
   top: 15px;
@@ -48,13 +49,12 @@ input[type=text] {
   background-color: #26272b;
   color: white;
   padding: 10px 20px ;
-  border:none;
   text-align: center;
   font-size: 15px;
-  outline: none;
-  
+  border:none;
+  outline:none;
 }
-.info{
+#info{
   position: fixed;
   left:880px;
   top: 15px;
@@ -69,7 +69,7 @@ input[type=text] {
   border-left: 1px solid white;
 }
 
-.info1{
+#info1{
   position: fixed;
   left:1000px;
   top: 15px;
@@ -83,7 +83,7 @@ input[type=text] {
   outline: none;
   border-left: 1px solid white;
 }
-.cart{
+#cart{
   position: fixed;
   left:1130px;
   top: 15px;
@@ -97,6 +97,7 @@ input[type=text] {
   background-color: #4d94ff;
   color: white;
   border-radius: 5px;
+  
 }
 
 .flag{
@@ -142,6 +143,7 @@ input[type=text] {
   background-color: #3e3d45;
   color: white;
   border-top:2px solid #3e3d45;
+  outline:none;
 }
 label #openbutton{
   position: fixed;
@@ -176,7 +178,7 @@ label #cancelbutton{
   left: 82px;
 }
 #check:checked ~ label #cancelbutton{
-  left: 220px;
+  left: 200px;
   top:-10px;
   background:black;
   color:blue;
@@ -184,9 +186,8 @@ label #cancelbutton{
   width:100%;
   height:110%;
   text-align:left;
+  padding-left:30px;
 }
-
-
 
 .sliderslide{
   position:absolute;
@@ -196,12 +197,30 @@ label #cancelbutton{
   left:0%;
   overflow:scroll;
   overflow-x:hidden;
+  
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e3d45;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d94ff; 
 }
 /* #Slideshow */
 .images img{
   position:absolute;
   top:10px;
-  left:17%;
+
+  left:220px;
+
   height: 400px;
   width: 900px;
   transition: all .15%s ease;
@@ -217,7 +236,8 @@ label #cancelbutton{
 .dot{
   position:absolute;
   top:410px;
-  left:47.5%;
+  left:640px;
+
   display:flex;
   justify-content:center;
   margin:5px;
@@ -243,7 +263,7 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:470px;
+  top:475px;
   left:330px;
   width:200px;
   height:200px;
@@ -257,7 +277,7 @@ label #cancelbutton{
 .school{
   position: absolute;
   top:470px;
-  left:570px;
+  left:575px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -270,7 +290,7 @@ label #cancelbutton{
 .organization{
   position: absolute;
   top:470px;
-  left:810px;
+  left:815px;
   width:200px;
   height:200px;
   background-color:lightblue;
@@ -282,7 +302,7 @@ label #cancelbutton{
 .spaces{
   position: absolute;
   top:730px;
-  left:230px;
+  left:225px;
   width:900px;
   height:250px;
   background-color:white;
@@ -290,7 +310,7 @@ label #cancelbutton{
   font-size:45px;
 }
 
-.games{
+#games{
   position: absolute;
   top:1000px;
   left:360px;
@@ -300,13 +320,13 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.games img{
+#games img{
   border-radius: 20px;
   border:none;
   background:none;
 }
 
-.baby{
+#baby{
   position: absolute;
   top:1000px;
   left:590px;
@@ -316,12 +336,12 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.baby img{
+#baby img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.patio{
+#patio{
   position: absolute;
   top:1000px;
   left:810px;
@@ -331,13 +351,13 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.patio img{
+#patio img{
   border-radius: 20px;
   border:none;
   background:none;
 }
 
-.pets{
+#pets{
   position: absolute;
   top:1280px;
   left:360px;
@@ -347,12 +367,12 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.pets img{
+#pets img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.pharmacy{
+#pharmacy{
   position: absolute;
   top:1280px;
   left:590px;
@@ -362,12 +382,12 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.pharmacy img{
+#pharmacy img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.beauty{
+#beauty{
   position: absolute;
   top:1280px;
   left:810px;
@@ -377,12 +397,12 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.beauty img{
+#beauty img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.sports{
+#sports{
   position: absolute;
   top:1580px;
   left:360px;
@@ -392,12 +412,12 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.sports img{
+#sports img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.auto{
+#auto{
   position: absolute;
   top:1580px;
   left:580px;
@@ -408,12 +428,12 @@ label #cancelbutton{
   outline:none;
   
 }
-.auto img{
+#auto img{
   border-radius: 20px;
   border:none;
   background:none;
 }
-.music{
+#music{
   position: absolute;
   top:1580px;
   left:810px;
@@ -423,7 +443,7 @@ label #cancelbutton{
   border:none;
   outline:none;
 }
-.music img{
+#music img{
   border-radius: 20px;
   border:none;
   background:none;
@@ -436,6 +456,7 @@ label #cancelbutton{
     height:230px;
     display:block;
     z-index:999;
+    outline:none;
 }
 .letterpic{
   position: absolute;
@@ -447,20 +468,22 @@ label #cancelbutton{
   height:150px;
 }
 
-.email{
+#email{
   position:absolute;
   top:25px;
   left:90px;
   width:300px;
   height:35px;
+  outline:none;
 }
-.subscribe{
+#subscribe{
   position:absolute;
   top:25px;
   left:390px;
   height:35px;
   background-color:lightgreen;
   border:none;
+  outline:none;
 }
 .newsletter{
   position: absolute;
@@ -477,9 +500,19 @@ label #cancelbutton{
   background-color:#26272b;
   color:white;
   padding:15px;
-  text-align:center;
   
 }
+.site-footer h1{
+  position:absolute;
+  left:560px;
+}
+
+
+.site-footer h1{
+  position:absolute;
+  left:555px;
+}
+  
 
 .site-footer .footer1 button{
   position:absolute;
@@ -494,7 +527,7 @@ label #cancelbutton{
 .site-footer .footer2 {
   position:absolute;
   top:110px;
-  left:500px;
+  left:450px;
   width:180px;
 }
 .site-footer .footer2 button{
@@ -536,8 +569,8 @@ label #cancelbutton{
 .site-footer .footer5 {
   position:absolute;
   top:350px;
-  left:60px;
-  width:1220px;
+  left:142px;
+  width:1050px;
   text-align:left;
 }
 .site-footer .footer5 button{
