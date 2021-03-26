@@ -1,4 +1,7 @@
 # Ecommerce fundraising platform
+
+# Demo
+https://njit-ecommerce.herokuapp.com/ deployed to Heroku
 Description will go here 
 
 ![Screenshot](capture.jpg)
@@ -46,13 +49,13 @@ b. 'add more info as we go here''add more info as we go here'
 c. 'add more info as we go here'
 
 ## Sign In Info
-Sellers: 
- email: admin@admin.com
- password: admin1
-Buyer:
- email: buyer@buyer.com
- password: buyer1
-Nonprofit:
- email: nonprofit@nonprofit.com
- password: nonprofit
+`Sellers: `
+ `email: admin@admin.com`
+` password: admin1`
+`Buyer:`
+ `email: buyer@buyer.com`
+ `password: buyer1`
+`Nonprofit:`
+ `email: nonprofit@nonprofit.com`
+ `password: nonprofit`
 
