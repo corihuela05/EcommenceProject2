@@ -8,17 +8,21 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products'
-import Profile from './Profile'
+import BeautyProducts from './beauty_products';
+import Profile from './Profile';
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
 
 
+import ArtProducts from './art_products';
 
 
 function App() {
+  function handleartProducts(){
+    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
+  }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -135,11 +139,11 @@ function App() {
     <button>Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
-    <button>Beauty</button>
+    <button onClick={handlebeautyProducts} >Beauty</button>
     <button>Sports, Fitness & Outdoors</button>
     <button>Auto & Tire</button>
     <button>Photos</button>
-    <button>Art, Craft, Sewing & Party Supplies</button>
+    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
