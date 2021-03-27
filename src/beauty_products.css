@@ -1,0 +1,493 @@
+.beautycard1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0; 
+}
+
+.beautycard1 button:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.Beautyadjust{
+  position:absolute;
+  top:150px;
+  width:100%;
+  height:77%;
+  left:0%;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.beautycard2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard2 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard3 button:hover {
+  opacity: 0.7;
+}
+
+
+.beautycard4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:0px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard4 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+ }
+
+.beautycard5 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard6 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard6 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard7 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard7 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard8 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:450px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard8 button:hover {
+  opacity: 0.7;
+}
+
+
+.beautycard9 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard9 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard10 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard10 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard11 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard11 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard11 button:hover {
+  opacity: 0.7;
+}
+
+.beautycard12 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:900px;
+  height:398px;
+  width:300px;
+}
+
+.beautycard12 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
+}
+
+.beautycard12 button:hover {
+  opacity: 0.7;
+}
+
+
+.beauty-site-footer1
+{
+  position:absolute;
+  top:1350px;
+  width:100%;
+  height:430px;
+  background-color:#26272b;
+  color:white;
+  padding:15px;
+  text-align:center;
+  
+}
+
+.beauty-site-footer1 .footer1 button{
+  position:absolute;
+  left:250px;
+  top:80px;
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  outline:none;
+}
+
+.beauty-site-footer1 .footer2 {
+  position:absolute;
+  top:110px;
+  left:500px;
+  width:180px;
+}
+.beauty-site-footer1 .footer2 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.beauty-site-footer1 .footer3 {
+  position:absolute;
+  top:110px;
+  left:650px;
+  width:180px;
+}
+.beauty-site-footer1 .footer3 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.beauty-site-footer1 .footer4 {
+  position:absolute;
+  top:110px;
+  left:850px;
+  width:180px;
+}
+.beauty-site-footer1 .footer4 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.beauty-site-footer1 .footer5 {
+  position:absolute;
+  top:350px;
+  left:60px;
+  width:1220px;
+  text-align:left;
+}
+.beauty-site-footer1 .footer5 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
