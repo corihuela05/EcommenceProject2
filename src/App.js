@@ -11,12 +11,21 @@ import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products'
 import Profile from './Profile'
 import Videog from './Videogame';
+import Homeandfurnitures from './homeandfurniture';
+
+
 
 
 function App() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
+  
+  function handleHomeandfurnitures(){
+  ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
+ }
+
+
   function handleHome(){
     ReactDOM.render(<Home />,document.getElementById('root'));
   }
@@ -103,7 +112,11 @@ function App() {
     <button>Departments</button>
     <button>Electronics & Office</button>
     <button>Clothing, Shoes, & Accessories</button>
-    <button>Home, Furniture & Appliances</button>
+    
+      <form onSubmit={handleHomeandfurnitures}>
+       <button>Home, Furniture & Appliances</button>
+    </form>
+   
     <button>Toys, Games and Video Games</button>
     <button>Home Improvement</button>
     <button>Movies, Music & Books</button>
@@ -160,6 +173,8 @@ function App() {
       <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>
       <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
       <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+      <button id="sports"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+
       <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
       <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
       <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
