@@ -64,9 +64,9 @@
 						<li class="nav-header">Account Management</li>
 						<li><a href="account.html">Account Settings</a></li>
 						<li><a href="users.html">User Settings</a></li>
-						<li><a href="shipping.html">Shipping Settings</a></li>
+						<li class="active"><a href="shipping.html">Shipping Settings</a></li>
 						<li class="nav-header">Item Management</li>
-						<li class="active"><a href="#">Create New Listing</a></li>
+						<li><a href="#">Create New Listing</a></li>
 						<li><a href="edit-sku.html">View Item Listings</a></li>
 						<li class="nav-header">Order Management</li>
 						<li><a href="#">View Orders</a></li>
@@ -81,84 +81,58 @@
 			</div><!--/span-->
 
 			<div class="span5">
-				<h2>Create New SKU</h2>
+				<h2>Shipping Settings</h2>
 
 				<form class="form-horizontal">
 					<div class="control-group">
-						<label class="control-label">Item Title</label>
+						<label class="control-label">Return Address</label>
 						<div class="controls">
-							<input type="text" placeholder="Max 150 Chars">
+							<input class="input-xxlarge" type="text" placeholder="123 Martin Luther King Blvd, Newark NJ">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Manufacturer</label>
+						<label class="control-label">Shipping Cost (Up to 1lb)</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-small" type="text" placeholder="$2.99">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Manufacturer Part #</label>
+						<label class="control-label">Shipping Cost (1lb-3lb)</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-small" type="text" placeholder="$4.99">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">UPC/ISBN</label>
+						<label class="control-label">Shipping Cost (3lb-6lb)</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-small" type="text" placeholder="$4.99">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Seller SKU</label>
+						<label class="control-label">Shipping Cost (6lb-10lb)</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-small" type="text" placeholder="$5.99">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Item Weight</label>
+						<label class="control-label">Shipping Cost (10lb+)</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-small" type="text" placeholder="$9.99">
 						</div>
 					</div>
-					<div class="control-group">
-						<label class="control-label">Price</label>
-						<div class="controls">
-							<input type="text">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label">Description</label>
-						<div class="controls">
-							<textarea placeholder="Max 600 Chars" rows="6"></textarea>
-						</div>
-					</div>
-
 					<div class="control-group">
 						<div class="controls">
 							<label class="checkbox">
-								<input type="checkbox"> Free shipping
-							</label>
-							<label class="checkbox">
-								<input type="checkbox"> Automatically activate SKU when created
+								<input type="checkbox"> Dropshipping enabled
 							</label><br>
 							<button type="submit" class="btn btn-primary">Save changes</button>
-							<button type="button" class="btn">Cancel</button>
+							<a href="edit-sku.html"><button type="button" class="btn">Go back</button></a>
 						</div>
 					</div>
 				</form>
 
 
 			</div><!--/span-->
-			<div class="span3">
-				<h3>Upload images</h3>
-				<p>Supported formats: JPEG, PNG, GIF. Max File Size 2MB</p>
-				<button class="btn btn-large" type="button">Select File(s)</button>
-				<br>
-				<h4>Upload progress</h4>
-				<div class="progress">
-					<div class="bar" style="width: 0%;"></div>
-				</div>
-			</div>
 		</div><!--/row-->
 
 		<hr>
