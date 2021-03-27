@@ -11,7 +11,7 @@ import BeautyProducts from './beauty_products';
 import Profile from './Profile';
 import './Nonprofit.css';
 
-function Nonprofit() {
+function School() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -74,7 +74,9 @@ function Nonprofit() {
       <form onSubmit={handleProduct}>
         <button>Products</button>
       </form>
-
+      <form onSubmit={handleProfile}>
+        <button>Profile</button>
+      </form>
       <form onSubmit={handleShop}>
         <button>Shop</button>
       </form>
@@ -121,79 +123,80 @@ function Nonprofit() {
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Mr. Christopher Perpich, Chief School</p>
     </div>
     
     <div className="video2">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Belleville Public School District</p>
     </div>
     
     <div className="video3">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Bloomfield Township School District</p>
     </div>
     
     <div className="video4">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Burch Charter School of Excellence</p>
     </div>
     
     <div className="video5">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Caldwell-West School District</p>
     </div>
     
     <div className="video6">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Cedar Grove Township School District</p>
     </div>
     
     <div className="nonprofisearch">
-      <h3>Search for your Non Profits</h3>
-      <h5>Name of Non Profit:</h5>
+      <h3>Search for your school</h3>
+      <h5>Name of schools:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="name1">Name1</option>
-        <option value="name2">Name2</option>
-        <option value="name3">Name3</option>
+        <option value="name1">Chancellor Avenue School</option>
+        <option value="name2">Cleveland Elementary School</option>
+        <option value="name3">Dr. E. Alma Flagg School </option>
       </select>
       <h5>Type:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="type1">Type1</option>
-        <option value="type2">Type2</option>
-        <option value="type3">Type3</option>
+        <option value="type1">Elementary School</option>
+        <option value="type2">High School</option>
+        <option value="type3">Middle School</option>
       </select>
       <h5>Category:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="category1">Category1</option>
-        <option value="category2">Category2</option>
-        <option value="category3">Category3</option>
+        <option value="category1">Public School</option>
+        <option value="category2">Non-Public School</option>
+        <option value="category3">Charter School</option>
       </select>
       <h5>Location:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="location1">Location1</option>
-        <option value="location2">Location2</option>
-        <option value="location3">Location3</option>
+        <option value="location1">Newark NJ</option>
+        <option value="location2">East Organge NJ</option>
+        <option value="location3">Springfield NJ</option>
       </select>
       
-            <form onSubmit={handleProfile}>
-      <button className="nonprofitsearch">SEARCH</button>
-      </form>
       
+       <form onSubmit={handleProfile}>
+         <button className="nonprofitsearch">SEARCH</button>
+      </form>
+    
     </div>
     <div className="nonprofitreview">
       <p>Non Profit Review</p>
@@ -313,4 +316,4 @@ function Nonprofit() {
   );
 }
 
-export default Nonprofit;
+export default School;
