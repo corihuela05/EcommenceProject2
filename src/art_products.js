@@ -132,91 +132,91 @@ function Art() {
     </div>
     
     <div class="artcard2">
-        <img src="https://cdn.shopify.com/s/files/1/0338/3882/5612/products/15003_circle_delete_concealer_1_soldier_PDP_2000x.jpg?v=1612899527" alt="Circle\Delete Concealer" height="130" width="180"/>
-        <h1>Circle\Delete® Concealer</h1>
-         <p class="price">$32.00</p>
-        <p>An eye conditioner and concealer containing moringa butter and avocado oil, both high in vitamins A, C, D and E.</p>
+        <img src="https://imgprd19.hobbylobby.com/0/65/13/06513633626902e938682933211dd920b7db7948/350Wx350H-298224-123119.jpg" alt="Paint Brushes" height="130" width="180"/>
+        <h1>Tempera Paint Brushes - 25 Piece Set</h1>
+         <p class="price">$8.59</p>
+        <p>Set of 10 Colors Paint Markers for Black Paper, Rock Painting, Scrapbooking Crafts, Card Making, Ceramics, DIY Photo Album, Ceramic, Glass and More (Medium tip).</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard3">
-        <img src="data:image/jpeg;base64,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" alt="One-Step Makeup Remover Wipes" height="130" width="180"/>
-        <h1>One-Step Makeup Remover Wipes</h1>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71icvScKFOL._AC_SL1090_.jpg" alt="PANDAFLY Metallic Marker Pens" height="130" width="180"/>
+        <h1>PANDAFLY Metallic Marker Pens</h1>
          <p class="price">$20</p>
         <p>Using a naturally derived micellar formula, each super soft wipe traps makeup, dirt, and impurities, then gently whisks it away.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard4">
-        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2021%2F01%2F14%2Fneutrogena-exfoliating-shampoo-2000.jpg&q=85" alt="Neutrogena Exfoliating Shampoo" height="130" width="180"/>
-        <h1>Neutrogena Exfoliating Shampoo</h1>
-         <p class="price">$8.74</p>
-        <p>Exfoliating Shampoo for Oily Hair & Scalp, 12 oz.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61e4cFFg6XL._AC_SL1001_.jpg" alt="MPen Organizer" height="130" width="180"/>
+        <h1>Marbrasse Wooden Pen Organizer</h1>
+         <p class="price">$16.99</p>
+        <p>Multi-Functional DIY Pen Holder Box, Desktop Stationary, Easy Assembly, Home Office Art Supplies Organizer Storage with Drawer (B11-Cherry Color).</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     
     <div class="artcard5">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR5kJfH3Ph-wHvio3BnOaHy7_nwH79cv7b2ety4UKqElwNjJnQYsvq52UxxZ1luwxVR1hyMdS1WwSK5_ogeModhAAZpFQUO0oJKGKUv20SB-41qsSw7rFSOroU&usqp=CAE" alt="Glowipedia Glass Skin Kit" height="130" width="180"/>
-        <h1>Glowipedia Glass Skin Kit</h1>
-         <p class="price">$130 was $104</p>
-        <p>Deep cleanse and gently exfoliate with Blueberry Bounce Gentle Cleanser.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81ner8eOhdL._AC_SL1500_.jpg" alt="Sewing KIT" height="130" width="180"/>
+        <h1>ARTIKA Sewing KIT</h1>
+         <p class="price">$14.97 was $24.99</p>
+        <p>Premium Sewing Supplies, XL Spools of Thread, Most Useful Colors, Emergency Repairs, Travel, Kids, Beginners and Home (Rainbow).</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard6">
-        <img src="https://hudaBeauty.com/dw/image/v2/BCNC_PRD/on/demandware.static/-/Sites-huda-master-catalog/default/dwb2abf238/images/sfra/HB00174M/HB00176_2.png?sw=1242&sh=1242&sm=fit" alt="HUDABeauty Liquid Matte Lipstick" height="130" width="180"/>
-        <h1>HUDABeauty Liquid Matte Lipstick</h1>
-         <p class="price">$20</p>
-        <p>One-stroke color with a buttery, suede-like finish.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51JFZ7U25-L._AC_SL1100_.jpg" alt="sewing machine" height="130" width="180"/>
+        <h1>SINGER 4423 Sewing Machine</h1>
+         <p class="price">$179.99</p>
+        <p>SINGER HEAVY DUTY SEWING MACHINE: The 23 built-in stitches including basic, stretch, decorative, and buttonhole stitches allow you to sew a variety of projects, such as fashions, home décor, quilts, crafts, and more.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard7">
-        <img src="https://cdn.shopify.com/s/files/1/1128/9816/products/FullControlMascara.Horizontal_2000x.jpg?v=1568770260" alt="FULL CONTROL LASH SCULPTING MASCARA" height="130" width="180"/>
-        <h1>FULL CONTROL ™ lash sculpting mascara</h1>
-         <p class="price">$35</p>
-        <p>Makes lashes look long and full. Never clumpy.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81U7FqUP6NL._AC_SL1500_.jpg" alt="Coquimbo Sewing Kit" height="130" width="180"/>
+        <h1>Coquimbo Sewing Kit</h1>
+         <p class="price">$8.99 was $16.99</p>
+        <p>Sewing Kit for Traveler, Adults, Beginner, Emergency, DIY Sewing Supplies Organizer Filled with Scissors, Thimble, Thread, Sewing Needles, Tape Measure etc (Black, S).</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard8">
-        <img src="https://i5.walmartimages.com/asr/f21a08dc-0c2d-460e-b882-b530bd502f36.bf4cbae5fbc2ab0c0070a1da446b701d.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="NYX Professional Makeup Ultimate Shadow Palette" height="130" width="180"/>
-        <h1>NYX Professional Makeup Ultimate Shadow Palette</h1>
-         <p class="price">$17.97</p>
-        <p>Warm Neutrals, 0.32 oz</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/717uEoBvk0L._AC_SL1500_.jpg" alt="Scissors" height="130" width="180"/>
+        <h1>Singer Bundle - Scissors</h1>
+         <p class="price">$18.99</p>
+        <p>Includes Singer ProSeries Thread Snips, ProSeries 8 1/2 inch Heavy Duty Scissors, and ProSeries 4 1/2 inch Detail Scissors</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard9">
-        <img src="https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw17269a6c/ProductImages/2020/Eyes/UUSP01/NYX-PMU-Makeup-Eye-ULTIMATE-UTOPIA-SHADOW-PALETTE-Shadow-Palette-Ultimate-Utopia-UUSP01-000-0800897206376-Closed.jpg?sw=500&sfrm=jpg&q=70" alt="ULTIMATE UTOPIA SHADOW PALETTE" height="130" width="180"/>
-        <h1>Ultimate Utopia Shadow Palette</h1>
-         <p class="price">$35</p>
-        <p>This 16 shade eyeshadow palette of incredibly creamy eyeshadows in matte and metallic finishes instantly transports you to a lush nirvana.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71R-J153mfL._AC_SL1121_.jpg" alt="neon party supplies" height="130" width="180"/>
+        <h1>Glow Neon Party Supplies</h1>
+         <p class="price">$31.97 was $39.99</p>
+        <p>Serves 32 guests, Hard Plastic & Disposable Neon Plates 9", Cups Tumblers 9 Oz, Cutlery - Forks, Knives, Spoons, and Napkins, Glow In The Dark Neon.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard10">
-        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQt3WIUZW2v3JiKqXnRC-ZI60BlOHCbqOCfaAcM5OCnhta5wCb7S56Xomi0hnZsenxWaaZ9ZX2cWhxL_g1QAcq6QKvmHLHI7F4HBFSOL7H6hghwNr_s-m_g&usqp=CAE" alt="Face Mask" height="130" width="180"/>
-        <h1>SEPHORA Face Mask</h1>
-         <p class="price">$4</p>
-        <p>Makes skin feels soft and fresh.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/719djVJD%2BUL._AC_SL1500_.jpg" alt="glow sticks" height="130" width="180"/>
+        <h1>PartySticks Glow Sticks</h1>
+         <p class="price">$10.25</p>
+        <p>100pk - 8 Inch Glow in the Dark Light Up Sticks Party Favors, Glow Party Decorations, Neon Party Glow Necklaces and Glow Bracelets with Connectors.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard11">
-        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRblTnR57jzGZA39CPNLC4ZHw9my7t_zJbOt5LzEEYUcT_ltweygSvFgRr-pze2W07l8xU9KSAibyh1YmUnCc5Ff6lsnzbpYF0VgofyeoaTZ1Qewqm-mc44yB0&usqp=CAE" alt="nails" height="130" width="180"/>
-        <h1>StaticNails - Toasted Sugar Almond</h1>
-         <p class="price">$14</p>
-        <p>24 Universal Nails in 12 sizes  — fits average, petite, and larger sized nails.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71e4kmJGEEL._AC_SL1200_.jpg" alt="party lights" height="130" width="180"/>
+        <h1>Sound Activated Party Lights</h1>
+         <p class="price">$13.99</p>
+        <p>Remote Control Dj Lighting, RGB Disco Ball, Strobe Lamp 7 Modes Stage Par Light for Home Room Dance Parties Birthday DJ Bar Karaoke Xmas Wedding Show Club Pub.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="artcard12">
-        <img src="https://cdn.shopify.com/s/files/1/2419/5919/products/blackobsidianroller_1400x.jpg?v=1595510059" alt="OBSIDIAN FACIAL ROLLER" height="130" width="180"/>
-        <h1>Obsidian Facial Roller</h1>
-         <p class="price">$25</p>
-        <p>A stimulating, handcrafted obsidian stone face roller that helps promote tranquility for revitalized-looking skin.</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91q%2Bv4SYiQL._AC_SL1500_.jpg" alt="rose gold party set" height="130" width="180"/>
+        <h1>Rose Gold Birthday Party Decorations</h1>
+         <p class="price">$31.99 was $34.99</p>
+        <p>Rose Gold Party Decorations Set for Girls Or Women, Happy Birthday Banner, Curtains, Table Runner, Balloons, Plates, Cups, Tissue for 24 Guest by JSN PARTY.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
