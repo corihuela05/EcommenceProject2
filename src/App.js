@@ -14,6 +14,9 @@ import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
+import FoodProducts from './food_products';
+
+import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
@@ -22,6 +25,12 @@ import Gettoknowus from './Gettoknowus';
 
 
 function App() {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
+  function handlefoodProducts(){
+    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
+  }
   function handleartProducts(){
     ReactDOM.render(<ArtProducts />,document.getElementById('root'));
   }
@@ -137,7 +146,7 @@ function App() {
     <button>Help</button>
     <button>Departments</button>
     <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
@@ -147,7 +156,7 @@ function App() {
     <button>Home Improvement</button>
     <button>Movies, Music & Books</button>
     <button>Patio & Garden</button>
-    <button>Food</button>
+    <button onClick={handlefoodProducts} >Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
     <button onClick={handlebeautyProducts} >Beauty</button>
