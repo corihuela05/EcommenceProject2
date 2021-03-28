@@ -11,7 +11,30 @@ import BeautyProducts from './beauty_products';
 import Profile from './Profile';
 import './Nonprofit.css';
 
-function Nonprofit() {
+function Nonprofit({ isLoggedIn, username }) {
+    function loginButton(props) {
+        <div>
+            <form onSubmit={handleuserlogin}>
+                <button id="info">Login</button>
+            </form>
+            <form onSubmit={handleAccount}>
+                <button id="info1">Sign Up</button>
+            </form>
+        </div>;
+    }
+
+    function logout(props) {
+        <form onSubmit={handleuserlogout}>
+            <button id="info">Logout</button>
+        </form>;
+        isLoggedIn = false;
+    }
+    function handleuserlogout() {
+        ReactDOM.render(
+            <Nonprofit isLoggedIn={false} />,
+            document.getElementById("root")
+        );
+    }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -48,7 +71,30 @@ function Nonprofit() {
     <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
-    </form>
+     </form>
+    {isLoggedIn ? (
+                  <div>
+                      <div>
+                          <form>
+                              <button id="info">{username}</button>
+                          </form>
+                      </div>
+                      <div>
+                          <form onSubmit={handleuserlogout}>
+                              <button id="info">Logout</button>
+                          </form>
+                      </div>
+                  </div>
+              ) : (
+                      <>
+                          <form onSubmit={handleuserlogin}>
+                              <button id="info">Login</button>
+                          </form>
+                          <form onSubmit={handleAccount}>
+                              <button id="info1">Sign Up</button>
+                          </form>
+                      </>
+    )}
    
   <form onSubmit={handleAccount}>
       <button id="info1">Sign Up</button>
