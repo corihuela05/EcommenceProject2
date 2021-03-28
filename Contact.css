@@ -1,0 +1,646 @@
+/*Contact sectiom*/
+.content-header{
+  font-family: 'Oleo Script', cursive;
+  color:rgb(173,216,229);
+  font-size: 45px;
+}
+
+.section-content{
+  text-align: center;
+
+}
+#contact{
+
+  font-family: 'Teko', sans-serif;
+  padding-top: 60px;
+  width: 100%;
+  width: 100vw;
+  height: 550px;
+  background: dimgrey; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, black , whitesmoke); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, black , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color : black;
+}
+.contact-section{
+  padding-top: 40px;
+}
+.contact-section .col-md-6{
+  width: 50%;
+}
+
+.form-line{
+  border-right: 1px solid #B29999;
+}
+
+.form-group{
+  margin-top: 10px;
+}
+label{
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+.form-control{
+  font-size: 1.3em;
+  color: #080808;
+}
+textarea.form-control {
+  height: 135px;
+  /* margin-top: px;*/
+}
+
+.submit{
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+
+}
+#CostumerService{
+  color: white;
+  text-align: center;
+
+}
+.App {
+  text-align: center;
+  background-color:#dfe1ed;
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.Appheader{
+  background-color:#26272b;
+  height:145px;
+}
+
+.companylogo{
+  position: fixed;
+  left: 1px;
+  top:-20px;
+  width:180px;
+  height:125px;
+}
+
+.logo{
+  position: absolute;
+  left: 1px;
+  top:1px;
+  width:180px;
+  height:125px;
+}
+
+input[type=text] {
+  position: fixed;
+  left: 200px;
+  top: 10px;
+  width: 550px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 2px solid #dfe1ed;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px ;
+  outline:none;
+}
+
+#homebutton{
+  position: fixed;
+  left:760px;
+  top: 15px;
+  width:120px;
+  background-color: #26272b;
+  color: white;
+  padding: 10px 20px ;
+  text-align: center;
+  font-size: 15px;
+  border:none;
+  outline:none;
+}
+#info{
+  position: fixed;
+  left:880px;
+  top: 15px;
+  width:120px;
+  background-color: #26272b;
+  color: white;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  border-left: 1px solid white;
+}
+
+#info1{
+  position: fixed;
+  left:1000px;
+  top: 15px;
+  width:120px;
+  background-color: #26272b;
+  color: white;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  border-left: 1px solid white;
+}
+#cart{
+  position: fixed;
+  left:1130px;
+  top: 15px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px ;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  background-color: #4d94ff;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.flag{
+  position: fixed;
+  left: 1248px;
+  top:16px;
+  width:65px;
+  height:40px;
+}
+
+.tabs{
+  position: fixed;
+  top:75px;
+  left:120px;
+  background-color: #3e3d45;
+  border: 1.5px solid #3e3d45;
+  border-radius: 10px;
+}
+
+.tabs button {
+  background-color: #3e3d45;
+  border: none;
+  outline: none;
+  padding: 16px 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  color:white;
+}
+/*Sidebar*/
+.sidebar {
+  position: fixed;
+  top:0px;
+  left:-270px;
+  height: 100%;
+  width: 225px;
+  overflow:scroll;
+  overflow-x:hidden;
+  z-index: 5;
+}
+.sidebar button {
+  width:210px;
+  font-size: 18px;
+  background-color: #3e3d45;
+  color: white;
+  border-top:2px solid #3e3d45;
+  outline:none;
+}
+label #openbutton{
+  position: fixed;
+  cursor: pointer;
+  background: #3e3d45;
+  left: 82px;
+  top: 75px;
+  font-size: 35px;
+  color: black;
+  padding: 11px 12px;
+  border: 1px solid #3e3d45;
+  border-radius: 10px;
+}
+label #cancelbutton{
+  position: fixed;
+  cursor: pointer;
+  left:160px;
+  height:5px;
+  top: -100px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  z-index: 5;
+
+}
+#check{
+  display: none;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #openbutton{
+  left: 82px;
+}
+#check:checked ~ label #cancelbutton{
+  left: 200px;
+  top:-10px;
+  background:black;
+  color:blue;
+  opacity: 0.8;
+  width:100%;
+  height:110%;
+  text-align:left;
+  padding-left:30px;
+}
+
+.sliderslide{
+  position:absolute;
+  top:150px;
+  width:100%;
+  height:77%;
+  left:0%;
+  overflow:scroll;
+  overflow-x:hidden;
+
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e3d45;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d94ff;
+}
+/* #Slideshow */
+.images img{
+  position:absolute;
+  top:10px;
+
+  left:220px;
+
+  height: 400px;
+  width: 900px;
+  transition: all .15%s ease;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.images input{
+  display:none;
+}
+
+
+.dot{
+  position:absolute;
+  top:410px;
+  left:640px;
+
+  display:flex;
+  justify-content:center;
+  margin:5px;
+}
+.dot label{
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  border: solid black 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+.dot label:hover{
+  background: black;
+}
+
+#image1:checked ~ .img1{
+  margin-left:0;
+}
+#image2:checked ~ .img2{
+  margin-left:-100%;
+}
+
+.church{
+  position: absolute;
+  top:475px;
+  left:330px;
+  width:200px;
+  height:200px;
+  background-color:lightblue;
+  border: solid black 5px;
+  border-radius: 25px;
+  outline: none;
+  padding-top:10px;
+}
+
+.school{
+  position: absolute;
+  top:470px;
+  left:575px;
+  width:200px;
+  height:200px;
+  background-color:lightblue;
+  border: solid black 5px;
+  border-radius: 25px;
+  outline: none;
+  padding-top:10px;
+}
+
+.organization{
+  position: absolute;
+  top:470px;
+  left:815px;
+  width:200px;
+  height:200px;
+  background-color:lightblue;
+  border: solid black 5px;
+  border-radius: 25px;
+  outline: none;
+  padding-top:10px;
+}
+.spaces{
+  position: absolute;
+  top:730px;
+  left:225px;
+  width:900px;
+  height:250px;
+  background-color:white;
+  border: solid black 2px;
+  font-size:45px;
+}
+
+#games{
+  position: absolute;
+  top:1000px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#games img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+
+#baby{
+  position: absolute;
+  top:1000px;
+  left:590px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#baby img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#patio{
+  position: absolute;
+  top:1000px;
+  left:810px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#patio img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+
+#pets{
+  position: absolute;
+  top:1280px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#pets img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#pharmacy{
+  position: absolute;
+  top:1280px;
+  left:590px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#pharmacy img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#beauty{
+  position: absolute;
+  top:1280px;
+  left:810px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#beauty img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#sports{
+  position: absolute;
+  top:1580px;
+  left:360px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#sports img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#auto{
+  position: absolute;
+  top:1580px;
+  left:580px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+
+}
+#auto img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+#music{
+  position: absolute;
+  top:1580px;
+  left:810px;
+  width:170px;
+  height:250px;
+  background-color:#dfe1ed;
+  border:none;
+  outline:none;
+}
+#music img{
+  border-radius: 20px;
+  border:none;
+  background:none;
+}
+.thumbnail:hover {
+  position:relative;
+  top:10px;
+  left:0px;
+  width:200px;
+  height:230px;
+  display:block;
+  z-index:999;
+  outline:none;
+}
+.letterpic{
+  position: absolute;
+  top:1900px;
+  left:350px;
+  border:1px solid black;
+  border-radius: 20px;
+  width:250px;
+  height:150px;
+}
+
+#email{
+  position:absolute;
+  top:25px;
+  left:90px;
+  width:300px;
+  height:35px;
+  outline:none;
+}
+#subscribe{
+  position:absolute;
+  top:25px;
+  left:390px;
+  height:35px;
+  background-color:lightgreen;
+  border:none;
+  outline:none;
+}
+.newsletter{
+  position: absolute;
+  top:1930px;
+  left:550px;
+}
+
+.site-footer
+{
+  position:absolute;
+  top:2100px;
+  width:100%;
+  height:430px;
+  background-color:#26272b;
+  color:white;
+  padding:15px;
+
+}
+.site-footer h1{
+  position:absolute;
+  left:560px;
+}
+
+
+.site-footer h1{
+  position:absolute;
+  left:555px;
+}
+
+
+.site-footer .footer1 button{
+  position:absolute;
+  left:250px;
+  top:80px;
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  outline:none;
+}
+
+.site-footer .footer2 {
+  position:absolute;
+  top:110px;
+  left:450px;
+  width:180px;
+}
+.site-footer .footer2 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.site-footer .footer3 {
+  position:absolute;
+  top:110px;
+  left:650px;
+  width:180px;
+}
+.site-footer .footer3 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.site-footer .footer4 {
+  position:absolute;
+  top:110px;
+  left:850px;
+  width:180px;
+}
+.site-footer .footer4 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.site-footer .footer5 {
+  position:absolute;
+  top:350px;
+  left:142px;
+  width:1050px;
+  text-align:left;
+}
+.site-footer .footer5 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
