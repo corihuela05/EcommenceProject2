@@ -16,11 +16,18 @@ import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
 import Ourads from './Ourads'
+import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
+import Gettoknowus from './Gettoknowus';
+
+
 
 
 function App() {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
   function handlefoodProducts(){
     ReactDOM.render(<FoodProducts />,document.getElementById('root'));
   }
@@ -40,6 +47,11 @@ function App() {
  }
   function handleChurch(){
   ReactDOM.render(<Church/>,document.getElementById('root'));
+ }
+ 
+ 
+   function handleGetknowus(){
+  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
  }
 
 
@@ -81,6 +93,7 @@ function App() {
   function handleOurads(){
      ReactDOM.render(<Ourads />,document.getElementById('root'));
   }
+
   return (
     <div className="App">
     <div className="Appheader">
@@ -134,7 +147,7 @@ function App() {
     <button>Help</button>
     <button>Departments</button>
     <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
@@ -228,7 +241,11 @@ function App() {
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-      <button>GET TO KNOW US</button>
+    
+        <form onSubmit={handleGetknowus}>
+            <button>GET TO KNOW US</button>
+    </form>
+     
       <button>OUR COMPANY</button>
       <button>DIRECTORY</button>
       <button>OUR SUPPLIERS</button>
@@ -257,8 +274,14 @@ function App() {
       <button>CA Privacy Rights</button>
       <button>Do Not Sell My information</button>
       <button>Request My information</button>
-      <button>Tax Exempt Program</button>
+      
+      <button>Tax Exempt Program</button> 
+      
     </div>
+     
+        
+    
+    
     <div className="footer5">
       <hr/>
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
