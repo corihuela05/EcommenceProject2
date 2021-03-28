@@ -16,7 +16,7 @@ import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Donotsellmyinformation from './Donotsellmyinformation';
 import Taxexemptprogram from '/TaxExemptProgram';
-import OurServices from '/Our Company';
+import OurServices from '/OurServices';
 
 
 
