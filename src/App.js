@@ -126,6 +126,7 @@ function App() {
      ReactDOM.render(<Ourads />,document.getElementById('root'));
   }
 
+
   return (
     <div className="App">
     <div className="Appheader">
@@ -169,19 +170,36 @@ function App() {
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
     </form>
-    <button>Buy Again</button>
-    <button>List</button>
-    <button>Registry</button>
-    <button>Gift Finder</button>
-    <button>Gift Card</button>
-    <button>Black Owned Businesses</button>
-    <button>Women Owned Businesses</button>
-    <button>Help</button>
-    <button>Departments</button>
-    <button>Electronics & Office</button>
-
-   
-    
+    <form onSubmit={handleNonprofit}>
+      <button>Buy Again</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>List</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Registry</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Finder</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Card</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Black Owned Businesses</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Women Owned Businesses</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Help</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Departments</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Electronics & Office</button>
+    </form>
     
     <form onSubmit={handlevideogame}>
       <button>Toys, Games and Video Games</button>
@@ -191,13 +209,22 @@ function App() {
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
     </form>
-   
-    <button>Home Improvement</button>
-    <button>Music</button>
-    <button>Patio & Garden</button>
+    <form onSubmit={handleNonprofit}>
+      <button>Home Improvement</button>
+    </form>
+     <form onSubmit={handlemusic}>
+      <button>Music</button>
+    </form>
+    <form onSubmit={handlepatio}>
+      <button>Patio & Garden</button>
+    </form>
     <button onClick={handlefoodProducts} >Food</button>
-    <button>Pets</button>
-    <button>Pharmacy, Health & Personal Care</button>
+   <form onSubmit={handlepets}>
+      <button>Pets</button>
+    </form>
+    <form onSubmit={handlepharmacy}>
+      <button>Pharmacy, Health & Personal Care</button>
+    </form>
 
     <form onSubmit={handlesports}>
       <button>Sports, Fitness & Outdoors</button>
@@ -205,21 +232,24 @@ function App() {
 
     <button onClick={handlebeautyProducts} >Beauty</button>
  
-
-    <button>Auto & Tire</button>
-    <button>Photos</button>
+    <form onSubmit={handleauto}>
+      <button>Auto & Tire</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Photos</button>
+    </form>
     <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
-      <button>Best Sellers</button>
-      <button>Today's Deals</button>
-      <button>Customer Service</button>
-      <button>New Releases</button>
-      <button>Near Me</button>
-      <button>Books</button>
-      <button>Fashion</button>
-      <button>Gift Cards</button>
+      <button  onClick={handleartProducts} >Best Sellers</button>
+      <button  onClick={handleartProducts} >Today's Deals</button>
+      <button  onClick={handleartProducts} >Customer Service</button>
+      <button  onClick={handleartProducts} >New Releases</button>
+      <button  onClick={handleartProducts} >Near Me</button>
+      <button  onClick={handleartProducts} >Books</button>
+      <button  onClick={handleartProducts} >Fashion</button>
+      <button  onClick={handleartProducts} >Gift Cards</button>
     </div>
     </div>
     <div className="sliderslide">
@@ -301,47 +331,74 @@ function App() {
     </div>
     <div className="footer2">
     
-        <form onSubmit={handleGetknowus}>
-            <button>GET TO KNOW US</button>
+    <form onSubmit={handleGetknowus}>
+        <button>GET TO KNOW US</button>
     </form>
-     
+    <form onSubmit={handleGetknowus}>
       <button>OUR COMPANY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>DIRECTORY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>OUR SUPPLIERS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>ADVERTISE WITH US</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>OUR SUPPLIERS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CONTACT US</button>
+    </form>
     </div>
     <div className="footer3">
-    <button>CUSTOMER SERVICE</button>
+    <form onSubmit={handleGetknowus}>
+      <button>CUSTOMER SERVICE</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>HELP CENTER</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>RETURNS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>PRODUCT RECALLS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>ACCESSIBILTY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CONTACT US</button>
+    </form>
     </div>
     <div className="footer4">
+    <form onSubmit={handleGetknowus}>
       <button>GREYSON'S</button>
-    
+    </form>
       <form onSubmit={handleOurads}>
         <button>OUR ADS</button>
       </form>
        <form onSubmit={handleTermofservices}>
             <button>TERMS OF SERVICE</button>
       </form>
-    
+    <form onSubmit={handleGetknowus}>
       <button>PRIVACY & SECURITY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CA Privacy Rights</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>Do Not Sell My information</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>Request My information</button>
-      
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>Tax Exempt Program</button> 
-      
+    </form>
     </div>
-     
-        
-    
-    
     <div className="footer5">
       <hr/>
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
