@@ -29,6 +29,7 @@ import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 
 
+
 function App() {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
@@ -170,6 +171,8 @@ function App() {
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
     </form>
+
+
     <form onSubmit={handleNonprofit}>
       <button>Buy Again</button>
     </form>
@@ -202,13 +205,14 @@ function App() {
     </form>
     
     <form onSubmit={handlevideogame}>
-      <button>Toys, Games and Video Games</button>
+      <button>Video Games</button>
     </form>
     <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
     </form>
+
     <form onSubmit={handleNonprofit}>
       <button>Home Improvement</button>
     </form>
@@ -219,6 +223,7 @@ function App() {
       <button>Patio & Garden</button>
     </form>
     <button onClick={handlefoodProducts} >Food</button>
+
    <form onSubmit={handlepets}>
       <button>Pets</button>
     </form>
@@ -229,15 +234,16 @@ function App() {
     <form onSubmit={handlesports}>
       <button>Sports, Fitness & Outdoors</button>
     </form>
-
     <button onClick={handlebeautyProducts} >Beauty</button>
+
  
-    <form onSubmit={handleauto}>
+   <form onSubmit={handleauto}>
       <button>Auto & Tire</button>
     </form>
     <form onSubmit={handleNonprofit}>
       <button>Photos</button>
     </form>
+
     <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
@@ -303,9 +309,8 @@ function App() {
       <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
       </form>
       <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
-
       <form onSubmit={handlesports}>
-      <button id="sports"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+      <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
       </form>
     
       <form onSubmit={handleauto}>
