@@ -11,7 +11,13 @@ import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products'
 import Profile from './Profile'
 import Videog from './Videogame';
-
+import Sportpro from './Sports';
+import Baby from './Baby';
+import Patio from './Patio';
+import Pets from './Pets';
+import Pharmacy from './Pharmacy';
+import Auto from './Auto';
+import Music from './Music';
 
 function App() {
   function handlebeautyProducts(){
@@ -46,6 +52,33 @@ function App() {
   
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
+  }
+    function handlesports(){
+     ReactDOM.render(<Sportpro />,document.getElementById('root'));
+  }
+  
+    function handlebaby(){
+     ReactDOM.render(<Baby />,document.getElementById('root'));
+  }
+  
+    function handlepatio(){
+     ReactDOM.render(<Patio />,document.getElementById('root'));
+  }
+  
+    function handlepets(){
+     ReactDOM.render(<Pets />,document.getElementById('root'));
+  }
+  
+    function handlepharmacy(){
+     ReactDOM.render(<Pharmacy />,document.getElementById('root'));
+  }
+  
+    function handleauto(){
+     ReactDOM.render(<Auto />,document.getElementById('root'));
+  }
+  
+    function handlemusic(){
+     ReactDOM.render(<Music />,document.getElementById('root'));
   }
   
   
@@ -104,15 +137,19 @@ function App() {
     <button>Electronics & Office</button>
     <button>Clothing, Shoes, & Accessories</button>
     <button>Home, Furniture & Appliances</button>
-    <button>Toys, Games and Video Games</button>
+    <form onSubmit={handlevideogame}>
+      <button>Toys, Games and Video Games</button>
+    </form>
     <button>Home Improvement</button>
-    <button>Movies, Music & Books</button>
+    <button>Music</button>
     <button>Patio & Garden</button>
     <button>Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
     <button>Beauty</button>
-    <button>Sports, Fitness & Outdoors</button>
+    <form onSubmit={handlesports}>
+      <button>Sports, Fitness & Outdoors</button>
+    </form>
     <button>Auto & Tire</button>
     <button>Photos</button>
     <button>Art, Craft, Sewing & Party Supplies</button>
@@ -155,15 +192,29 @@ function App() {
       <form onSubmit={handlevideogame}>
       <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' class="thumbnail" width="150" height="200"/>VIDEO GAMES</button>
       </form>
+      <form onSubmit={handlebaby}>
       <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' class="thumbnail" width="150" height="200"/>BABY</button>
+      </form>
+      <form onSubmit={handlepatio}>
       <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
+      </form>
+      <form onSubmit={handlepets}>
       <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>
+      </form>
+      <form onSubmit={handlepharmacy}>
       <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
+      </form>
       <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+      <form onSubmit={handlesports}>
       <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
+      </form>
+      <form onSubmit={handleauto}>
       <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
+      </form>
+      <form onSubmit={handlemusic}>
       <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
-
+      </form>
+      
     </div>
     <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150"/>
     <div className="newsletter">
