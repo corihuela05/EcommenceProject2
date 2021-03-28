@@ -8,8 +8,8 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products'
-import Profile from './Profile'
+import BeautyProducts from './beauty_products';
+import Profile from './Profile';
 import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
@@ -18,11 +18,50 @@ import Pets from './Pets';
 import Pharmacy from './Pharmacy';
 import Auto from './Auto';
 import Music from './Music';
+import Homeandfurnitures from './homeandfurniture';
+import School from './Schools';
+import Termofservice from './Termofservices';
+import FoodProducts from './food_products';
+
+import ClothingProducts from './clothing_products';
+import ArtProducts from './art_products';
+import Church from './Church';
+import Gettoknowus from './Gettoknowus';
+
+
+
 
 function App() {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
+  function handlefoodProducts(){
+    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
+  }
+  function handleartProducts(){
+    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
+  }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
+  
+  function handleHomeandfurnitures(){
+  ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
+ }
+ 
+   function handleTermofservices(){
+  ReactDOM.render(<Termofservice />,document.getElementById('root'));
+ }
+  function handleChurch(){
+  ReactDOM.render(<Church/>,document.getElementById('root'));
+ }
+ 
+ 
+   function handleGetknowus(){
+  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
+ }
+
+
   function handleHome(){
     ReactDOM.render(<Home />,document.getElementById('root'));
   }
@@ -37,6 +76,10 @@ function App() {
   }
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+  
+   function handleSchoolst(){
+    ReactDOM.render(<School />,document.getElementById('root'));
   }
   
   
@@ -80,6 +123,8 @@ function App() {
     function handlemusic(){
      ReactDOM.render(<Music />,document.getElementById('root'));
   }
+  
+  
   
   
   return (
@@ -136,23 +181,27 @@ function App() {
     <button>Departments</button>
     <button>Electronics & Office</button>
     <button>Clothing, Shoes, & Accessories</button>
-    <button>Home, Furniture & Appliances</button>
     <form onSubmit={handlevideogame}>
       <button>Toys, Games and Video Games</button>
+    </form>
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+    
+      <form onSubmit={handleHomeandfurnitures}>
+       <button>Home, Furniture & Appliances</button>
     </form>
     <button>Home Improvement</button>
     <button>Music</button>
     <button>Patio & Garden</button>
-    <button>Food</button>
+    <button onClick={handlefoodProducts} >Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
-    <button>Beauty</button>
     <form onSubmit={handlesports}>
       <button>Sports, Fitness & Outdoors</button>
     </form>
+    <button onClick={handlebeautyProducts} >Beauty</button>
     <button>Auto & Tire</button>
     <button>Photos</button>
-    <button>Art, Craft, Sewing & Party Supplies</button>
+    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
@@ -181,9 +230,21 @@ function App() {
       </div>
     </div>
     <div className="threebox">
+    
+          <form onSubmit={handleChurch}>
       <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg"  alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
+    </form>
+      
+      
+      <form onSubmit={handleSchoolst}>
       <button className="school"><img src="https://media2.giphy.com/media/1etn2BmiW0nOgoZHTL/source.gif" alt='school' width="150" height="100"/>School<p>1,023 videos</p></button>
-      <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100"/>Non-Profits<p>2,416 videos</p></button>
+    </form>
+
+   
+       <form onSubmit={handleNonprofit}>
+            <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100"/>Non-Profits<p>2,416 videos</p></button>
+    </form>
+
     </div>
     <div className="addspace">
       <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
@@ -229,7 +290,11 @@ function App() {
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-      <button>GET TO KNOW US</button>
+    
+        <form onSubmit={handleGetknowus}>
+            <button>GET TO KNOW US</button>
+    </form>
+     
       <button>OUR COMPANY</button>
       <button>DIRECTORY</button>
       <button>OUR SUPPLIERS</button>
@@ -248,13 +313,24 @@ function App() {
     <div className="footer4">
       <button>GREYSON'S</button>
       <button>OUR ADS</button>
-      <button>TERMS OF SERVICE</button>
+      
+       <form onSubmit={handleTermofservices}>
+            <button>TERMS OF SERVICE</button>
+    </form>
+    
+    
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
       <button>Do Not Sell My information</button>
       <button>Request My information</button>
-      <button>Tax Exempt Program</button>
+      
+      <button>Tax Exempt Program</button> 
+      
     </div>
+     
+        
+    
+    
     <div className="footer5">
       <hr/>
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
