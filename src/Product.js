@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Shop from "./Shop";
+import Product from "./Product";
 import Home from "./App"
 import './App.css';
 import Cart from './Cart';
@@ -10,18 +11,29 @@ import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products';
 import Profile from './Profile';
 import Videog from './Videogame';
+import Sportpro from './Sports';
+import Baby from './Baby';
+import Patio from './Patio';
+import Pets from './Pets';
+import Pharmacy from './Pharmacy';
+import Auto from './Auto';
+import Music from './Music';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
-
-
+import Ourads from './Ourads'
+import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
+import Gettoknowus from './Gettoknowus';
 import './Product.css';
 
-function Product() {
- function handlefoodProducts(){
+function Products() {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
+  function handlefoodProducts(){
     ReactDOM.render(<FoodProducts />,document.getElementById('root'));
   }
   function handleartProducts(){
@@ -41,10 +53,18 @@ function Product() {
   function handleChurch(){
   ReactDOM.render(<Church/>,document.getElementById('root'));
  }
+ 
+ 
+   function handleGetknowus(){
+  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
+ }
 
 
   function handleHome(){
     ReactDOM.render(<Home />,document.getElementById('root'));
+  }
+  function handleProduct(){
+    ReactDOM.render(<Product />,document.getElementById('root'));
   }
   function handleShop(){
     ReactDOM.render(<Shop />,document.getElementById('root'));
@@ -74,10 +94,42 @@ function Product() {
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
+    function handlesports(){
+     ReactDOM.render(<Sportpro />,document.getElementById('root'));
+  }
   
+    function handlebaby(){
+     ReactDOM.render(<Baby />,document.getElementById('root'));
+  }
+  
+    function handlepatio(){
+     ReactDOM.render(<Patio />,document.getElementById('root'));
+  }
+  
+    function handlepets(){
+     ReactDOM.render(<Pets />,document.getElementById('root'));
+  }
+  
+    function handlepharmacy(){
+     ReactDOM.render(<Pharmacy />,document.getElementById('root'));
+  }
+  
+    function handleauto(){
+     ReactDOM.render(<Auto />,document.getElementById('root'));
+  }
+  
+    function handlemusic(){
+     ReactDOM.render(<Music />,document.getElementById('root'));
+  }
+  
+  function handleOurads(){
+     ReactDOM.render(<Ourads />,document.getElementById('root'));
+  }
+
+
   return (
     <div className="productlogo">
-      <div className="Appheader">
+    <div className="Appheader">
     <img src="logo.png" alt='company logo' className="companylogo" />
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
     <input type="text" name="search" placeholder="Search.."/>
@@ -106,6 +158,9 @@ function Product() {
       <form onSubmit={handleHome}>
         <button>Home</button>
       </form>
+      <form onSubmit={handleProduct}>
+        <button>Products</button>
+      </form>
       <form onSubmit={handleProfile}>
         <button>Profile</button>
       </form>
@@ -115,45 +170,86 @@ function Product() {
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
     </form>
-    <button>Buy Again</button>
-    <button>List</button>
-    <button>Registry</button>
-    <button>Gift Finder</button>
-    <button>Gift Card</button>
-    <button>Black Owned Businesses</button>
-    <button>Women Owned Businesses</button>
-    <button>Help</button>
-    <button>Departments</button>
-    <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
+    <form onSubmit={handleNonprofit}>
+      <button>Buy Again</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>List</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Registry</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Finder</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Card</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Black Owned Businesses</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Women Owned Businesses</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Help</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Departments</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Electronics & Office</button>
+    </form>
+    
+    <form onSubmit={handlevideogame}>
+      <button>Toys, Games and Video Games</button>
+    </form>
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
     </form>
-   
-    <button>Toys, Games and Video Games</button>
-    <button>Home Improvement</button>
-    <button>Movies, Music & Books</button>
-    <button>Patio & Garden</button>
+    <form onSubmit={handleNonprofit}>
+      <button>Home Improvement</button>
+    </form>
+     <form onSubmit={handlemusic}>
+      <button>Music</button>
+    </form>
+    <form onSubmit={handlepatio}>
+      <button>Patio & Garden</button>
+    </form>
     <button onClick={handlefoodProducts} >Food</button>
-    <button>Pets</button>
-    <button>Pharmacy, Health & Personal Care</button>
+   <form onSubmit={handlepets}>
+      <button>Pets</button>
+    </form>
+    <form onSubmit={handlepharmacy}>
+      <button>Pharmacy, Health & Personal Care</button>
+    </form>
+
+    <form onSubmit={handlesports}>
+      <button>Sports, Fitness & Outdoors</button>
+    </form>
+
     <button onClick={handlebeautyProducts} >Beauty</button>
-    <button>Sports, Fitness & Outdoors</button>
-    <button>Auto & Tire</button>
-    <button>Photos</button>
+ 
+    <form onSubmit={handleauto}>
+      <button>Auto & Tire</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Photos</button>
+    </form>
     <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
-      <button>Best Sellers</button>
-      <button>Today's Deals</button>
-      <button>Customer Service</button>
-      <button>New Releases</button>
-      <button>Near Me</button>
-      <button>Books</button>
-      <button>Fashion</button>
-      <button>Gift Cards</button>
+      <button  onClick={handleartProducts} >Best Sellers</button>
+      <button  onClick={handleartProducts} >Today's Deals</button>
+      <button  onClick={handleartProducts} >Customer Service</button>
+      <button  onClick={handleartProducts} >New Releases</button>
+      <button  onClick={handleartProducts} >Near Me</button>
+      <button  onClick={handleartProducts} >Books</button>
+      <button  onClick={handleartProducts} >Fashion</button>
+      <button  onClick={handleartProducts} >Gift Cards</button>
     </div>
     </div>
     <div className="productsliderslide">
@@ -215,36 +311,74 @@ function Product() {
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-      <button>GET TO KNOW US</button>
+    
+    <form onSubmit={handleGetknowus}>
+        <button>GET TO KNOW US</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>OUR COMPANY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>DIRECTORY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>OUR SUPPLIERS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>ADVERTISE WITH US</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>OUR SUPPLIERS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CONTACT US</button>
+    </form>
     </div>
     <div className="footer3">
-    <button>CUSTOMER SERVICE</button>
+    <form onSubmit={handleGetknowus}>
+      <button>CUSTOMER SERVICE</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>HELP CENTER</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>RETURNS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>PRODUCT RECALLS</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>ACCESSIBILTY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CONTACT US</button>
+    </form>
     </div>
     <div className="footer4">
+    <form onSubmit={handleGetknowus}>
       <button>GREYSON'S</button>
-      <button>OUR ADS</button>
-      
+    </form>
+      <form onSubmit={handleOurads}>
+        <button>OUR ADS</button>
+      </form>
        <form onSubmit={handleTermofservices}>
             <button>TERMS OF SERVICE</button>
-    </form>
-    
-    
+      </form>
+    <form onSubmit={handleGetknowus}>
       <button>PRIVACY & SECURITY</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>CA Privacy Rights</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>Do Not Sell My information</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
       <button>Request My information</button>
-      <button>Tax Exempt Program</button>
+    </form>
+    <form onSubmit={handleGetknowus}>
+      <button>Tax Exempt Program</button> 
+    </form>
     </div>
     <div className="footer5">
       <hr/>
@@ -257,4 +391,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Products;
