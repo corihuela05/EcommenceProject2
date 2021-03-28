@@ -1,0 +1,287 @@
+import React from "react";
+import ReactDOM from 'react-dom';
+import Shop from "./Shop";
+import Product from "./Product";
+import Home from "./App"
+import './App.css';
+import Cart from './Cart';
+import Nonprofit from "./Nonprofit";
+import Account from './Account';
+import FormSignup from './userlogin';
+import BeautyProducts from './beauty_products'
+import Profile from './Profile'
+import Videog from './Videogame';
+import Sportpro from './Sports';
+import './Sports.css';
+import './Baby.css';
+import './Patio.css';
+import './Pets.css';
+import './Pharmacy.css';
+
+
+function Pharmacy() {
+    
+  function handlebeautyProducts(){
+    ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
+  }
+  function handleHome(){
+    ReactDOM.render(<Home />,document.getElementById('root'));
+  }
+  function handleProduct(){
+    ReactDOM.render(<Product />,document.getElementById('root'));
+  }
+  function handleShop(){
+    ReactDOM.render(<Shop />,document.getElementById('root'));
+  }
+  function handleCart(){
+    ReactDOM.render(<Cart />,document.getElementById('root'));
+  }
+   function handleNonprofit(){
+    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+  
+  
+    function handleAccount(){
+    ReactDOM.render(<Account />,document.getElementById('root'));
+  }
+   function handleuserlogin(){
+    ReactDOM.render(<FormSignup />,document.getElementById('root'));
+  }
+  function handleProfile(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
+    function handlevideogame(){
+     ReactDOM.render(<Videog />,document.getElementById('root'));
+  }
+  
+      function handlesports(){
+     ReactDOM.render(<Sportpro />,document.getElementById('root'));
+  }
+  
+  return (
+    <div className="App">
+    <div className="Appheader">
+    <img src="logo.png" alt='company logo' className="companylogo" />
+    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
+    <input type="text" name="search" placeholder="Search.."/>
+    <form onSubmit={handleHome}>
+      <button id="homebutton">Home</button>
+    </form>
+   
+  <form onSubmit={handleAccount}>
+      <button id="info1">Sign Up</button>
+    </form>
+    <form onSubmit={handleuserlogin}>
+      <button id="info">Login</button>
+    </form>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <form onSubmit={handleCart}>
+      <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    </form>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-close" id="cancelbutton"></i>
+    </label>
+    <div className="sidebar">
+      <form onSubmit={handleHome}>
+        <button>Home</button>
+      </form>
+      <form onSubmit={handleProduct}>
+        <button>Products</button>
+      </form>
+      <form onSubmit={handleProfile}>
+        <button>Profile</button>
+      </form>
+      <form onSubmit={handleShop}>
+        <button>Shop</button>
+      </form>
+      <form onSubmit={handleNonprofit}>
+      <button>Non Profits</button>
+    </form>
+    <button>Buy Again</button>
+    <button>List</button>
+    <button>Registry</button>
+    <button>Gift Finder</button>
+    <button>Gift Card</button>
+    <button>Black Owned Businesses</button>
+    <button>Women Owned Businesses</button>
+    <button>Help</button>
+    <button>Departments</button>
+    <button>Electronics & Office</button>
+    <button>Clothing, Shoes, & Accessories</button>
+    <button>Home, Furniture & Appliances</button>
+    <form onSubmit={handlevideogame}>
+      <button>Toys, Games and Video Games</button>
+    </form>
+    <button>Home Improvement</button>
+    <button>Music</button>
+    <button>Patio & Garden</button>
+    <button>Food</button>
+    <button>Pets</button>
+    <button>Pharmacy, Health & Personal Care</button>
+    <button>Beauty</button>
+    <button>Auto & Tire</button>
+    <button>Photos</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
+    </div> 
+    </div>
+    <div className="tabs">
+      <button>Best Sellers</button>
+      <button>Today's Deals</button>
+      <button>Customer Service</button>
+      <button>New Releases</button>
+      <button>Near Me</button>
+      <button>Books</button>
+      <button>Fashion</button>
+      <button>Gift Cards</button>
+    </div>
+    </div>
+    <div class="pharmacyadjust">
+    <div class="pharmacycard1">
+        <img src="https://i5.walmartimages.com/asr/b69f74a9-2458-4ca1-a87e-3b77091eb0c4.141d935cfaa5662076b6e3d795d8af24.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="thermoeter" height="130" width="180"/>
+        <h1>iProven Forehead Thermometer</h1>
+         <p class="price">$24.99</p>
+        <p>The iProven Forehead Thermometer for Adults measures the temperature of the body. With the powerful technology of the infrared sensor.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard2">
+        <img src="https://i5.walmartimages.com/asr/3169b492-877d-4aad-afaf-c63e64eddae6.df3e6c82f4d1182544ceca55ad68966a.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="advil" height="130" width="180"/>
+        <h1>Advil Coated Tablets</h1>
+         <p class="price">$14.97</p>
+        <p>Headache, muscle aches, backaches, menstrual pain, and pains from the common cold, nothing's stronger on tough pain than Advil.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard3">
+        <img src="https://i5.walmartimages.com/asr/894a1912-0686-4334-9f63-f30f839cf25c.bdbd1d555218c0b05bcae6dfa1e1f447.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="ankle" height="130" width="180"/>
+        <h1>ACE Ankle Stabilizer</h1>
+         <p class="price">$13.05</p>
+        <p>Sometimes, all you need to stay in the game is a bit of support, and that's just what the ACE Brand Deluxe Ankle Stabilizer gives you.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard4">
+        <img src="https://i5.walmartimages.com/asr/81c24a4b-8e84-4c12-8382-bc49ac2d18a3.b23387ea4399d94cad4d97bf0c9435d7.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="nyquil" height="130" width="180"/>
+        <h1>Vicks Dayquil & Nyquil </h1>
+         <p class="price">$16.94</p>
+        <p>The Power of VICKS brought to you by the world's #1 selling cough and cold brand! Get powerful DayQuil/NyQuil SEVERE Liquid.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    
+    <div class="pharmacycard5">
+        <img src="https://i5.walmartimages.com/asr/80718e3b-6559-41be-a061-246369497b8a.f1910fd8e19997499870c6331813aaba.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="wrist" height="130" width="180"/>
+        <h1>ACE Deluxe Wrist Brace</h1>
+         <p class="price">$16.84</p>
+        <p>Get back to doing what you love with the strong, stabilizing comfort of the ACE Deluxe Wrist Stabilizer.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard6">
+        <img src="https://i5.walmartimages.com/asr/1c497c51-476b-4865-a581-48e3fed8ebe2_2.6e73464aa4956338a5df34ebb1ece449.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="bandages" height="130" width="180"/>
+        <h1>Flexible Fabric Bandages</h1>
+         <p class="price">$4.97</p>
+        <p>Protect minor cuts, scrapes, and burns from infection with Equate Antibacterial Flexible Fabric Bandages.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard7">
+        <img src="https://i5.walmartimages.com/asr/7603d9bc-9ff6-4e0d-9c02-cfd3975bbd46_1.3ebca4a1524094c57d711b5ef485e459.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="tylenol" height="130" width="180"/>
+        <h1>Tylenol Extra Strength Caplets</h1>
+         <p class="price">$14.97</p>
+        <p>Tylenol Extra Strength caplets help reduce fever and provide temporary relief of minor aches and pains.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard8">
+        <img src="https://i5.walmartimages.com/asr/e55792dd-e44e-4ffd-8c84-3d06b35aa0a7_1.c0dbb9d423564090dfffb3bd0350081d.png?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="drops" height="130" width="180"/>
+        <h1>Lubricant eye drops</h1>
+         <p class="price">$9.84</p>
+        <p>Make your dry eyes feel better with the drops doctors recommend.Refresh Tears® Lubricant Eye Drops instantly moisturizes and relieves dry.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard9">
+        <img src="https://i5.walmartimages.com/asr/f39a9d55-311a-4438-95dc-59a8cf8d45a9_1.7367cd50e770091ceeec65d49c3d2d89.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="vitaminc" height="130" width="180"/>
+        <h1>Spring Valley Vitamin C Tablets</h1>
+         <p class="price">$8.88</p>
+        <p>Vitamin C is a potent antioxidant and an essential nutrient that may support immune, cardiovascular, and bone health..</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard10">
+        <img src="https://i5.walmartimages.com/asr/988b0a72-330a-4262-a511-f229e8f91648.47455c2a58affce40957a01708cb29cb.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="biofreeze" height="130" width="180"/>
+        <h1>Biofreeze Pain Relieving Gel</h1>
+         <p class="price">$11.98</p>
+        <p>Biofreeze 3 oz. gel tube is well-suited for application on small and large muscle areas; the unique cooling menthol formula applies easily.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard11">
+        <img src="https://i5.walmartimages.com/asr/4e83b9c1-0f63-46d9-b30a-495d78ba5f68.c3b2d66932ef711c12c970915cd805e3.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="b12" height="130" width="180"/>
+        <h1>Vitamin B12 Tablets</h1>
+         <p class="price">$7.88</p>
+        <p>Keep your body fueled with these Spring Valley Vitamin B12 Tablets. Paired with the right diet, help support your metabolism, nervous system.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="pharmacycard12">
+        <img src="https://i5.walmartimages.com/asr/43131936-7421-4996-b15b-f07f8e93736f.4bf6d342bbb7b2f6be9d8bc79b5f0fed.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="icyhot" height="130" width="180"/>
+        <h1>Icy Hot Medicated Pain Relief Spray</h1>
+         <p class="price">$9.06</p>
+        <p>Experience powerful pain relief at the push of a button. Icy Hot Maximum Strength Medicated Pain Relief Dry Spray provides fast-acting.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    
+    <footer class="videogame-site-footer1">
+    <h1>About Greyson</h1>
+    <div className="footer1">
+      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
+    </div>
+    <div className="footer2">
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
+    </div>
+    <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
+      <button>RETURNS</button>
+      <button>PRODUCT RECALLS</button>
+      <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
+    </div>
+    <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
+      <button>TERMS OF SERVICE</button>
+      <button>PRIVACY & SECURITY</button>
+      <button>CA Privacy Rights</button>
+      <button>Do Not Sell My information</button>
+      <button>Request My information</button>
+      <button>Tax Exempt Program</button>
+    </div>
+    <div className="footer5">
+      <hr/>
+      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
+    </div>
+    </footer>
+    
+
+    </div>
+   </div>
+ 
+    
+  );
+}
+
+export default Pharmacy;

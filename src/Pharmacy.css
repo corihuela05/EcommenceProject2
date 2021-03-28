@@ -1,4 +1,4 @@
-.videogcard1 {
+.pharmacycard1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -12,7 +12,7 @@
   width:300px;
 }
 
-.videogcard1 button {
+.pharmacycard1 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -24,7 +24,7 @@
   font-size: 18px;
 }
 
-.videogcard1 button:hover {
+.pharmacycard1 button:hover {
   opacity: 0.7;
 }
 
@@ -33,7 +33,7 @@
   font-size: 22px;
 }
 
-.Videogameadjust{
+.pharmacyadjust{
   position:absolute;
   top:150px;
   width:100%;
@@ -43,7 +43,7 @@
   overflow-x:hidden;
 }
 
-.videogcard2 {
+.pharmacycard2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -57,7 +57,7 @@
   width:300px;
 }
 
-.videogcard2 button {
+.pharmacycard2 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -69,11 +69,11 @@
   font-size: 18px;
 }
 
-.videogcard2 button:hover {
+.pharmacycard2 button:hover {
   opacity: 0.7;
 }
 
-.videogcard3 {
+.pharmacycard3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -87,7 +87,7 @@
   width:300px;
 }
 
-.videogcard3 button {
+.pharmacycard3 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -99,12 +99,12 @@
   font-size: 18px;
 }
 
-.videogcard3 button:hover {
+.pharmacycard3 button:hover {
   opacity: 0.7;
 }
 
 
-.videogcard4 {
+.pharmacycard4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -118,7 +118,7 @@
   width:300px;
 }
 
-.videogcard4 button {
+.pharmacycard4 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -130,11 +130,11 @@
   font-size: 18px;
 }
 
-.videogcard4 button:hover {
+.pharmacycard4 button:hover {
   opacity: 0.7;
 }
 
-.videogcard5 {
+.pharmacycard5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -148,7 +148,7 @@
   width:300px;
 }
 
-.videogcard5 button {
+.pharmacycard5 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -160,11 +160,11 @@
   font-size: 18px;
 }
 
-.videogcard5 button:hover {
+.pharmacycard5 button:hover {
   opacity: 0.7;
 }
 
-.videogcard6 {
+.pharmacycard6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -178,7 +178,7 @@
   width:300px;
 }
 
-.videogcard6 button {
+.pharmacycard6 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -190,11 +190,11 @@
   font-size: 18px;
 }
 
-.videogcard6 button:hover {
+.pharmacycard6 button:hover {
   opacity: 0.7;
 }
 
-.videogcard7 {
+.pharmacycard7 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -208,7 +208,7 @@
   width:300px;
 }
 
-.videogcard7 button {
+.pharmacycard7 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -220,11 +220,11 @@
   font-size: 18px;
 }
 
-.videogcard7 button:hover {
+.pharmacycard7 button:hover {
   opacity: 0.7;
 }
 
-.videogcard8 {
+.pharmacycard8 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -238,7 +238,7 @@
   width:300px;
 }
 
-.videogcard8 button {
+.pharmacycard8 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -250,12 +250,12 @@
   font-size: 18px;
 }
 
-.videogcard8 button:hover {
+.pharmacycard8 button:hover {
   opacity: 0.7;
 }
 
 
-.videogcard9 {
+.pharmacycard9 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -269,7 +269,7 @@
   width:300px;
 }
 
-.videogcard9 button {
+.pharmacycard9 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -281,11 +281,11 @@
   font-size: 18px;
 }
 
-.videogcard9 button:hover {
+.pharmacycard9 button:hover {
   opacity: 0.7;
 }
 
-.videogcard10 {
+.pharmacycard10 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -299,7 +299,7 @@
   width:300px;
 }
 
-.videogcard10 button {
+.pharmacycard10 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -311,11 +311,11 @@
   font-size: 18px;
 }
 
-.videogcard10 button:hover {
+.pharmacycard10 button:hover {
   opacity: 0.7;
 }
 
-.videogcard11 {
+.pharmacycard11 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -329,7 +329,7 @@
   width:300px;
 }
 
-.videogcard11 button {
+.pharmacycard11 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -341,11 +341,11 @@
   font-size: 18px;
 }
 
-.videogcard11 button:hover {
+.pharmacycard11 button:hover {
   opacity: 0.7;
 }
 
-.videogcard12 {
+.pharmacycard12 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -359,7 +359,7 @@
   width:300px;
 }
 
-.videogcard12 button {
+.pharmacycard12 button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -371,7 +371,7 @@
   font-size: 18px;
 }
 
-.videogcard12 button:hover {
+.pharmacycard12 button:hover {
   opacity: 0.7;
 }
 
