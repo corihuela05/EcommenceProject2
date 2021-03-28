@@ -121,73 +121,73 @@ function Nonprofit() {
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Nativity of Our Lord Church</p>
     </div>
     
     <div className="video2">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>St. Anianus Coptic Orthodox Church</p>
     </div>
     
     <div className="video3">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Old Ship of Zion Missionary Baptist Church</p>
     </div>
     
     <div className="video4">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>First Presbyterian Church</p>
     </div>
     
     <div className="video5">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>Stonecrest Community Church</p>
     </div>
     
     <div className="video6">
     <video width="320" height="240" controls>
       <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
     </video>
-    <p>Boys and Girls Club</p>
+    <p>First Presbyterian Church</p>
     </div>
     
     <div className="nonprofisearch">
-      <h3>Search for your Non Profits</h3>
-      <h5>Name of Non Profit:</h5>
+      <h3>Search for your Church</h3>
+      <h5>Name of Church:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="name1">Special Strides</option>
-        <option value="name2">Weidhorn Family Foundation Inc.</option>
-        <option value="name3">John F Carroll Columbian Club</option>
+        <option value="name1">Saint Lucy's Church</option>
+        <option value="name2">St Antoninus Catholic Church</option>
+        <option value="name3">Cathedral Basilica of the Sacred Heart</option>
       </select>
       <h5>Type:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="type1">Educational</option>
-        <option value="type2">Scientific</option>
-        <option value="type3">Church</option>
+        <option value="type1">Eastern Orthodox</option>
+        <option value="type2">Catholic</option>
+        <option value="type3">protestant </option>
       </select>
       <h5>Category:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="category1">Category1</option>
-        <option value="category2">Category2</option>
-        <option value="category3">Category3</option>
+        <option value="category1"> Roman Catholicism,</option>
+        <option value="category2">Oriental Orthodoxy</option>
+        <option value="category3">Protestantism</option>
       </select>
       <h5>Location:</h5>
       <select>
         <option selected disabled>Select option</option>
         <option value="location1">Newark NJ</option>
-        <option value="location2">Springfield NJ</option>
-        <option value="location3">Woodbdrige NJ</option>
+        <option value="location2">Garfield NJ</option>
+        <option value="location3">Bayonne NJ</option>
       </select>
       
             <form onSubmit={handleProfile}>
@@ -196,7 +196,7 @@ function Nonprofit() {
       
     </div>
     <div className="nonprofitreview">
-      <p>Non Profit Review</p>
+      <p>Church Review</p>
       <div className="productreview">
         <img src="https://i.stack.imgur.com/l60Hf.png" alt='reviewprofile' className="logo" />
         <button><h3>Jim Clark</h3><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><p>President at BoysandGirlsClub</p></button>

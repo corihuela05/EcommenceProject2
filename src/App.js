@@ -14,9 +14,8 @@ import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
-
-
 import ArtProducts from './art_products';
+import Church from './Church';
 
 
 function App() {
@@ -34,7 +33,9 @@ function App() {
    function handleTermofservices(){
   ReactDOM.render(<Termofservice />,document.getElementById('root'));
  }
-
+  function handleChurch(){
+  ReactDOM.render(<Church/>,document.getElementById('root'));
+ }
 
 
   function handleHome(){
@@ -172,7 +173,10 @@ function App() {
       </div>
     </div>
     <div className="threebox">
+    
+          <form onSubmit={handleChurch}>
       <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg"  alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
+    </form>
       
       
       <form onSubmit={handleSchoolst}>
