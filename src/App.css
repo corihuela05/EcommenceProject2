@@ -583,3 +583,11 @@ label #cancelbutton{
   padding:5px 5px;
   outline:none;
 }
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}

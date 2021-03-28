@@ -8,39 +8,23 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products';
-import Profile from './Profile';
+import BeautyProducts from './beauty_products'
+import Profile from './Profile'
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
-import Termofservice from './Termofservices';
-import FoodProducts from './food_products';
 
 
-import ArtProducts from './art_products';
-import Church from './Church';
 
 
-function App() {
-  function handlefoodProducts(){
-    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
-  }
-  function handleartProducts(){
-    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
-  }
+
+function Termofservice() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
   
   function handleHomeandfurnitures(){
   ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
- }
- 
-   function handleTermofservices(){
-  ReactDOM.render(<Termofservice />,document.getElementById('root'));
- }
-  function handleChurch(){
-  ReactDOM.render(<Church/>,document.getElementById('root'));
  }
 
 
@@ -143,14 +127,14 @@ function App() {
     <button>Home Improvement</button>
     <button>Movies, Music & Books</button>
     <button>Patio & Garden</button>
-    <button onClick={handlefoodProducts} >Food</button>
+    <button>Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
-    <button onClick={handlebeautyProducts} >Beauty</button>
+    <button>Beauty</button>
     <button>Sports, Fitness & Outdoors</button>
     <button>Auto & Tire</button>
     <button>Photos</button>
-    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
@@ -166,59 +150,59 @@ function App() {
     </div>
     <div className="sliderslide">
     <div className="slider">
-      <div className="images">
-        <input type="radio" name="slide" id="image1" checked/>
-        <input type="radio" name="slide" id="image2" checked/>
-      
-        <img src="https://philanthropyu.org/wp-content/uploads/2020/01/1-1200-x-800.jpg" class="img1" alt="image1" />
-        <img src="http://www.epilepsy.com/sites/core/files/styles/banner_image/public/upload/image/Get%20Involved%20logo_0.jpg" class="img2" alt="image2"/>
-      </div>
-      <div className="dot">
-        <label for="image1"></label>
-        <label for="image2"></label>
-      </div>
-    </div>
-    <div className="threebox">
     
-          <form onSubmit={handleChurch}>
-      <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg"  alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
-    </form>
+    
+      <h1>Terms Of Service </h1>
+           <p>
+
+We provide services to you subject to the notices, terms, and conditions set forth in this agreement. Besides, you will obey the rules, guidelines, policies, terms, and conditions applicable to such services before you use them. We reserve the right to change this site and these terms and conditions at any time.
+
+Before proceeding, please read this agreement because accessing, browsing, or otherwise using the Site indicates your agreement to all the terms and conditions in this agreement.
+
+You shall not upload, distribute, or otherwise publish through this Site any Content, information, or other material that (a) includes any bugs, viruses, worms, trap doors, Trojan horses, or other harmful code or properties; (b) is libelous, threatening, defamatory, obscene, indecent, pornographic, discriminatory, or could give rise to any civil or criminal liability under the laws of the U.S. or the laws of any other country that may apply; or (c)violates or infringes upon the copyrights, patents, trademarks, service marks, trade secrets, or other proprietary rights of any person.  www.yourbusinessdomain may give you an account identification and password to enable you to access and use certain portions of this Site. Each time you use a password or identification, you are deemed to be authorized to access and use the Site in a manner consistent with the terms and conditions of this agreement, and
+
+www.MagEASYcase.com has no obligation to investigate the source of any such access or use of the Site.
+
+By accepting these Terms of Use through your use of the Site, you certify that you are 18 years of age or older. If you are under 18 years old please use this Site only under the supervision of a parent or legal guardian. Subject to the terms and conditions of this agreement, hereby grants you a limited, revocable, non-transferable, and non-exclusive license to access and use the Site by displaying it on your Internet browser only for the purpose of shopping and not for any commercial use or use on behalf of any third party, except as explicitly permitted by 
+
+www.MagEASYcase.com in advance. Any violation of this Agreement shall result in the immediate revocation of the license granted in this paragraph without notice to you.
+
+Unless explicitly permitted by our company in advance, all materials, including images, text, illustrations, designs, icons, photographs, programs, music clips or downloads, video clips and written and other materials that are part of this Site (collectively, the “Contents”) are intended solely for personal, non-commercial use. You may not make any commercial use of any of the information provided on the Site or make any use of the Site for the benefit of another business. We reserve the right to refuse service, terminate accounts, and/or cancel orders in its discretion, including, without limitation, if we believe that customer conduct violates applicable laws or is harmful to our interests. You may not reproduce, distribute, display, sell, lease, transmit, create derivative works from, translate, modify, reverse-engineer, disassemble, decompile, or otherwise exploit this Site or any portion of it unless expressly permitted by our company in writing.
+
+You will be solely responsible for all access to and use of this site by anyone using the password and identification originally assigned to you whether or not such access to and use of this site is actually authorized by you, including without limitation, all communications and transmissions and all obligations (including without limitation financial obligations) incurred through such access or use. You are solely responsible for protecting the security and confidentiality of the password and identification assigned to you. You shall immediately notify www.MagEASYcase.com of any unauthorized use of your password or identification or any other breach or threatened breach of this Site’s security.
+
+MagEASYcase
+New Jersey, USA
+
++1 (609) 316 -2780
+
+support@MagEASYcase.com
+
+ 
+Shop MagEASY Case  Track your order  Shipping & Delivery  Returns and Refunds  Terms Of Service  FAQ  Privacy Policy
+CLOSE
+SHOPPING CART :
+No Items in cart
+
+</p>
       
+      <div className="dot">
       
-      <form onSubmit={handleSchoolst}>
-      <button className="school"><img src="https://media2.giphy.com/media/1etn2BmiW0nOgoZHTL/source.gif" alt='school' width="150" height="100"/>School<p>1,023 videos</p></button>
-    </form>
-
-   
-       <form onSubmit={handleNonprofit}>
-            <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100"/>Non-Profits<p>2,416 videos</p></button>
-    </form>
-
+    <div>
+    
+    
+      
+ 
+      
     </div>
-    <div className="addspace">
-      <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
-    </div>
-    <div className="category">
-      <form onSubmit={handlevideogame}>
-      <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' class="thumbnail" width="150" height="200"/>VIDEO GAMES</button>
-      </form>
-      <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' class="thumbnail" width="150" height="200"/>BABY</button>
-      <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
-      <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>
-      <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
-      <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
-      <button id="sports"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+    
+    
+  
 
-      <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
-      <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
-      <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
-
+      
+      </div>
     </div>
-    <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150"/>
-    <div className="newsletter">
-      <input type="input" id="email" placeholder="Email Address"/>
-      <button id="subscribe">Subscribe</button>
-    </div>
+  
     
     
     <footer class="site-footer">
@@ -246,12 +230,7 @@ function App() {
     <div className="footer4">
       <button>GREYSON'S</button>
       <button>OUR ADS</button>
-      
-       <form onSubmit={handleTermofservices}>
-            <button>TERMS OF SERVICE</button>
-    </form>
-    
-    
+      <button>TERMS OF SERVICE</button>
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
       <button>Do Not Sell My information</button>
@@ -268,4 +247,4 @@ function App() {
   );
 }
 
-export default App;
+export default Termofservice;
