@@ -1,36 +1,163 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import App from "./App";
 import Shop from "./Shop";
-import Toyourcarts from './Cart';
+import Home from "./App"
+import './App.css';
+import Cart from './Cart';
+import Nonprofit from "./Nonprofit";
+import Account from './Account';
+import FormSignup from './userlogin';
+import BeautyProducts from './beauty_products';
+import Profile from './Profile';
+import Videog from './Videogame';
+import Homeandfurnitures from './homeandfurniture';
+import School from './Schools';
+import Termofservice from './Termofservices';
+import FoodProducts from './food_products';
+
+
+import ArtProducts from './art_products';
+import Church from './Church';
 import './Product.css';
 
 function Product() {
-   function handleHome(){
-     ReactDOM.render(<App />,document.getElementById('root'));
+ function handlefoodProducts(){
+    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
   }
-   function handleShop(){
-     ReactDOM.render(<Shop />,document.getElementById('root'));
+  function handleartProducts(){
+    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
   }
-  function handleToyourcarts(){
-     ReactDOM.render(<Toyourcarts />,document.getElementById('root'));
-   }
+  function handlebeautyProducts(){
+    ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
+  }
+  
+  function handleHomeandfurnitures(){
+  ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
+ }
+ 
+   function handleTermofservices(){
+  ReactDOM.render(<Termofservice />,document.getElementById('root'));
+ }
+  function handleChurch(){
+  ReactDOM.render(<Church/>,document.getElementById('root'));
+ }
+
+
+  function handleHome(){
+    ReactDOM.render(<Home />,document.getElementById('root'));
+  }
+  function handleShop(){
+    ReactDOM.render(<Shop />,document.getElementById('root'));
+  }
+  function handleCart(){
+    ReactDOM.render(<Cart />,document.getElementById('root'));
+  }
+   function handleNonprofit(){
+    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
+  }
+  
+   function handleSchoolst(){
+    ReactDOM.render(<School />,document.getElementById('root'));
+  }
+  
+  
+    function handleAccount(){
+    ReactDOM.render(<Account />,document.getElementById('root'));
+  }
+   function handleuserlogin(){
+    ReactDOM.render(<FormSignup />,document.getElementById('root'));
+  }
+  function handleProfile(){
+    ReactDOM.render(<Profile />,document.getElementById('root'));
+  }
+  
+    function handlevideogame(){
+     ReactDOM.render(<Videog />,document.getElementById('root'));
+  }
+  
   return (
     <div className="productlogo">
-      <img src="logo.jpg" alt='company logo' className="logo" />
+      <div className="Appheader">
+    <img src="logo.png" alt='company logo' className="companylogo" />
+    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
+    <input type="text" name="search" placeholder="Search.."/>
+    <form onSubmit={handleHome}>
+      <button id="homebutton">Home</button>
+    </form>
+   
+  <form onSubmit={handleAccount}>
+      <button id="info1">Sign Up</button>
+    </form>
+    <form onSubmit={handleuserlogin}>
+      <button id="info">Login</button>
+    </form>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <form onSubmit={handleCart}>
+      <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    </form>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-close" id="cancelbutton"></i>
+    </label>
+    <div className="sidebar">
       <form onSubmit={handleHome}>
-        <button className="producthome">Home</button>
+        <button>Home</button>
       </form>
-      <button className="productabout">About</button>
+      <form onSubmit={handleProfile}>
+        <button>Profile</button>
+      </form>
       <form onSubmit={handleShop}>
-        <button className="productshop">Shop</button>
+        <button>Shop</button>
       </form>
-      <button className="producthelp">Help</button>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-      <form onSubmit={handleToyourcarts}>
-        <button className="shopcart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
-      </form>  
-      <div className="boxs">
+      <form onSubmit={handleNonprofit}>
+      <button>Non Profits</button>
+    </form>
+    <button>Buy Again</button>
+    <button>List</button>
+    <button>Registry</button>
+    <button>Gift Finder</button>
+    <button>Gift Card</button>
+    <button>Black Owned Businesses</button>
+    <button>Women Owned Businesses</button>
+    <button>Help</button>
+    <button>Departments</button>
+    <button>Electronics & Office</button>
+    <button>Clothing, Shoes, & Accessories</button>
+    
+      <form onSubmit={handleHomeandfurnitures}>
+       <button>Home, Furniture & Appliances</button>
+    </form>
+   
+    <button>Toys, Games and Video Games</button>
+    <button>Home Improvement</button>
+    <button>Movies, Music & Books</button>
+    <button>Patio & Garden</button>
+    <button onClick={handlefoodProducts} >Food</button>
+    <button>Pets</button>
+    <button>Pharmacy, Health & Personal Care</button>
+    <button onClick={handlebeautyProducts} >Beauty</button>
+    <button>Sports, Fitness & Outdoors</button>
+    <button>Auto & Tire</button>
+    <button>Photos</button>
+    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+    </div> 
+    </div>
+    <div className="tabs">
+      <button>Best Sellers</button>
+      <button>Today's Deals</button>
+      <button>Customer Service</button>
+      <button>New Releases</button>
+      <button>Near Me</button>
+      <button>Books</button>
+      <button>Fashion</button>
+      <button>Gift Cards</button>
+    </div>
+    </div>
+    <div className="productsliderslide">
+    <div className="boxs">
           <li><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod01/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image1" width="100" height="100"/><ul id="active"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod01/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image1" /></ul></li>
           <li><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod02/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image2" width="100" height="100"/> <ul><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod02/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image2" /></ul></li>
           <li><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod03/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image3" width="100" height="100"/> <ul><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/586449/01/mod03/fnd/PNA/fmt/png/Essentials-Men's-Logo-Tee" alt="image3" /></ul></li>
@@ -82,18 +209,48 @@ function Product() {
         <p>This T-shirt is too expensive, and it's not worth it.</p>
       </div>
     </div>
-    <div className="productfooter">
-    <form onSubmit={handleHome}>
-      <button className="homePosition">Home</button>
-    </form>  
-      <button className="aboutPosition">About</button>
-    <form onSubmit={handleShop}>
-      <button className="shopPosition">Shop</button>
-    </form>
-      <button className="helpPosition">Help</button>
+    <footer class="product-site-footer">
+    <h1>About Greyson</h1>
+    <div className="footer1">
+      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
-    <div className="productcopyright">
-      <p>© Greyson</p>
+    <div className="footer2">
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
+    </div>
+    <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
+      <button>RETURNS</button>
+      <button>PRODUCT RECALLS</button>
+      <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
+    </div>
+    <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
+      
+       <form onSubmit={handleTermofservices}>
+            <button>TERMS OF SERVICE</button>
+    </form>
+    
+    
+      <button>PRIVACY & SECURITY</button>
+      <button>CA Privacy Rights</button>
+      <button>Do Not Sell My information</button>
+      <button>Request My information</button>
+      <button>Tax Exempt Program</button>
+    </div>
+    <div className="footer5">
+      <hr/>
+      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
+    </div>
+    </footer>
     </div>
     </div>
     
