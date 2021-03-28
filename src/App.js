@@ -16,12 +16,15 @@ import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
 
-
+import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 
 
 function App() {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
   function handlefoodProducts(){
     ReactDOM.render(<FoodProducts />,document.getElementById('root'));
   }
@@ -133,7 +136,7 @@ function App() {
     <button>Help</button>
     <button>Departments</button>
     <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
