@@ -8,41 +8,23 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products';
-import Profile from './Profile';
+import BeautyProducts from './beauty_products'
+import Profile from './Profile'
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
-import Termofservice from './Termofservices';
-import ArtProducts from './art_products';
-import Church from './Church';
-import Gettoknowus from './Gettoknowus';
 
 
 
 
-function App() {
-  function handleartProducts(){
-    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
-  }
+
+function Gettoknowus() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
   
   function handleHomeandfurnitures(){
   ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
- }
- 
-   function handleTermofservices(){
-  ReactDOM.render(<Termofservice />,document.getElementById('root'));
- }
-  function handleChurch(){
-  ReactDOM.render(<Church/>,document.getElementById('root'));
- }
- 
- 
-   function handleGetknowus(){
-  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
  }
 
 
@@ -80,8 +62,6 @@ function App() {
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
-  
-  
   
   
   return (
@@ -150,11 +130,11 @@ function App() {
     <button>Food</button>
     <button>Pets</button>
     <button>Pharmacy, Health & Personal Care</button>
-    <button onClick={handlebeautyProducts} >Beauty</button>
+    <button>Beauty</button>
     <button>Sports, Fitness & Outdoors</button>
     <button>Auto & Tire</button>
     <button>Photos</button>
-    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+    <button>Art, Craft, Sewing & Party Supplies</button>
     </div> 
     </div>
     <div className="tabs">
@@ -170,59 +150,70 @@ function App() {
     </div>
     <div className="sliderslide">
     <div className="slider">
-      <div className="images">
-        <input type="radio" name="slide" id="image1" checked/>
-        <input type="radio" name="slide" id="image2" checked/>
-      
-        <img src="https://philanthropyu.org/wp-content/uploads/2020/01/1-1200-x-800.jpg" class="img1" alt="image1" />
-        <img src="http://www.epilepsy.com/sites/core/files/styles/banner_image/public/upload/image/Get%20Involved%20logo_0.jpg" class="img2" alt="image2"/>
-      </div>
-      <div className="dot">
-        <label for="image1"></label>
-        <label for="image2"></label>
-      </div>
-    </div>
-    <div className="threebox">
     
-          <form onSubmit={handleChurch}>
-      <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg"  alt='church' width="150" height="100"/>Church<p>1,782 videos</p></button>
-    </form>
+    
+      <h1>Get to Know US! </h1>
+           <p>
+
+
+
+
+</p>
+      <div classname="title">
+  <a href="#">
+    <h2>Experienced & Professional Team</h2>
+  </a>
+</div>
+<div classname="subtitle">
+  <a href="#">
+    <h4> You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h4>
+  </a>
+</div>
+
+  <div classname="column">
+      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="" width="200" height="200" />
+      <h5>Michael Doe</h5>
+      <h6>Property Specialist</h6>
+      <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+    </div>
+      <div classname="column">
+      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="" width="200" height="200" />
+      <h5>Jennifer Jane </h5>
+      <h6>Property Specialist</h6>
+      <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+    </div>
+      <div classname="column">
+        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="" width="200" height="200"  />
+        <h5>Christopher Doe</h5>
+        <h6>Property Specialist</h6>
+        <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+      </div>
       
+        <div classname="column">
+        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="" width="200" height="200"  />
+        <h5>James Johnson </h5>
+        <h6>Property Specialist</h6>
+        <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+      </div>
+
+
+      <div className="dot">
       
-      <form onSubmit={handleSchoolst}>
-      <button className="school"><img src="https://media2.giphy.com/media/1etn2BmiW0nOgoZHTL/source.gif" alt='school' width="150" height="100"/>School<p>1,023 videos</p></button>
-    </form>
-
-   
-       <form onSubmit={handleNonprofit}>
-            <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100"/>Non-Profits<p>2,416 videos</p></button>
-    </form>
-
+    <div>
+    
+    
+      
+ 
+      
     </div>
-    <div className="addspace">
-      <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180"/>ADD SPACE</button>
-    </div>
-    <div className="category">
-      <form onSubmit={handlevideogame}>
-      <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif"  alt='games' class="thumbnail" width="150" height="200"/>VIDEO GAMES</button>
-      </form>
-      <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif"  alt='baby' class="thumbnail" width="150" height="200"/>BABY</button>
-      <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail"  alt='patio' width="150" height="200"/>PATIO</button>
-      <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif"  alt='pets' class="thumbnail" width="150" height="200"/>PETS</button>
-      <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif"  alt='pharmacy' class="thumbnail"  width="150" height="200"/>PHARMACY</button>
-      <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
-      <button id="sports"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty'  class="thumbnail" width="150" height="200" onClick={handlebeautyProducts}/>BEAUTY</button>
+    
+    
+  
 
-      <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
-      <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
-      <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
-
+      
+      </div>
     </div>
-    <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150"/>
-    <div className="newsletter">
-      <input type="input" id="email" placeholder="Email Address"/>
-      <button id="subscribe">Subscribe</button>
-    </div>
+  
     
     
     <footer class="site-footer">
@@ -231,11 +222,7 @@ function App() {
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-    
-        <form onSubmit={handleGetknowus}>
-            <button>GET TO KNOW US</button>
-    </form>
-     
+      <button>GET TO KNOW US</button>
       <button>OUR COMPANY</button>
       <button>DIRECTORY</button>
       <button>OUR SUPPLIERS</button>
@@ -254,24 +241,13 @@ function App() {
     <div className="footer4">
       <button>GREYSON'S</button>
       <button>OUR ADS</button>
-      
-       <form onSubmit={handleTermofservices}>
-            <button>TERMS OF SERVICE</button>
-    </form>
-    
-    
+      <button>TERMS OF SERVICE</button>
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
       <button>Do Not Sell My information</button>
       <button>Request My information</button>
-      
-      <button>Tax Exempt Program</button> 
-      
+      <button>Tax Exempt Program</button>
     </div>
-     
-        
-    
-    
     <div className="footer5">
       <hr/>
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
@@ -282,4 +258,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gettoknowus;
