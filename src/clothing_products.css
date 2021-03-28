@@ -1,0 +1,493 @@
+.clothingcard1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0; 
+  }
+  
+  .clothingcard1 button:hover {
+    opacity: 0.7;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .Clothingadjust{
+    position:absolute;
+    top:150px;
+    width:100%;
+    height:77%;
+    left:0%;
+    overflow:scroll;
+    overflow-x:hidden;
+  }
+  
+  .clothingcard2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard2 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard3 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .clothingcard4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard4 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard4 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard5 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+   }
+  
+  .clothingcard5 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard6 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard6 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard6 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard7 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard7 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard7 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard8 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard8 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard8 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .clothingcard9 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard9 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard9 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard10 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard10 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard10 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard11 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard11 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard11 button:hover {
+    opacity: 0.7;
+  }
+  
+  .clothingcard12 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .clothingcard12 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .clothingcard12 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .clothing-site-footer1
+  {
+    position:absolute;
+    top:1350px;
+    width:100%;
+    height:430px;
+    background-color:#26272b;
+    color:white;
+    padding:15px;
+    text-align:center;
+    
+  }
+  
+  .clothing-site-footer1 .footer1 button{
+    position:absolute;
+    left:250px;
+    top:80px;
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    outline:none;
+  }
+  
+  .clothing-site-footer1 .footer2 {
+    position:absolute;
+    top:110px;
+    left:500px;
+    width:180px;
+  }
+  .clothing-site-footer1 .footer2 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .clothing-site-footer1 .footer3 {
+    position:absolute;
+    top:110px;
+    left:650px;
+    width:180px;
+  }
+  .clothing-site-footer1 .footer3 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .clothing-site-footer1 .footer4 {
+    position:absolute;
+    top:110px;
+    left:850px;
+    width:180px;
+  }
+  .clothing-site-footer1 .footer4 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .clothing-site-footer1 .footer5 {
+    position:absolute;
+    top:350px;
+    left:60px;
+    width:1220px;
+    text-align:left;
+  }
+  .clothing-site-footer1 .footer5 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }

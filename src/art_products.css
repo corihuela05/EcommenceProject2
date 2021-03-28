@@ -1,0 +1,493 @@
+.artcard1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0; 
+  }
+  
+  .artcard1 button:hover {
+    opacity: 0.7;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .Artadjust{
+    position:absolute;
+    top:150px;
+    width:100%;
+    height:77%;
+    left:0%;
+    overflow:scroll;
+    overflow-x:hidden;
+  }
+  
+  .artcard2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard2 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard3 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .artcard4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:0px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard4 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard4 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard5 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+   }
+  
+  .artcard5 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard6 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard6 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard6 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard7 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard7 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard7 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard8 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:450px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard8 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard8 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .artcard9 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:80px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard9 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard9 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard10 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:440px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard10 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard10 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard11 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:790px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard11 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard11 button:hover {
+    opacity: 0.7;
+  }
+  
+  .artcard12 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    position: absolute;
+    left:1140px;
+    top:900px;
+    height:398px;
+    width:300px;
+  }
+  
+  .artcard12 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position:absolute;                 
+    bottom:0;                         
+    right:0;
+  }
+  
+  .artcard12 button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .art-site-footer1
+  {
+    position:absolute;
+    top:1350px;
+    width:100%;
+    height:430px;
+    background-color:#26272b;
+    color:white;
+    padding:15px;
+    text-align:center;
+    
+  }
+  
+  .art-site-footer1 .footer1 button{
+    position:absolute;
+    left:250px;
+    top:80px;
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    outline:none;
+  }
+  
+  .art-site-footer1 .footer2 {
+    position:absolute;
+    top:110px;
+    left:500px;
+    width:180px;
+  }
+  .art-site-footer1 .footer2 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .art-site-footer1 .footer3 {
+    position:absolute;
+    top:110px;
+    left:650px;
+    width:180px;
+  }
+  .art-site-footer1 .footer3 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .art-site-footer1 .footer4 {
+    position:absolute;
+    top:110px;
+    left:850px;
+    width:180px;
+  }
+  .art-site-footer1 .footer4 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
+  
+  .art-site-footer1 .footer5 {
+    position:absolute;
+    top:350px;
+    left:60px;
+    width:1220px;
+    text-align:left;
+  }
+  .art-site-footer1 .footer5 button{
+    width:180px;
+    background-color:#26272b;
+    border:none;
+    padding:5px 5px;
+    outline:none;
+  }
