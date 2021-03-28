@@ -1,3 +1,4 @@
+import './Sports.css';
 import React from "react";
 import ReactDOM from 'react-dom';
 import Shop from "./Shop";
@@ -8,17 +9,58 @@ import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
-import BeautyProducts from './beauty_products'
-import Profile from './Profile'
+import BeautyProducts from './beauty_products';
+import Profile from './Profile';
 import Videog from './Videogame';
 import Sportpro from './Sports';
-import './Sports.css';
+import Baby from './Baby';
+import Patio from './Patio';
+import Pets from './Pets';
+import Pharmacy from './Pharmacy';
+import Auto from './Auto';
+import Music from './Music';
+import Homeandfurnitures from './homeandfurniture';
+import School from './Schools';
+import Termofservice from './Termofservices';
+import FoodProducts from './food_products';
+import Ourads from './Ourads'
+import ClothingProducts from './clothing_products';
+import ArtProducts from './art_products';
+import Church from './Church';
+import Gettoknowus from './Gettoknowus';
 
 
-function Sports() {
+function Sport () {
+  function handleclothingProducts(){
+    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
+  }
+  function handlefoodProducts(){
+    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
+  }
+  function handleartProducts(){
+    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
+  }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
+ 
+  function handleHomeandfurnitures(){
+  ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
+ }
+ 
+   function handleTermofservices(){
+  ReactDOM.render(<Termofservice />,document.getElementById('root'));
+ }
+  function handleChurch(){
+  ReactDOM.render(<Church/>,document.getElementById('root'));
+ }
+ 
+ 
+   function handleGetknowus(){
+  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
+ }
+
+
   function handleHome(){
     ReactDOM.render(<Home />,document.getElementById('root'));
   }
@@ -34,8 +76,12 @@ function Sports() {
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
   }
-  
-  
+ 
+   function handleSchoolst(){
+    ReactDOM.render(<School />,document.getElementById('root'));
+  }
+ 
+ 
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
   }
@@ -45,15 +91,43 @@ function Sports() {
   function handleProfile(){
     ReactDOM.render(<Profile />,document.getElementById('root'));
   }
-  
+ 
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
-  
-      function handlesports(){
+    function handlesports(){
      ReactDOM.render(<Sportpro />,document.getElementById('root'));
   }
-  
+ 
+    function handlebaby(){
+     ReactDOM.render(<Baby />,document.getElementById('root'));
+  }
+ 
+    function handlepatio(){
+     ReactDOM.render(<Patio />,document.getElementById('root'));
+  }
+ 
+    function handlepets(){
+     ReactDOM.render(<Pets />,document.getElementById('root'));
+  }
+ 
+    function handlepharmacy(){
+     ReactDOM.render(<Pharmacy />,document.getElementById('root'));
+  }
+ 
+    function handleauto(){
+     ReactDOM.render(<Auto />,document.getElementById('root'));
+  }
+ 
+    function handlemusic(){
+     ReactDOM.render(<Music />,document.getElementById('root'));
+  }
+ 
+  function handleOurads(){
+     ReactDOM.render(<Ourads />,document.getElementById('root'));
+  }
+
+
   return (
     <div className="App">
     <div className="Appheader">
@@ -97,44 +171,90 @@ function Sports() {
       <form onSubmit={handleNonprofit}>
       <button>Non Profits</button>
     </form>
-    <button>Buy Again</button>
-    <button>List</button>
-    <button>Registry</button>
-    <button>Gift Finder</button>
-    <button>Gift Card</button>
-    <button>Black Owned Businesses</button>
-    <button>Women Owned Businesses</button>
-    <button>Help</button>
-    <button>Departments</button>
-    <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
-    <button>Home, Furniture & Appliances</button>
+    <form onSubmit={handleNonprofit}>
+      <button>Buy Again</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>List</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Registry</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Finder</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Gift Card</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Black Owned Businesses</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Women Owned Businesses</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Help</button>
+    </form>  
+    <form onSubmit={handleNonprofit}>
+      <button>Departments</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Electronics & Office</button>
+    </form>
+   
     <form onSubmit={handlevideogame}>
       <button>Toys, Games and Video Games</button>
     </form>
-    <button>Home Improvement</button>
-    <button>Music</button>
-    <button>Patio & Garden</button>
-    <button>Food</button>
-    <button>Pets</button>
-    <button>Pharmacy, Health & Personal Care</button>
-    <button>Beauty</button>
-    <button>Auto & Tire</button>
-    <button>Photos</button>
-    <button>Art, Craft, Sewing & Party Supplies</button>
-    </div> 
+    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+   
+      <form onSubmit={handleHomeandfurnitures}>
+       <button>Home, Furniture & Appliances</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Home Improvement</button>
+    </form>
+     <form onSubmit={handlemusic}>
+      <button>Music</button>
+    </form>
+    <form onSubmit={handlepatio}>
+      <button>Patio & Garden</button>
+    </form>
+    <button onClick={handlefoodProducts} >Food</button>
+   <form onSubmit={handlepets}>
+      <button>Pets</button>
+    </form>
+    <form onSubmit={handlepharmacy}>
+      <button>Pharmacy, Health & Personal Care</button>
+    </form>
+
+    <form onSubmit={handlesports}>
+      <button>Sports, Fitness & Outdoors</button>
+    </form>
+
+    <button onClick={handlebeautyProducts} >Beauty</button>
+ 
+    <form onSubmit={handleauto}>
+      <button>Auto & Tire</button>
+    </form>
+    <form onSubmit={handleNonprofit}>
+      <button>Photos</button>
+    </form>
+    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+    </div>
     </div>
     <div className="tabs">
-      <button>Best Sellers</button>
-      <button>Today's Deals</button>
-      <button>Customer Service</button>
-      <button>New Releases</button>
-      <button>Near Me</button>
-      <button>Books</button>
-      <button>Fashion</button>
-      <button>Gift Cards</button>
+      <button  onClick={handleartProducts} >Best Sellers</button>
+      <button  onClick={handleartProducts} >Today's Deals</button>
+      <button  onClick={handleartProducts} >Customer Service</button>
+      <button  onClick={handleartProducts} >New Releases</button>
+      <button  onClick={handleartProducts} >Near Me</button>
+      <button  onClick={handleartProducts} >Books</button>
+      <button  onClick={handleartProducts} >Fashion</button>
+      <button  onClick={handleartProducts} >Gift Cards</button>
     </div>
     </div>
+
+
     <div class="sportadjust">
     <div class="sportcard1">
         <img src="https://www.thecricketsquare.com/wp-content/uploads/2019/01/MRF-Virat-Kohli-Run-Machine-English-Willow-Cricket-Bat-SH-2.jpg" alt="bat" height="130" width="180"/>
@@ -279,4 +399,4 @@ function Sports() {
   );
 }
 
-export default Sports;
+export default Sport;

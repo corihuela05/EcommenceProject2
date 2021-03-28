@@ -22,12 +22,11 @@ import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
-
+import Ourads from './Ourads'
 import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
-
 
 
 
@@ -124,9 +123,10 @@ function App() {
      ReactDOM.render(<Music />,document.getElementById('root'));
   }
   
-  
-  
-  
+  function handleOurads(){
+     ReactDOM.render(<Ourads />,document.getElementById('root'));
+  }
+
   return (
     <div className="App">
     <div className="Appheader">
@@ -180,26 +180,37 @@ function App() {
     <button>Help</button>
     <button>Departments</button>
     <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
+
     <form onSubmit={handlevideogame}>
-      <button>Toys, Games and Video Games</button>
+      <button>Video Games</button>
     </form>
     <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
     
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
     </form>
+
     <button>Home Improvement</button>
-    <button>Music</button>
-    <button>Patio & Garden</button>
+    <form onSubmit={handlemusic}>
+      <button>Music</button>
+    </form>
+    <form onSubmit={handlepatio}>
+      <button>Patio & Garden</button>
+    </form>
     <button onClick={handlefoodProducts} >Food</button>
-    <button>Pets</button>
-    <button>Pharmacy, Health & Personal Care</button>
+    <form onSubmit={handlepets}>
+      <button>Pets</button>
+    </form>
+    <form onSubmit={handlepharmacy}>
+      <button>Pharmacy, Health & Personal Care</button>
+    </form>
     <form onSubmit={handlesports}>
       <button>Sports, Fitness & Outdoors</button>
     </form>
     <button onClick={handlebeautyProducts} >Beauty</button>
-    <button>Auto & Tire</button>
+    <form onSubmit={handleauto}>
+      <button>Auto & Tire</button>
+    </form>
     <button>Photos</button>
     <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
     </div> 
@@ -269,9 +280,11 @@ function App() {
       <form onSubmit={handlesports}>
       <button id="sports"><img src="http://cdn.lowgif.com/full/af53e1302b915b40-.gif" alt='sports' class="thumbnail"width="150" height="200"/>SPORTS</button>
       </form>
+    
       <form onSubmit={handleauto}>
       <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200"/>AUTO</button>
       </form>
+    
       <form onSubmit={handlemusic}>
       <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200"/>MUSIC</button>
       </form>
@@ -312,12 +325,13 @@ function App() {
     </div>
     <div className="footer4">
       <button>GREYSON'S</button>
-      <button>OUR ADS</button>
-      
+    
+      <form onSubmit={handleOurads}>
+        <button>OUR ADS</button>
+      </form>
        <form onSubmit={handleTermofservices}>
             <button>TERMS OF SERVICE</button>
-    </form>
-    
+      </form>
     
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
