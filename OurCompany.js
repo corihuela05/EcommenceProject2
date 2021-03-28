@@ -16,11 +16,14 @@ import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Donotsellmyinformation from './Donotsellmyinformation';
 import Taxexemptprogram from '/TaxExemptProgram';
+import OurServices from '/Our Company';
 
 
 
 function handleTermofservice() {
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
+    function OurCompany() {
+        ReactDOM.render(<OurCompany />,document.getElementById('root'));
 
     function handleTaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram />,document.getElementById('root'));
