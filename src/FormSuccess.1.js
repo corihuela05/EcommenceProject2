@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./Form.css";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Nonprofit from "./Nonprofit";
+
 import App from "./App";
 
 
@@ -17,23 +19,21 @@ const FormSuccess = () => {
         setTimeout(() => {
             switch (userType) {
                 case "admin":
+                    <Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
                     break;
-                case "nonprofit":
-                    ReactDOM.render(<Nonprofit />, document.getElementById("root"));
+                    case "nonprofit":
+                    ReactDOM.render(<App username="Nonprofit" isLoggedIn={true} />, document.getElementById("root"));
                     break;
                 case "buyer":
-                    ReactDOM.render(<App />, document.getElementById("root"));
+                    //ReactDOM.render(<App username="User" isLoggedIn={true} />, document.getElementById("root"));
+                    <Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
                     break;
                 default:
                     break;
             }
         }, 1000);
 
-        /*
-          admin -> Sellers
-          buyers
-          nonprofit -> dashboard?
-        */
+
     };
 
     return (
