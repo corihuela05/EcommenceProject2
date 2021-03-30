@@ -13,12 +13,22 @@ import Profile from './Profile'
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
-
-
+import { useState } from "react";
 
 
 
 function Gettoknowus() {
+     const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -73,13 +83,30 @@ function Gettoknowus() {
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
-   
-  <form onSubmit={handleAccount}>
-      <button id="info1">Sign Up</button>
-    </form>
-    <form onSubmit={handleuserlogin}>
-      <button id="info">Login</button>
-    </form>
+                {isLoggedIn ? (
+                    <div>
+                        <div>
+                            <form>
+                                <button id="info">{username}</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form onSubmit={handleuserlogout}>
+                                <button id="info1">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                ) : (
+                        <>
+                            <form onSubmit={handleuserlogin}>
+                                <button id="info">Login</button>
+                            </form>
+                            <form onSubmit={handleAccount}>
+                                <button id="info1">Sign Up</button>
+                            </form>
+                        </>
+                    )}
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
