@@ -90,15 +90,8 @@ function App() {
     function handleGetknowus() {
         ReactDOM.render(<Gettoknowus />, document.getElementById('root'));
     }
-
-
     function handleHome() {
-        if(isLoggedIn){
-            ReactDOM.render(<App username={username} isLoggedIn={true} />, document.getElementById('root'));
-        }
-        else{
-                    ReactDOM.render(<App />, document.getElementById('root'));
-        }
+               ReactDOM.render(<App />, document.getElementById('root'));
     }
     function handleProduct() {
         ReactDOM.render(<Product />, document.getElementById('root'));
