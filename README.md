@@ -58,6 +58,3 @@ c. 'add more info as we go here'
 `Nonprofit:`
  `email: nonprofit@nonprofit.com`
  `password: nonprofit`
-
-Use following command to allow user to stay logged in throughout react:   
-npm install axios 
