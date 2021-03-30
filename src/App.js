@@ -27,8 +27,14 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import { useState } from "react";
 
-function App({ isLoggedIn, username }) {
+function App() {
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
 
     function loginButton(props) {
         <div>
@@ -41,17 +47,19 @@ function App({ isLoggedIn, username }) {
         </div>;
     }
 
-    function logout(props) {
+  /*  function logout(props) {
         <form onSubmit={handleuserlogout}>
             <button id="info">Logout</button>
         </form>;
         isLoggedIn = false;
-    }
+    }*/
     function handleuserlogout() {
-        ReactDOM.render(
+        /*ReactDOM.render(
             <App isLoggedIn={false} />,
             document.getElementById("root")
-        );
+            );*/
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
     }
 
     function handleclothingProducts() {
@@ -223,8 +231,14 @@ function App({ isLoggedIn, username }) {
                             <button>Non Profits</button>
                         </form>
                         <button>Buy Again</button>
+                        <button>List</button>
+                        <button>Registry</button>
+                        <button>Gift Finder</button>
+                        <button>Gift Card</button>
                         <button>Black Owned Businesses</button>
                         <button>Women Owned Businesses</button>
+                        <button>Help</button>
+                        <button>Departments</button>
                         <button>Electronics & Office</button>
 
 
@@ -254,6 +268,7 @@ function App({ isLoggedIn, username }) {
 
 
                         <button>Auto & Tire</button>
+                        <button>Photos</button>
                         <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
