@@ -28,36 +28,27 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import { useState } from "react";
 
 
 function Musics () {
-  function handleclothingProducts(){
-    ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
-  }
-  function handlefoodProducts(){
-    ReactDOM.render(<FoodProducts />,document.getElementById('root'));
-  }
-  function handleartProducts(){
-    ReactDOM.render(<ArtProducts />,document.getElementById('root'));
-  }
+     const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
- 
+  
   function handleHomeandfurnitures(){
   ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
- }
- 
-   function handleTermofservices(){
-  ReactDOM.render(<Termofservice />,document.getElementById('root'));
- }
-  function handleChurch(){
-  ReactDOM.render(<Church/>,document.getElementById('root'));
- }
- 
- 
-   function handleGetknowus(){
-  ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
  }
 
 
@@ -76,12 +67,12 @@ function Musics () {
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
   }
- 
+  
    function handleSchoolst(){
     ReactDOM.render(<School />,document.getElementById('root'));
   }
- 
- 
+  
+  
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
   }
@@ -91,43 +82,12 @@ function Musics () {
   function handleProfile(){
     ReactDOM.render(<Profile />,document.getElementById('root'));
   }
- 
+  
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
-    function handlesports(){
-     ReactDOM.render(<Sportpro />,document.getElementById('root'));
-  }
- 
-    function handlebaby(){
-     ReactDOM.render(<Baby />,document.getElementById('root'));
-  }
- 
-    function handlepatio(){
-     ReactDOM.render(<Patio />,document.getElementById('root'));
-  }
- 
-    function handlepets(){
-     ReactDOM.render(<Pets />,document.getElementById('root'));
-  }
- 
-    function handlepharmacy(){
-     ReactDOM.render(<Pharmacy />,document.getElementById('root'));
-  }
- 
-    function handleauto(){
-     ReactDOM.render(<Auto />,document.getElementById('root'));
-  }
- 
-    function handlemusic(){
-     ReactDOM.render(<Music />,document.getElementById('root'));
-  }
- 
-  function handleOurads(){
-     ReactDOM.render(<Ourads />,document.getElementById('root'));
-  }
-
-
+  
+  
   return (
     <div className="App">
     <div className="Appheader">
@@ -137,13 +97,30 @@ function Musics () {
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
-   
-  <form onSubmit={handleAccount}>
-      <button id="info1">Sign Up</button>
-    </form>
-    <form onSubmit={handleuserlogin}>
-      <button id="info">Login</button>
-    </form>
+                {isLoggedIn ? (
+                    <div>
+                        <div>
+                            <form>
+                                <button id="info">{username}</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form onSubmit={handleuserlogout}>
+                                <button id="info1">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                ) : (
+                        <>
+                            <form onSubmit={handleuserlogin}>
+                                <button id="info">Login</button>
+                            </form>
+                            <form onSubmit={handleAccount}>
+                                <button id="info1">Sign Up</button>
+                            </form>
+                        </>
+                    )}
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
