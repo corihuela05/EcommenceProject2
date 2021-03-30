@@ -223,14 +223,10 @@ function App({ isLoggedIn, username }) {
                             <button>Non Profits</button>
                         </form>
                         <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
                         <button>Gift Finder</button>
                         <button>Gift Card</button>
                         <button>Black Owned Businesses</button>
                         <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
                         <button>Electronics & Office</button>
 
 
@@ -260,7 +256,6 @@ function App({ isLoggedIn, username }) {
 
 
                         <button>Auto & Tire</button>
-                        <button>Photos</button>
                         <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
