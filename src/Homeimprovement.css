@@ -1,0 +1,457 @@
+.sportcard1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:20px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard1 button:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.sportadjust{
+  position:absolute;
+  top:150px;
+  width:100%;
+  height:77%;
+  left:0%;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.sportcard2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:20px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard2 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:20px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard3 button:hover {
+  opacity: 0.7;
+}
+
+
+.sportcard4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:20px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard4 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:470px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard5 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard6 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:470px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard6 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard7 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:470px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard7 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard8 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:470px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard8 button:hover {
+  opacity: 0.7;
+}
+
+
+.sportcard9 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:80px;
+  top:920px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard9 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard10 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:440px;
+  top:920px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard10 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard11 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:790px;
+  top:920px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard11 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard11 button:hover {
+  opacity: 0.7;
+}
+
+.sportcard12 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  position: absolute;
+  left:1140px;
+  top:920px;
+  height:398px;
+  width:300px;
+}
+
+.sportcard12 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sportcard12 button:hover {
+  opacity: 0.7;
+}
+
+
+.videogame-site-footer1
+{
+  position:absolute;
+  top:1370px;
+  width:100%;
+  height:430px;
+  background-color:#26272b;
+  color:white;
+  padding:15px;
+  text-align:center;
+
+}
+
+.videogame-site-footer1 .footer1 button{
+  position:absolute;
+  left:250px;
+  top:80px;
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer2 {
+  position:absolute;
+  top:110px;
+  left:500px;
+  width:180px;
+}
+.videogame-site-footer1 .footer2 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer3 {
+  position:absolute;
+  top:110px;
+  left:650px;
+  width:180px;
+}
+.videogame-site-footer1 .footer3 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer4 {
+  position:absolute;
+  top:110px;
+  left:850px;
+  width:180px;
+}
+.videogame-site-footer1 .footer4 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.videogame-site-footer1 .footer5 {
+  position:absolute;
+  top:350px;
+  left:60px;
+  width:1220px;
+  text-align:left;
+}
+.videogame-site-footer1 .footer5 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}

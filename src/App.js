@@ -12,6 +12,7 @@ import BeautyProducts from './beauty_products';
 import Profile from './Profile';
 import Videog from './Videogame';
 import Sportpro from './Sports';
+import Homeimpro from './Homeimprovement';
 import Baby from './Baby';
 import Patio from './Patio';
 import Auto from './Auto';
@@ -78,7 +79,9 @@ function App({ isLoggedIn, username }) {
         ReactDOM.render(<Church />, document.getElementById('root'));
     }
 
-
+    function handleHomeimprov() {
+        ReactDOM.render(<Homeimpro />, document.getElementById('root'));
+    }
     function handleGetknowus() {
         ReactDOM.render(<Gettoknowus />, document.getElementById('root'));
     }
@@ -239,7 +242,7 @@ function App({ isLoggedIn, username }) {
                             <button>Home, Furniture & Appliances</button>
                         </form>
 
-                        <button>Home Improvement</button>
+                        <button onClick={handleHomeimprov}>Home Improvement</button>
                         <button>Music</button>
                         <button>Patio & Garden</button>
                         <button onClick={handlefoodProducts} >Food</button>
