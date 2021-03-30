@@ -8,9 +8,21 @@ import Shipshop from "./Shop";
 import './Account.css';
 import Form from './Form';
 import FormSignup from './userlogin';
+import { useState } from "react";
+
 
 function Accounts() {
-    
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
     function handleHome(){
      ReactDOM.render(<App />,document.getElementById('root'));
     }
@@ -37,11 +49,30 @@ function Accounts() {
       <form onSubmit={handleShipshop}>
       <button className="topshop">Shop</button>
       </form>
-      
-      <form onSubmit={handleuserlogin}>
-      <button className="tophelp">login in</button>
-      </form>
-     
+                {isLoggedIn ? (
+                    <div>
+                        <div>
+                            <form>
+                                <button id="info">{username}</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form onSubmit={handleuserlogout}>
+                                <button id="info1">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                ) : (
+                        <>
+                            <form onSubmit={handleuserlogin}>
+                                <button id="info">Login</button>
+                            </form>
+                            <form onSubmit={handleAccount}>
+                                <button id="info1">Sign Up</button>
+                            </form>
+                        </>
+                    )}
+
       <button className="carts"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
       </div>
