@@ -180,7 +180,7 @@ function App({ isLoggedIn, username }) {
                         </div>
                         <div>
                             <form onSubmit={handleuserlogout}>
-                                <button id="info">Logout</button>
+                                <button id="info1">Logout</button>
                             </form>
                         </div>
                     </div>
