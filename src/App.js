@@ -223,8 +223,6 @@ function App({ isLoggedIn, username }) {
                             <button>Non Profits</button>
                         </form>
                         <button>Buy Again</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
                         <button>Black Owned Businesses</button>
                         <button>Women Owned Businesses</button>
                         <button>Electronics & Office</button>
