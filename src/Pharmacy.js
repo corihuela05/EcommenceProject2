@@ -28,9 +28,21 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import { useState } from "react";
 
 
 function Pharmacys () {
+  const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -138,12 +150,29 @@ function Pharmacys () {
       <button id="homebutton">Home</button>
     </form>
    
-  <form onSubmit={handleAccount}>
-      <button id="info1">Sign Up</button>
-    </form>
-    <form onSubmit={handleuserlogin}>
-      <button id="info">Login</button>
-    </form>
+              {isLoggedIn ? (
+                  <div>
+                      <div>
+                          <form>
+                              <button id="info">{username}</button>
+                          </form>
+                      </div>
+                      <div>
+                          <form onSubmit={handleuserlogout}>
+                              <button id="info1">Logout</button>
+                          </form>
+                      </div>
+                  </div>
+              ) : (
+                      <>
+                          <form onSubmit={handleuserlogin}>
+                              <button id="info">Login</button>
+                          </form>
+                          <form onSubmit={handleAccount}>
+                              <button id="info1">Sign Up</button>
+                          </form>
+                      </>
+                  )}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
