@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import Shop from "./Shop";
 import Product from "./Product";
-import Home from "./App"
+import Home from "./App";
 import './App.css';
 import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
@@ -23,13 +23,13 @@ import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
-import Ourads from './Ourads'
+import Ourads from './Ourads';
 import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 import { useState } from "react";
-
+import App from './App';
 
 function Musics () {
      const [isLoggedIn, setIsLoggedIn] = useState(
@@ -39,53 +39,101 @@ function Musics () {
     const [username, setUsername] = useState(localStorage.getItem("username"));
 
 
-    function handleuserlogout() {
-        localStorage.removeItem("isLoggedIn");
-        localStorage.removeItem("username");
-    }
-  function handlebeautyProducts(){
-    ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
-  }
-  
-  function handleHomeandfurnitures(){
-  ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
- }
+      function handleuserlogout() {
+          localStorage.removeItem("isLoggedIn");
+          localStorage.removeItem("username");
+      }
+      function handleclothingProducts() {
+          ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
+      }
+      function handlefoodProducts() {
+          ReactDOM.render(<FoodProducts />, document.getElementById('root'));
+      }
+      function handleartProducts() {
+          ReactDOM.render(<ArtProducts />, document.getElementById('root'));
+      }
+      function handlebeautyProducts() {
+          ReactDOM.render(<BeautyProducts />, document.getElementById('root'));
+      }
+
+      function handleHomeandfurnitures() {
+          ReactDOM.render(<Homeandfurnitures />, document.getElementById('root'));
+      }
+
+      function handleTermofservices() {
+          ReactDOM.render(<Termofservice />, document.getElementById('root'));
+      }
+      function handleChurch() {
+          ReactDOM.render(<Church />, document.getElementById('root'));
+      }
+      function handleGetknowus() {
+          ReactDOM.render(<Gettoknowus />, document.getElementById('root'));
+      }
+      function handleHome() {
+                ReactDOM.render(<App />, document.getElementById('root'));
+      }
+      function handleProduct() {
+          ReactDOM.render(<Product />, document.getElementById('root'));
+      }
+      function handleShop() {
+          ReactDOM.render(<Shop />, document.getElementById('root'));
+      }
+      function handleCart() {
+          ReactDOM.render(<Cart />, document.getElementById('root'));
+      }
+      function handleNonprofit() {
+          ReactDOM.render(<Nonprofit />, document.getElementById('root'));
+      }
+
+      function handleSchoolst() {
+          ReactDOM.render(<School />, document.getElementById('root'));
+      }
 
 
-  function handleHome(){
-    ReactDOM.render(<Home />,document.getElementById('root'));
-  }
-  function handleProduct(){
-    ReactDOM.render(<Product />,document.getElementById('root'));
-  }
-  function handleShop(){
-    ReactDOM.render(<Shop />,document.getElementById('root'));
-  }
-  function handleCart(){
-    ReactDOM.render(<Cart />,document.getElementById('root'));
-  }
-   function handleNonprofit(){
-    ReactDOM.render(<Nonprofit />,document.getElementById('root'));
-  }
-  
-   function handleSchoolst(){
-    ReactDOM.render(<School />,document.getElementById('root'));
-  }
-  
-  
-    function handleAccount(){
-    ReactDOM.render(<Account />,document.getElementById('root'));
-  }
-   function handleuserlogin(){
-    ReactDOM.render(<FormSignup />,document.getElementById('root'));
-  }
-  function handleProfile(){
-    ReactDOM.render(<Profile />,document.getElementById('root'));
-  }
-  
-    function handlevideogame(){
-     ReactDOM.render(<Videog />,document.getElementById('root'));
-  }
+      function handleAccount() {
+          ReactDOM.render(<Account />, document.getElementById('root'));
+      }
+      function handleuserlogin() {
+          ReactDOM.render(<FormSignup />, document.getElementById('root'));
+      }
+      function handleProfile() {
+          ReactDOM.render(<Profile />, document.getElementById('root'));
+      }
+
+      function handlevideogame() {
+          ReactDOM.render(<Videog />, document.getElementById('root'));
+      }
+      function handlesports() {
+          ReactDOM.render(<Sportpro />, document.getElementById('root'));
+      }
+
+      function handlebaby() {
+          ReactDOM.render(<Baby />, document.getElementById('root'));
+      }
+
+      function handlepatio() {
+          ReactDOM.render(<Patio />, document.getElementById('root'));
+      }
+
+      function handlepets() {
+          ReactDOM.render(<Pets />, document.getElementById('root'));
+      }
+
+      function handlepharmacy() {
+          ReactDOM.render(<Pharmacy />, document.getElementById('root'));
+      }
+
+      function handleauto() {
+          ReactDOM.render(<Auto />, document.getElementById('root'));
+      }
+
+      function handlemusic() {
+          ReactDOM.render(<Music />, document.getElementById('root'));
+      }
+
+      function handleOurads() {
+          ReactDOM.render(<Ourads />, document.getElementById('root'));
+      }
   
   
   return (
