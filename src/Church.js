@@ -12,7 +12,7 @@ import Profile from './Profile';
 import './Nonprofit.css';
 import { useState } from "react";
 
-function Nonprofit() {
+function Church() {
       const [isLoggedIn, setIsLoggedIn] = useState(
         localStorage.getItem("isLoggedIn")
     );
@@ -342,4 +342,4 @@ function Nonprofit() {
   );
 }
 
-export default Nonprofit;
+export default Church;
