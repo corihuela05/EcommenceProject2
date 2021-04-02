@@ -1,21 +1,22 @@
 
 .App {
   text-align: center;
-  background-color:#dfe1ed;
+  background-color:white;
   position:absolute;
   width:100%;
   height:100%;
   overflow:hidden;
   
 }
+
 .Appheader{
-  background-color:#26272b;
+  background-color: #0065ff;
   height:145px;
 }
 
 .companylogo{
   position: fixed;
-  left: 1px;
+  left: 1%;
   top:-20px;
   width:180px; 
   height:125px;
@@ -29,26 +30,46 @@
   height:125px;
 }
 
+.searchbar{
+  position:fixed;
+  left:18%;
+}
+.searchbar button[type=submit]{
+  position:fixed;
+  left:50%;
+}
 input[type=text] {
   position: fixed;
-  left: 200px;
-  top: 10px;
-  width: 550px;
-  height: 55px;
+  
+  top: 20px;
+  width: 33%;
+  height: 38px;
   box-sizing: border-box;
   border: 2px solid #dfe1ed;
-  border-radius: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   font-size: 16px;
   padding: 10px 20px ;
+  outline:none;
+}
+button[type=submit]{
+  position:fixed;
+  top:20px;
+  height: 38px;
+  width:35px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border:none;
+  background:#ffc220;
   outline:none;
 }
 
 #homebutton{
   position: fixed;
-  left:760px;
+  left:55%;
   top: 15px;
   width:120px;
-  background-color: #26272b;
+  background-color: #0065ff;
   color: white;
   padding: 10px 20px ;
   text-align: center;
@@ -58,10 +79,10 @@ input[type=text] {
 }
 #info{
   position: fixed;
-  left:880px;
+  left:64%;
   top: 15px;
   width:120px;
-  background-color: #26272b;
+  background-color: #0065ff;
   color: white;
   padding: 10px 20px ;
   border:none;
@@ -73,10 +94,10 @@ input[type=text] {
 
 #info1{
   position: fixed;
-  left:1000px;
+  left:73%;
   top: 15px;
   width:120px;
-  background-color: #26272b;
+  background-color: #0065ff;
   color: white;
   padding: 10px 20px ;
   border:none;
@@ -87,7 +108,7 @@ input[type=text] {
 }
 #cart{
   position: fixed;
-  left:1130px;
+  left:82%;
   top: 15px;
   background-color: white;
   color: black;
@@ -104,7 +125,7 @@ input[type=text] {
 
 .flag{
   position: fixed;
-  left: 1248px;
+  left:91%;
   top:16px;
   width:65px; 
   height:40px;
@@ -113,19 +134,18 @@ input[type=text] {
 .tabs{
   position: fixed;
   top:75px;
-  left:120px;
-  background-color: #3e3d45;
-  border: 1.5px solid #3e3d45;
-  border-radius: 10px;
+  left:52px;
+  width:98%;
+  background-color: #041e42;
+  border: 1.5px solid #041e42;
 }
 
 .tabs button {
-  background-color: #3e3d45;
+  background-color: #041e42;
   border: none;
   outline: none;
-  padding: 16px 30px;
+  padding: 15px 43.5px;
   font-size: 17px;
-  border-radius: 10px;
   color:white;
 }
 /*Sidebar*/
@@ -142,22 +162,22 @@ input[type=text] {
 .sidebar button {
   width:210px;
   font-size: 18px;
-  background-color: #3e3d45;
+  background-color: #041e42;
   color: white;
-  border-top:2px solid #3e3d45;
+  border-top:2px solid #041e42;
   outline:none;
 }
 label #openbutton{
   position: fixed;
   cursor: pointer;
-  background: #3e3d45;
-  left: 82px;
+  background: #041e42;
+  left: 0px;
   top: 75px;
   font-size: 35px;
-  color: black;
-  padding: 11px 12px;
-  border: 1px solid #3e3d45;
-  border-radius: 10px;
+  color: white;
+  padding: 10px 12px;
+  border: 1px solid #041e42;
+  
 }
 label #cancelbutton{
   position: fixed;
@@ -208,26 +228,23 @@ label #cancelbutton{
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3e3d45;
+  background: #0065ff;
   border-radius: 10px;
   
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4d94ff; 
+  background: #ffc220; 
 }
 /* #Slideshow */
 .images img{
   position:absolute;
   top:10px;
-
-  left:220px;
-
-  height: 400px;
-  width: 900px;
+  left:1.2px;
+  height: 480px;
+  width: 100%;
   transition: all .15%s ease;
-  border: 2px solid black;
-  border-radius: 25px;
+  border: 1px solid black;
 }
 
 .images input{
@@ -237,23 +254,27 @@ label #cancelbutton{
 
 .dot{
   position:absolute;
-  top:410px;
-  left:640px;
-
+  top:430px;
+  left:47%;
   display:flex;
   justify-content:center;
   margin:5px;
+  background:black;
+  padding:8px;
+  border-radius:15px;
+  opacity: 0.8;
 }
 .dot label{
-  height:20px;
-  width:20px;
+  height:18px;
+  width:18px;
   border-radius: 50%;
-  border: solid black 3px;
+  border: solid white 3px;
   cursor: pointer;
   margin: 5px;
+  opacity: 0.8;
 }
 .dot label:hover{
-  background: black;
+  background: white;
 }
 
 #image1:checked ~ .img1{
@@ -265,206 +286,205 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:475px;
-  left:330px;
-  width:200px;
-  height:200px;
-  background-color:lightblue;
-  border: solid black 5px;
-  border-radius: 25px;
+  top:510px;
+  left:2%;
+  width:430px;
+  background-color:#F8F2FC ;
+  border: solid #F8F2FC  5px;
   outline: none;
   padding-top:10px;
+  font-size:20px;
 }
-  
+
 .school{
   position: absolute;
-  top:470px;
-  left:575px;
-  width:200px;
-  height:200px;
-  background-color:lightblue;
-  border: solid black 5px;
-  border-radius: 25px;
+  top:510px;
+  left:35%;
+  width:430px;
+  background-color:#F8F2FC ;
+  border: solid #F8F2FC  5px;
   outline: none;
   padding-top:10px;
+  font-size:20px;
 }
   
 .organization{
   position: absolute;
-  top:470px;
-  left:815px;
-  width:200px;
-  height:200px;
-  background-color:lightblue;
-  border: solid black 5px;
-  border-radius: 25px;
+  top:510px;
+  left:68%;
+  width:430px;
+  background-color:#F8F2FC ;
+  border: solid #F8F2FC  5px;
   outline: none;
   padding-top:10px;
+  font-size:20px;
 }
 .spaces{
   position: absolute;
-  top:730px;
-  left:225px;
-  width:900px;
+  top:920px;
+  left:0px;
+  width:100%;
   height:250px;
   background-color:white;
-  border: solid black 2px;
+  border: solid white 2px;
   font-size:45px;
 }
 
 #games{
   position: absolute;
-  top:1000px;
-  left:360px;
-  width:170px;
+  top:1200px;
+  left:11%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
+  
   
 }
 #games img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 
 #baby{
   position: absolute;
-  top:1000px;
-  left:590px;
-  width:170px;
+  top:1200px;
+  left:41%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
+  
 }
 #baby img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #patio{
   position: absolute;
-  top:1000px;
-  left:810px;
-  width:170px;
+  top:1200px;
+  left:71%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #patio img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
-  background:none;
+
 }
 
 #pets{
   position: absolute;
-  top:1280px;
-  left:360px;
-  width:170px;
+  top:1600px;
+  left:11%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #pets img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #pharmacy{
   position: absolute;
-  top:1280px;
-  left:590px;
-  width:170px;
+  top:1600px;
+  left:41%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #pharmacy img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #beauty{
   position: absolute;
-  top:1280px;
-  left:810px;
-  width:170px;
+  top:1600px;
+  left:71%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #beauty img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #sports{
   position: absolute;
-  top:1580px;
-  left:360px;
-  width:170px;
+  top:2000px;
+  left:11%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #sports img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #auto{
   position: absolute;
-  top:1580px;
-  left:580px;
-  width:170px;
+  top:2000px;
+  left:41%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
   
 }
 #auto img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
 #music{
   position: absolute;
-  top:1580px;
-  left:810px;
-  width:170px;
+  top:2000px;
+  left:71%;
+  width:300px;
   height:250px;
-  background-color:#dfe1ed;
+  background-color:white;
   border:none;
   outline:none;
+  font-size:20px;
 }
 #music img{
-  border-radius: 20px;
+  border-radius: 500px;
   border:none;
   background:none;
 }
-.thumbnail:hover {
-    position:relative;
-    top:10px;
-    left:0px;
-    width:200px;
-    height:230px;
-    display:block;
-    z-index:999;
-    outline:none;
-}
+
 .letterpic{
   position: absolute;
-  top:1900px;
-  left:350px;
+  top:2400px;
+  left:25%;
   border:1px solid black;
   border-radius: 20px;
   width:250px;
@@ -478,29 +498,31 @@ label #cancelbutton{
   width:300px;
   height:35px;
   outline:none;
+  
 }
 #subscribe{
   position:absolute;
   top:25px;
-  left:390px;
+  left:388px;
   height:35px;
-  background-color:lightgreen;
+  background-color:black;
   border:none;
   outline:none;
+  color:white;
 }
 .newsletter{
   position: absolute;
-  top:1930px;
-  left:550px;
+  top:2430px;
+  left:40%;
 }
 
 .site-footer
 {
   position:absolute;
-  top:2100px;
+  top:2600px;
   width:100%;
   height:430px;
-  background-color:#26272b;
+  background-color:#0065ff;
   color:white;
   padding:15px;
   
@@ -513,16 +535,15 @@ label #cancelbutton{
 
 .site-footer h1{
   position:absolute;
-  left:555px;
+  left:42%;
 }
   
-
 .site-footer .footer1 button{
   position:absolute;
-  left:250px;
+  left:21%;
   top:80px;
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   outline:none;
 }
@@ -530,12 +551,12 @@ label #cancelbutton{
 .site-footer .footer2 {
   position:absolute;
   top:110px;
-  left:450px;
+  left:37%;
   width:180px;
 }
 .site-footer .footer2 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
@@ -544,12 +565,12 @@ label #cancelbutton{
 .site-footer .footer3 {
   position:absolute;
   top:110px;
-  left:650px;
+  left:51%;
   width:180px;
 }
 .site-footer .footer3 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
@@ -558,12 +579,12 @@ label #cancelbutton{
 .site-footer .footer4 {
   position:absolute;
   top:110px;
-  left:850px;
+  left:66%;
   width:180px;
 }
 .site-footer .footer4 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
@@ -572,13 +593,13 @@ label #cancelbutton{
 .site-footer .footer5 {
   position:absolute;
   top:350px;
-  left:142px;
-  width:1050px;
+  left:15%;
+  width:70%;
   text-align:left;
 }
 .site-footer .footer5 button{
-  width:180px;
-  background-color:#26272b;
+  width:400px;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;

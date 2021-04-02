@@ -28,12 +28,12 @@ import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 import { useState } from "react";
-import Returns from '/Returns';
-import Accessibility from '/Accessibility';
-import SecurityandPrivacy from '/SecurityandPrivacy';
-import CAPrivacyRights from '/CAPrivacyRights';
-import DoNotSellMyInformation from '/DoNotSellMyInformation';
-import TaxExemptProgram from 'TaxExemptProgram';
+//import Returns from '/Returns';
+//import Accessibility from '/Accessibility';
+//import SecurityandPrivacy from '/SecurityandPrivacy';
+//import CAPrivacyRights from '/CAPrivacyRights';
+//import DoNotSellMyInformation from '/DoNotSellMyInformation';
+//import TaxExemptProgram from 'TaxExemptProgram';
 
 
 
@@ -159,26 +159,28 @@ function App() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
     
-    function handleSecurityandPrivacy() {
-        ReactDOM.render(<SecurityandPrivacy />, document.getElementById('root'));
     
     function CAPrivacyRights() {
         
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
     
-    function handleDoNotSellMyInformation() {
-        ReactDOM.render(<DoNotSellMyInformation />, document.getElementById('root'));
-}
+    
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
     
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
+    }
     
     function Returns() {
         ReactDOM.render(<Returns/>, document.getElementById('root'));
+    }
+    
+    function handleGetknowus(){
+         ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
+    }
     return (
         <div className="App">
             <div className="Appheader">
@@ -188,11 +190,13 @@ function App() {
                     alt="flag"
                     className="flag"
                 />
-                <input type="text" name="search" placeholder="Search.." />
+                    <div className="searchbar">
+                    <input type="text" name="search" placeholder="Search.." />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
                 <form onSubmit={handleHome}>
                     <button id="homebutton">Home</button>
                 </form>
-
 
                 {isLoggedIn ? (
                     <div>
@@ -304,8 +308,8 @@ function App() {
                         <input type="radio" name="slide" id="image1" checked />
                         <input type="radio" name="slide" id="image2" checked />
 
-                        <img src="https://philanthropyu.org/wp-content/uploads/2020/01/1-1200-x-800.jpg" class="img1" alt="image1" />
-                        <img src="http://www.epilepsy.com/sites/core/files/styles/banner_image/public/upload/image/Get%20Involved%20logo_0.jpg" class="img2" alt="image2" />
+                        <img src="ECOMMERCE.png" class="img1" alt="image1" />
+                        <img src="Electronics.jpg" class="img2" alt="image2" />
                     </div>
                     <div className="dot">
                         <label for="image1"></label>
@@ -315,17 +319,17 @@ function App() {
                 <div className="threebox">
 
                     <form onSubmit={handleChurch}>
-                        <button className="church"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Japanese_Map_symbol_%28Church%29.svg" alt='church' width="150" height="100" />Church<p>1,782 videos</p></button>
+                        <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="https://media2.giphy.com/media/1etn2BmiW0nOgoZHTL/source.gif" alt='school' width="150" height="100" />School<p>1,023 videos</p></button>
+                        <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="organization.jpg" alt='organization' width="150" height="100" />Non-Profits<p>2,416 videos</p></button>
+                        <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                 </div>
@@ -334,38 +338,38 @@ function App() {
                 </div>
                 <div className="category">
                     <form onSubmit={handlevideogame}>
-                        <button id="games"><img src="https://media4.giphy.com/media/9VtLabdE5IGJf4N5eS/source.gif" alt='games' class="thumbnail" width="150" height="200" />VIDEO GAMES</button>
+                        <button id="games"><img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" />VIDEO GAMES</button>
                     </form>
                     <form onSubmit={handlebaby}>
-                        <button id="baby"><img src="https://thumbs.gfycat.com/OilyInfantileBangeltiger-small.gif" alt='baby' class="thumbnail" width="150" height="200" />BABY</button>
+                        <button id="baby"><img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" />BABY</button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button id="patio"><img src="https://media.tenor.com/images/7cd663f1bf6d0b7b64b00aa17940fe6a/tenor.gif" class="thumbnail" alt='patio' width="150" height="200" />PATIO</button>
+                        <button id="patio"><img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" />PATIO</button>
                     </form>
                     <form onSubmit={handlepets}>
-                        <button id="pets"><img src="https://media3.giphy.com/media/4blbm32XAiY0YVkQfW/source.gif" alt='pets' class="thumbnail" width="150" height="200" />PETS</button>
+                        <button id="pets"><img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" />PETS</button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy"><img src="https://thumbs.gfycat.com/GregariousAbandonedBongo-max-1mb.gif" alt='pharmacy' class="thumbnail" width="150" height="200" />PHARMACY</button>
+                        <button id="pharmacy"><img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" />PHARMACY</button>
                     </form>
-                    <button id="beauty"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty' class="thumbnail" width="150" height="200" onClick={handlebeautyProducts} />BEAUTY</button>
+                    <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
 
                     <form onSubmit={handlesports}>
-                        <button id="sports"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign.com/headlines/market-trends/unfiltered-experience-rethinks-what-s-possible-with-virtual-beauty-events/11691757-1-eng-GB/Unfiltered-Experience-rethinks-what-s-possible-with-virtual-beauty-events_wrbm_large.jpg" alt='beauty' class="thumbnail" width="150" height="200" onClick={handlebeautyProducts} />BEAUTY</button>
+                        <button id="sports"><img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />SPORT</button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button id="auto"><img src="https://media4.giphy.com/media/47JkfnjsIODDhq3Xyr/source.gif" alt='auto' class="thumbnail" width="150" height="200" />AUTO</button>
+                        <button id="auto"><img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" />AUTO</button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music"><img src="https://media2.giphy.com/media/mCbhenyAxo3oytYHan/giphy.gif" alt='music' class="thumbnail" width="150" height="200" />MUSIC</button>
+                        <button id="music"><img src="music.png" alt='music' class="thumbnail" width="280" height="280" />MUSIC</button>
                     </form>
 
                 </div>
                 <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
                 <div className="newsletter">
-                    <input type="input" id="email" placeholder="Email Address" />
+                    <input type="input" id="email" placeholder="  Email Address" />
                     <button id="subscribe">Subscribe</button>
                 </div>
 
@@ -407,24 +411,24 @@ function App() {
                         <form onSubmit ={handleTermofservices}>
                             <button>TERMS OF SERVICE </button>
                           </form>
-                        <form onsubmit{handlePrivacyandSecurity}>
+                       
                             <button>PRIVACY & SECURITY</button>
-                         </form>
-                        <form onsubmit={handleCAPrivacyRights}>
+                    
                            <button>CA Privacy Rights</button>
-                            </form>
-                        <form onsubmit={DoNotSellMyInformation}>
+                           
+                        
                             <button>Do Not Sell My Information</button>
-                         </form>
-                             <form onsubmit={TaxExemptProgram}>
+                         
+                            
                             <button>Tax Exempt Program</button>
-                            </form>
+                    </div>   
                    <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
+                
                 </footer>
-            </div>
+        </div>
         </div>
     );
 }
