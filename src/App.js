@@ -33,7 +33,7 @@ import Accessibility from '/Accessibility';
 import SecurityandPrivacy from '/SecurityandPrivacy';
 import CAPrivacyRights from '/CAPrivacyRights';
 import DoNotSellMyInformation from '/DoNotSellMyInformation';
-import TaxExemptProgram from 'DoNotSellMyInformation';
+import TaxExemptProgram from 'TaxExemptProgram';
 
 
 
