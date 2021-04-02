@@ -28,12 +28,12 @@ import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 import { useState } from "react";
-import Returns from '/Returns';
-import Accessibility from '/Accessibility';
-import SecurityandPrivacy from '/SecurityandPrivacy';
-import CAPrivacyRights from '/CAPrivacyRights';
-import DoNotSellMyInformation from '/DoNotSellMyInformation';
-import TaxExemptProgram from 'TaxExemptProgram';
+//import Returns from '/Returns';
+//import Accessibility from '/Accessibility';
+//import SecurityandPrivacy from '/SecurityandPrivacy';
+//import CAPrivacyRights from '/CAPrivacyRights';
+//import DoNotSellMyInformation from '/DoNotSellMyInformation';
+//import TaxExemptProgram from 'TaxExemptProgram';
 
 
 
@@ -159,26 +159,28 @@ function App() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
     
-    function handleSecurityandPrivacy() {
-        ReactDOM.render(<SecurityandPrivacy />, document.getElementById('root'));
     
     function CAPrivacyRights() {
         
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
     
-    function handleDoNotSellMyInformation() {
-        ReactDOM.render(<DoNotSellMyInformation />, document.getElementById('root'));
-}
+    
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
     
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
+    }
     
     function Returns() {
         ReactDOM.render(<Returns/>, document.getElementById('root'));
+    }
+    
+    function handleGetknowus(){
+         ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
+    }
     return (
         <div className="App">
             <div className="Appheader">
@@ -189,13 +191,12 @@ function App() {
                     className="flag"
                 />
                     <div className="searchbar">
-                        <input type="text" name="search" placeholder="Search.." />
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" name="search" placeholder="Search.." />
+                    <button type="submit"><i class="fa fa-search"></i></button>
                     </div>
                 <form onSubmit={handleHome}>
                     <button id="homebutton">Home</button>
                 </form>
-
 
                 {isLoggedIn ? (
                     <div>
@@ -410,24 +411,24 @@ function App() {
                         <form onSubmit ={handleTermofservices}>
                             <button>TERMS OF SERVICE </button>
                           </form>
-                        <form onsubmit{handlePrivacyandSecurity}>
+                       
                             <button>PRIVACY & SECURITY</button>
-                         </form>
-                        <form onsubmit={handleCAPrivacyRights}>
+                    
                            <button>CA Privacy Rights</button>
-                            </form>
-                        <form onsubmit={DoNotSellMyInformation}>
+                           
+                        
                             <button>Do Not Sell My Information</button>
-                         </form>
-                             <form onsubmit={TaxExemptProgram}>
+                         
+                            
                             <button>Tax Exempt Program</button>
-                            </form>
+                    </div>   
                    <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
+                
                 </footer>
-            </div>
+        </div>
         </div>
     );
 }

@@ -144,7 +144,10 @@ function Products() {
     <div className="Appheader">
     <img src="logo.png" alt='company logo' className="companylogo" />
     <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+    <div className="searchbar">
+      <input type="text" name="search" placeholder="Search.." />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>

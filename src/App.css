@@ -55,7 +55,6 @@ input[type=text] {
 button[type=submit]{
   position:fixed;
   top:20px;
-  
   height: 38px;
   width:35px;
   border-top-right-radius: 15px;
@@ -163,9 +162,9 @@ button[type=submit]{
 .sidebar button {
   width:210px;
   font-size: 18px;
-  background-color: #0065ff;
+  background-color: #041e42;
   color: white;
-  border-top:2px solid #0065ff;
+  border-top:2px solid #041e42;
   outline:none;
 }
 label #openbutton{
@@ -176,8 +175,8 @@ label #openbutton{
   top: 75px;
   font-size: 35px;
   color: white;
-  padding: 11px 12px;
-  border: 1px solid #041e42s;
+  padding: 10px 12px;
+  border: 1px solid #041e42;
   
 }
 label #cancelbutton{
@@ -235,7 +234,7 @@ label #cancelbutton{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4d94ff; 
+  background: #ffc220; 
 }
 /* #Slideshow */
 .images img{
@@ -334,7 +333,7 @@ label #cancelbutton{
 #games{
   position: absolute;
   top:1200px;
-  left:9%;
+  left:11%;
   width:300px;
   height:250px;
   background-color:white;
@@ -353,7 +352,7 @@ label #cancelbutton{
 #baby{
   position: absolute;
   top:1200px;
-  left:39%;
+  left:41%;
   width:300px;
   height:250px;
   background-color:white;
@@ -370,7 +369,7 @@ label #cancelbutton{
 #patio{
   position: absolute;
   top:1200px;
-  left:69%;
+  left:71%;
   width:300px;
   height:250px;
   background-color:white;
@@ -387,7 +386,7 @@ label #cancelbutton{
 #pets{
   position: absolute;
   top:1600px;
-  left:9%;
+  left:11%;
   width:300px;
   height:250px;
   background-color:white;
@@ -403,7 +402,7 @@ label #cancelbutton{
 #pharmacy{
   position: absolute;
   top:1600px;
-  left:39%;
+  left:41%;
   width:300px;
   height:250px;
   background-color:white;
@@ -419,7 +418,7 @@ label #cancelbutton{
 #beauty{
   position: absolute;
   top:1600px;
-  left:69%;
+  left:71%;
   width:300px;
   height:250px;
   background-color:white;
@@ -435,7 +434,7 @@ label #cancelbutton{
 #sports{
   position: absolute;
   top:2000px;
-  left:9%;
+  left:11%;
   width:300px;
   height:250px;
   background-color:white;
@@ -451,7 +450,7 @@ label #cancelbutton{
 #auto{
   position: absolute;
   top:2000px;
-  left:39%;
+  left:41%;
   width:300px;
   height:250px;
   background-color:white;
@@ -468,7 +467,7 @@ label #cancelbutton{
 #music{
   position: absolute;
   top:2000px;
-  left:69%;
+  left:71%;
   width:300px;
   height:250px;
   background-color:white;
@@ -539,7 +538,6 @@ label #cancelbutton{
   left:42%;
 }
   
-
 .site-footer .footer1 button{
   position:absolute;
   left:21%;
@@ -600,7 +598,7 @@ label #cancelbutton{
   text-align:left;
 }
 .site-footer .footer5 button{
-  width:180px;
+  width:400px;
   background-color:#0065ff;
   border:none;
   padding:5px 5px;
