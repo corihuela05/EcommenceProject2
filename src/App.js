@@ -28,6 +28,14 @@ import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 import { useState } from "react";
+import Returns from '/Returns';
+import Accessibility from '/Accessibility';
+import SecurityandPrivacy from '/SecurityandPrivacy';
+import CAPrivacyRights from '/CAPrivacyRights';
+import DoNotSellMyInformation from '/DoNotSellMyInformation';
+import TaxExemptProgram from 'DoNotSellMyInformation';
+
+
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(
@@ -84,11 +92,6 @@ function App() {
     }
     function handleChurch() {
         ReactDOM.render(<Church />, document.getElementById('root'));
-    }
-
-
-    function handleGetknowus() {
-        ReactDOM.render(<Gettoknowus />, document.getElementById('root'));
     }
     function handleHome() {
                ReactDOM.render(<App />, document.getElementById('root'));
@@ -155,8 +158,27 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-
-
+    
+    function handleSecurityandPrivacy() {
+        ReactDOM.render(<SecurityandPrivacy />, document.getElementById('root'));
+    
+    function CAPrivacyRights() {
+        
+        ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
+    }
+    
+    function handleDoNotSellMyInformation() {
+        ReactDOM.render(<DoNotSellMyInformation />, document.getElementById('root'));
+}
+    function TaxExemptProgram() {
+        ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
+}
+    
+    function Accessibility() {
+        ReactDOM.render(<Accessibility/>, document.getElementById('root'));
+    
+    function Returns() {
+        ReactDOM.render(<Returns/>, document.getElementById('root'));
     return (
         <div className="App">
             <div className="Appheader">
@@ -352,6 +374,7 @@ function App() {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
+                    
                     </div>
                     <div className="footer2">
 
@@ -360,19 +383,19 @@ function App() {
                         </form>
 
                         <button>OUR COMPANY</button>
-                        <button>DIRECTORY</button>
-                        <button>OUR SUPPLIERS</button>
-                        <button>ADVERTISE WITH US</button>
-                        <button>OUR SUPPLIERS</button>
+                        <button> VENDOR DIRECTORY</button>
+                        <button>HELP CENTER</button>
                         <button>CONTACT US</button>
                     </div>
                     <div className="footer3">
-                        <button>CUSTOMER SERVICE</button>
-                        <button>HELP CENTER</button>
-                        <button>RETURNS</button>
+                        <form onsubmit={Returns}>
+                            <button>RETURNS</button>
+                        </form>
                         <button>PRODUCT RECALLS</button>
-                        <button>ACCESSIBILTY</button>
-                        <button>CONTACT US</button>
+                        <form onsubmit={Accessibility}>
+                            <button>ACCESSIBILTY</button>
+                        </form>
+                        <button>ADVERTISE WITH US</button>
                     </div>
                     <div className="footer4">
                         <button>GREYSON'S</button>
@@ -380,23 +403,23 @@ function App() {
                         <form onSubmit={handleOurads}>
                             <button>OUR ADS</button>
                         </form>
-                        <form onSubmit={handleTermofservices}>
-                            <button>TERMS OF SERVICE</button>
-                        </form>
-
-                        <button>PRIVACY & SECURITY</button>
-                        <button>CA Privacy Rights</button>
-                        <button>Do Not Sell My information</button>
-                        <button>Request My information</button>
-
-                        <button>Tax Exempt Program</button>
-
-                    </div>
-
-
-
-
-                    <div className="footer5">
+                    
+                        <form onSubmit ={handleTermofservices}>
+                            <button>TERMS OF SERVICE </button>
+                          </form>
+                        <form onsubmit{handlePrivacyandSecurity}>
+                            <button>PRIVACY & SECURITY</button>
+                         </form>
+                        <form onsubmit={handleCAPrivacyRights}>
+                           <button>CA Privacy Rights</button>
+                            </form>
+                        <form onsubmit={DoNotSellMyInformation}>
+                            <button>Do Not Sell My Information</button>
+                         </form>
+                             <form onsubmit={TaxExemptProgram}>
+                            <button>Tax Exempt Program</button>
+                            </form>
+                   <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
