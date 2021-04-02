@@ -19,11 +19,8 @@ import School from './Schools';
 
 
 
-function Termofservice() {
+function SecurityandPrivacy() {
   function handlebeautyProducts(){
-    ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
-  }
-  function handleSecurityandPrivacy(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
   
