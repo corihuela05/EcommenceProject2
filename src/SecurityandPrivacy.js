@@ -240,7 +240,9 @@ Choice/Opting out of Marketing: OpenText offers you the choice of receiving diff
     </div>
     <div className="footer4">
       <button>TERMS OF SERVICE</button>
+      <form onSubmit={handlePrivacyandSecurity}>
       <button>PRIVACY & SECURITY</button>
+      </form>
       <button>CA Privacy Rights</button>
       <button>Do Not Sell My information</button>
       <button>Request My information</button>
@@ -257,3 +259,4 @@ Choice/Opting out of Marketing: OpenText offers you the choice of receiving diff
 }
 
 export default SecurityandPrivacy;
+
