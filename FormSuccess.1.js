@@ -4,8 +4,9 @@ import "./Form.css";
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Nonprofit from "./Nonprofit";
-
+import GiveAccess from "./GiveAccess";
 import App from "./App";
+import Profile from "./Profile";
 
 
 const FormSuccess = () => {
@@ -28,6 +29,11 @@ const FormSuccess = () => {
                     localStorage.setItem("isLoggedIn", true);
                     localStorage.setItem("username", "nonprofit");
                     ReactDOM.render(<Profile />, document.getElementById("root"));
+                    break;
+                case "rodney":
+                    localStorage.setItem("isLoggedIn", true);
+                    localStorage.setItem("username", "nonprofit");
+                    ReactDOM.render(<GiveAccess />, document.getElementById("root"));
                     break;
                 case "buyer":
                     localStorage.setItem("isLoggedIn", true);
