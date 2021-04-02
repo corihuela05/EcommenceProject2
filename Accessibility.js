@@ -166,12 +166,14 @@ This website endeavours to conform to level Double-A of the World Wide Web Conso
 
 The next paragraph should follow on from the information about the guidelines, by informing people about the more technical standards the website follows. The example below indicates that the website will work across all browsers and explains that it should continue to do so when new browsers are released.
 
-This site has been built using code compliant with W3C standards for HTML and CSS. The site displays correctly in current browsers and using standards compliant HTML/CSS code means any future browsers will also display it correctly.
+This site has been built using code compliant with W3C standards for HTML and CSS. 
+The site displays correctly in current browsers and using standards compliant HTML/CSS code means 
+any future browsers will also display it correctly.
 
 <h2>Exceptions <h2/>
 Sometimes, despite best efforts, there are areas of the website that fall outside of intended web accessibility targets. Acknowledging these instances can help people understand the limitations of the site. A note of caution however, such exceptions should not be used as an easy escape from providing real accessibility. Any areas where accessibility is not provided should be indicated, along with an intended roadmap for resolving the inaccessibility. The following example provides an opening paragraph, which should be supplemented with any specific examples of inaccessible areas:
 
-Whilst *Website Name* strive to adhere to the accepted guidelines and standards for accessibility and usability, it is not always possible to do so in all areas of the website.
+Whilst *Grayson* strive to adhere to the accepted guidelines and standards for accessibility and usability, it is not always possible to do so in all areas of the website.
 
 <h2>Contact information <h2/>
 <p>Lastly, it is important to provide people with the ability to contact the website regarding specific problems they may be having. 
