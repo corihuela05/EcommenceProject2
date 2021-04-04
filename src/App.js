@@ -27,6 +27,8 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import Accessibility from './Accessibility';
+import CAPrivacyRights from './CAPrivacyRights';
 import { useState } from "react";
 //import Returns from '/Returns';
 //import Accessibility from '/Accessibility';
@@ -414,7 +416,7 @@ function App() {
                        
                             <button>PRIVACY & SECURITY</button>
                     
-                           <button>CA Privacy Rights</button>
+                             <button onClick={handleCAPrivacyRights} > CA PRIVACY RIGHTS</button>
                            
                         
                             <button>Do Not Sell My Information</button>
