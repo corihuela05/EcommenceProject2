@@ -282,10 +282,10 @@ function Item_Display(props){
       <button  onClick={handleartProducts} >Gift Cards</button>
     </div>
     </div>
-            <img src={props.image}></img>
-            <h1>{props.name}</h1>
-            <p class="price">${props.price}</p>
-            <p>{props.description}</p>
+            <img class="propimage" src={props.image}></img>
+            <h1 class="propname">{props.name}</h1>
+            <p class="propprice">${props.price}</p>
+            <p class="propdescription">{props.description}</p>
         </div>
         <footer class="product-site-footer">
             <h1>About Greyson</h1>
