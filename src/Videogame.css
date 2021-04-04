@@ -1,18 +1,16 @@
-.videogcard1 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:80px;
-  top:20px;
-  height:398px;
-  width:300px;
+
+.vproduct{
+  display:grid;
+  grid-template-column: 1fr 1fr;
+
+  
 }
 
-.videogcard1 button {
+.vproduct img{
+  width:150px;
+}
+
+.vproduct button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -24,9 +22,14 @@
   font-size: 18px;
 }
 
-.videogcard1 button:hover {
+.vproduct button:hover {
   opacity: 0.7;
 }
+
+.product{
+  padding:40px;
+}
+
 
 .price {
   color: grey;
@@ -43,415 +46,120 @@
   overflow-x:hidden;
 }
 
-.videogcard2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:440px;
-  top:20px;
-  height:398px;
+.cart{
+  position:absolute;
+  top:0px;
   width:300px;
+  display:grid;
+  grid-template-column:lfr lfr;
 }
 
-.videogcard2 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+.cart{
+  position:absolute;
+  top:0px;
+  display:grid;
+  grid-template-column:lfr lfr;
+  width:515px;
+  text-align:center;
+  left:32%;
 }
 
-.videogcard2 button:hover {
-  opacity: 0.7;
+.cart img{
+  width:150px;
 }
 
-.videogcard3 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:790px;
-  top:20px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard3 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard3 button:hover {
-  opacity: 0.7;
-}
-
-
-.videogcard4 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:1140px;
-  top:20px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard4 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard4 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard5 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:80px;
-  top:470px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard5 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard5 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard6 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:440px;
-  top:470px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard6 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard6 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard7 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:790px;
-  top:470px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard7 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard7 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard8 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:1140px;
-  top:470px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard8 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard8 button:hover {
-  opacity: 0.7;
-}
-
-
-.videogcard9 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:80px;
-  top:920px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard9 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard9 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard10 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:440px;
-  top:920px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard10 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard10 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard11 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:790px;
-  top:920px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard11 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard11 button:hover {
-  opacity: 0.7;
-}
-
-.videogcard12 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-  position: absolute;
-  left:1140px;
-  top:920px;
-  height:398px;
-  width:300px;
-}
-
-.videogcard12 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.videogcard12 button:hover {
-  opacity: 0.7;
-}
-
-
-.videogame-site-footer1
+.vsite-footer
 {
   position:absolute;
-  top:1370px;
+  top:4800px;
   width:100%;
   height:430px;
-  background-color:#26272b;
+  background-color:#0065ff;
   color:white;
   padding:15px;
-  text-align:center;
   
 }
-
-.videogame-site-footer1 .footer1 button{
+.vsite-footer h1{
   position:absolute;
-  left:250px;
+  left:560px;
+}
+
+.vsite-footer h1{
+  position:absolute;
+  left:42%;
+}
+  
+.vsite-footer .footer1 button{
+  position:absolute;
+  left:21%;
   top:80px;
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   outline:none;
 }
 
-.videogame-site-footer1 .footer2 {
+.vsite-footer .footer2 {
   position:absolute;
   top:110px;
-  left:500px;
+  left:37%;
   width:180px;
 }
-.videogame-site-footer1 .footer2 button{
+.vsite-footer .footer2 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
 }
 
-.videogame-site-footer1 .footer3 {
+.vsite-footer .footer3 {
   position:absolute;
   top:110px;
-  left:650px;
+  left:51%;
   width:180px;
 }
-.videogame-site-footer1 .footer3 button{
+.vsite-footer .footer3 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
 }
 
-.videogame-site-footer1 .footer4 {
+.vsite-footer .footer4 {
   position:absolute;
   top:110px;
-  left:850px;
+  left:66%;
   width:180px;
 }
-.videogame-site-footer1 .footer4 button{
+.vsite-footer .footer4 button{
   width:180px;
-  background-color:#26272b;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
 }
 
-.videogame-site-footer1 .footer5 {
+.vsite-footer .footer5 {
   position:absolute;
   top:350px;
-  left:60px;
-  width:1220px;
+  left:15%;
+  width:70%;
   text-align:left;
 }
-.videogame-site-footer1 .footer5 button{
-  width:180px;
-  background-color:#26272b;
+.vsite-footer .footer5 button{
+  width:400px;
+  background-color:#0065ff;
   border:none;
   padding:5px 5px;
   outline:none;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }
