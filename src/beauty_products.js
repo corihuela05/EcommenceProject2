@@ -147,7 +147,7 @@ function Beauty() {
         <h1>Circle\Delete® Concealer</h1>
          <p class="price">$32.00</p>
         <p>An eye conditioner and concealer containing moringa butter and avocado oil, both high in vitamins A, C, D and E.</p>
-        <p><button  onClick={()=>itemDisplay(1)}>Add to Cart</button></p>
+        <p><button  onClick={()=>itemDisplay(2)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard3">
@@ -155,7 +155,7 @@ function Beauty() {
         <h1>One-Step Makeup Remover Wipes</h1>
          <p class="price">$20</p>
         <p>Using a naturally derived micellar formula, each super soft wipe traps makeup, dirt, and impurities, then gently whisks it away.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(3)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard4">
@@ -163,7 +163,7 @@ function Beauty() {
         <h1>Neutrogena Exfoliating Shampoo</h1>
          <p class="price">$8.74</p>
         <p>Exfoliating Shampoo for Oily Hair & Scalp, 12 oz.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(4)}>Add to Cart</button></p>
     </div>
     
     
@@ -172,7 +172,7 @@ function Beauty() {
         <h1>Glowipedia Glass Skin Kit</h1>
          <p class="price">$130 was $104</p>
         <p>Deep cleanse and gently exfoliate with Blueberry Bounce Gentle Cleanser.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(5)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard6">
@@ -180,7 +180,7 @@ function Beauty() {
         <h1>HUDABEAUTY Liquid Matte Lipstick</h1>
          <p class="price">$20</p>
         <p>One-stroke color with a buttery, suede-like finish.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(6)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard7">
@@ -188,7 +188,7 @@ function Beauty() {
         <h1>FULL CONTROL ™ lash sculpting mascara</h1>
          <p class="price">$35</p>
         <p>Makes lashes look long and full. Never clumpy.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(7)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard8">
@@ -196,7 +196,7 @@ function Beauty() {
         <h1>NYX Professional Makeup Ultimate Shadow Palette</h1>
          <p class="price">$17.97</p>
         <p>Warm Neutrals, 0.32 oz</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(8)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard9">
@@ -204,7 +204,7 @@ function Beauty() {
         <h1>Ultimate Utopia Shadow Palette</h1>
          <p class="price">$35</p>
         <p>This 16 shade eyeshadow palette of incredibly creamy eyeshadows in matte and metallic finishes instantly transports you to a lush nirvana.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(9)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard10">
@@ -212,7 +212,7 @@ function Beauty() {
         <h1>SEPHORA Face Mask</h1>
          <p class="price">$4</p>
         <p>Makes skin feels soft and fresh.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(10)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard11">
@@ -220,7 +220,7 @@ function Beauty() {
         <h1>StaticNails - Toasted Sugar Almond</h1>
          <p class="price">$14</p>
         <p>24 Universal Nails in 12 sizes  — fits average, petite, and larger sized nails.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(11)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard12">
@@ -228,7 +228,7 @@ function Beauty() {
         <h1>Obsidian Facial Roller</h1>
          <p class="price">$25</p>
         <p>A stimulating, handcrafted obsidian stone face roller that helps promote tranquility for revitalized-looking skin.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(12)}>Add to Cart</button></p>
     </div>
     
     <footer class="beauty-site-footer1">
