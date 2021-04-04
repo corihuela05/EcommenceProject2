@@ -183,6 +183,14 @@ function App() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
+    function handleAccessibility() {
+        ReactDOM.render(<Accessibility/>, document.getElementById('root'));
+    }
+    function handleCAPrivacyRights() {
+        ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
+    }
+
+
     return (
         <div className="App">
             <div className="Appheader">
@@ -398,9 +406,7 @@ function App() {
                             <button>RETURNS</button>
                         </form>
                         <button>PRODUCT RECALLS</button>
-                        <form onsubmit={Accessibility}>
-                            <button>ACCESSIBILTY</button>
-                        </form>
+                        <button onClick={handleAccessibility}> ACCESSIBILITY</button>
                         <button>ADVERTISE WITH US</button>
                     </div>
                     <div className="footer4">
