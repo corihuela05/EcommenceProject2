@@ -4,7 +4,6 @@ import Shop from "./Shop";
 import Product from "./Product";
 import Home from "./App"
 import './App.css';
-import './main_footer.css';
 import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
 import Account from './Account';
@@ -14,12 +13,14 @@ import Profile from './Profile'
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
+import "./main-footer.ccs";
 
 
 
 
 
-function Returns() {
+
+function Custreturn() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -152,74 +153,37 @@ function Returns() {
     <div className="sliderslide">
     <div className="slider">
     
-    
-      <h1>Returns</h1>
+      <h1>RETURNS </h1>
            <p>
 
+We provide services to you subject to the notices, terms, and conditions set forth in this agreement. Besides, you will obey the rules, guidelines, policies, terms, and conditions applicable to such services before you use them. We reserve the right to change this site and these terms and conditions at any time.
 
+Before proceeding, please read this agreement because accessing, browsing, or otherwise using the Site indicates your agreement to all the terms and conditions in this agreement.
 
+You shall not upload, distribute, or otherwise publish through this Site any Content, information, or other material that (a) includes any bugs, viruses, worms, trap doors, Trojan horses, or other harmful code or properties; (b) is libelous, threatening, defamatory, obscene, indecent, pornographic, discriminatory, or could give rise to any civil or criminal liability under the laws of the U.S. or the laws of any other country that may apply; or (c)violates or infringes upon the copyrights, patents, trademarks, service marks, trade secrets, or other proprietary rights of any person.  www.yourbusinessdomain may give you an account identification and password to enable you to access and use certain portions of this Site. Each time you use a password or identification, you are deemed to be authorized to access and use the Site in a manner consistent with the terms and conditions of this agreement, and
 
-<h2>Option 1 – No Refunds/Exchanges:<h2>
+www.MagEASYcase.com has no obligation to investigate the source of any such access or use of the Site.
 
-<p> We do not accept returns or exchanges unless the item you purchased is defective. 
-If you receive a defective item, please contact us at [•] with details of the product and the defect. 
-You can send the item you consider defective to:
+By accepting these Terms of Use through your use of the Site, you certify that you are 18 years of age or older. If you are under 18 years old please use this Site only under the supervision of a parent or legal guardian. Subject to the terms and conditions of this agreement, hereby grants you a limited, revocable, non-transferable, and non-exclusive license to access and use the Site by displaying it on your Internet browser only for the purpose of shopping and not for any commercial use or use on behalf of any third party, except as explicitly permitted by 
 
-[Address]
+www.MagEASYcase.com in advance. Any violation of this Agreement shall result in the immediate revocation of the license granted in this paragraph without notice to you.
 
-Upon receipt of the returned product, we will fully examine it and notify you via e-mail, within a reasonable period of time, whether you are entitled to a refund or a replacement as a result of the defect. If you are entitled to a replacement or refund, we will replace the product or refund the purchase price, using the original method of payment.
+Unless explicitly permitted by our company in advance, all materials, including images, text, illustrations, designs, icons, photographs, programs, music clips or downloads, video clips and written and other materials that are part of this Site (collectively, the “Contents”) are intended solely for personal, non-commercial use. You may not make any commercial use of any of the information provided on the Site or make any use of the Site for the benefit of another business. We reserve the right to refuse service, terminate accounts, and/or cancel orders in its discretion, including, without limitation, if we believe that customer conduct violates applicable laws or is harmful to our interests. You may not reproduce, distribute, display, sell, lease, transmit, create derivative works from, translate, modify, reverse-engineer, disassemble, decompile, or otherwise exploit this Site or any portion of it unless expressly permitted by our company in writing.
 
+You will be solely responsible for all access to and use of this site by anyone using the password and identification originally assigned to you whether or not such access to and use of this site is actually authorized by you, including without limitation, all communications and transmissions and all obligations (including without limitation financial obligations) incurred through such access or use. You are solely responsible for protecting the security and confidentiality of the password and identification assigned to you. You shall immediately notify www.MagEASYcase.com of any unauthorized use of your password or identification or any other breach or threatened breach of this Site’s security.
 
+MagEASYcase
+New Jersey, USA
 
-<h2>Option 2 – Refunds Permitted: <h2>
++1 (609) 316 -2780
 
-We accept returns. You can return unopened items in the original packaging within 30 days of your purchase with receipt or proof of purchase. If 30 days or more have passed since your purchase, we cannot offer you a refund or an exchange.
-
-Upon receipt of the returned item, we will fully examine it and notify you via email, within a reasonable period of time, whether you are entitled to a return. If you are entitled to a return, we will refund your purchase price and a credit will automatically be applied to your original method of payment.
-
-Only regular priced items may be refunded. Sale items are non-refundable.
-
-To follow-up on the status of your return, please contact us at [•].
+support@MagEASYcase.com
 
  
-
-<h2> 2. Exchanges [Delete if you select Option 1]<h2>
-
-<p>We only exchange goods if they are defective or damaged. 
-In circumstances where you consider that a product is defective, 
-you should promptly contact us at [•] with details of the product and the defect.
-You can send the item you consider defective to:<p>
-
- 
-
-<b>[Address]<b/>
-
- 
-
-<p>Upon receipt of the returned product, we will fully examine it and notify you via e-mail,
-within a reasonable period of time, whether you are entitled to a replacement as a result of the defect. 
-If you are eligible, we will send you a replacement product. <p/>
-
- 
-
-<b>3. Exceptions [May be included if you select Option 2]<b/>
-
-<p>Some items are non-refundable and non-exchangeable. These include: [list items]<p/>
-
- 
-
-<h2>4. Shipping <h2/>
-
-<p>To return the item you purchased, please mail it to:
-
- 
-
-<b>[Address]<b/>
-
- 
-
-Refunds do not include any shipping and handling charges shown on the packaging slip or invoice. Shipping charges for all returns must be prepaid and insured by you. You are responsible for any loss or damage to hardware during shipment. We do not guarantee that we will receive your returned item. Shipping and handling charges are not refundable.
-Any amounts refunded will not include the cost of shipping.<p/>
+Shop MagEASY Case  Track your order  Shipping & Delivery  Returns and Refunds  Terms Of Service  FAQ  Privacy Policy
+CLOSE
+SHOPPING CART :
+No Items in cart
 
 </p>
       
@@ -240,25 +204,31 @@ Any amounts refunded will not include the cost of shipping.<p/>
       </div>
     </div>
   
-    
-    
     <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-     <button>OUR COMPANY</button>
-      <button>VENDOR DIRECTORY</button>
-      <button>HELP CENTER</button>
-      <button>COSTUMER SERVICE</button>
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
       <button>RETURNS</button>
       <button>PRODUCT RECALLS</button>
       <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
       <button>TERMS OF SERVICE</button>
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
@@ -276,4 +246,4 @@ Any amounts refunded will not include the cost of shipping.<p/>
   );
 }
 
-export default Returns;
+export default Custreturn;
