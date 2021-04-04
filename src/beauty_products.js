@@ -11,7 +11,8 @@ import Account from './Account';
 import FormSignup from './userlogin';
 import Profile from './Profile'
 import Videog from './Videogame';
-
+import Item_Display from './item_display';
+import axios from 'axios'
 
 function Beauty() {
   function handleHome(){
@@ -43,7 +44,16 @@ function Beauty() {
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
-  
+    function itemDisplay(id){
+      axios.post("http://127.0.0.1:5000/itemDisplay", {"id":id}).then(data=>{
+        
+        ReactDOM.render(<Item_Display image={data['data']['image']} category={data['data']['category']}
+                        description={data['data']['description']} id={data['data']['id']} name={data['data']['name']} 
+                        price={data['data']['price']}/>,document.getElementById('root'));
+
+      })
+    }
+
   return (
     <div className="App">
     <div className="Appheader">
@@ -129,7 +139,7 @@ function Beauty() {
         <h1>YOUNIQUE fan brush</h1>
          <p class="price">$24.99</p>
         <p>Gently brush away those extra flecks of color with the YOUNIQUE fan brush.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button onClick={()=>itemDisplay(1)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard2">
@@ -137,7 +147,7 @@ function Beauty() {
         <h1>Circle\Delete® Concealer</h1>
          <p class="price">$32.00</p>
         <p>An eye conditioner and concealer containing moringa butter and avocado oil, both high in vitamins A, C, D and E.</p>
-        <p><button>Add to Cart</button></p>
+        <p><button  onClick={()=>itemDisplay(1)}>Add to Cart</button></p>
     </div>
     
     <div class="beautycard3">

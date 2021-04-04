@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, json
 from flask_mysqldb import MySQL
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_cors import CORS
 app = Flask("__main__")
 
 app.config['MYSQL_HOST'] = 'localhost'
@@ -10,23 +10,25 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
 
-#'''buyers profile table'''
+CORS(app)
+#buyers profile table
 db = SQLAlchemy(app)
+'''
 from buyersprofile import getbuyersprofile
 buyersprofile=getbuyersprofile(db)
 
-#'''non profit table'''
+#non profit table
 from nonprofitprofile import getnonprofitprofile
 nonprofitprofile=getnonprofitprofile(db)
 
-#'''gmf profile table'''
+#gmf profile table
 from gmfprofile import getgmfprofile
 gmfprofile=getgmfprofile(db)
 
-#'''products table'''
+#products table
 from products import getproducts
 products=getproducts(db)
-
+'''
 
 
 
@@ -42,9 +44,42 @@ products=getproducts(db)
 
 #'''edit function'''
 #buyersprofile.edit(21,12)
+class Product_test(db.Model):
+    Number_Products = db.Column(db.Integer, primary_key=True)
+    productName = db.Column(db.String(40), unique=False)
+    productPrice = db.Column(db.Integer, unique=False)
+    productDescription = db.Column(db.String(80), unique=False)
 
+    productImage = db.Column(db.String(100), unique=False)
+    product_Category = db.Column(db.String(20), unique=False)
+
+
+    def __repr__(self):                         
+        return '<Product %r>' % self.Number_Products
 db.create_all()
+'''
+entry=Product_test(Number_Products=1,productName="YOUNIQUE fan brush",productPrice=25,
+                    productDescription="Gently brush away those extra flecks of color with the YOUNIQUE fan brush.",
+                    productImage="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892",
+                    product_Category="Beauty")
+db.session.add(entry)
+db.session.commit()
+'''
+@app.route("/itemDisplay", methods=['GET','POST'])
+def item_Display():
+    data=json.loads(request.data.decode())
+    query=Product_test.query.filter_by(Number_Products=data["id"]).first()
+    returnval={"id":query.Number_Products,
+            "name":query.productName,
+            "price":query.productPrice,
+            "description":query.productDescription,
+            "image":query.productImage,
+            "category":query.product_Category}
+    print(returnval)
+    return returnval
 
+
+'''
 #Homepage
 
 @app.route("/", methods=['GET', 'POST'])
@@ -53,13 +88,8 @@ def index():
         if request.method == "POST":
             details = request.form
         return flask.render_template("index.html", token= "Hello")
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 app.run(debug=True)
-=======
-=======
-app.run(debug=True)
->>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 
 #Shipping
 
@@ -210,10 +240,6 @@ def profile():
 def test():
     return "Heyyyyyy"
 
-        
+'''   
 app.run(debug=True)
 
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
