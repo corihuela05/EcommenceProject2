@@ -31,42 +31,9 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
 <link rel="apple-touch-icon-precomposed" href="#">
 <link rel="shortcut icon" href="#">
-<style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-</style>
 </head>
 
 <body>
-  <script>
-    function on() {
-      document.getElementById("overlay").style.display = "block";
-    }
-
-    function off() {
-      document.getElementById("overlay").style.display = "none";
-    }
-  </script>
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
@@ -76,30 +43,27 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-        <a class="brand" href="#">Greyson Management Portal</a>
-        <div class="nav-collapse collapse">
-          <p class="navbar-text pull-right">
-            Logged in as <a href="#" class="navbar-link">Owner</a>
-          </p>
-          <ul class="nav">
-            <li class="active"><a href="ownerdashboard.html">Owner Dashboard</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><br>
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span2">
-        <div class="sidebar-nav">
-          <ul class="nav nav-list">
-          	<li class="nav-header">Statistics</li>
-            <li class="active"><a href="ownerdashboard.html">Sitewide Stats</a></li>
-            <li class="nav-header">Management</li>
-            <li><a href="owner-allsellers.html">All Sellers</a></li>
-            <li><a href="owner-allskus.html">All Items</a></li>
-
+				<a class="brand" href="#">Greyson Management Portal</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+						Logged in as <a href="#" class="navbar-link">Sponsor</a>
+					</p>
+					<ul class="nav">
+						<li class="active"><a href="ownerdashboard.html">Sponsor Dashboard</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<div class="sidebar-nav">
+					<ul class="nav nav-list">
+                  <li class="nav-header">Sponsors</li>
+                 <li class="active"><a href="sponsordashboard.html">Sponsor Statistics</a></li>
+                  <li><a href="sponsors.html">Edit Information</a></li>
 
 					</ul>
 				</div><!--/.well -->
@@ -112,7 +76,7 @@
 						<div class="card">
 							<h2 class="card-heading simple">Total Contributions</h2>
 							<div class="card-body">
-								<p class="lead text-center"><b>$15,650.33</b></p>
+								<p class="lead text-center"><b>$6,650.33</b></p>
 							</div>
 						</div>
 					</div><!--/span-->
@@ -120,7 +84,7 @@
 						<div class="card">
 							<h2 class="card-heading simple">Sales</h2>
 							<div class="card-body">
-								<p class="text-center lead"><b>3710</b></p>
+								<p class="text-center lead"><b>710</b></p>
 							</div>
 						</div>
 					</div><!--/span-->
@@ -128,7 +92,7 @@
 						<div class="card">
 							<h2 class="card-heading simple">Number of Units</h2>
 							<div class="card-body">
-								<p class="text-center lead"><b>3991</b></p>
+								<p class="text-center lead"><b>76</b></p>
 							</div>
 						</div>
 					</div><!--/span-->
@@ -136,7 +100,7 @@
 						<div class="card">
 							<h2 class="card-heading simple">Sales Amount</h2>
 							<div class="card-body">
-								<p class="text-center lead"><b>$91,605.29</b></p>
+								<p class="text-center lead"><b>$13,605.29</b></p>
 							</div>
 						</div>
 					</div><!--/span-->
@@ -144,48 +108,19 @@
 						<div class="card">
 							<h2 class="card-heading simple">Sales (30 days)</h2>
 							<div class="card-body">
-								<p class="text-center lead"><b>$47,601.17</b></p>
+								<p class="text-center lead"><b>$7,601.17</b></p>
 							</div>
 						</div>
 					</div><!--/span--> 
 					<div class="span2">
 						<div class="card">
-							<h2 class="card-heading simple">Total Fees</h2>
+							<h2 class="card-heading simple">Sales (7 days)</h2>
 							<div class="card-body">
-								<p class="text-center lead"><b>$13,221.91</b></p>
+								<p class="text-center lead"><b>$2,221.91</b></p>
 							</div>
 						</div>
 					</div><!--/span--> 
-
 				</div><!--/row-->
-					<div class="hero-unit">
-					<button onclick="on()">New</button>
-					<hr>
-					<h2>3/1/2021 - New Announcement 2</h2>
-					<p>Text for new announcements.</p><button onclick="on()">Edit</button>
-					<hr>
-					<h2>2/15/2021 - New Announcement</h2>
-					<p>Text for new announcements.</p><button onclick="on()">Edit</button>
-				</div>
-				<div id="overlay">
-                <div id="text">
-                  <h3>Enter Announcement</h3>
-                  <label class="control-label">Title</label>
-						<div class="controls">
-							<input type="text">
-						</div>
-						<label class="control-label">Message</label>
-						<div class="controls">
-							<textarea rows="7"></textarea>
-						</div>
-                  
-                  <div class="control-group">
-                    <div class="controls">
-                      <button onclick="off()" type="submit" class="btn btn-primary">Submit</button>
-                      <button onclick="off()" type="button" class="btn">Cancel</button>
-                    </div>
-                  </div></div>
-                </div>
 
 			</div><!--/span-->
 		</div><!--/row-->
