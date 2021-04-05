@@ -30,7 +30,7 @@ import Gettoknowus from './Gettoknowus';
 import './Profile.css';
 import './Videogame.css';
 
-function Profiles () {
+function CES () {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -256,35 +256,35 @@ function Profiles () {
     
    <div class="Videogameadjust">
     <div className="nonp">
-        <h1>American Red Cross</h1>
-        <p1>431 18th Street, NW Washington, DC 20006</p1>
-        <p3>1 (800) 733-2767</p3>
-        <p><a className="com1link"href="https://www.redcross.org/">ARC!</a></p>
+        <h1>Cleveland Elementary School</h1>
+        <p1>388 Bergen St, Newark, NJ 07108</p1>
+        <p3>(973) 733-6944</p3>
+        <p><a className="com1link"href="https://www.nps.k12.nj.us/clv/">Cleveland!</a></p>
     </div>
     
-    <img className="gmflogo"src="https://valdostatoday.com/wp-content/uploads/2016/10/american-red-cross.png" />
+    <img className="gmflogo"src="https://clevelandscholarshangout.weebly.com/uploads/5/5/8/6/55862035/692418.jpg?332" />
     
    <div class="midlinetopthree"></div>
    
    <div class="nonpmission1">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-bar-chart"></i>
-       <h3>Non profit mission 1</h3>
-       <p1>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p1>
+       <h3>School Mission 1</h3>
+       <p1>Cleveland Avenue Elementary School’s mission is to provide our students with the academic tools such as critical thinking and problem solving.</p1>
     </div>
     
     <div class="nonpmission2">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-list-ul"></i>
-       <h3>Non profit mission 2</h3>
-       <p1>The American Red Cross, through its strong network of volunteers, donors and partners, is always there in times of need.</p1>
+       <h3>School Mission 2</h3>
+       <p1>Further, students learn positive social inter-action skills that they need to succeed in high school, college and the global society.</p1>
     </div>
     
     <div class="nonpmission3">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-check-circle-o"></i>
-       <h3>Non profit mission 3</h3>
-       <p1>The Red Cross is a worldwide institution in which all societies have equal status and share equal responsibilities and duties in helping each other.</p1>
+       <h3>School Mission 3</h3>
+       <p1>Developing the core values of respect, responsibility, reflection, and resiliency.</p1>
     </div>
    
     <div class="secondmidlinetopthree"></div>
@@ -298,8 +298,8 @@ function Profiles () {
     <div class="thirdmidlinetopthree"></div>
     
       <div class="similarnearyou">
-      <h2>Non Profits Near you</h2>
-      <p1> Similar non profit that you may be interested</p1>
+      <h2>School Near you</h2>
+      <p1> Similar school that you may be interested</p1>
     </div>
     
 
@@ -307,8 +307,8 @@ function Profiles () {
      <div className="bottomimages">
        <input type="radio" name="slide" id="simage1" checked/>
        <input type="radio" name="slide" id="simage2" />
-       <img src="http://photos.prnewswire.com/prnfull/20151216/296712LOGO" class="simg1" alt="image1" />
-       <img src="https://highergroundusa.org/wp-content/uploads/charity-navigator-4star-903x675.jpg" class="simg2" alt="image2"/>
+       <img src="https://www.nj.com/resizer/QojiVu1qqrF3XGUoTDnmg045BCE=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/essex_impact/photo/2018/02/28/24209967-standard.jpg" class="simg1" alt="image1" />
+       <img src="https://lh3.googleusercontent.com/proxy/Xlb8yCXJnvZxuKYLzomaAQlRooR8o29XeKWtQj0qn_SbxX8Ayn5kgfVVgtUhx0VM2RivkB_f52mHcd3v0AxlE9cWn89jinLDQoPX3hqCJWyruPCFUCWvAIFAqHfOtw" class="simg2" alt="image2"/>
       </div>
     <div className="sdot">
         <label for="simage1"></label>
@@ -361,4 +361,4 @@ function Profiles () {
   );
 }
 
-export default Profiles;
+export default CES;
