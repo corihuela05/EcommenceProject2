@@ -1,49 +1,14 @@
-.pthree1{
-  position: absolute;
-  top:0px;
-  left:40%;
-}
-
-.pthree2{
-  position: absolute;
-  top:0px;
-  left:50%;
-}
-
-.pthree3{
-  position: absolute;
-  top:0px;
-  left:80%;
-  background-color: black;
-  color: white;
-}
-
-.profilethree button {
-  border: none;
-  outline: none;
-  padding: 16px 18px;
-  font-size: 17px;
-}
-
-.linetopthree {
-  position: absolute;
-  border-bottom: 3px solid gray;
-  width: 99%;
-  top:65px;
-  left:.5%;
-}
-
 .midlinetopthree {
   position: absolute;
-  border-bottom: 3px solid lightgrey;
+  border-bottom: 3px solid grey;
   width: 99%;
-  top:380px;
+  top:360px;
   left:.5%;
 }
 
 .secondmidlinetopthree {
   position: absolute;
-  border-bottom: 3px solid lightgrey;
+  border-bottom: 3px solid grey;
   width: 99%;
   top:620px;
   left:.5%;
@@ -51,9 +16,9 @@
 
 .thirdmidlinetopthree {
   position: absolute;
-  border-bottom: 3px solid lightgrey;
+  border-bottom: 3px solid grey;
   width: 99%;
-  top:1140px;
+  top:1160px;
   left:.5%;
 }
 
@@ -67,32 +32,32 @@
 
 .nonp{
   position:absolute;
-  top:100px;
+  top:20px;
   width:600px;
   height: 200px;
-  left:3%;
+  left:80px;
   font-size: 22px;
 }
 
 .nonp p1{
   position: absolute;
-  top:82px;
-  left:1px;
+  top:170px;
+  left:120px;
 }
 
 .gmflogo{
   position: absolute;
-  top:90px;
-  left:48%;
-  height:250px;
-  width:700px;
+  top:20px;
+  left:800px;
+  height:300px;
+  width:600px;
   border:3px solid black;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .nonpmission1{
   position: absolute;
-  top: 420px;
+  top: 410px;
   left:3%;
   width:400px;
   height: 200px;
@@ -120,7 +85,7 @@
 /**/
 .nonpmission2{
   position: absolute;
-  top: 420px;
+  top: 410px;
   left:38%;
   width:400px;
   height: 200px;
@@ -148,7 +113,7 @@
 /**/
 .nonpmission3{
   position: absolute;
-  top: 420px;
+  top: 410px;
   left:73%;
   width:400px;
   height: 200px;
@@ -177,13 +142,14 @@
 .videofile{
   position: absolute;
   top:660px;
-  left:280px;
+  left:290px;
 }
 
 .similarnearyou{
   position: absolute;
-  top:1140px;
+  top:1170px;
   width: 100%;
+  
 }
 
 .similarnearyou h2{
@@ -193,15 +159,15 @@
 
 .similarnearyou p1{
   position: absolute;
-  left:36.5%;
+  left:40%;
   top:70px;
 }
 
 .bottomimages img{
   position:absolute;
   top:1270px;
-  left:370px;
-  height: 200px;
+  left:400px;
+  height: 220px;
   width: 45%;
   transition: all .15%s ease;
   border: 2px solid black;
@@ -210,12 +176,13 @@
 
 .bottomimages input{
   display:none;
+  transition: all 0.15s ease;
 }
 
 .sdot{
   position:absolute;
-  top:1480px;
-  left:660px;
+  top:1490px;
+  left:700px;
   display:flex;
   justify-content:center;
   margin:5px;
@@ -227,6 +194,7 @@
   border: solid black 3px;
   cursor: pointer;
   margin: 5px;
+  transition: all 0.15s ease;
 }
 .sdot label:hover{
   background: black;
@@ -239,42 +207,82 @@
   margin-left:-100%;
 }
 
-.profilecopyright{
-  position: absolute;
-  top:1560px;
-  left:80%;
-  background-color:white;
-  width:120px;
-  height: 50px;
-  border: 1px solid white;
+.Profile-site-footer1
+{
+  position:absolute;
+  top:1550px;
+  width:100%;
+  height:430px;
+  background-color:#26272b;
+  color:white;
+  padding:15px;
+  text-align:center;
+  
 }
 
-.profilefooter {
-  position: absolute;
-  top:1560px;
-  padding: 20px;
-  font-size: 20px;
-  width: 200px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  font-size: 28px;
-}
-.profilefooter a{
-  margin-right: 10px;
+.Profile-site-footer1 .footer1 button{
+  position:absolute;
+  left:250px;
+  top:80px;
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  outline:none;
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+.Profile-site-footer1 .footer2 {
+  position:absolute;
+  top:110px;
+  left:500px;
+  width:180px;
+}
+.Profile-site-footer1 .footer2 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+.Profile-site-footer1 .footer3 {
+  position:absolute;
+  top:110px;
+  left:650px;
+  width:180px;
+}
+.Profile-site-footer1 .footer3 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
 }
 
-.fa-instagram {
-  background: #125688;
-  color: white;
+.Profile-site-footer1 .footer4 {
+  position:absolute;
+  top:110px;
+  left:850px;
+  width:180px;
+}
+.Profile-site-footer1 .footer4 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.Profile-site-footer1 .footer5 {
+  position:absolute;
+  top:350px;
+  left:60px;
+  width:1220px;
+  text-align:left;
+}
+.Profile-site-footer1 .footer5 button{
+  width:180px;
+  background-color:#26272b;
+  border:none;
+  padding:5px 5px;
+  outline:none;
 }

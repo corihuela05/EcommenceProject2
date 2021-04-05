@@ -18,7 +18,7 @@ import School from './Schools';
 
 
 
-function DoNotSellMyInformation() {
+function Ourcompany() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -152,91 +152,14 @@ function DoNotSellMyInformation() {
     <div className="slider">
     
     
-      <h1>Returns</h1>
+      <h1>Our company </h1>
            <p>
 
-
-
-
-<h2>Option 1 – No Refunds/Exchanges:<h2>
-
-<p> We do not accept returns or exchanges unless the item you purchased is defective. 
-If you receive a defective item, please contact us at [•] with details of the product and the defect. 
-You can send the item you consider defective to:
-
-[Address]
-
-Upon receipt of the returned product, we will fully examine it and notify you via e-mail, within a reasonable period of time, whether you are entitled to a refund or a replacement as a result of the defect. If you are entitled to a replacement or refund, we will replace the product or refund the purchase price, using the original method of payment.
-
-
-
-<h2>Option 2 – Refunds Permitted: <h2>
-
-We accept returns. You can return unopened items in the original packaging within 30 days of your purchase with receipt or proof of purchase. If 30 days or more have passed since your purchase, we cannot offer you a refund or an exchange.
-
-Upon receipt of the returned item, we will fully examine it and notify you via email, within a reasonable period of time, whether you are entitled to a return. If you are entitled to a return, we will refund your purchase price and a credit will automatically be applied to your original method of payment.
-
-Only regular priced items may be refunded. Sale items are non-refundable.
-
-To follow-up on the status of your return, please contact us at [•].
-
- 
-
-<h2> 2. Exchanges [Delete if you select Option 1]<h2>
-
-<p>We only exchange goods if they are defective or damaged. 
-In circumstances where you consider that a product is defective, 
-you should promptly contact us at [•] with details of the product and the defect.
-You can send the item you consider defective to:<p>
-
- 
-
-<b>[Address]<b/>
-
- 
-
-<p>Upon receipt of the returned product, we will fully examine it and notify you via e-mail,
-within a reasonable period of time, whether you are entitled to a replacement as a result of the defect. 
-If you are eligible, we will send you a replacement product. <p/>
-
- 
-
-<b>3. Exceptions [May be included if you select Option 2]<b/>
-
-<p>Some items are non-refundable and non-exchangeable. These include: [list items]<p/>
-
- 
-
-<h2>4. Shipping <h2/>
-
-<p>To return the item you purchased, please mail it to:
-
- 
-
-<b>[Address]<b/>
-
- 
-
-Refunds do not include any shipping and handling charges shown on the packaging slip or invoice. Shipping charges for all returns must be prepaid and insured by you. You are responsible for any loss or damage to hardware during shipment. We do not guarantee that we will receive your returned item. Shipping and handling charges are not refundable.
-Any amounts refunded will not include the cost of shipping.<p/>
+Our company
 
 </p>
       
-      <div className="dot">
-      
-    <div>
-    
-    
-      
- 
-      
-    </div>
-    
-    
-  
-
-      
-      </div>
+   
     </div>
   
     
@@ -247,17 +170,25 @@ Any amounts refunded will not include the cost of shipping.<p/>
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-     <button>OUR COMPANY</button>
-      <button>VENDOR DIRECTORY</button>
-      <button>HELP CENTER</button>
-      <button>COSTUMER SERVICE</button>
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
       <button>RETURNS</button>
       <button>PRODUCT RECALLS</button>
       <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
       <button>TERMS OF SERVICE</button>
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
@@ -275,5 +206,4 @@ Any amounts refunded will not include the cost of shipping.<p/>
   );
 }
 
-export default DoNotSellMyInformation;
-
+export default Ourcompany;

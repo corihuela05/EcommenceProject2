@@ -18,7 +18,7 @@ import School from './Schools';
 
 
 
-function CAPrivacyRights(){
+function Caprivacy() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
@@ -149,41 +149,30 @@ function CAPrivacyRights(){
     </div>
     </div>
     <div className="sliderslide">
-    <div className="slider">
-    
-    
-      <h1>CA Privacy Rights </h1>
-           <p>
+<div className="slider">
 
 
-What Data We Collect
-The personal information we process about you and how we collect it can vary depending on (a) the product(s) or service(s) you use; (b) how you use the product or service; (c) how you have interacted with OpenText, and (d) the information that we have obtained from a customer or from a third party with permission to share such information with us.
-OpenText may collect personal information about you such as, for example: full name, email address, telephone number, company name, company location, position in company, department, billing information including credit card details where applicable, IP address and how you use our services. See Cookie Technology section for details on what we collect using cookies and other technologies.
-OpenText may combine the personal information you provide with information that is not collected directly from you. Data not provided directly by you may be supplied by OpenText’s vendors and/or partners. Refer to Personal Information Collected from Third Parties for additional information.
-How We Process Your Data
-OpenText processes personal information to respond to your requests, to provide you OpenText products and services, including information, support and delivery and access to online resources. Some of the specific processing activities include, for example:
+                    <h1>CA Privacy Rights </h1>
+                    <b>What Data We Collect</b>
+                        <p>The personal information we process about you and how we collect
+                        it can vary depending on (a) the product(s) or service(s) you use;
+                        (b) how you use the product or service; (c)
+                        how you have interacted with OpenText, and (d)
+                        the information that we have obtained from
+                        a customer or from a third party with permission to share
+                        such information with us.
 
+                        OpenText may collect personal information about you such as, for example:
+                        full name, email address, telephone number, company name, company location,
+                        position in company, department, billing information including credit card
+                        details where applicable, IP address and how you use our services.
+                        See Cookie Technology section for details on what we collect
+                        using cookies and other technologies.
 
+                        </p>
 
-
-</p>
-      
-      <div className="dot">
-      
-    <div>
-    
-    
-      
- 
-      
     </div>
-    
-    
-  
 
-      
-      </div>
-    </div>
   
     
     
@@ -193,17 +182,25 @@ OpenText processes personal information to respond to your requests, to provide 
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
     </div>
     <div className="footer2">
-     <button>OUR COMPANY</button>
-      <button>VENDOR DIRECTORY</button>
-      <button>HELP CENTER</button>
-      <button>COSTUMER SERVICE</button>
+      <button>GET TO KNOW US</button>
+      <button>OUR COMPANY</button>
+      <button>DIRECTORY</button>
+      <button>OUR SUPPLIERS</button>
+      <button>ADVERTISE WITH US</button>
+      <button>OUR SUPPLIERS</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer3">
+    <button>CUSTOMER SERVICE</button>
+      <button>HELP CENTER</button>
       <button>RETURNS</button>
       <button>PRODUCT RECALLS</button>
       <button>ACCESSIBILTY</button>
+      <button>CONTACT US</button>
     </div>
     <div className="footer4">
+      <button>GREYSON'S</button>
+      <button>OUR ADS</button>
       <button>TERMS OF SERVICE</button>
       <button>PRIVACY & SECURITY</button>
       <button>CA Privacy Rights</button>
@@ -221,6 +218,4 @@ OpenText processes personal information to respond to your requests, to provide 
   );
 }
 
-export default CAPrivacyRights;
-
-    
+export default Caprivacy;

@@ -17,8 +17,20 @@ import BeautyProducts from './beauty_products';
 import Profile from './Profile';
 import './Nonprofit.css';
 import Nonprofit from "./Nonprofit";
+import { useState } from "react";
 
 function Accounts() {
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
     function handlebeautyProducts() {
         ReactDOM.render(<BeautyProducts />, document.getElementById('root'));
     }
@@ -60,12 +72,29 @@ function Accounts() {
               <form onSubmit={handleHome}>
                   <button id="homebutton">Home</button>
               </form>
-              <form onSubmit={handleuserlogin}>
-                  <button id="info">Login</button>
-              </form>
-              <form onSubmit={handleAccount}>
-                  <button id="info1">Sign Up</button>
-              </form>
+              {isLoggedIn ? (
+                  <div>
+                      <div>
+                          <form>
+                              <button id="info">{username}</button>
+                          </form>
+                      </div>
+                      <div>
+                          <form onSubmit={handleuserlogout}>
+                              <button id="info1">Logout</button>
+                          </form>
+                      </div>
+                  </div>
+              ) : (
+                      <>
+                          <form onSubmit={handleuserlogin}>
+                              <button id="info">Login</button>
+                          </form>
+                          <form onSubmit={handleAccount}>
+                              <button id="info1">Sign Up</button>
+                          </form>
+                      </>
+                  )}
 
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
               <form onSubmit={handleCart}>

@@ -1,4 +1,3 @@
-import './Sports.css';
 import React from "react";
 import ReactDOM from 'react-dom';
 import Shop from "./Shop";
@@ -28,9 +27,10 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import './Profile.css';
+import './Videogame.css';
 
-
-function Sport () {
+function specialstrides () {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -127,16 +127,12 @@ function Sport () {
      ReactDOM.render(<Ourads />,document.getElementById('root'));
   }
 
-
-  return (
+ return (
     <div className="App">
     <div className="Appheader">
     <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-   <div className="searchbar">
-      <input type="text" name="search" placeholder="Search.." />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
+    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itmid=4320892" alt='flag' className="flag" />
+    <input type="text" name="search" placeholder="Search.."/>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -257,106 +253,70 @@ function Sport () {
     </div>
     </div>
 
+    
+   <div class="Videogameadjust">
+    <div className="nonp">
+        <h1>Special Strides</h1>
+        <p1>118 Federal Rd #8018, Monroe Township, NJ 08831</p1>
+        <p3>(732) 446-0945</p3>
+        <p><a className="com1link"href="https://specialstrides.com/">specialstrides!</a></p>
+    </div>
+    
+    <img className="gmflogo"src="https://centraljersey.com/wp-content/uploads/sites/26/2018/10/se-eb-special-strides-4-1024x768.jpg" />
+    
+   <div class="midlinetopthree"></div>
+   
+   <div class="nonpmission1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+       <i class="fa fa-bar-chart"></i>
+       <h3>Non profit mission 1</h3>
+       <p1> Special Strides has focused on improving the quality of life for all individuals who pass through the stable gates; patients, riders, families, volunteers, staff, donors, and community members.</p1>
+    </div>
+    
+    <div class="nonpmission2">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+       <i class="fa fa-list-ul"></i>
+       <h3>Non profit mission 2</h3>
+       <p1>Special Strides provides all individuals an opportunity to “Improve their lives… one stride at a time” regardless of financial status.</p1>
+    </div>
+    
+    <div class="nonpmission3">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+       <i class="fa fa-check-circle-o"></i>
+       <h3>Non profit mission 3</h3>
+       <p1>With a unique combination of therapy, horses, and the natural environment, individuals achieve goals appropriate for therapy, recreation, and education.</p1>
+    </div>
+   
+    <div class="secondmidlinetopthree"></div>
+    
+    <div className="videofile">
+      <video width="920" height="450" controls>
+        <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
+      </video>
+    </div>
+    
+    <div class="thirdmidlinetopthree"></div>
+    
+      <div class="similarnearyou">
+      <h2>Non Profits Near you</h2>
+      <p1> Similar non profit that you may be interested</p1>
+    </div>
+    
 
-    <div class="sportadjust">
-    <div class="sportcard1">
-        <img src="https://www.thecricketsquare.com/wp-content/uploads/2019/01/MRF-Virat-Kohli-Run-Machine-English-Willow-Cricket-Bat-SH-2.jpg" alt="bat" height="130" width="180"/>
-        <h1>MRF Legend VK 18</h1>
-         <p class="price">$103.01</p>
-        <p>The brand went to next level in the 1990’s when some of the world’s best batsmen wielded bats sponsored by MRF.</p>
-        <p><button>Add to Cart</button></p>
+    <div className="bottomslider">
+     <div className="bottomimages">
+       <input type="radio" name="slide" id="simage1" checked/>
+       <input type="radio" name="slide" id="simage2" />
+       <img src="http://rockinghorserehab.com/wp-content/uploads/2020/06/rhr-logo-retina-2020-new.jpg" class="simg1" alt="image1" />
+       <img src="https://lh3.googleusercontent.com/proxy/4HKK6kBlmk5z1G3AMmp6kLznC_OlpXBs0ftaaoJxJiec89ciC0loVGK4kWTWqxTzJsorH70fhaz5E4IQH8Hzc5NqPcaXfxAJHXL-BPDqJF0YAaWb3glMqNMI8aTT2QW-9nuamw" class="simg2" alt="image2"/>
+      </div>
+    <div className="sdot">
+        <label for="simage1"></label>
+        <label for="simage2"></label>
     </div>
+  
     
-    <div class="sportcard2">
-        <img src="https://i5.walmartimages.com/asr/fcc19c82-3182-49bd-8d05-cfd90199bc88.0675aa111eafcc66225336e5bca8d7b3.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="soccer" height="130" width="180"/>
-        <h1>Umbro Tristar Soccer Ball</h1>
-         <p class="price">$18.94</p>
-        <p>More than a sport, soccer is a diverse community of passionate players, and with the Umbro Tristar Size 5 Soccer Ball.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard3">
-        <img src="https://i5.walmartimages.com/asr/f7e31c14-076d-43bb-943c-0bd70a822910.023f322002ba0ca7d176d22ab9a6be45.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="basketballlls" height="130" width="180"/>
-        <h1>Spalding NBA Basketball</h1>
-         <p class="price">$29.94</p>
-        <p>The Spalding NBA Max Grip 29.5" Basketball brings superior game development to the next level.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard4">
-        <img src="https://i5.walmartimages.com/asr/71c070ba-7345-4599-b644-137be9a9a60f_1.03d28af839f167a152c1880da10bfa2f.png?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="nflhelmet" height="130" width="180"/>
-        <h1>Riddell Speedflex Football Helmet</h1>
-         <p class="price">$349.99</p>
-        <p>The goal was to design a helmet with fully integrated components and innovations for peak athlete performanc.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    
-    <div class="sportcard5">
-        <img src="https://i5.walmartimages.com/asr/866d1f54-b619-4cb3-bfc3-2f2e1744a1ab_1.ca1a6cfc096557ae535dc98ed0bfcb42.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="vset" height="130" width="180"/>
-        <h1>Park & Sun Sports Volleyball Set</h1>
-         <p class="price">$154.99</p>
-        <p>The Tournament Flex 1000 volleyball set includes everything needed for a fun and competitive outdoor volleyball game!.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard6">
-        <img src="https://i5.walmartimages.com/asr/70443963-bee5-415e-a958-f910aa45a55f.bcff7740dbfd3668f28f0546a27d1713.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="footballnfl" height="130" width="180"/>
-        <h1>Wilson American Football</h1>
-         <p class="price">$79.99</p>
-        <p>Wilson American FootballWilson American Football. NFL official size Ball. #1 Brand from NFL. Top rated.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard7">
-        <img src="https://i5.walmartimages.com/asr/d453fd08-ca3f-468c-a2f6-0afe3d98190d_1.80e1e63b9daafafa7bba00017616cb5c.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="vollball" height="130" width="180"/>
-        <h1>Wilson Soft Play Outdoor Volleyball</h1>
-         <p class="price">$8.97 was $12.99</p>
-        <p>For the beginners who are perfecting the fundamentals, or for players just looking to have fun with some friends.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard8">
-        <img src="https://i5.walmartimages.com/asr/ac95c44f-1bb1-45f2-b421-3432a1c4485a_4.b1a1389b6a5e22d6e1d9cc9ad9cc1943.png?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="baseballglove" height="130" width="180"/>
-        <h1>Rawlings Baseball Glove</h1>
-         <p class="price">$49.50</p>
-        <p>The Rawlings select Pro Lite Series offers an exciting collection of a popular Player designs to give aspiring big Leaguers the same glove styling.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard9">
-        <img src="https://i5.walmartimages.com/asr/a836dd92-7398-4bf3-808b-3f8bce04269b_1.078a0e56ad5a01407a21858aa577ebf0.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="golf" height="130" width="180"/>
-        <h1>Wilson Pro Golf Set</h1>
-         <p class="price">$349.99</p>
-        <p>Getting fit for custom clubs is a very popular trend in the golf industry today. The Profile SGI complete golf set is the only system in the world.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard10">
-        <img src="https://i5.walmartimages.com/asr/5a8c4fe3-d0ba-45fd-b92e-75310e55418d_1.b489aa52c36a0d8e6f43312d8b051642.png?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="keyboard" height="130" width="180"/>
-        <h1>EASTON REBEL Baseball Bat</h1>
-         <p class="price">$18.94</p>
-        <p>The Easton® Rebel™ is a one-piece design constructed ALX50 TM Aircraft Grade Alloy.It features a cushioned Flex™ grip.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard11">
-        <img src="https://pbs.twimg.com/media/ExQBpJoXEAIgEmG.jpg" alt="csk" height="130" width="180"/>
-        <h1>IPL Cricket Jersey CSK Team</h1>
-         <p class="price">$99.99</p>
-        <p>CSK's new jersey features camouflage as a tribute to the armed forces of the nation. It also features three stars above the team's logo on the shirt.</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <div class="sportcard12">
-        <img src="https://i5.walmartimages.com/asr/8f51bb37-8aaa-4b70-9563-d0ed001f9a72.493f59c859d27c6fdc00c656c3b2e2ea.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff" alt="trampoline" height="130" width="180"/>
-        <h1>Outdoor Trampoline</h1>
-         <p class="price">$789.99</p>
-        <p>2020 the new Zupapa Trampoline employs upgraded techniques and technology to make products have a longer life..</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-    
-    <footer class="videogame-site-footer1">
+     <footer class="Profile-site-footer1">
     <h1>About Greyson</h1>
     <div className="footer1">
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -394,12 +354,11 @@ function Sport () {
     </div>
     </footer>
     
-
     </div>
-   </div>
- 
+    </div>
+    </div>
     
   );
 }
 
-export default Sport;
+export default specialstrides;
