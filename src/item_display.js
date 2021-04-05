@@ -284,7 +284,7 @@ function Item_Display(props){
     </div>
             <img class="propimage" src={props.image}></img>
             <h1 class="propname">{props.name}</h1>
-            <p class="propprice">${props.price}</p>
+            <p class="price">${props.price}</p>
             <p class="propdescription">{props.description}</p>
         </div>
         <footer class="product-site-footer">

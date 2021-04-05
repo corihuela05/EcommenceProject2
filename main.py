@@ -65,6 +65,7 @@ entry=Product_test(Number_Products=1,productName="YOUNIQUE fan brush",productPri
 db.session.add(entry)
 db.session.commit()
 '''
+
 @app.route("/itemDisplay", methods=['GET','POST'])
 def item_Display():
     data=json.loads(request.data.decode())
