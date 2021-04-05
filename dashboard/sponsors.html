@@ -46,10 +46,10 @@
 				<a class="brand" href="#">Greyson Management Portal</a>
 				<div class="nav-collapse collapse">
 					<p class="navbar-text pull-right">
-						Logged in as <a href="#" class="navbar-link">Admin</a>
+						Logged in as <a href="#" class="navbar-link">Sponsor</a>
 					</p>
 					<ul class="nav">
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="ownerdashboard.html">Sponsor Dashboard</a></li>
 					</ul>
 				</div>
 			</div>
@@ -61,88 +61,53 @@
 			<div class="span2">
 				<div class="sidebar-nav">
 					<ul class="nav nav-list">
-                <li class="nav-header">Account Management</li>
-                  <li><a href="account.html">Account Settings</a></li>
-                  <li><a href="users.html">User Settings</a></li>
-                  <li><a href="shipping.html">Shipping Settings</a></li>
-                  <li class="nav-header">Item Management</li>
-                  <li class="active"><a href="create-sku.html">Create New Listing</a></li>
-                  <li><a href="edit-sku.html">View Item Listings</a></li>
-                  <li class="nav-header">Order Management</li>
-                  <li><a href="orders.html">View Orders</a></li>
-                  <li><a href="returns.html">Returns</a></li>
-                  <li><a href="preorders.html">Pre-Orders</a></li>
-                  <li><a href="messages.html">Customer Messages</a></li>
                   <li class="nav-header">Sponsors</li>
-                  <li><a href="sponsors.html">Edit Information</a></li>
+                 <li><a href="sponsordashboard.html">Sponsor Statistics</a></li>
+                  <li class="active"><a href="sponsors.html">Edit Information</a></li>
 
 					</ul>
 				</div><!--/.well -->
 			</div><!--/span-->
 
 			<div class="span5">
-				<h2>Create New SKU</h2>
+				<h2>Sponsor Settings</h2>
 
 				<form class="form-horizontal">
 					<div class="control-group">
-						<label class="control-label">Item Title</label>
+						<label class="control-label">Spoonsor Name</label>
 						<div class="controls">
-							<input type="text" placeholder="Max 150 Chars">
+							<input class="input-large" type="text" placeholder="Admin Company LLC">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Manufacturer</label>
+						<label class="control-label">Address</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-xxlarge" type="text" placeholder="123 Martin Luther King Blvd, Newark NJ">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Manufacturer Part #</label>
+						<label class="control-label">Email Address</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-large" type="text" placeholder="testaccount@gmail.com">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">UPC/ISBN</label>
+						<label class="control-label">Phone #</label>
 						<div class="controls">
-							<input type="text">
+							<input class="input-large" type="text" placeholder="973-201-1234" type="text" type="text">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Seller SKU</label>
+						<label class="control-label">Mission Statement</label>
 						<div class="controls">
-							<input type="text">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label">Item Weight</label>
-						<div class="controls">
-							<input type="text">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label">Price</label>
-						<div class="controls">
-							<input type="text">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label">Description</label>
-						<div class="controls">
-							<textarea placeholder="Max 600 Chars" rows="6"></textarea>
+							<textarea rows="10"></textarea>
 						</div>
 					</div>
 
 					<div class="control-group">
 						<div class="controls">
-							<label class="checkbox">
-								<input type="checkbox"> Free shipping
-							</label>
-							<label class="checkbox">
-								<input type="checkbox"> Automatically activate SKU when created
-							</label><br>
 							<button type="submit" class="btn btn-primary">Save changes</button>
-							<button type="button" class="btn">Cancel</button>
+							<a href="index.html"><button type="button" class="btn">Go back</button></a>
 						</div>
 					</div>
 				</form>
@@ -150,7 +115,7 @@
 
 			</div><!--/span-->
 			<div class="span3">
-				<h3>Upload images</h3>
+				<h3>Upload logo</h3>
 				<p>Supported formats: JPEG, PNG, GIF. Max File Size 2MB</p>
 				<input type="file"></input>
 				<br>
