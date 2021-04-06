@@ -45,11 +45,8 @@ function Beauty() {
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
     function itemDisplay(id){
-      axios.post("http://127.0.0.1:5000/itemDisplay", {"id":id}).then(data=>{
-        console.log(data)
-        ReactDOM.render(<Item_Display image={data['data']['image']} category={data['data']['category']}
-                        description={data['data']['description']} id={data['data']['id']} name={data['data']['name']} 
-                        price={data['data']['price']}/>,document.getElementById('root'));
+      axios.post("http://127.0.0.1:5000/addtoCart", {"id":id}).then(()=>{
+        ReactDOM.render(<Cart/>,document.getElementById('root'));
 
       })
     }

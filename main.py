@@ -65,19 +65,47 @@ entry=Product_test(Number_Products=1,productName="YOUNIQUE fan brush",productPri
 db.session.add(entry)
 db.session.commit()
 '''
-
-@app.route("/itemDisplay", methods=['GET','POST'])
-def item_Display():
+cart={
+    'items': {
+        1: {
+            'id': 1, 
+            'name': 'YOUNIQUE fan brush',
+            'price': 25, 
+            'image': 'https://components.youniqueproducts.com/images/2020-09/product-images/fan-brush-full.jpg?null', 
+            'num': 1}}, 
+    'total': 25}
+@app.route("/addtoCart", methods=['GET','POST'])
+def addtoCart():
+    global cart
     data=json.loads(request.data.decode())
     query=Product_test.query.filter_by(Number_Products=data["id"]).first()
-    returnval={"id":query.Number_Products,
+    if data["id"] not in cart["items"].keys():
+        cart['items'][data['id']]={"id":query.Number_Products,
             "name":query.productName,
             "price":query.productPrice,
-            "description":query.productDescription,
             "image":query.productImage,
-            "category":query.product_Category}
-    print(returnval)
-    return returnval
+            "num":1
+        }
+        cart["total"]+=query.productPrice
+    return {"code":0}
+@app.route("/getCart")
+def getCart():
+    return cart
+@app.route("/numChange",methods=["GET","POST"])
+def increaseOrDecrease():
+    global cart
+    data=json.loads(request.data.decode())
+    if int(data['id']) in cart['items'].keys():
+        if data['action']=='add':
+            cart['items'][int(data['id'])]['num']+=1
+            cart['total']+=cart['items'][int(data['id'])]['price']
+        elif data['action']=='sub':
+            cart['total']-=cart['items'][int(data['id'])]['price']
+            if cart['items'][int(data['id'])]['num']-1 <=0:
+                del cart['items'][int(data['id'])]
+            else:
+                cart['items'][int(data['id'])]['num']-=1
+    return  cart
 
 
 '''
