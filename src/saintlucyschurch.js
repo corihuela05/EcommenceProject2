@@ -30,7 +30,7 @@ import Gettoknowus from './Gettoknowus';
 import './Profile.css';
 import './Videogame.css';
 
-function Profiles () {
+function Slcs () {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -256,35 +256,35 @@ function Profiles () {
     
    <div class="Videogameadjust">
     <div className="nonp">
-        <h1>American Red Cross</h1>
-        <p1>431 18th Street, NW Washington, DC 20006</p1>
-        <p3>1 (800) 733-2767</p3>
-        <p><a className="com1link"href="https://www.redcross.org/">ARC!</a></p>
+        <h1>St. Lucy's Church</h1>
+        <p1>118 7th Ave #1897, Newark, NJ 07104</p1>
+        <p3>(973) 803-4200</p3>
+        <p><a className="com1link"href="https://www.saintlucy.net/">Saint Lucy's Church!</a></p>
     </div>
     
-    <img className="gmflogo"src="https://valdostatoday.com/wp-content/uploads/2016/10/american-red-cross.png" />
+    <img className="gmflogo"src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/109987339_3036316233151678_1930969916960765449_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=e3f864&_nc_ohc=5dh31eqXBWcAX94Waos&_nc_oc=AQmsyEDb6nP9qWhfPcjs3r0rsZLXCbwe_FxFeTZdkYbzVj5InEW-eC39foI13FbbOhKsQIXUSfqX6Zz7QD4FDNxx&_nc_ht=scontent-lga3-1.xx&oh=79def68f923eed23eee706892fa48f02&oe=608EA50F" />
     
    <div class="midlinetopthree"></div>
    
    <div class="nonpmission1">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-bar-chart"></i>
-       <h3>Non profit mission 1</h3>
-       <p1>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p1>
+       <h3>Church mission 1</h3>
+       <p1>Since 1891 the community of St. Lucy's Church has been transmitting this divine presence to the next generation.</p1>
     </div>
     
     <div class="nonpmission2">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-list-ul"></i>
-       <h3>Non profit mission 2</h3>
-       <p1>The American Red Cross, through its strong network of volunteers, donors and partners, is always there in times of need.</p1>
+       <h3>Church mission 2</h3>
+       <p1>Our mission is to help lead people into a growing relationship with Jesus Christ by creating a dynamic environment for authentic worship and effective communication while developing genuine community with each other.</p1>
     </div>
     
     <div class="nonpmission3">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-check-circle-o"></i>
-       <h3>Non profit mission 3</h3>
-       <p1>The Red Cross is a worldwide institution in which all societies have equal status and share equal responsibilities and duties in helping each other.</p1>
+       <h3>Church mission 3</h3>
+       <p1>We are a diverse community centered on Jesus Christ, seeking to wholly enjoy His grace, faithfully embody His love for one another, and boldly engage our culture with His truth, from our neighborhoods to the nations.</p1>
     </div>
    
     <div class="secondmidlinetopthree"></div>
@@ -298,8 +298,8 @@ function Profiles () {
     <div class="thirdmidlinetopthree"></div>
     
       <div class="similarnearyou">
-      <h2>Non Profits Near you</h2>
-      <p1> Similar non profit that you may be interested</p1>
+      <h2>Church Near you</h2>
+      <p1> Similar Church that you may be interested</p1>
     </div>
     
 
@@ -307,8 +307,8 @@ function Profiles () {
      <div className="bottomimages">
        <input type="radio" name="slide" id="simage1" checked/>
        <input type="radio" name="slide" id="simage2" />
-       <img src="http://photos.prnewswire.com/prnfull/20151216/296712LOGO" class="simg1" alt="image1" />
-       <img src="https://highergroundusa.org/wp-content/uploads/charity-navigator-4star-903x675.jpg" class="simg2" alt="image2"/>
+       <img src="https://www.abc.net.au/news/image/9445446-3x2-940x627.jpg" class="simg1" alt="image1" />
+       <img src="https://img.gta5-mods.com/q95/images/church-interior/e18c47-pic6.png" class="simg2" alt="image2"/>
       </div>
     <div className="sdot">
         <label for="simage1"></label>
@@ -361,4 +361,4 @@ function Profiles () {
   );
 }
 
-export default Profiles;
+export default Slcs;

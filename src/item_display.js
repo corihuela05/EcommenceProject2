@@ -27,10 +27,21 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
-import './Profile.css';
-import './Videogame.css';
+import './item_display.css';
+import { useState } from "react";
 
-function Profiles () {
+function Item_Display(props){
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+
+    function handleuserlogout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+    }
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -43,7 +54,7 @@ function Profiles () {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
   }
- 
+  
   function handleHomeandfurnitures(){
   ReactDOM.render(<Homeandfurnitures />,document.getElementById('root'));
  }
@@ -76,12 +87,12 @@ function Profiles () {
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
   }
- 
+  
    function handleSchoolst(){
     ReactDOM.render(<School />,document.getElementById('root'));
   }
- 
- 
+  
+  
     function handleAccount(){
     ReactDOM.render(<Account />,document.getElementById('root'));
   }
@@ -91,58 +102,77 @@ function Profiles () {
   function handleProfile(){
     ReactDOM.render(<Profile />,document.getElementById('root'));
   }
- 
+  
     function handlevideogame(){
      ReactDOM.render(<Videog />,document.getElementById('root'));
   }
     function handlesports(){
      ReactDOM.render(<Sportpro />,document.getElementById('root'));
   }
- 
+  
     function handlebaby(){
      ReactDOM.render(<Baby />,document.getElementById('root'));
   }
- 
+  
     function handlepatio(){
      ReactDOM.render(<Patio />,document.getElementById('root'));
   }
- 
+  
     function handlepets(){
      ReactDOM.render(<Pets />,document.getElementById('root'));
   }
- 
+  
     function handlepharmacy(){
      ReactDOM.render(<Pharmacy />,document.getElementById('root'));
   }
- 
+  
     function handleauto(){
      ReactDOM.render(<Auto />,document.getElementById('root'));
   }
- 
+  
     function handlemusic(){
      ReactDOM.render(<Music />,document.getElementById('root'));
   }
- 
+  
   function handleOurads(){
      ReactDOM.render(<Ourads />,document.getElementById('root'));
   }
-
- return (
-    <div className="App">
+    return(
+        <div>
+            <div className="productlogo">
     <div className="Appheader">
     <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itmid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
+    <div className="searchbar">
+      <input type="text" name="search" placeholder="Search.." />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
-   
-  <form onSubmit={handleAccount}>
-      <button id="info1">Sign Up</button>
-    </form>
-    <form onSubmit={handleuserlogin}>
-      <button id="info">Login</button>
-    </form>
+              {isLoggedIn ? (
+                  <div>
+                      <div>
+                          <form>
+                              <button id="info">{username}</button>
+                          </form>
+                      </div>
+                      <div>
+                          <form onSubmit={handleuserlogout}>
+                              <button id="info1">Logout</button>
+                          </form>
+                      </div>
+                  </div>
+              ) : (
+                      <>
+                          <form onSubmit={handleuserlogin}>
+                              <button id="info">Login</button>
+                          </form>
+                          <form onSubmit={handleAccount}>
+                              <button id="info1">Sign Up</button>
+                          </form>
+                      </>
+                  )}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <form onSubmit={handleCart}>
       <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
@@ -200,12 +230,12 @@ function Profiles () {
     <form onSubmit={handleNonprofit}>
       <button>Electronics & Office</button>
     </form>
-   
+    
     <form onSubmit={handlevideogame}>
       <button>Toys, Games and Video Games</button>
     </form>
     <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-   
+    
       <form onSubmit={handleHomeandfurnitures}>
        <button>Home, Furniture & Appliances</button>
     </form>
@@ -239,7 +269,7 @@ function Profiles () {
       <button>Photos</button>
     </form>
     <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
-    </div>
+    </div> 
     </div>
     <div className="tabs">
       <button  onClick={handleartProducts} >Best Sellers</button>
@@ -252,113 +282,95 @@ function Profiles () {
       <button  onClick={handleartProducts} >Gift Cards</button>
     </div>
     </div>
+            <img class="propimage" src={props.image}></img>
+            <h1 class="propname">{props.name}</h1>
+            <p class="price">${props.price}</p>
+            <p class="propdescription">{props.description}</p>
+        </div>
+        <footer class="product-site-footer">
+            <h1>About Greyson</h1>
+            <div className="footer1">
+            <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
+            </div>
+            <div className="footer2">
+            
+            <form onSubmit={handleGetknowus}>
+                <button>GET TO KNOW US</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>OUR COMPANY</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>DIRECTORY</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>OUR SUPPLIERS</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>ADVERTISE WITH US</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>OUR SUPPLIERS</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>CONTACT US</button>
+            </form>
+            </div>
+            <div className="footer3">
+            <form onSubmit={handleGetknowus}>
+            <button>CUSTOMER SERVICE</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>HELP CENTER</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>RETURNS</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>PRODUCT RECALLS</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>ACCESSIBILTY</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>CONTACT US</button>
+            </form>
+            </div>
+            <div className="footer4">
+            <form onSubmit={handleGetknowus}>
+            <button>GREYSON'S</button>
+            </form>
+            <form onSubmit={handleOurads}>
+                <button>OUR ADS</button>
+            </form>
+            <form onSubmit={handleTermofservices}>
+                    <button>TERMS OF SERVICE</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>PRIVACY & SECURITY</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>CA Privacy Rights</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>Do Not Sell My information</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>Request My information</button>
+            </form>
+            <form onSubmit={handleGetknowus}>
+            <button>Tax Exempt Program</button> 
+            </form>
+            </div>
+            <div className="footer5">
+            <hr/>
+            <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
+            </div>
+            </footer>
+            </div>
+            
+            
+        );
+        }
 
-    
-   <div class="Videogameadjust">
-    <div className="nonp">
-        <h1>American Red Cross</h1>
-        <p1>431 18th Street, NW Washington, DC 20006</p1>
-        <p3>1 (800) 733-2767</p3>
-        <p><a className="com1link"href="https://www.redcross.org/">ARC!</a></p>
-    </div>
-    
-    <img className="gmflogo"src="https://valdostatoday.com/wp-content/uploads/2016/10/american-red-cross.png" />
-    
-   <div class="midlinetopthree"></div>
-   
-   <div class="nonpmission1">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-       <i class="fa fa-bar-chart"></i>
-       <h3>Non profit mission 1</h3>
-       <p1>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p1>
-    </div>
-    
-    <div class="nonpmission2">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-       <i class="fa fa-list-ul"></i>
-       <h3>Non profit mission 2</h3>
-       <p1>The American Red Cross, through its strong network of volunteers, donors and partners, is always there in times of need.</p1>
-    </div>
-    
-    <div class="nonpmission3">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-       <i class="fa fa-check-circle-o"></i>
-       <h3>Non profit mission 3</h3>
-       <p1>The Red Cross is a worldwide institution in which all societies have equal status and share equal responsibilities and duties in helping each other.</p1>
-    </div>
-   
-    <div class="secondmidlinetopthree"></div>
-    
-    <div className="videofile">
-      <video width="920" height="450" controls>
-        <source src="BoysandGirlsClub.mp4" type="video/mp4"/>
-      </video>
-    </div>
-    
-    <div class="thirdmidlinetopthree"></div>
-    
-      <div class="similarnearyou">
-      <h2>Non Profits Near you</h2>
-      <p1> Similar non profit that you may be interested</p1>
-    </div>
-    
-
-    <div className="bottomslider">
-     <div className="bottomimages">
-       <input type="radio" name="slide" id="simage1" checked/>
-       <input type="radio" name="slide" id="simage2" />
-       <img src="http://photos.prnewswire.com/prnfull/20151216/296712LOGO" class="simg1" alt="image1" />
-       <img src="https://highergroundusa.org/wp-content/uploads/charity-navigator-4star-903x675.jpg" class="simg2" alt="image2"/>
-      </div>
-    <div className="sdot">
-        <label for="simage1"></label>
-        <label for="simage2"></label>
-    </div>
-  
-    
-     <footer class="Profile-site-footer1">
-    <h1>About Greyson</h1>
-    <div className="footer1">
-      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
-    </div>
-    <div className="footer2">
-      <button>GET TO KNOW US</button>
-      <button>OUR COMPANY</button>
-      <button>DIRECTORY</button>
-      <button>OUR SUPPLIERS</button>
-      <button>ADVERTISE WITH US</button>
-      <button>OUR SUPPLIERS</button>
-      <button>CONTACT US</button>
-    </div>
-    <div className="footer3">
-    <button>CUSTOMER SERVICE</button>
-      <button>HELP CENTER</button>
-      <button>RETURNS</button>
-      <button>PRODUCT RECALLS</button>
-      <button>ACCESSIBILTY</button>
-      <button>CONTACT US</button>
-    </div>
-    <div className="footer4">
-      <button>GREYSON'S</button>
-      <button>OUR ADS</button>
-      <button>TERMS OF SERVICE</button>
-      <button>PRIVACY & SECURITY</button>
-      <button>CA Privacy Rights</button>
-      <button>Do Not Sell My information</button>
-      <button>Request My information</button>
-      <button>Tax Exempt Program</button>
-    </div>
-    <div className="footer5">
-      <hr/>
-      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
-    </div>
-    </footer>
-    
-    </div>
-    </div>
-    </div>
-    
-  );
-}
-
-export default Profiles;
+        export default Item_Display;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="./bootstrap/css/bootplus.css" rel="stylesheet">
+  <style type="text/css">
+  <style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .hero-unit {
+    padding: 30px;
+  }
+  @media (max-width: 980px) {
+    .navbar-text.pull-right {
+      float: none;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+</style>
+<link href="./bootstrap/css/bootplus-responsive.css" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+<link rel="apple-touch-icon-precomposed" href="#">
+<link rel="shortcut icon" href="#">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+
+<body>
+  <script>
+    function myFunction() {
+      confirm("Are you sure you want to void this order?");
+    }
+  </script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Greyson Management Portal</a>
+        <div class="nav-collapse collapse">
+          <p class="navbar-text pull-right">
+            Logged in as <a href="#" class="navbar-link">Owner</a>
+          </p>
+          <ul class="nav">
+            <li class="active"><a href="ownerdashboard.html">Owner Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <div class="sidebar-nav">
+          <ul class="nav nav-list">
+            <li class="nav-header">Statistics</li>
+            <li><a href="ownerdashboard.html">Sitewide Stats</a></li>
+            <li class="nav-header">Management</li>
+            <li class="active"><a href="owner-allsellers.html">All Sellers</a></li>
+            <li><a href="owner-allskus.html">All Items</a></li>
+
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+
+      <div class="span10">
+        <h2>View All Sellers</h2>
+
+        <div id="app">
+        	<table class="table table-striped">
+        		<thead>
+             <tr>
+               <th>Seller Business Name</th>
+               <th>Action</th>
+               <th>Sales Amount</th>
+               <th>SKUs listed</th>
+               <th>Total Contributions</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr v-for="item in currentPageItems" :key="item.id">
+              <td>{{item.id}}</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>{{item.sales}}</td>
+              <td>{{item.skus}}</td>
+              <td>{{item.contributions}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <span>Page:</span>
+          <button v-for="i in paginatedItems.length" class="btn btn-secondary mr-1" :class="{'btn-success' : currentPage === i }" @click="changePage(i)">
+           {{i}}
+         </button>
+       </div>
+     </div>
+     <script src="./js/pages.js"></script>
+
+   </div><!--/span-->
+ </div><!--/row-->
+
+ <hr>
+
+ <footer>
+  <p>© Greyson 2021</p>
+</footer>
+
+</div>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./bootstrap/js/bootstrap-min.js"></script>
+
+</body></html>

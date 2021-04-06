@@ -4,8 +4,9 @@ import "./Form.css";
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Nonprofit from "./Nonprofit";
-
+import GiveAccess from "./GiveAccess";
 import App from "./App";
+import Profile from "./Profile";
 
 
 const FormSuccess = () => {
@@ -21,19 +22,30 @@ const FormSuccess = () => {
                 case "admin":
                     localStorage.setItem("isLoggedIn", true);
                     localStorage.setItem("username", "admin");
-                    <Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
+                    ReactDOM.render(<App />, document.getElementById("root"));
+                    //<Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
                     break;
-                    case "nonprofit":
-                    //ReactDOM.render(<App username="Non Profit" isLoggedIn={true} />, document.getElementById("root"));
+                case "nonprofit":
                     localStorage.setItem("isLoggedIn", true);
                     localStorage.setItem("username", "nonprofit");
-                    <Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
+                    ReactDOM.render(<Profile />, document.getElementById("root"));
+                    break;
+                case "rodney":
+                    localStorage.setItem("isLoggedIn", true);
+                    localStorage.setItem("username", "nonprofit");
+                    ReactDOM.render(<GiveAccess />, document.getElementById("root"));
                     break;
                 case "buyer":
                     localStorage.setItem("isLoggedIn", true);
                     localStorage.setItem("username", "buyer");
                     ReactDOM.render(<App />, document.getElementById("root"));
                     break;
+                case "hello":
+                    localStorage.setItem("isLoggedIn", true);
+                    localStorage.setItem("username", "hello");
+                    ReactDOM.render(<App />, document.getElementById("root"));
+                    //<Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
+                    break
                 default:
                     break;
             }

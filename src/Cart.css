@@ -4,7 +4,9 @@
   left:70%;
   width:450px;
 }
-
+.image{
+  width:200px;
+}
 .topsright button {
   border: none;
   outline: none;

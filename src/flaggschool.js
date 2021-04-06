@@ -30,7 +30,7 @@ import Gettoknowus from './Gettoknowus';
 import './Profile.css';
 import './Videogame.css';
 
-function Profiles () {
+function flaggschool () {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -256,35 +256,35 @@ function Profiles () {
     
    <div class="Videogameadjust">
     <div className="nonp">
-        <h1>American Red Cross</h1>
-        <p1>431 18th Street, NW Washington, DC 20006</p1>
-        <p3>1 (800) 733-2767</p3>
-        <p><a className="com1link"href="https://www.redcross.org/">ARC!</a></p>
+        <h1>Dr. E. Alma Flagg School</h1>
+        <p1>150 3rd St, Newark, NJ 07107</p1>
+        <p3>(973) 268-5190</p3>
+        <p><a className="com1link"href="https://www.nps.k12.nj.us/FLG/">Dr. E.!</a></p>
     </div>
     
-    <img className="gmflogo"src="https://valdostatoday.com/wp-content/uploads/2016/10/american-red-cross.png" />
+    <img className="gmflogo"src="https://www.npshpc.org/wp-content/uploads/2017/08/image28.jpg" />
     
    <div class="midlinetopthree"></div>
    
    <div class="nonpmission1">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-bar-chart"></i>
-       <h3>Non profit mission 1</h3>
-       <p1>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p1>
+       <h3>School Mission 1</h3>
+       <p1>Dr. E. Alma Flagg Elementary School is committed to creating a healthy environment conducive to the enhancement of academic success by identifying and maximizing the collective talents of its students, teachers, administrators, staff, parents, and community.</p1>
     </div>
     
     <div class="nonpmission2">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-list-ul"></i>
-       <h3>Non profit mission 2</h3>
-       <p1>The American Red Cross, through its strong network of volunteers, donors and partners, is always there in times of need.</p1>
+       <h3>School Mission 2</h3>
+       <p1>We are committed to the creation of a learning environment, which will enable all students to achieve the skills to function in a democratic society by becoming productive and positive citizens.</p1>
     </div>
     
     <div class="nonpmission3">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-check-circle-o"></i>
-       <h3>Non profit mission 3</h3>
-       <p1>The Red Cross is a worldwide institution in which all societies have equal status and share equal responsibilities and duties in helping each other.</p1>
+       <h3>School Mission 3</h3>
+       <p1>Developing the core values of respect, responsibility, reflection, and resiliency.</p1>
     </div>
    
     <div class="secondmidlinetopthree"></div>
@@ -298,8 +298,8 @@ function Profiles () {
     <div class="thirdmidlinetopthree"></div>
     
       <div class="similarnearyou">
-      <h2>Non Profits Near you</h2>
-      <p1> Similar non profit that you may be interested</p1>
+      <h2>School Near you</h2>
+      <p1> Similar school that you may be interested</p1>
     </div>
     
 
@@ -307,8 +307,8 @@ function Profiles () {
      <div className="bottomimages">
        <input type="radio" name="slide" id="simage1" checked/>
        <input type="radio" name="slide" id="simage2" />
-       <img src="http://photos.prnewswire.com/prnfull/20151216/296712LOGO" class="simg1" alt="image1" />
-       <img src="https://highergroundusa.org/wp-content/uploads/charity-navigator-4star-903x675.jpg" class="simg2" alt="image2"/>
+       <img src="https://media.glassdoor.com/l/137673/newark-public-schools-office.jpg" class="simg1" alt="image1" />
+       <img src="https://www.nps.k12.nj.us/prk/wp-content/uploads/sites/87/2020/05/Park-Graduation-clean2.png" class="simg2" alt="image2"/>
       </div>
     <div className="sdot">
         <label for="simage1"></label>
@@ -361,4 +361,4 @@ function Profiles () {
   );
 }
 
-export default Profiles;
+export default flaggschool;

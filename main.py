@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, json
 from flask_mysqldb import MySQL
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_cors import CORS
 app = Flask("__main__")
 
 app.config['MYSQL_HOST'] = 'localhost'
@@ -10,23 +10,25 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'gmfdatabase'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/gmfdatabase'
 
-#'''buyers profile table'''
+CORS(app)
+#buyers profile table
 db = SQLAlchemy(app)
+'''
 from buyersprofile import getbuyersprofile
 buyersprofile=getbuyersprofile(db)
 
-#'''non profit table'''
+#non profit table
 from nonprofitprofile import getnonprofitprofile
 nonprofitprofile=getnonprofitprofile(db)
 
-#'''gmf profile table'''
+#gmf profile table
 from gmfprofile import getgmfprofile
 gmfprofile=getgmfprofile(db)
 
-#'''products table'''
+#products table
 from products import getproducts
 products=getproducts(db)
-
+'''
 
 
 
@@ -42,9 +44,71 @@ products=getproducts(db)
 
 #'''edit function'''
 #buyersprofile.edit(21,12)
+class Product_test(db.Model):
+    Number_Products = db.Column(db.Integer, primary_key=True)
+    productName = db.Column(db.String(40), unique=False)
+    productPrice = db.Column(db.Integer, unique=False)
+    productDescription = db.Column(db.String(80), unique=False)
 
+    productImage = db.Column(db.String(100), unique=False)
+    product_Category = db.Column(db.String(20), unique=False)
+
+
+    def __repr__(self):                         
+        return '<Product %r>' % self.Number_Products
 db.create_all()
+'''
+entry=Product_test(Number_Products=1,productName="YOUNIQUE fan brush",productPrice=25,
+                    productDescription="Gently brush away those extra flecks of color with the YOUNIQUE fan brush.",
+                    productImage="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892",
+                    product_Category="Beauty")
+db.session.add(entry)
+db.session.commit()
+'''
+cart={
+    'items': {
+        1: {
+            'id': 1, 
+            'name': 'YOUNIQUE fan brush',
+            'price': 25, 
+            'image': 'https://components.youniqueproducts.com/images/2020-09/product-images/fan-brush-full.jpg?null', 
+            'num': 1}}, 
+    'total': 25}
+@app.route("/addtoCart", methods=['GET','POST'])
+def addtoCart():
+    global cart
+    data=json.loads(request.data.decode())
+    query=Product_test.query.filter_by(Number_Products=data["id"]).first()
+    if data["id"] not in cart["items"].keys():
+        cart['items'][data['id']]={"id":query.Number_Products,
+            "name":query.productName,
+            "price":query.productPrice,
+            "image":query.productImage,
+            "num":1
+        }
+        cart["total"]+=query.productPrice
+    return {"code":0}
+@app.route("/getCart")
+def getCart():
+    return cart
+@app.route("/numChange",methods=["GET","POST"])
+def increaseOrDecrease():
+    global cart
+    data=json.loads(request.data.decode())
+    if int(data['id']) in cart['items'].keys():
+        if data['action']=='add':
+            cart['items'][int(data['id'])]['num']+=1
+            cart['total']+=cart['items'][int(data['id'])]['price']
+        elif data['action']=='sub':
+            cart['total']-=cart['items'][int(data['id'])]['price']
+            if cart['items'][int(data['id'])]['num']-1 <=0:
+                del cart['items'][int(data['id'])]
+            else:
+                cart['items'][int(data['id'])]['num']-=1
+    return  cart
 
+
+'''
 #Homepage
 
 @app.route("/", methods=['GET', 'POST'])
@@ -53,13 +117,8 @@ def index():
         if request.method == "POST":
             details = request.form
         return flask.render_template("index.html", token= "Hello")
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 app.run(debug=True)
-=======
-=======
-app.run(debug=True)
->>>>>>> 2af62755c00eec16a60434f43d223e80dc263682
 
 #Shipping
 
@@ -210,10 +269,6 @@ def profile():
 def test():
     return "Heyyyyyy"
 
-        
+'''   
 app.run(debug=True)
 
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> 2af62755c00eec16a60434f43d223e80dc263682

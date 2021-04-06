@@ -9,7 +9,7 @@ import Nonprofit from "./Nonprofit";
 import Account from './Account';
 import FormSignup from './userlogin';
 import BeautyProducts from './beauty_products';
-import Profile from './Profile';
+import Profile from './WFFI';
 import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
@@ -30,7 +30,7 @@ import Gettoknowus from './Gettoknowus';
 import './Profile.css';
 import './Videogame.css';
 
-function Profiles () {
+function WFFI () {
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -256,13 +256,13 @@ function Profiles () {
     
    <div class="Videogameadjust">
     <div className="nonp">
-        <h1>American Red Cross</h1>
-        <p1>431 18th Street, NW Washington, DC 20006</p1>
-        <p3>1 (800) 733-2767</p3>
-        <p><a className="com1link"href="https://www.redcross.org/">ARC!</a></p>
+        <h1>Weidhorn Family Foundation Inc</h1>
+        <p1> 60 Thomas Dr, Manalapan Township, NJ 07726</p1>
+        <p3>(732) 446-6391</p3>
+        <p><a className="com1link"href="https://www.guidestar.org/profile/22-2862629">WFFI!</a></p>
     </div>
     
-    <img className="gmflogo"src="https://valdostatoday.com/wp-content/uploads/2016/10/american-red-cross.png" />
+    <img className="gmflogo"src="https://companiesinc.com/wp-content/uploads/2015/09/NonProfit-Organization-2.png" />
     
    <div class="midlinetopthree"></div>
    
@@ -270,21 +270,21 @@ function Profiles () {
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-bar-chart"></i>
        <h3>Non profit mission 1</h3>
-       <p1>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p1>
+       <p1>A mission is to a nonprofit what profit is to a business.</p1>
     </div>
     
     <div class="nonpmission2">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-list-ul"></i>
        <h3>Non profit mission 2</h3>
-       <p1>The American Red Cross, through its strong network of volunteers, donors and partners, is always there in times of need.</p1>
+       <p1>We want to ensure that the world that comes after us is a world in which a wild tomorrow is possible.</p1>
     </div>
     
     <div class="nonpmission3">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
        <i class="fa fa-check-circle-o"></i>
        <h3>Non profit mission 3</h3>
-       <p1>The Red Cross is a worldwide institution in which all societies have equal status and share equal responsibilities and duties in helping each other.</p1>
+       <p1>To inspire public servants, people from the tech sector, and community organizers to create change by proving government can do better and showing others how.</p1>
     </div>
    
     <div class="secondmidlinetopthree"></div>
@@ -307,8 +307,8 @@ function Profiles () {
      <div className="bottomimages">
        <input type="radio" name="slide" id="simage1" checked/>
        <input type="radio" name="slide" id="simage2" />
-       <img src="http://photos.prnewswire.com/prnfull/20151216/296712LOGO" class="simg1" alt="image1" />
-       <img src="https://highergroundusa.org/wp-content/uploads/charity-navigator-4star-903x675.jpg" class="simg2" alt="image2"/>
+       <img src="http://rockinghorserehab.com/wp-content/uploads/2020/06/rhr-logo-retina-2020-new.jpg" class="simg1" alt="image1" />
+       <img src="https://lh3.googleusercontent.com/proxy/4HKK6kBlmk5z1G3AMmp6kLznC_OlpXBs0ftaaoJxJiec89ciC0loVGK4kWTWqxTzJsorH70fhaz5E4IQH8Hzc5NqPcaXfxAJHXL-BPDqJF0YAaWb3glMqNMI8aTT2QW-9nuamw" class="simg2" alt="image2"/>
       </div>
     <div className="sdot">
         <label for="simage1"></label>
@@ -361,4 +361,4 @@ function Profiles () {
   );
 }
 
-export default Profiles;
+export default WFFI;
