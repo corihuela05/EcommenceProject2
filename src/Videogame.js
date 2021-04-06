@@ -138,7 +138,7 @@ function Videogames () {
   }
   const renderCart = () =>{
      ReactDOM.render(
-        <div className="cart">
+    <div className="cart">
     <button onClick={handlevideogame}>Go Back</button>
     <h1>Cart</h1>
     {cart.map((product,index) =>(

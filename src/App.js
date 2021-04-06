@@ -230,7 +230,7 @@ function App() {
                 />
                     <div className="searchbar">
                     <input type="text" name="search" placeholder="Search.." />
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submitsearch"><i class="fa fa-search"></i></button>
                     </div>
                 <form onSubmit={handleHome}>
                     <button id="homebutton">Home</button>

@@ -104,9 +104,11 @@ function Cart() {
     </div>
      
     <div class="cards4">
-     <img className="uparno"src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/913bf76315384452a583aa12002a1311_9366/Badge_of_Sport_Tee_Red_FI7031_41_detail.jpg" alt="Tshirt"/>
-     <p className="productname4">BADGE OF SPORT TEE</p>
-     <p className="price4">$25</p>
+
+     <img className="uparno"src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e400dfdb5de4de3aa23aa03013fea92_9366/Trefoil_Tee_Red_EJ9678_01_laydown.jpg" alt="Tshirt"/>
+     <p8 className="productname4">BADGE OF SPORT TEE</p8>
+     <p7 className="price4">$25</p7>
+
     </div>
     {
       (cart!=false) && Object.entries(cart["items"]).map((item)=>{
