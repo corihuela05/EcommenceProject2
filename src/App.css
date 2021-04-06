@@ -52,9 +52,10 @@ input[type=text] {
   padding: 10px 20px ;
   outline:none;
 }
-button[type=submit]{
+button[type=submitsearch]{
   position:fixed;
   top:20px;
+  left:50%;
   height: 38px;
   width:35px;
   border-top-right-radius: 15px;
