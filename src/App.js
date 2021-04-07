@@ -483,7 +483,6 @@ function App() {
                             
                         
                         
-                        
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
                         </form>                        
