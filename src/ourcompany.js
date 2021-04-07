@@ -194,24 +194,28 @@ enhance and enrich our communities, neighborhoods and world. </p>
 by helping them raise the funds necessary to support their mission, programs and objectives.
 
 </p>
-         
-      <div className="dot">
+ <h5> Rodney Folmar </h5>
+        <p>President/CEO</p>
+      <div className="images">
+          <img src="Picture1.jpeg" />
+          </div>
+         <h5>Ronnie Urban </h5>
+        <p>Vendor Relations</p>
+        <div className="images">
+        <img src="Person2.jpeg" />
+        </div>
       
-    <div>
-    
-    
-      
- 
-      
-    </div>
-    
-    
-  
-
-      
-      </div>
-    </div>
-  
+        <h5>Carol Westfield</h5>
+            <p>Client Development Manager</p>
+            <div className="images">
+             <img src="Person3.jpeg" />
+            </div>
+        <h5>David Cohen </h5>
+        <p> Advertising</p>
+        <div className="images">
+        <img src="Person4.jpeg" />
+          </div>
+     </div>
     <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
@@ -251,6 +255,6 @@ by helping them raise the funds necessary to support their mission, programs and
     </footer>
     </div>
     </div>
-    );
-  }
+  );
+}
 export default Ourcompany;
