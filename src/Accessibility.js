@@ -153,13 +153,36 @@ function Accessibilitty() {
     
     
       <h1>Accessibility</h1>
-           <p>
+<p>
 
-Accessibility
+Grayson is committed to providing a website
+that is accessible to the widest possible audience,
+regardless of technology or ability. We are actively 
+working to increase the accessibility and usability of
+our website and in doing so adhere to many
+of the available standards and guidelines.
 
 </p>
-      
-   
+<p>
+This site has been built using code compliant with W3C standards for HTML and CSS. 
+The site displays correctly in current browsers and using standards compliant HTML/CSS code 
+means any future browsers will also display it correctly.This website endeavours to conform to 
+level Double-A of the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines 2.1. 
+These guidelines explain how to make web content more accessible for people with disabilities. 
+Conformance with these guidelines will help make the web more user friendly for all people.
+</p>
+<p>
+Whilst Grayson strive to adhere to the accepted
+guidelines and standards for accessibility and usability,
+it is not always possible to do so in all areas of the 
+website.
+</p>
+<p>
+Whilst *Grayson* strive to adhere to the accepted 
+guidelines and standards for accessibility and usability, 
+it is not always possible to do so in all areas of the
+website.
+</p>
     </div>
   
     
