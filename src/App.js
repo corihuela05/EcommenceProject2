@@ -27,6 +27,7 @@ import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import Contacting from './Contact_us';
 import { useState } from "react";
 //import Returns from '/Returns';
 //import Accessibility from '/Accessibility';
@@ -72,6 +73,9 @@ function App() {
 
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
+    }
+    function handleContacting() {
+        ReactDOM.render(<Contacting />, document.getElementById('root'));
     }
     function handlefoodProducts() {
         ReactDOM.render(<FoodProducts />, document.getElementById('root'));
@@ -158,26 +162,26 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-    
-    
+
+
     function CAPrivacyRights() {
-        
+
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
-    
-    
+
+
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
-    
+
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
     }
-    
+
     function Returns() {
         ReactDOM.render(<Returns/>, document.getElementById('root'));
     }
-    
+
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
@@ -378,7 +382,7 @@ function App() {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
+
                     </div>
                     <div className="footer2">
 
@@ -389,7 +393,9 @@ function App() {
                         <button>OUR COMPANY</button>
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
+                        <form onSubmit ={handleContacting}>
                         <button>CONTACT US</button>
+                        </form>
                     </div>
                     <div className="footer3">
                         <form onsubmit={Returns}>
@@ -407,26 +413,26 @@ function App() {
                         <form onSubmit={handleOurads}>
                             <button>OUR ADS</button>
                         </form>
-                    
+
                         <form onSubmit ={handleTermofservices}>
                             <button>TERMS OF SERVICE </button>
                           </form>
-                       
+
                             <button>PRIVACY & SECURITY</button>
-                    
+
                            <button>CA Privacy Rights</button>
-                           
-                        
+
+
                             <button>Do Not Sell My Information</button>
-                         
-                            
+
+
                             <button>Tax Exempt Program</button>
-                    </div>   
+                    </div>
                    <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
-                
+
                 </footer>
         </div>
         </div>
