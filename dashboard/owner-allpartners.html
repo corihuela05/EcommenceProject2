@@ -70,25 +70,25 @@
             <li class="nav-header">Statistics</li>
             <li><a href="ownerdashboard.html">Sitewide Stats</a></li>
             <li class="nav-header">Management</li>
-            <li class="active"><a href="owner-allsellers.html">All Sellers</a></li>
+            <li><a href="owner-allsellers.html">All Sellers</a></li>
             <li><a href="owner-allskus.html">All Items</a></li>
-            <li><a href="owner-allpartners.html">All Partners</a></li>
+            <li class="active"><a href="owner-allpartners.html">All Partners</a></li>
 
           </ul>
         </div><!--/.well -->
       </div><!--/span-->
 
       <div class="span10">
-        <h2>View All Sellers</h2>
+        <h2>View All Partners</h2>
 
         <div id="app">
         	<table class="table table-striped">
         		<thead>
              <tr>
-               <th>Seller Business Name</th>
+               <th>Partner Name</th>
                <th>Action</th>
+               <th>Type</th>
                <th>Sales Amount</th>
-               <th>SKUs listed</th>
                <th>Total Contributions</th>
              </tr>
            </thead>
@@ -96,8 +96,8 @@
              <tr v-for="item in currentPageItems" :key="item.id">
               <td>{{item.id}}</td>
               <td><a onclick="myFunction()">Disable</a></td>
+              <td>{{item.type}}</td>
               <td>{{item.sales}}</td>
-              <td>{{item.skus}}</td>
               <td>{{item.contributions}}</td>
             </tr>
           </tbody>
@@ -109,7 +109,7 @@
          </button>
        </div>
      </div>
-     <script src="./js/pages.js"></script>
+     <script src="./js/allpartners.js"></script>
 
    </div><!--/span-->
  </div><!--/row-->
