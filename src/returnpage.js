@@ -152,10 +152,22 @@ function Returnpage() {
     <div className="slider">
     
     
-      <h1>RETURNS</h1>
+    <h1>RETURNS POLICY AND REFUNDS</h1>
            <p>
 
-RETURNS
+If you are not 100% satisfied with your purchase,
+you can return the productand get a full refund or
+exchange the product for another one, be it similar or not.
+
+You can return a product for up to 30 days from the date
+you purchased it.
+
+Please inform the Grayson that you are unsatisfied with your item 
+and we will cover the costs of shipping for you.
+
+Any product you return must be in the same condition you
+received it and in the original packaging. 
+Please keep the receipt.
 
 </p>
       

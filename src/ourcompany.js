@@ -153,17 +153,65 @@ function Ourcompany() {
     
     
       <h1>Our company </h1>
-           <p>
+<p>
 
-Our company
+<b> GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profitorganizations.
+</p>
+
+<p><b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, 
+together with the enormous reach of social media, video, and Internet marketing to promote ,
+support and exceed the fund raising efforts of organizations worldwide. </p>
+
+
+<p> <b>Greyson's</b> offers fund raising campaigns the fastest path to market, and even before their 
+fund raising campaign begins Greyson's has identified thousands of 
+opt-in supporters (Buyers) who have expressed a willingness to purchase 
+products & services in an effort to support select school(s), churches(s) 
+and/or non-profits fund raising efforts.</p>
+
+<p> 
+
+We view as essential the existence, sustainability and growth of public and private educational institutions, non-profit and religious 
+organizations to support, enhance and enrich our communities, neighborhoods and world.</p> 
+
+<p>Our mission is to support these essential and treasured institutions by helping them
+raise the funds necessary to support their mission, programs and objectives. </p>
+
+<p><b>GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profit 
+organizations. <p/>
+
+<b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, together with the enormous reach of social media, video, and Internet marketing to promote , 
+support and exceed the fund raising efforts of organizations worldwide. and even before their fund raising campaign begins Greyson's has identified thousands of
+opt-in supporters (Buyers) who have expressed a willingness to purchase products
+& services in an effort to support select school(s), churches and/or non-profits fund raising efforts. </p>
+
+
+<p>We view as essential the existence, sustainability and growth of public and private 
+educational institutions, non-profit and religious organizations to support, 
+enhance and enrich our communities, neighborhoods and world. </p>
+
+<p>Our mission is to support these essential and treasured institutions 
+by helping them raise the funds necessary to support their mission, programs and objectives.
 
 </p>
+         
+      <div className="dot">
       
-   
+    <div>
+    
+    
+      
+ 
+      
+    </div>
+    
+    
+  
+
+      
+      </div>
     </div>
   
-    
-    
     <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
@@ -203,7 +251,6 @@ Our company
     </footer>
     </div>
     </div>
-  );
-}
-
+    );
+  }
 export default Ourcompany;
