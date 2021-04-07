@@ -291,7 +291,7 @@ function Accessibility() {
     <img src="logo.png" alt='company logo' className="companylogo" />
     <div className="searchbar">
       <input type="text" name="search" placeholder="Search.." />
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submitsearch"><i class="fa fa-search"></i></button>
     </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
@@ -331,104 +331,75 @@ function Accessibility() {
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
     </label>
-    <div className="sidebar">
-      <form onSubmit={handleHome}>
-        <button>Home</button>
-      </form>
-      <form onSubmit={handleProduct}>
-        <button>Products</button>
-      </form>
-      <form onSubmit={handleProfile}>
-        <button>Profile</button>
-      </form>
-      <form onSubmit={handleShop}>
-        <button>Shop</button>
-      </form>
-      <form onSubmit={handleNonprofit}>
-      <button>Non Profits</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Buy Again</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>List</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Registry</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Gift Finder</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Gift Card</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Black Owned Businesses</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Women Owned Businesses</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Help</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Departments</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Electronics & Office</button>
-    </form>
-   
-    <form onSubmit={handlevideogame}>
-      <button>Toys, Games and Video Games</button>
-    </form>
-    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-   
-      <form onSubmit={handleHomeandfurnitures}>
-       <button>Home, Furniture & Appliances</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Home Improvement</button>
-    </form>
-     <form onSubmit={handlemusic}>
-      <button>Music</button>
-    </form>
-    <form onSubmit={handlepatio}>
-      <button>Patio & Garden</button>
-    </form>
-    <button onClick={handlefoodProducts} >Food</button>
-   <form onSubmit={handlepets}>
-      <button>Pets</button>
-    </form>
-    <form onSubmit={handlepharmacy}>
-      <button>Pharmacy, Health & Personal Care</button>
-    </form>
+   <div className="sidebar">
+                        <form onSubmit={handleHome}>
+                            <button>Home</button>
+                        </form>
+                        <form onSubmit={handleProduct}>
+                            <button>Products</button>
+                        </form>
+                        <form onSubmit={handleProfile}>
+                            <button>Profile</button>
+                        </form>
+                        <form onSubmit={handleShop}>
+                            <button>Shop</button>
+                        </form>
+                        <form onSubmit={handleNonprofit}>
+                            <button>Non Profits</button>
+                        </form>
+                        <button>Buy Again</button>
+                        <button>List</button>
+                        <button>Registry</button>
+                        <button>Gift Finder</button>
+                        <button>Gift Card</button>
+                        <button>Black Owned Businesses</button>
+                        <button>Women Owned Businesses</button>
+                        <button>Help</button>
+                        <button>Departments</button>
+                        <button>Electronics & Office</button>
 
-    <form onSubmit={handlesports}>
-      <button>Sports, Fitness & Outdoors</button>
-    </form>
 
-    <button onClick={handlebeautyProducts} >Beauty</button>
- 
-    <form onSubmit={handleauto}>
-      <button>Auto & Tire</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Photos</button>
-    </form>
-    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
-    </div>
-    </div>
-    <div className="tabs">
-      <button  onClick={handleartProducts} >Best Sellers</button>
-      <button  onClick={handleartProducts} >Today's Deals</button>
-      <button  onClick={handleartProducts} >Customer Service</button>
-      <button  onClick={handleartProducts} >New Releases</button>
-      <button  onClick={handleartProducts} >Near Me</button>
-      <button  onClick={handleartProducts} >Books</button>
-      <button  onClick={handleartProducts} >Fashion</button>
-      <button  onClick={handleartProducts} >Gift Cards</button>
-    </div>
-    </div>
+
+
+                        <form onSubmit={handlevideogame}>
+                            <button>Toys, Games and Video Games</button>
+                        </form>
+                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+
+                        <form onSubmit={handleHomeandfurnitures}>
+                            <button>Home, Furniture & Appliances</button>
+                        </form>
+
+                        <button>Home Improvement</button>
+                        <button>Music</button>
+                        <button>Patio & Garden</button>
+                        <button onClick={handlefoodProducts} >Food</button>
+                        <button>Pets</button>
+                        <button>Pharmacy, Health & Personal Care</button>
+
+                        <form onSubmit={handlesports}>
+                            <button>Sports, Fitness & Outdoors</button>
+                        </form>
+
+                        <button onClick={handlebeautyProducts} >Beauty</button>
+
+
+                        <button>Auto & Tire</button>
+                        <button>Photos</button>
+                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                    </div>
+                </div>
+                <div className="tabs">
+                    <button>Best Sellers</button>
+                    <button>Today's Deals</button>
+                    <button>Customer Service</button>
+                    <button>New Releases</button>
+                    <button>Near Me</button>
+                    <button>Books</button>
+                    <button>Fashion</button>
+                    <button>Gift Cards</button>
+                </div>
+            </div>
     
     <div class="babyadjust">
      {page === PAGE_PRODUCT && renderProducts()}

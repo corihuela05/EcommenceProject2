@@ -34,7 +34,7 @@
   position:fixed;
   left:18%;
 }
-.searchbar button[type=submit]{
+.searchbar button[type=submitsearch]{
   position:fixed;
   left:50%;
 }
