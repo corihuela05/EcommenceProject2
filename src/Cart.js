@@ -357,16 +357,20 @@ function Cart() {
     </div>
     
     <div class="cards3">
-     <img className="nicheno"src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9c7058d8677742ac8519ac3f009cdcf4_9366/Tiro_21_Track_Pants_Black_GH7305_21_model.jpg" alt="Pant"/>
-     <p className="productname3">TIRO 21 TRACK PANTS</p>
-     <p className="price3">$45</p>
+     <img className="nicheno"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6344/6344118_sd.jpg" alt="Pant"/>
+     <p className="productname3">Microsoft - Xbox Series S 512 GB</p>
+     <p className="price3">$299.99</p>
     </div>
+    
+     <button className="pro_2"onClick={decrementCount}>-</button>
+    <span className="pro_23">{count}</span>
+    <button className="pro_22" onClick={incrementcount}>+</button>
      
     <div class="cards4">
 
-     <img className="uparno"src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e400dfdb5de4de3aa23aa03013fea92_9366/Trefoil_Tee_Red_EJ9678_01_laydown.jpg" alt="Tshirt"/>
-     <p8 className="productname4">BADGE OF SPORT TEE</p8>
-     <p7 className="price4">$25</p7>
+     <img className="uparno"src="https://specials-images.forbesimg.com/imageserve/5eeb7b50706cd80006e3154c/960x0.jpg?cropX1=0&cropX2=680&cropY1=0&cropY2=453" alt="Tshirt"/>
+     <p8 className="productname4">Sony - PlayStation 5 Console</p8>
+     <p7 className="price4">$499.99</p7>
 
     </div>
     {
@@ -390,11 +394,11 @@ function Cart() {
     <button className="pro22" onClick={incrementcount}>+</button>
      
     <div class="amount1">
-     <p className="sub1">SUBTOTAL $70</p>
+     <p className="sub1">SUBTOTAL $799.98</p>
      <p className="ship1">SHIPPING  FREE</p>
      <p className="tax1">TAXES  $4.90</p>
-     <p className="total1">TOTAL  $74.90</p>
-     <p className="voucher1">HAVE A VOUCHER?</p>
+     <p className="total1">TOTAL  $804.88</p>
+     <p className="voucher1">HAVE A DISCOUNT CODE??</p>
     </div>
     
     <input type="text10" id="fname" name="copoun" placeholder="Voucher #"/>
@@ -411,6 +415,7 @@ function Cart() {
       <button className="cn2">Cancel</button>
       </form>
     </div>
+    
     
    <footer class="carts-site-footer">
                     <h1>About Greyson</h1>
