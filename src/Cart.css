@@ -231,6 +231,27 @@ input[type=text10]{
   font-size: 17px;
 }
 
+.pro_2{
+  position: absolute;
+  top:370px;
+  left: 33%;
+  font-size: 17px;
+}
+
+.pro_22{
+  position: absolute;
+  top:370px;
+  left: 36%;
+  font-size: 17px;
+}
+
+.pro_23{
+  position: absolute;
+  top:370px;
+  left: 35%;
+  font-size: 17px;
+}
+
 .horline {
   position: absolute;
   border-bottom: 3px solid grey;
