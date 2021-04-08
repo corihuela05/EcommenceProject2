@@ -542,7 +542,6 @@ function Videogames () {
         <p><button onClick={()=>itemDisplay(24)}>Add to Cart</button></p>
     </div>
     
-
     
     </div>*/}
    </div>
