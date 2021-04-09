@@ -151,8 +151,9 @@ function Ourcompany() {
     <div className="sliderslide">
     <div className="slider">
     
-    
+    <div class="title">
       <h1>Our company </h1>
+      </div>
 <p>
 
 <b> GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profitorganizations.
@@ -194,28 +195,31 @@ enhance and enrich our communities, neighborhoods and world. </p>
 by helping them raise the funds necessary to support their mission, programs and objectives.
 
 </p>
- <h5> Rodney Folmar </h5>
+<div class="title">
+  <h2> Meet the Staff </h2>
+  </div>
+      <h5> Rodney Folmar </h5>
         <p>President/CEO</p>
-      <div className="images">
-          <img src="Picture1.jpeg" />
-          </div>
+       <img src="Rodney.jpg"  Class="imgRound" />
+         
+         
+         
          <h5>Ronnie Urban </h5>
         <p>Vendor Relations</p>
-        <div className="images">
-        <img src="Person2.jpeg" />
-        </div>
+  
+        <img src="Person2.jpg"  Class="imgRound" />
+        
       
         <h5>Carol Westfield</h5>
             <p>Client Development Manager</p>
-            <div className="images">
-             <img src="Person3.jpeg" />
-            </div>
+         
+             <img src="Person1.jpg" Class="imgRound" />
+           
         <h5>David Cohen </h5>
         <p> Advertising</p>
-        <div className="images">
-        <img src="Person4.jpeg" />
-          </div>
-     </div>
+      
+        <img src="Person3.jpg"  class="imgRound"/>
+   </div>
     <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">

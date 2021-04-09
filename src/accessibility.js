@@ -13,7 +13,7 @@ import Profile from './Profile'
 import Videog from './Videogame';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
-//import './footer.css';
+import './footer.css';
 
 
 

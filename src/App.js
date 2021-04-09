@@ -452,7 +452,7 @@ function App() {
                         
                         <button>ADVERTISE WITH US</button>
                          </div>
-                          <div className="footer4">
+                          <div classNam e="footer4">
                           
                           
                         <button>GREYSON'S</button>
