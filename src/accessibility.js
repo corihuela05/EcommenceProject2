@@ -151,8 +151,9 @@ function Accessibilitty() {
     <div className="sliderslide">
     <div className="slider">
     
-    
+          <div class="title">
       <h1>Accessibility</h1>
+      </div>
 <p>
 
 Grayson is committed to providing a website
