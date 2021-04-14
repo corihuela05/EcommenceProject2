@@ -247,6 +247,13 @@ label #cancelbutton{
   transition: all .15%s ease;
   border: 1px solid black;
 }
+.imgRound {
+        width:225px;
+        height:225px;
+        border-radius:160px;
+        border:10px solid rgb(162, 178, 202);
+        margin-top: 20px;
+}
 
 .images input{
   display:none;
@@ -522,7 +529,7 @@ label #cancelbutton{
   position:absolute;
   top:2600px;
   width:100%;
-  height:430px;
+  height:400px;
   background-color:#0065ff;
   color:white;
   padding:15px;
@@ -611,4 +618,16 @@ p {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
+}
+
+.title {
+        color: #0065FF;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+      }
+.caption{
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

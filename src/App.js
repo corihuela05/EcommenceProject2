@@ -31,7 +31,7 @@ import Privacyandsecurity from './privacyandsecurity';
 import Donotsellmyinfo from './donotsellmyinfo';
 import Ourcompany from './ourcompany';
 import Caprivacy from './caprivacy';
-import Accessibilitty from './accessibility';
+import Accessibilitty from './Accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 
@@ -81,40 +81,40 @@ function App() {
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
-    
-    
-    
+
+
+
     function handlePrivacyandsecurity() {
     ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
     }
-    
+
     function handleOurcompany() {
     ReactDOM.render(<Ourcompany />, document.getElementById('root'));
-    }  
-    
-    
+    }
+
+
     function handleTaxExcemptpage() {
     ReactDOM.render(<TaxExcemptpage />, document.getElementById('root'));
-    }      
+    }
     function handlefoodProducts() {
         ReactDOM.render(<FoodProducts />, document.getElementById('root'));
     }
-   
+
     function handleReturnpage () {
         ReactDOM.render(<Returnpage  />, document.getElementById('root'));
-    }    
+    }
     function handleCaprivacy() {
         ReactDOM.render(<Caprivacy />, document.getElementById('root'));
-    }    
-    
-    
+    }
+
+
     function handleAccessibility() {
         ReactDOM.render(<Accessibilitty />, document.getElementById('root'));
-    }    
-        
+    }
+
     function handleDonotsellmyinfo() {
         ReactDOM.render(<Donotsellmyinfo />, document.getElementById('root'));
-    }    
+    }
     function handleartProducts() {
         ReactDOM.render(<ArtProducts />, document.getElementById('root'));
     }
@@ -197,23 +197,23 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-    
-    
+
+
     function CAPrivacyRights() {
-        
+
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
-    
-    
+
+
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
-    
+
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
     }
-    
-    
+
+
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
@@ -416,83 +416,61 @@ function App() {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
+
                     </div>
                     <div className="footer2">
-
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
-
-
-                        
                         <form onSubmit={handleOurcompany}>
                         <button>OUR COMPANY</button>
-                        </form>                        
-                        
+                        </form>
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
+                        <button> COSTUMER SERVICE </button>
                         <button>CONTACT US</button>
-                    
+
                     </div>
                     <div className="footer3">
-                    
-                   
-                            
-                            
+
                         <form onSubmit={handleReturnpage}>
                         <button>RETURNS</button>
-                        </form>         
-                        
+                        </form>
+
                         <button>PRODUCT RECALLS</button>
-                        
+
                         <form onSubmit={handleAccessibility}>
                         <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
+                        </form>
+                        <form onsubmit={handleOurads}>
                         <button>OUR ADS</button>
                         </form>
-                    
+                         </div>
+                          <div className="footer4">
+
                         <form onSubmit ={handleTermofservices}>
                         <button>TERMS OF SERVICE </button>
                         </form>
-                       
+
                         <form onSubmit={handlePrivacyandsecurity}>
                         <button>PRIVACY & SECURITY</button>
                         </form>
-                        
-                        
+
+
                         <form onSubmit={handleCaprivacy}>
                         <button>CA PRIVACY RIGHTS</button>
                         </form>
-                        
+
                         <form onSubmit={handleDonotsellmyinfo}>
                         <button>Do Not Sell My Information</button>
                         </form>
-                        
-                            
-                         
-                            
-                        
-                        
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
+                        </form>
+
+                    </div>
                         <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
-                
+
                 </footer>
         </div>
         </div>
