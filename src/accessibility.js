@@ -18,6 +18,8 @@ import './footer.css';
 
 
 
+
+
 function Accessibilitty() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));
