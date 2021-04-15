@@ -419,26 +419,16 @@ function App() {
                     
                     </div>
                     <div className="footer2">
-
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
-
-
-                        
                         <form onSubmit={handleOurcompany}>
                         <button>OUR COMPANY</button>
                         </form>                        
-                        
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
+                        <button> COSTUMER SERVICE </button>
                         <button>CONTACT US</button>
                     
                     </div>
                     <div className="footer3">
-                    
-                   
-                            
                             
                         <form onSubmit={handleReturnpage}>
                         <button>RETURNS</button>
@@ -449,17 +439,11 @@ function App() {
                         <form onSubmit={handleAccessibility}>
                         <button>ACCESSIBILITY</button>
                         </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
+                        <form onsubmit={handleOurads}>
                         <button>OUR ADS</button>
                         </form>
+                         </div>
+                          <div className="footer4">
                     
                         <form onSubmit ={handleTermofservices}>
                         <button>TERMS OF SERVICE </button>
@@ -477,13 +461,6 @@ function App() {
                         <form onSubmit={handleDonotsellmyinfo}>
                         <button>Do Not Sell My Information</button>
                         </form>
-                        
-                            
-                         
-                            
-                        
-                        
-                        
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
                         </form>                        

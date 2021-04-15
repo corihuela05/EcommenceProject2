@@ -137,30 +137,30 @@ function Videogames () {
     setCart(cart.filter((product) => product !== productToRemove));
   }
   const renderCart = () =>{
-     ReactDOM.render(
-    <div className="cart">
-    <button onClick={handlevideogame}>Go Back</button>
-    <h1>Cart</h1>
-    {cart.map((product,index) =>(
-    <div class="product" key={index}>
-        <img src={product.image} alt="Xbox one" height="130" width="180"/>
-        <h1>{product.name}</h1>
-        <p class="price">{product.cost}</p>
+     //ReactDOM.render(
+    //<div className="cart">
+    //<button onClick={handlevideogame}>Go Back</button>
+    //<h1>Cart</h1>
+   // {cart.map((product,index) =>(
+    //<div class="product" key={index}>
+        //<img src={product.image} alt="Xbox one" height="130" width="180"/>
+        //<h1>{product.name}</h1>
+       // <p class="price">{product.cost}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
-        <hr />
-    </div>
-    ))}
-    <h5>Select which Non Profit organization you want to donate to:</h5>
-      <select>
-        <option selected disabled>Select option</option>
-        <option value="name1">Special Strides</option>
-        <option value="name2">Weidhorn Family Foundation Inc.</option>
-        <option value="name3">John F Carroll Columbian Club</option>
-      </select>
-      <p></p>
-      <button onClick={handleCart}>Proceed to Checkout</button>
-     </div>  
-       ,document.getElementById('root'));
+        //<hr />
+   // </div>
+    //))}
+    //<h5>Select which Non Profit organization you want to donate to:</h5>
+      //<select>
+        //<option selected disabled>Select option</option>
+        //<option value="name1">Special Strides</option>
+        //<option value="name2">Weidhorn Family Foundation Inc.</option>
+        //<option value="name3">John F Carroll Columbian Club</option>
+      //</select>
+      //<p></p>
+      //<button onClick={handleCart}>Proceed to Checkout</button>
+     //</div>  
+       //,document.getElementById('root'));
   }
   
   const navigateTo = (nextpage) =>{
@@ -295,8 +295,8 @@ function Videogames () {
     <div className="Appheader">
     <img src="logo.png" alt='company logo' className="companylogo" />
     <div className="searchbar">
-      <input type="text" name="search" placeholder="Search.." />
-      <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" name="search" placeholder="Search.." />
+        <button type="submitsearch"><i class="fa fa-search"></i></button>
     </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
@@ -309,7 +309,38 @@ function Videogames () {
       <button id="info">Login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-      <button id="cart" onClick={()=> navigateTo(PAGE_CART)}><span className="glyphicon glyphicon-shopping-cart"></span>Go to Cart ({cart.length})</button>
+    <div className="cartpopout">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                    <input type="checkbox" id="check1" />
+                    <label for="check1">
+                        <i class="glyphicon glyphicon-shopping-cart"  id="openbutton1"><p>Go to Cart ({cart.length})</p></i>
+                        <i class="fa fa-close" id="cancelbutton1"></i>
+                    </label>
+                     <div className="sidebars">
+                        <div className="cart">
+    <h1>Cart</h1>
+    {cart.map((product,index) =>(
+    <div class="product" key={index}>
+        <img src={product.image} alt="Xbox one" height="130" width="180"/>
+        <h1>{product.name}</h1>
+        <p class="price">{product.cost}</p>
+        {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
+        <hr />
+    </div>
+    ))}
+    <h5>Select which Non Profit organization you want to donate to:</h5>
+      <select>
+        <option selected disabled>Select option</option>
+        <option value="name1">Special Strides</option>
+        <option value="name2">Weidhorn Family Foundation Inc.</option>
+        <option value="name3">John F Carroll Columbian Club</option>
+      </select>
+      <p></p>
+      <button onClick={handleCart}>Proceed to Checkout</button>
+     </div> 
+                    </div>    
+    </div>                
+    {/*<button id="cart" onClick={()=> navigateTo(PAGE_CART)}><span className="glyphicon glyphicon-shopping-cart"></span>Go to Cart ({cart.length})</button>*/}
     <div className="homepagesidebar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <input type="checkbox" id="check"/>
@@ -318,103 +349,74 @@ function Videogames () {
       <i class="fa fa-close" id="cancelbutton"></i>
     </label>
     <div className="sidebar">
-      <form onSubmit={handleHome}>
-        <button>Home</button>
-      </form>
-      <form onSubmit={handleProduct}>
-        <button>Products</button>
-      </form>
-      <form onSubmit={handleProfile}>
-        <button>Profile</button>
-      </form>
-      <form onSubmit={handleShop}>
-        <button>Shop</button>
-      </form>
-      <form onSubmit={handleNonprofit}>
-      <button>Non Profits</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Buy Again</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>List</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Registry</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Gift Finder</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Gift Card</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Black Owned Businesses</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Women Owned Businesses</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Help</button>
-    </form>  
-    <form onSubmit={handleNonprofit}>
-      <button>Departments</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Electronics & Office</button>
-    </form>
-   
-    <form onSubmit={handlevideogame}>
-      <button>Toys, Games and Video Games</button>
-    </form>
-    <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-   
-      <form onSubmit={handleHomeandfurnitures}>
-       <button>Home, Furniture & Appliances</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Home Improvement</button>
-    </form>
-     <form onSubmit={handlemusic}>
-      <button>Music</button>
-    </form>
-    <form onSubmit={handlepatio}>
-      <button>Patio & Garden</button>
-    </form>
-    <button onClick={handlefoodProducts} >Food</button>
-   <form onSubmit={handlepets}>
-      <button>Pets</button>
-    </form>
-    <form onSubmit={handlepharmacy}>
-      <button>Pharmacy, Health & Personal Care</button>
-    </form>
+                        <form onSubmit={handleHome}>
+                            <button>Home</button>
+                        </form>
+                        <form onSubmit={handleProduct}>
+                            <button>Products</button>
+                        </form>
+                        <form onSubmit={handleProfile}>
+                            <button>Profile</button>
+                        </form>
+                        <form onSubmit={handleShop}>
+                            <button>Shop</button>
+                        </form>
+                        <form onSubmit={handleNonprofit}>
+                            <button>Non Profits</button>
+                        </form>
+                        <button>Buy Again</button>
+                        <button>List</button>
+                        <button>Registry</button>
+                        <button>Gift Finder</button>
+                        <button>Gift Card</button>
+                        <button>Black Owned Businesses</button>
+                        <button>Women Owned Businesses</button>
+                        <button>Help</button>
+                        <button>Departments</button>
+                        <button>Electronics & Office</button>
 
-    <form onSubmit={handlesports}>
-      <button>Sports, Fitness & Outdoors</button>
-    </form>
 
-    <button onClick={handlebeautyProducts} >Beauty</button>
- 
-    <form onSubmit={handleauto}>
-      <button>Auto & Tire</button>
-    </form>
-    <form onSubmit={handleNonprofit}>
-      <button>Photos</button>
-    </form>
-    <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
-    </div>
-    </div>
-    <div className="tabs">
-      <button  onClick={handleartProducts} >Best Sellers</button>
-      <button  onClick={handleartProducts} >Today's Deals</button>
-      <button  onClick={handleartProducts} >Customer Service</button>
-      <button  onClick={handleartProducts} >New Releases</button>
-      <button  onClick={handleartProducts} >Near Me</button>
-      <button  onClick={handleartProducts} >Books</button>
-      <button  onClick={handleartProducts} >Fashion</button>
-      <button  onClick={handleartProducts} >Gift Cards</button>
-    </div>
-    </div>
+
+
+                        <form onSubmit={handlevideogame}>
+                            <button>Toys, Games and Video Games</button>
+                        </form>
+                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+
+                        <form onSubmit={handleHomeandfurnitures}>
+                            <button>Home, Furniture & Appliances</button>
+                        </form>
+
+                        <button>Home Improvement</button>
+                        <button>Music</button>
+                        <button>Patio & Garden</button>
+                        <button onClick={handlefoodProducts} >Food</button>
+                        <button>Pets</button>
+                        <button>Pharmacy, Health & Personal Care</button>
+
+                        <form onSubmit={handlesports}>
+                            <button>Sports, Fitness & Outdoors</button>
+                        </form>
+
+                        <button onClick={handlebeautyProducts} >Beauty</button>
+
+
+                        <button>Auto & Tire</button>
+                        <button>Photos</button>
+                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                    </div>
+                </div>
+                <div className="tabs">
+                    <button>Best Sellers</button>
+                    <button>Today's Deals</button>
+                    <button>Customer Service</button>
+                    <button>New Releases</button>
+                    <button>Near Me</button>
+                    <button>Books</button>
+                    <button>Fashion</button>
+                    <button>Gift Cards</button>
+                </div>
+            </div>
     <div class="Videogameadjust">
     {page === PAGE_PRODUCT && renderProducts()}
     {page === PAGE_CART && renderCart()}
@@ -430,7 +432,50 @@ function Videogames () {
                             <button>GET TO KNOW US</button>
                         </form>
 
-    <div class="Videogameadjust">
+                        <button>OUR COMPANY</button>
+                        <button> VENDOR DIRECTORY</button>
+                        <button>HELP CENTER</button>
+                        <button>CONTACT US</button>
+                    </div>
+                    <div className="footer3">
+                        <form onsubmit={Returns}>
+                            <button>RETURNS</button>
+                        </form>
+                        <button>PRODUCT RECALLS</button>
+                        <form onsubmit={Accessibility}>
+                            <button>ACCESSIBILTY</button>
+                        </form>
+                        <button>ADVERTISE WITH US</button>
+                    </div>
+                    <div className="footer4">
+                        <button>GREYSON'S</button>
+
+                        <form onSubmit={handleOurads}>
+                            <button>OUR ADS</button>
+                        </form>
+                    
+                        <form onSubmit ={handleTermofservices}>
+                            <button>TERMS OF SERVICE </button>
+                          </form>
+                       
+                            <button>PRIVACY & SECURITY</button>
+                    
+                           <button>CA Privacy Rights</button>
+                           
+                        
+                            <button>Do Not Sell My Information</button>
+                         
+                            
+                            <button>Tax Exempt Program</button>
+                    </div>   
+                   <div className="footer5">
+                        <hr />
+                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                    </div>
+                
+                </footer>
+
+  {/*  <div class="Videogameadjust">
     <div class="videogcard1">
         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6344/6344118_sd.jpg" alt="Xbox one" height="130" width="180"/>
         <h1>Microsoft - Xbox Series S 512 GB</h1>
@@ -527,6 +572,7 @@ function Videogames () {
         <p>Step up your game with this Logitech HERO Core wired gaming mouse. Easy to enhance your performance.</p>
         <p><button onClick={()=>itemDisplay(24)}>Add to Cart</button></p>
     </div>
+<<<<<<< HEAD
   
     <footer class="videogame-site-footer1">
     <h1>About Greyson</h1>
@@ -565,51 +611,12 @@ function Videogames () {
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
     </div>
                 </footer>
+=======
     
-                        <button>OUR COMPANY</button>
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    </div>
-                    <div className="footer3">
-                        <form onsubmit={Returns}>
-                            <button>RETURNS</button>
-                        </form>
-                        <button>PRODUCT RECALLS</button>
-                        <form onsubmit={Accessibility}>
-                            <button>ACCESSIBILTY</button>
-                        </form>
-                        <button>ADVERTISE WITH US</button>
-                    </div>
-                    <div className="footer4">
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
-                            <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                            <button>TERMS OF SERVICE </button>
-                          </form>
-                       
-                            <button>PRIVACY & SECURITY</button>
-                    
-                           <button>CA Privacy Rights</button>
-                           
-                        
-                            <button>Do Not Sell My Information</button>
-                         
-                            
-                            <button>Tax Exempt Program</button>
-                    </div>   
-                   <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                    </div>
-                </footer>
+>>>>>>> f34855ef3e829def13481b14708c8b920e9cacf1
     
-    </div>
+    </div>*/}
+   </div>
    </div>
 
   );

@@ -152,22 +152,33 @@ function DoNotSellMyInformation() {
     <div className="slider">
     
     
-      <h1>Do Not Sell My Information </h1>
-           <p>
+                                   <h1>Do Not Sell My Information </h1>
+                      <h2> Learn about our commitment to privacy protection</h2>
 
+<p>
+Grayson deeply values transparency and wanted to take this opportunity to address the requirements of the
+California Consumer Privacy Act (“CCPA”), which requires businesses to disclose sales of personal information.
 
-What Data We Collect
-The personal information we process about you and how we collect it can vary depending on (a) the product(s) or service(s) you use; (b) how you use the product or service; (c) how you have interacted with OpenText, and (d) the information that we have obtained from a customer or from a third party with permission to share such information with us.
-OpenText may collect personal information about you such as, for example: full name, email address, telephone number, company name, company location, position in company, department, billing information including credit card details where applicable, IP address and how you use our services. See Cookie Technology section for details on what we collect using cookies and other technologies.
-OpenText may combine the personal information you provide with information that is not collected directly from you. Data not provided directly by you may be supplied by OpenText’s vendors and/or partners. Refer to Personal Information Collected from Third Parties for additional information.
-How We Process Your Data
-OpenText processes personal information to respond to your requests, to provide you OpenText products and services, including information, support and delivery and access to online resources. Some of the specific processing activities include, for example:
-
-
-
+Grayson uses cookies and similar technologies on our website, which gather personal information. 
+And, like most companies with an online presence, we share some of that information with our cookie vendors
+to make sure we deliver the best information to you. That sharing may be considered a “sale” under the CCPA, 
+which defines “selling” and “sale” broadly. If you want to opt out of advertising cookies, or other 
+cookies that are not necessary for the performance of the website, you may do so by accessing our
+Cookie Preferences tool and adjusting your preferences for that web domain.
+Please see our Privacy Statement for details about how Grayson handles personal information.
 
 </p>
-      
+                                        <h2> Right to Opt Out</h2>
+
+<p> You can opt out of this type of information sharing at any time by disabling advertising cookies in your cookie preferences. All you have to do is click this link and adjust the toggles to match your preferences.
+
+Please note that your cookie preferences are domain- and browser-specific. This means that if you visit other Tableau domains, or replace or upgrade your browser, use another browser (or device), clear your browser’s cookies, or set your browser to refuse third-party cookies, you may need to revisit your Cookie Preferences to opt-out again from that domain or browser.
+
+Please keep in mind that we may continue to share your personal information if the transfers are not considered 
+“sales” under the CCPA, for example when we send information to our service providers or if you direct us to disclose it
+(for example, by opting in to have your information shared with event sponsors, or by having your badge scanned at 
+an event).
+</p>
       <div className="dot">
       
     <div>

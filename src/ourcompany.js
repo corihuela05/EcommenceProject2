@@ -151,19 +151,86 @@ function Ourcompany() {
     <div className="sliderslide">
     <div className="slider">
     
-    
+    <div class="title">
       <h1>Our company </h1>
-           <p>
+      </div>
+<p>
 
-Our company
+<b> GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profitorganizations.
+</p>
+
+<p><b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, 
+together with the enormous reach of social media, video, and Internet marketing to promote ,
+support and exceed the fund raising efforts of organizations worldwide. </p>
+
+
+<p> <b>Greyson's</b> offers fund raising campaigns the fastest path to market, and even before their 
+fund raising campaign begins Greyson's has identified thousands of 
+opt-in supporters (Buyers) who have expressed a willingness to purchase 
+products & services in an effort to support select school(s), churches(s) 
+and/or non-profits fund raising efforts.</p>
+
+<p> 
+
+We view as essential the existence, sustainability and growth of public and private educational institutions, non-profit and religious 
+organizations to support, enhance and enrich our communities, neighborhoods and world.</p> 
+
+<p>Our mission is to support these essential and treasured institutions by helping them
+raise the funds necessary to support their mission, programs and objectives. </p>
+
+<p><b>GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profit 
+organizations. <p/>
+
+<b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, together with the enormous reach of social media, video, and Internet marketing to promote , 
+support and exceed the fund raising efforts of organizations worldwide. and even before their fund raising campaign begins Greyson's has identified thousands of
+opt-in supporters (Buyers) who have expressed a willingness to purchase products
+& services in an effort to support select school(s), churches and/or non-profits fund raising efforts. </p>
+
+
+<p>We view as essential the existence, sustainability and growth of public and private 
+educational institutions, non-profit and religious organizations to support, 
+enhance and enrich our communities, neighborhoods and world. </p>
+
+<p>Our mission is to support these essential and treasured institutions 
+by helping them raise the funds necessary to support their mission, programs and objectives.
 
 </p>
-      
-   
-    </div>
+<div class="title">
+  <h2> Meet the Staff </h2>
+  </div>
+      <div class="caption">
+      <h5> Rodney Folmar </h5>
+        <p>President/CEO</p>
+       <img src="Rodney.jpg"  Class="imgRound" />
+       </div>
+
+         
+          <div class="caption">
+         <h5>Ronnie Urban </h5>
+        <p>Vendor Relations</p>
+        </div>
   
-    
-    
+        <img src="Person2.jpg"  Class="imgRound" />
+        
+          <div class="caption">
+        <h5>Carol Westfield</h5>
+            <p>Client Development Manager</p>
+            </div>
+         
+             <img src="Person1.jpg" Class="imgRound" />
+        
+        <div class="caption">
+        <h5>David Cohen </h5>
+        <p> Advertising</p>
+        </div>
+        <img src="Person3.jpg"  class="imgRound"/>
+        
+         <div class="caption">
+        <h5> Beth Forthwright </h5>
+        <p> Public Relations</p>
+        </div>
+        <img src="Person5.jpg"  class="imgRound"/>
+   </div>
     <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
@@ -205,5 +272,4 @@ Our company
     </div>
   );
 }
-
 export default Ourcompany;
