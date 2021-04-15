@@ -126,7 +126,9 @@ function Videogames () {
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
         <p>{product.text}</p>
-        <button onClick={()=>addToCart(product)}>Add to Cart</button>
+        <div className='addtocarts'>
+            <button onClick={()=>addToCart(product)}>Add to Cart</button>
+        </div>
     </div>
     ))}
      </div>  
@@ -325,7 +327,7 @@ function Videogames () {
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
-        <hr />
+       
     </div>
     ))}
     <h5>Select which Non Profit organization you want to donate to:</h5>
