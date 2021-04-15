@@ -1,9 +1,9 @@
 
 .vproduct{
-  display:grid;
-  grid-template-column: 1fr 1fr;
-
-  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .vproduct img{
@@ -11,6 +11,7 @@
 }
 
 .vproduct button {
+  position: relative;
   border: none;
   outline: 0;
   padding: 12px;
@@ -20,6 +21,7 @@
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  button:10px;
 }
 
 .vproduct button:hover {
@@ -28,8 +30,18 @@
 
 .product{
   padding:40px;
+  font-size: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
 }
-
+.product h1{
+  font-size: 25px;
+  font-weight: bold;
+}
 
 .price {
   color: grey;
@@ -71,7 +83,7 @@
 .vsite-footer
 {
   position:absolute;
-  top:4800px;
+  top:1360px;
   width:100%;
   height:430px;
   background-color:#0065ff;
@@ -214,13 +226,13 @@ label #cancelbutton1{
 .cart{
   position: absolute;
   cursor: pointer;
-  left:15%;
+  left:1.5%;
 }
 #check1{
   display: none;
 }
 #check1:checked ~ .sidebars{
-  left: 56.8%;
+  left: 65%;
   background:white;
   
 }
@@ -229,12 +241,13 @@ label #cancelbutton1{
   top: 15px;
 }
 #check1:checked ~ label #cancelbutton1{
-  left: 54%;
+  left: 62%;
   top:-10px;
   color:black;
   width:1%;
   height:110%;
   text-align:left;
   padding-left:10px;
+
  
 }
