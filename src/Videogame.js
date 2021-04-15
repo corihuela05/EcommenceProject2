@@ -137,30 +137,30 @@ function Videogames () {
     setCart(cart.filter((product) => product !== productToRemove));
   }
   const renderCart = () =>{
-     ReactDOM.render(
-    <div className="cart">
-    <button onClick={handlevideogame}>Go Back</button>
-    <h1>Cart</h1>
-    {cart.map((product,index) =>(
-    <div class="product" key={index}>
-        <img src={product.image} alt="Xbox one" height="130" width="180"/>
-        <h1>{product.name}</h1>
-        <p class="price">{product.cost}</p>
+     //ReactDOM.render(
+    //<div className="cart">
+    //<button onClick={handlevideogame}>Go Back</button>
+    //<h1>Cart</h1>
+   // {cart.map((product,index) =>(
+    //<div class="product" key={index}>
+        //<img src={product.image} alt="Xbox one" height="130" width="180"/>
+        //<h1>{product.name}</h1>
+       // <p class="price">{product.cost}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
-        <hr />
-    </div>
-    ))}
-    <h5>Select which Non Profit organization you want to donate to:</h5>
-      <select>
-        <option selected disabled>Select option</option>
-        <option value="name1">Special Strides</option>
-        <option value="name2">Weidhorn Family Foundation Inc.</option>
-        <option value="name3">John F Carroll Columbian Club</option>
-      </select>
-      <p></p>
-      <button onClick={handleCart}>Proceed to Checkout</button>
-     </div>  
-       ,document.getElementById('root'));
+        //<hr />
+   // </div>
+    //))}
+    //<h5>Select which Non Profit organization you want to donate to:</h5>
+      //<select>
+        //<option selected disabled>Select option</option>
+        //<option value="name1">Special Strides</option>
+        //<option value="name2">Weidhorn Family Foundation Inc.</option>
+        //<option value="name3">John F Carroll Columbian Club</option>
+      //</select>
+      //<p></p>
+      //<button onClick={handleCart}>Proceed to Checkout</button>
+     //</div>  
+       //,document.getElementById('root'));
   }
   
   const navigateTo = (nextpage) =>{
@@ -309,7 +309,38 @@ function Videogames () {
       <button id="info">Login</button>
     </form>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-      <button id="cart" onClick={()=> navigateTo(PAGE_CART)}><span className="glyphicon glyphicon-shopping-cart"></span>Go to Cart ({cart.length})</button>
+    <div className="cartpopout">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                    <input type="checkbox" id="check1" />
+                    <label for="check1">
+                        <i class="glyphicon glyphicon-shopping-cart"  id="openbutton1"><p>Go to Cart ({cart.length})</p></i>
+                        <i class="fa fa-close" id="cancelbutton1"></i>
+                    </label>
+                     <div className="sidebars">
+                        <div className="cart">
+    <h1>Cart</h1>
+    {cart.map((product,index) =>(
+    <div class="product" key={index}>
+        <img src={product.image} alt="Xbox one" height="130" width="180"/>
+        <h1>{product.name}</h1>
+        <p class="price">{product.cost}</p>
+        {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
+        <hr />
+    </div>
+    ))}
+    <h5>Select which Non Profit organization you want to donate to:</h5>
+      <select>
+        <option selected disabled>Select option</option>
+        <option value="name1">Special Strides</option>
+        <option value="name2">Weidhorn Family Foundation Inc.</option>
+        <option value="name3">John F Carroll Columbian Club</option>
+      </select>
+      <p></p>
+      <button onClick={handleCart}>Proceed to Checkout</button>
+     </div> 
+                    </div>    
+    </div>                
+    {/*<button id="cart" onClick={()=> navigateTo(PAGE_CART)}><span className="glyphicon glyphicon-shopping-cart"></span>Go to Cart ({cart.length})</button>*/}
     <div className="homepagesidebar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <input type="checkbox" id="check"/>
