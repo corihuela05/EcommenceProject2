@@ -151,9 +151,8 @@ function Termofservice() {
     <div className="sliderslide">
     <div className="slider">
     
-      <div class="title">
+    
       <h1>Terms Of Service </h1>
-      </div>
            <p>
 
 We provide services to you subject to the notices, terms, and conditions set forth in this agreement. Besides, you will obey the rules, guidelines, policies, terms, and conditions applicable to such services before you use them. We reserve the right to change this site and these terms and conditions at any time.
@@ -206,7 +205,7 @@ No Items in cart
   
     
     
-       <footer class="site-footer">
+    <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>

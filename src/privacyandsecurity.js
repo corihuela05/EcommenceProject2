@@ -151,9 +151,8 @@ function Privacyandsecurity() {
     <div className="sliderslide">
     <div className="slider">
     
-      <div class="title">
+    
       <h1>PRIVACY & SECURITY </h1>
-      </div>
            <p>
 
 WHEN YOU SIGN UP TO THE GRAYSON WEBSITE, YOU GIVE US CERTAIN INFORMATION VOLUNTARILY. 
@@ -175,7 +174,7 @@ ON THE SITTINGS OF AND THIER PRIVACY POLICIES SO PLEASE CHECK WHAT THEY ARE.
   
     
     
-      <footer class="site-footer">
+    <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>

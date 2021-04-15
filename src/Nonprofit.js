@@ -37,9 +37,6 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 
-import SS from './specialstrides'
-import WFFI from './WFFI'
-import JFCCC from './JFCCC'
 
 
 
@@ -194,23 +191,6 @@ function Nonprofits() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
-    
-    function handleSearch(event) {
-    event.preventDefault()
-    const name = event.target[0].value;
-    switch (name) {
-      case "Special":
-        ReactDOM.render(<SS />, document.getElementById('root'));
-        break;
-      case "Weidhorn":
-        ReactDOM.render(<WFFI />, document.getElementById('root'));
-        break;
-      case "John":
-        ReactDOM.render(<JFCCC />, document.getElementById('root'));
-        break;
-    }
-  }
-
   return (
     <div className="nonprofit">
     <div className="Appheader">
@@ -371,14 +351,13 @@ function Nonprofits() {
     </div>
     
     <div className="nonprofisearch">
-      <form onSubmit={handleSearch}>
       <h3>Search for your Non Profits</h3>
       <h5>Name of Non Profit:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="Special">Special Strides</option>
-        <option value="Weidhorn">Weidhorn Family Foundation Inc.</option>
-        <option value="John">John F Carroll Columbian Club</option>
+        <option value="name1">Special Strides</option>
+        <option value="name2">Weidhorn Family Foundation Inc.</option>
+        <option value="name3">John F Carroll Columbian Club</option>
       </select>
       <h5>Type:</h5>
       <select>
@@ -402,6 +381,7 @@ function Nonprofits() {
         <option value="location3">Woodbdrige NJ</option>
       </select>
       
+            <form onSubmit={handleProfile}>
       <button className="nonprofitsearch">SEARCH</button>
       </form>
       
