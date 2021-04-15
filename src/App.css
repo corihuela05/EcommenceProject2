@@ -6,7 +6,7 @@
   width:100%;
   height:100%;
   overflow:hidden;
-  
+
 }
 
 .Appheader{
@@ -18,7 +18,7 @@
   position: fixed;
   left: 1%;
   top:-20px;
-  width:180px; 
+  width:180px;
   height:125px;
 }
 
@@ -26,7 +26,7 @@
   position: absolute;
   left: 1px;
   top:1px;
-  width:180px; 
+  width:180px;
   height:125px;
 }
 
@@ -40,7 +40,7 @@
 }
 input[type=text] {
   position: fixed;
-  
+
   top: 20px;
   width: 33%;
   height: 38px;
@@ -121,14 +121,14 @@ button[type=submitsearch]{
   background-color: #4d94ff;
   color: white;
   border-radius: 5px;
-  
+
 }
 
 .flag{
   position: fixed;
   left:91%;
   top:16px;
-  width:65px; 
+  width:65px;
   height:40px;
 }
 
@@ -178,7 +178,7 @@ label #openbutton{
   color: white;
   padding: 10px 12px;
   border: 1px solid #041e42;
-  
+
 }
 label #cancelbutton{
   position: fixed;
@@ -189,7 +189,7 @@ label #cancelbutton{
   font-size: 28px;
   padding: 14.5px 12px;
   z-index: 5;
-  
+
 }
 #check{
   display: none;
@@ -212,6 +212,20 @@ label #cancelbutton{
   padding-left:30px;
 }
 
+.threebox{
+  margin-top: 450px;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(#0065ff, white);
+
+}
+
+.category{
+  margin-top: 250px;
+  height: 1200px;
+  width: 100%;
+}
+
 .sliderslide{
   position:absolute;
   top:150px;
@@ -220,7 +234,7 @@ label #cancelbutton{
   left:0%;
   overflow:scroll;
   overflow-x:hidden;
-  
+
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -231,11 +245,11 @@ label #cancelbutton{
 ::-webkit-scrollbar-thumb {
   background: #0065ff;
   border-radius: 10px;
-  
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffc220; 
+  background: #ffc220;
 }
 /* #Slideshow */
 .images img{
@@ -287,8 +301,8 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:510px;
-  left:2%;
+  top:525px;
+  left:6%;
   width:430px;
   background-color:#F8F2FC ;
   border: solid #F8F2FC  5px;
@@ -299,8 +313,8 @@ label #cancelbutton{
 
 .school{
   position: absolute;
-  top:510px;
-  left:35%;
+  top:525px;
+  left:37%;
   width:430px;
   background-color:#F8F2FC ;
   border: solid #F8F2FC  5px;
@@ -308,10 +322,10 @@ label #cancelbutton{
   padding-top:10px;
   font-size:20px;
 }
-  
+
 .organization{
   position: absolute;
-  top:510px;
+  top:525px;
   left:68%;
   width:430px;
   background-color:#F8F2FC ;
@@ -322,169 +336,173 @@ label #cancelbutton{
 }
 .spaces{
   position: absolute;
-  top:920px;
+  top:1000px;
   left:0px;
   width:100%;
   height:250px;
   background-color:white;
-  border: solid white 2px;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
   font-size:45px;
+  margin-top: 50px;
 }
 
 #games{
   position: absolute;
-  top:1200px;
+  top:1525px;
   left:11%;
   width:300px;
-  height:250px;
-  background-color:white;
-  border:none;
+  height:350px;
+  background-color: #F8F2FC;
+  border: none;
   outline:none;
   font-size:20px;
-  
-  
+
+
 }
 #games img{
+  background-color:#F8F2FC;
+  border: none;
   border-radius: 500px;
-  border:none;
-  background:none;
 }
 
 #baby{
   position: absolute;
-  top:1200px;
+  top:1525px;
   left:41%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color: #F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
-  
+
 }
 #baby img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #patio{
   position: absolute;
-  top:1200px;
+  top:1525px;
   left:71%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color: #F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #patio img{
   border-radius: 500px;
-  border:none;
+  border: none;
 
 }
 
 #pets{
   position: absolute;
-  top:1600px;
+  top:1925px;
   left:11%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color:#F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #pets img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #pharmacy{
   position: absolute;
-  top:1600px;
+  top:1925px;
   left:41%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color:#F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #pharmacy img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #beauty{
   position: absolute;
-  top:1600px;
+  top:1925px;
   left:71%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color: #F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #beauty img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #sports{
   position: absolute;
-  top:2000px;
+  top:2325px;
   left:11%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color:#F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #sports img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #auto{
   position: absolute;
-  top:2000px;
+  top:2325px;
   left:41%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color:#F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
-  
+
 }
 #auto img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 #music{
   position: absolute;
-  top:2000px;
+  top:2325px;
   left:71%;
   width:300px;
-  height:250px;
-  background-color:white;
+  height:350px;
+  background-color:#F8F2FC;
   border:none;
   outline:none;
   font-size:20px;
 }
 #music img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
 }
 
 .letterpic{
   position: absolute;
-  top:2400px;
+  top:2700px;
   left:25%;
   border:1px solid black;
   border-radius: 20px;
@@ -494,16 +512,16 @@ label #cancelbutton{
 
 #email{
   position:absolute;
-  top:25px;
+  top:60px;
   left:90px;
   width:300px;
   height:35px;
   outline:none;
-  
+
 }
 #subscribe{
   position:absolute;
-  top:25px;
+  top:60px;
   left:388px;
   height:35px;
   background-color:black;
@@ -513,21 +531,42 @@ label #cancelbutton{
 }
 .newsletter{
   position: absolute;
-  top:2430px;
+  top:2700px;
   left:40%;
 }
 
 .site-footer
 {
   position:absolute;
-  top:2600px;
+  top:2900px;
   width:100%;
   height:430px;
   background-color:#0065ff;
   color:white;
   padding:15px;
-  
+
 }
+
+.titleBox{
+  top:1425px;
+  margin-left: 11%;
+  width:600px;
+  height:150px;
+  background-color: #F8F2FC;
+}
+
+.category h1{
+  padding-top: 40px;
+  padding-left: 9%;
+  text-align: left;
+}
+
+.category p{
+  text-align: left;
+  padding-left: 12%;
+
+}
+
 .site-footer h1{
   position:absolute;
   left:560px;
@@ -537,7 +576,7 @@ label #cancelbutton{
   position:absolute;
   left:42%;
 }
-  
+
 .site-footer .footer1 button{
   position:absolute;
   left:21%;

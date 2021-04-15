@@ -81,40 +81,40 @@ function App() {
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
-    
-    
-    
+
+
+
     function handlePrivacyandsecurity() {
     ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
     }
-    
+
     function handleOurcompany() {
     ReactDOM.render(<Ourcompany />, document.getElementById('root'));
-    }  
-    
-    
+    }
+
+
     function handleTaxExcemptpage() {
     ReactDOM.render(<TaxExcemptpage />, document.getElementById('root'));
-    }      
+    }
     function handlefoodProducts() {
         ReactDOM.render(<FoodProducts />, document.getElementById('root'));
     }
-   
+
     function handleReturnpage () {
         ReactDOM.render(<Returnpage  />, document.getElementById('root'));
-    }    
+    }
     function handleCaprivacy() {
         ReactDOM.render(<Caprivacy />, document.getElementById('root'));
-    }    
-    
-    
+    }
+
+
     function handleAccessibility() {
         ReactDOM.render(<Accessibilitty />, document.getElementById('root'));
-    }    
-        
+    }
+
     function handleDonotsellmyinfo() {
         ReactDOM.render(<Donotsellmyinfo />, document.getElementById('root'));
-    }    
+    }
     function handleartProducts() {
         ReactDOM.render(<ArtProducts />, document.getElementById('root'));
     }
@@ -197,23 +197,23 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-    
-    
+
+
     function CAPrivacyRights() {
-        
+
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
-    
-    
+
+
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
-    
+
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
     }
-    
-    
+
+
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
@@ -354,8 +354,7 @@ function App() {
                         <label for="image2"></label>
                     </div>
                 </div>
-                <div className="threebox">
-
+                <div className="threebox" >
                     <form onSubmit={handleChurch}>
                         <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
@@ -365,43 +364,47 @@ function App() {
                         <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
                     </form>
 
-
                     <form onSubmit={handleNonprofit}>
                         <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                 </div>
+
                 <div className="addspace">
                     <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
+                <div className="titleBox">
+                <h1> Click a category to browse more! </h1>
+                <p> You will be able to choose a non-profit at checkout </p>
+                </div>
                     <form onSubmit={handlevideogame}>
-                        <button id="games"><img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" />VIDEO GAMES</button>
+                        <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlebaby}>
-                        <button id="baby"><img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" />BABY</button>
+                        <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button id="patio"><img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" />PATIO</button>
+                        <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepets}>
-                        <button id="pets"><img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" />PETS</button>
+                        <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy"><img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" />PHARMACY</button>
+                        <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
-                    <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
+                    <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlesports}>
-                        <button id="sports"><img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />SPORT</button>
+                        <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button id="auto"><img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" />AUTO</button>
+                        <button id="auto">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music"><img src="music.png" alt='music' class="thumbnail" width="280" height="280" />MUSIC</button>
+                        <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                 </div>
@@ -416,7 +419,7 @@ function App() {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
+
                     </div>
                     <div className="footer2">
 
@@ -425,74 +428,74 @@ function App() {
                         </form>
 
 
-                        
+
                         <form onSubmit={handleOurcompany}>
                         <button>OUR COMPANY</button>
-                        </form>                        
-                        
+                        </form>
+
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
                         <button>CONTACT US</button>
-                    
+
                     </div>
                     <div className="footer3">
-                    
-                   
-                            
-                            
+
+
+
+
                         <form onSubmit={handleReturnpage}>
                         <button>RETURNS</button>
-                        </form>         
-                        
+                        </form>
+
                         <button>PRODUCT RECALLS</button>
-                        
+
                         <form onSubmit={handleAccessibility}>
                         <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
+                        </form>
+
                         <button>ADVERTISE WITH US</button>
                          </div>
                           <div className="footer4">
-                          
-                          
+
+
                         <button>GREYSON'S</button>
 
                         <form onSubmit={handleOurads}>
                         <button>OUR ADS</button>
                         </form>
-                    
+
                         <form onSubmit ={handleTermofservices}>
                         <button>TERMS OF SERVICE </button>
                         </form>
-                       
+
                         <form onSubmit={handlePrivacyandsecurity}>
                         <button>PRIVACY & SECURITY</button>
                         </form>
-                        
-                        
+
+
                         <form onSubmit={handleCaprivacy}>
                         <button>CA PRIVACY RIGHTS</button>
                         </form>
-                        
+
                         <form onSubmit={handleDonotsellmyinfo}>
                         <button>Do Not Sell My Information</button>
                         </form>
-                        
-                            
-                         
-                            
-                        
-                        
+
+
+
+
+
+
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
+                        </form>
+
+                    </div>
                         <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
-                
+
                 </footer>
         </div>
         </div>
