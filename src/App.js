@@ -386,7 +386,7 @@ function App() {
                 <div className="lightbulbHP">
                   <i class="fa fa-lightbulb-o"></i>
                 </div>
-                <h3>How do I donate?</h3>
+                <h3>How do I contribute?</h3>
                 <div className="nonprofittextboxHP">
                   <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
                 </div>
