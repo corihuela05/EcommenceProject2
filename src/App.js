@@ -356,16 +356,20 @@ function App() {
                 </div>
                 <div className="threebox" >
                     <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
+                        <button className="church"><img src="church.png" alt='church' width="370" height="270" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
+                        <button className="school"><img src="school.png" alt='school' width="370" height="270" /><b> School</b><p>1,023 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img src="nonprofit.png" alt='organization' width="370" height="270" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                    </form>
+
+                    <form onSubmit={handleNonprofit}>
+                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="370" height="270" /><b> Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                 </div>
@@ -375,9 +379,18 @@ function App() {
                 </div>
                 <div className="category">
                 <div className="titleBox">
-                <h1> Click a category to browse more! </h1>
-                <p> You will be able to choose a non-profit at checkout </p>
+                <h1> Currently available to you: </h1>
+                <p> Choose from one of our categories to begin shopping </p>
                 </div>
+                <div className="bulletpointsHP">
+                <div className="lightbulbHP">
+                  <i class="fa fa-lightbulb-o"></i>
+                </div>
+                <h3>How do I donate?</h3>
+                <div className="nonprofittextboxHP">
+                  <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
+                </div>
+              </div>
                     <form onSubmit={handlevideogame}>
                         <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
                     </form>
@@ -387,13 +400,24 @@ function App() {
                     <form onSubmit={handlepatio}>
                         <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
+
+                    <form onSubmit={handlepatio}>
+                        <button id="patio1">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                    </form>
+
+
                     <form onSubmit={handlepets}>
                         <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
                         <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
+
                     <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+
+                    <form onSubmit={handlepharmacy}>
+                        <button id="pharmacy1">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                    </form>
 
                     <form onSubmit={handlesports}>
                         <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
@@ -405,6 +429,10 @@ function App() {
 
                     <form onSubmit={handlemusic}>
                         <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                    </form>
+
+                    <form onSubmit={handlemusic}>
+                        <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                 </div>

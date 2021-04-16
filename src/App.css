@@ -1,7 +1,7 @@
 
 .App {
   text-align: center;
-  background-color:white;
+  background-color:#f0f5f5;
   position:absolute;
   width:100%;
   height:100%;
@@ -214,14 +214,60 @@ label #cancelbutton{
 
 .threebox{
   margin-top: 450px;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 600px;
-  width: 100%;
-  background-image: linear-gradient(#0065ff, white);
+  width: 91%;
+  background-image: linear-gradient(#0065ff, #f0f5f5);
 
 }
 
+.bulletpointsHP{
+  position:absolute;
+  top:1325px;
+  left:51%;
+  width:625px;
+  height:150px;
+  background-color: white;
+}
+
+.lightbulbHP{
+  position:absolute;
+  top:35%;
+  left:47%;
+  background-color:#f0f5f5;
+  width:40px;
+  height:auto;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 80%;
+}
+
+.nonprofittextboxHP{
+  position:absolute;
+  top:30%;
+  left:51%;
+  width: 40%;
+}
+
+.bulletpointsHP h3{
+  position:absolute;
+  top: 5px;
+  left:50px;
+  padding-top: 30px;
+  padding-left: 0%;
+  text-align: left;
+  font-size: 30px;
+}
+
+.bulletpointsHP h1{
+padding-top: 30px;
+padding-left: 15%;
+text-align: left;
+}
+
 .category{
-  margin-top: 250px;
+  margin-top: 275px;
   height: 1200px;
   width: 100%;
 }
@@ -234,7 +280,7 @@ label #cancelbutton{
   left:0%;
   overflow:scroll;
   overflow-x:hidden;
-
+  background-color: #f0f5f5;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -301,11 +347,11 @@ label #cancelbutton{
 
 .church{
   position: absolute;
-  top:525px;
-  left:6%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:540px;
+  left:7%;
+  width:400px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
@@ -313,11 +359,11 @@ label #cancelbutton{
 
 .school{
   position: absolute;
-  top:525px;
-  left:37%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:540px;
+  left:29%;
+  width:400px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
@@ -325,22 +371,36 @@ label #cancelbutton{
 
 .organization{
   position: absolute;
-  top:525px;
-  left:68%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:540px;
+  left:51%;
+  width:400px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
 }
+
+.organization1{
+  position: absolute;
+  top:540px;
+  left: 73%;
+  width:400px;
+  background-color:white ;
+  border: solid white  5px;
+  outline: none;
+  padding-top:10px;
+  font-size:20px;
+}
+
+
 .spaces{
   position: absolute;
   top:1000px;
   left:0px;
   width:100%;
   height:250px;
-  background-color:white;
+  background-color:#f0f5f5;
   border-top: 0;
   border-bottom: 0;
   border-right: 0;
@@ -349,13 +409,14 @@ label #cancelbutton{
   margin-top: 50px;
 }
 
+
 #games{
   position: absolute;
-  top:1525px;
-  left:11%;
+  top:1495px;
+  left:17%;
   width:300px;
   height:350px;
-  background-color: #F8F2FC;
+  background-color: white;
   border: none;
   outline:none;
   font-size:20px;
@@ -363,18 +424,18 @@ label #cancelbutton{
 
 }
 #games img{
-  background-color:#F8F2FC;
+  background-color:white;
   border: none;
   border-radius: 500px;
 }
 
 #baby{
   position: absolute;
-  top:1525px;
-  left:41%;
+  top:1495px;
+  left:34%;
   width:300px;
   height:350px;
-  background-color: #F8F2FC;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
@@ -383,15 +444,16 @@ label #cancelbutton{
 #baby img{
   border-radius: 500px;
   border: none;
-  background:none;
+  background: none;
 }
+
 #patio{
   position: absolute;
-  top:1525px;
-  left:71%;
+  top:1495px;
+  left: 68%;
   width:300px;
   height:350px;
-  background-color: #F8F2FC;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
@@ -402,13 +464,31 @@ label #cancelbutton{
 
 }
 
-#pets{
+#patio1{
   position: absolute;
-  top:1925px;
-  left:11%;
+  top:1495px;
+  left:51%;
   width:300px;
   height:350px;
-  background-color:#F8F2FC;
+  background-color: white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+#patio1 img{
+  border-radius: 500px;
+  border: none;
+
+}
+
+
+#pets{
+  position: absolute;
+  top:1865px;
+  left:17%;
+  width:300px;
+  height:350px;
+  background-color:white;
   border:none;
   outline:none;
   font-size:20px;
@@ -420,11 +500,11 @@ label #cancelbutton{
 }
 #pharmacy{
   position: absolute;
-  top:1925px;
-  left:41%;
+  top:1865px;
+  left:34%;
   width:300px;
   height:350px;
-  background-color:#F8F2FC;
+  background-color:white;
   border:none;
   outline:none;
   font-size:20px;
@@ -434,13 +514,32 @@ label #cancelbutton{
   border: none;
   background:none;
 }
-#beauty{
+
+#pharmacy1{
   position: absolute;
-  top:1925px;
-  left:71%;
+  top:1865px;
+  left:51%;
   width:300px;
   height:350px;
-  background-color: #F8F2FC;
+  background-color:white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+
+#pharmacy1 img{
+  border-radius: 500px;
+  border: none;
+  background:none;
+}
+
+#beauty{
+  position: absolute;
+  top:1865px;
+  left:68%;
+  width:300px;
+  height:350px;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
@@ -452,11 +551,11 @@ label #cancelbutton{
 }
 #sports{
   position: absolute;
-  top:2325px;
-  left:11%;
+  top:2235px;
+  left:17%;
   width:300px;
   height:350px;
-  background-color:#F8F2FC;
+  background-color:white;
   border:none;
   outline:none;
   font-size:20px;
@@ -468,11 +567,11 @@ label #cancelbutton{
 }
 #auto{
   position: absolute;
-  top:2325px;
-  left:41%;
+  top:2235px;
+  left:34%;
   width:300px;
   height:350px;
-  background-color:#F8F2FC;
+  background-color:white;
   border:none;
   outline:none;
   font-size:20px;
@@ -485,16 +584,34 @@ label #cancelbutton{
 }
 #music{
   position: absolute;
-  top:2325px;
-  left:71%;
+  top:2235px;
+  left:68%;
   width:300px;
   height:350px;
-  background-color:#F8F2FC;
+  background-color:white;
   border:none;
   outline:none;
   font-size:20px;
 }
 #music img{
+  border-radius: 500px;
+  border: none;
+  background:none;
+}
+
+
+#music1 {
+  position: absolute;
+  top:2235px;
+  left:51%;
+  width:300px;
+  height:350px;
+  background-color:white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+#music1 img{
   border-radius: 500px;
   border: none;
   background:none;
@@ -548,22 +665,22 @@ label #cancelbutton{
 }
 
 .titleBox{
-  top:1425px;
-  margin-left: 11%;
-  width:600px;
+  top:1475px;
+  margin-left: 17%;
+  width:625px;
   height:150px;
-  background-color: #F8F2FC;
+  background-color: white;
 }
 
 .category h1{
-  padding-top: 40px;
-  padding-left: 9%;
+  padding-top: 45px;
+  padding-left: 10%;
   text-align: left;
 }
 
 .category p{
   text-align: left;
-  padding-left: 12%;
+  padding-left: 15%;
 
 }
 
