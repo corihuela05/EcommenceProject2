@@ -319,15 +319,15 @@ function Videogames () {
                         <i class="fa fa-close" id="cancelbutton1"></i>
                     </label>
                      <div className="sidebars">
-                        <div className="cart">
+                        <div className="carts">
     <h1>Cart</h1>
     {cart.map((product,index) =>(
-    <div class="product" key={index}>
+    <div class="productsss" key={index}>
         <img src={product.image} alt="Xbox one" height="130" width="180"/>
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
+        <p class="productinfo">{product.text}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
-       
     </div>
     ))}
     <h5>Select which Non Profit organization you want to donate to:</h5>
@@ -338,7 +338,7 @@ function Videogames () {
         <option value="name3">John F Carroll Columbian Club</option>
       </select>
       <p></p>
-      <button onClick={handleCart}>Proceed to Checkout</button>
+      <button className='btn' onClick={handleCart}>Proceed to Checkout</button>
      </div> 
                     </div>    
     </div>                
