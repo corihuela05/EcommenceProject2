@@ -40,9 +40,9 @@ const FormSuccess = () => {
                     localStorage.setItem("username", "buyer");
                     ReactDOM.render(<App />, document.getElementById("root"));
                     break;
-                case "hello":
+                case "seller":
                     localStorage.setItem("isLoggedIn", true);
-                    localStorage.setItem("username", "hello");
+                    localStorage.setItem("username", "seller");
                     ReactDOM.render(<App />, document.getElementById("root"));
                     //<Route exact path="/dashboard" render={() => { window.location.href = "index.html" }} />
                     break

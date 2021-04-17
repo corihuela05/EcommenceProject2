@@ -227,7 +227,9 @@ function App() {
     else if (username==="nonprofit"){
         url="sponsordashboard.html"
     }
-
+    else if (username==="seller"){
+        url="account.html"
+    }
     return (
         <div className="App">
             <div className="Appheader">
