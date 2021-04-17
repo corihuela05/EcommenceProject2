@@ -34,7 +34,7 @@ import Caprivacy from './caprivacy';
 import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
-
+//import Messages from './messages';
 
 
 import { useState } from "react";
@@ -52,6 +52,9 @@ function App() {
 
     const [username, setUsername] = useState(localStorage.getItem("username"));
 
+   /* function handleMessages(){
+        ReactDOM.render(<Messages/>, document.getElementById('root'));
+   }*/
     function loginButton(props) {
         <div>
             <form onSubmit={handleuserlogin}>
@@ -330,7 +333,8 @@ function App() {
                     </div>
                 </div>
                 <div className="tabs">
-                    <button>Best Sellers</button>
+                    <a href="messages.html">Redirect to Html page</a>
+                    {/*<button onClick={handleMessages}>Best Sellers</button>*/}
                     <button>Today's Deals</button>
                     <button>Customer Service</button>
                     <button>New Releases</button>
