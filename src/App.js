@@ -220,7 +220,13 @@ function App() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
-
+    var url=""
+    if (username==="admin"){
+        url="ownerdashboard.html"
+    }
+    else if (username==="nonprofit"){
+        url="sponsordashboard.html"
+    }
 
     return (
         <div className="App">
@@ -243,7 +249,7 @@ function App() {
                     <div>
                         <div>
                             <form>
-                                <button id="info">{username}</button>
+                                <button id="info" ><a href={url}>{username}</a></button>
                             </form>
                         </div>
                         <div>
@@ -333,8 +339,7 @@ function App() {
                     </div>
                 </div>
                 <div className="tabs">
-                    <a href="messages.html">Redirect to Html page</a>
-                    {/*<button onClick={handleMessages}>Best Sellers</button>*/}
+                    <button>Best Sellers</button>
                     <button>Today's Deals</button>
                     <button>Customer Service</button>
                     <button>New Releases</button>
