@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Dashboard</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="./bootstrap/css/bootplus.css" rel="stylesheet">
+	<style type="text/css">
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	.hero-unit {
+		padding: 30px;
+	}
+	@media (max-width: 980px) {
+		.navbar-text.pull-right {
+			float: none;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+</style>
+<link href="./bootstrap/css/bootplus-responsive.css" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+<link rel="apple-touch-icon-precomposed" href="#">
+<link rel="shortcut icon" href="#">
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
+</head>
+
+<body>
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+        <a class="brand" href="#">Greyson Management Portal</a>
+        <div class="nav-collapse collapse">
+          <p class="navbar-text pull-right">
+            Logged in as <a href="#" class="navbar-link">Owner</a>
+          </p>
+          <ul class="nav">
+            <li class="active"><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <div class="sidebar-nav">
+          <ul class="nav nav-list">
+          	<li class="nav-header">Statistics</li>
+            <li class="active"><a href="ownerdashboard.html">Sitewide Stats</a></li>
+            <li class="nav-header">Management</li>
+            <li><a href="owner-allsellers.html">All Sellers</a></li>
+            <li><a href="owner-allskus.html">All Items</a></li>
+            <li><a href="owner-allpartners.html">All Partners</a></li>
+
+
+					</ul>
+				</div><!--/.well -->
+			</div><!--/span-->
+
+			<div class="span10">
+				<h2>Sitewide stats</h2>
+				<div class="row-fluid">
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Total Contributions</h2>
+							<div class="card-body">
+								<p class="lead text-center"><b>$15,650.33</b></p>
+							</div>
+						</div>
+					</div><!--/span-->
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Sales</h2>
+							<div class="card-body">
+								<p class="text-center lead"><b>3710</b></p>
+							</div>
+						</div>
+					</div><!--/span-->
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Number of Units</h2>
+							<div class="card-body">
+								<p class="text-center lead"><b>3991</b></p>
+							</div>
+						</div>
+					</div><!--/span-->
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Sales Amount</h2>
+							<div class="card-body">
+								<p class="text-center lead"><b>$91,605.29</b></p>
+							</div>
+						</div>
+					</div><!--/span-->
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Sales (30 days)</h2>
+							<div class="card-body">
+								<p class="text-center lead"><b>$47,601.17</b></p>
+							</div>
+						</div>
+					</div><!--/span--> 
+					<div class="span2">
+						<div class="card">
+							<h2 class="card-heading simple">Total Fees</h2>
+							<div class="card-body">
+								<p class="text-center lead"><b>$13,221.91</b></p>
+							</div>
+						</div>
+					</div><!--/span--> 
+
+				</div><!--/row-->
+					<div class="hero-unit">
+					<button onclick="on()">New</button>
+					<hr>
+					<h2>3/1/2021 - New Announcement 2</h2>
+					<p>Text for new announcements.</p><button onclick="on()">Edit</button>
+					<hr>
+					<h2>2/15/2021 - New Announcement</h2>
+					<p>Text for new announcements.</p><button onclick="on()">Edit</button>
+				</div>
+				<div id="overlay">
+                <div id="text">
+                  <h3>Enter Announcement</h3>
+                  <label class="control-label">Title</label>
+						<div class="controls">
+							<input type="text">
+						</div>
+						<label class="control-label">Message</label>
+						<div class="controls">
+							<textarea rows="7"></textarea>
+						</div>
+                  
+                  <div class="control-group">
+                    <div class="controls">
+                      <button onclick="off()" type="submit" class="btn btn-primary">Submit</button>
+                      <button onclick="off()" type="button" class="btn">Cancel</button>
+                    </div>
+                  </div></div>
+                </div>
+
+			</div><!--/span-->
+		</div><!--/row-->
+
+		<hr>
+
+		<footer>
+			<p>© Greyson 2021</p>
+		</footer>
+
+	</div>
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="./bootstrap/js/bootstrap-min.js"></script>
+
+</body></html>

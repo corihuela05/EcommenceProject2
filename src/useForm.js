@@ -33,6 +33,9 @@ const useForm = (callback, validate) => {
             case "nonprofit@nonprofit.com":
                 userType = "nonprofit";
                 break;
+            case "seller@seller.com":
+                userType = "seller";
+                break;    
             default:
                 break;
         }
