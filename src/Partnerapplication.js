@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import Shop from "./Shop";
 import Product from "./Product";
-import Home from "./App"
+import App from "./App"
 import './App.css';
 import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
@@ -14,19 +14,21 @@ import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
 import Patio from './Patio';
-import Auto from './Partnerapplication';
 import Pets from './Pets';
 import Pharmacy from './Pharmacy';
+import Auto from './Auto';
 import Music from './Music';
 import Homeandfurnitures from './homeandfurniture';
 import School from './Schools';
 import Termofservice from './Termofservices';
 import FoodProducts from './food_products';
-import Ourads from './Ourads';
+import Ourads from './Ourads'
 import ClothingProducts from './clothing_products';
 import ArtProducts from './art_products';
 import Church from './Church';
 import Gettoknowus from './Gettoknowus';
+import './Profile.css';
+import './Videogame.css';
 import Privacyandsecurity from './privacyandsecurity';
 import Donotsellmyinfo from './donotsellmyinfo';
 import Ourcompany from './ourcompany';
@@ -34,51 +36,12 @@ import Caprivacy from './caprivacy';
 import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
+import './Partnerapplication.css';
+import Partnersucc from './Partnersucc';
 
 
-
-import { useState } from "react";
-
-//import CAPrivacyRights from '/CAPrivacyRights';
-//import DoNotSellMyInformation from '/DoNotSellMyInformation';
-//import TaxExemptProgram from 'TaxExemptProgram';
-
-
-
-function App() {
-    const [isLoggedIn, setIsLoggedIn] = useState(
-        localStorage.getItem("isLoggedIn")
-    );
-
-    const [username, setUsername] = useState(localStorage.getItem("username"));
-
-    function loginButton(props) {
-        <div>
-            <form onSubmit={handleuserlogin}>
-                <button id="info">Login</button>
-            </form>
-            <form onSubmit={handleAccount}>
-                <button id="info1">Sign Up</button>
-            </form>
-        </div>;
-    }
-
-  /*  function logout(props) {
-        <form onSubmit={handleuserlogout}>
-            <button id="info">Logout</button>
-        </form>;
-        isLoggedIn = false;
-    }*/
-    function handleuserlogout() {
-        /*ReactDOM.render(
-            <App isLoggedIn={false} />,
-            document.getElementById("root")
-            );*/
-        localStorage.removeItem("isLoggedIn");
-        localStorage.removeItem("username");
-    }
-
-    function handleclothingProducts() {
+function Partnerapplications () {
+  function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
     
@@ -217,61 +180,45 @@ function App() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
+    
+        
+    function handlePartnersuccess(){
+         ReactDOM.render(<Partnersucc />, document.getElementById('root'));
+    }
+    
 
-
-    return (
-        <div className="App">
-            <div className="Appheader">
-                <img src="logo.png" alt="company logo" className="companylogo" />
-                <img
-                    src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
-                    alt="flag"
-                    className="flag"
-                />
-                    <div className="searchbar">
-                    <input type="text" name="search" placeholder="Search.." />
-                    <button type="submitsearch"><i class="fa fa-search"></i></button>
-                    </div>
-                <form onSubmit={handleHome}>
-                    <button id="homebutton">Home</button>
-                </form>
-
-                {isLoggedIn ? (
-                    <div>
-                        <div>
-                            <form>
-                                <button id="info">{username}</button>
-                            </form>
-                        </div>
-                        <div>
-                            <form onSubmit={handleuserlogout}>
-                                <button id="info1">Logout</button>
-                            </form>
-                        </div>
-                    </div>
-                ) : (
-                        <>
-                            <form onSubmit={handleuserlogin}>
-                                <button id="info">Login</button>
-                            </form>
-                            <form onSubmit={handleAccount}>
-                                <button id="info1">Sign Up</button>
-                            </form>
-                        </>
-                    )}
-
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-                <form onSubmit={handleCart}>
-                    <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
-                </form>
-                <div className="homepagesidebar">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-                    <input type="checkbox" id="check" />
-                    <label for="check">
-                        <i class="fa fa-bars" id="openbutton"></i>
-                        <i class="fa fa-close" id="cancelbutton"></i>
-                    </label>
-                    <div className="sidebar">
+ return (
+    
+    <div className="App">
+    <div className="Appheader">
+    <img src="logo.png" alt='company logo' className="companylogo" />
+    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itmid=4320892" alt='flag' className="flag" />
+    <div className="searchbar">
+      <input type="text" name="search" placeholder="Search.." />
+      <button type="submitsearch"><i class="fa fa-search"></i></button>
+    </div>
+    <form onSubmit={handleHome}>
+      <button id="homebutton">Home</button>
+    </form>
+   
+  <form onSubmit={handleAccount}>
+      <button id="info1">Sign Up</button>
+    </form>
+    <form onSubmit={handleuserlogin}>
+      <button id="info">Login</button>
+    </form>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <form onSubmit={handleCart}>
+      <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
+    </form>
+    <div className="homepagesidebar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <input type="checkbox" id="check"/>
+    <label for="check">
+      <i class="fa fa-bars" id="openbutton"></i>
+      <i class="fa fa-close" id="cancelbutton"></i>
+    </label>
+    <div className="sidebar">
                         <form onSubmit={handleHome}>
                             <button>Home</button>
                         </form>
@@ -340,79 +287,96 @@ function App() {
                     <button>Gift Cards</button>
                 </div>
             </div>
-            <div className="sliderslide">
-                <div className="slider">
-                    <div className="images">
-                        <input type="radio" name="slide" id="image1" checked />
-                        <input type="radio" name="slide" id="image2" checked />
 
-                        <img src="ECOMMERCE.png" class="img1" alt="image1" />
-                        <img src="Electronics.jpg" class="img2" alt="image2" />
-                    </div>
-                    <div className="dot">
-                        <label for="image1"></label>
-                        <label for="image2"></label>
-                    </div>
-                </div>
-                <div className="threebox">
-
-                    <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
-                    </form>
-
-
-                    <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
-                    </form>
-
-
-                    <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
-                    </form>
-
-                </div>
-                <div className="addspace">
-                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
-                </div>
-                <div className="category">
-                    <form onSubmit={handlevideogame}>
-                        <button id="games"><img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" />VIDEO GAMES</button>
-                    </form>
-                    <form onSubmit={handlebaby}>
-                        <button id="baby"><img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" />BABY</button>
-                    </form>
-                    <form onSubmit={handlepatio}>
-                        <button id="patio"><img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" />PATIO</button>
-                    </form>
-                    <form onSubmit={handlepets}>
-                        <button id="pets"><img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" />PETS</button>
-                    </form>
-                    <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy"><img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" />PHARMACY</button>
-                    </form>
-                    <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
-
-                    <form onSubmit={handlesports}>
-                        <button id="sports"><img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />SPORT</button>
-                    </form>
-
-                    <form onSubmit={handleauto}>
-                        <button id="auto"><img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" />AUTO</button>
-                    </form>
-
-                    <form onSubmit={handlemusic}>
-                        <button id="music"><img src="music.png" alt='music' class="thumbnail" width="280" height="280" />MUSIC</button>
-                    </form>
-
-                </div>
-                <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
-                <div className="newsletter">
-                    <input type="input" id="email" placeholder="  Email Address" />
-                    <button id="subscribe">Subscribe</button>
-                </div>
-
-
-                <footer class="site-footer">
+    
+   <div class="Videogameadjust">
+    <h2> Our Services </h2>
+    
+    <div class="partnerinputdetails">
+      <input type="text1" id="fname" name="firstname" placeholder="First Name"/>
+      <input type="text2" id="lname" name="lastname" placeholder="Last Name"/>
+      <input type="text3" id="lname" name="Phone#" placeholder="Phone number"/>
+      <input type="text4" id="lname" name="Email" placeholder="Email address"/>
+    </div>
+    
+    <div class="partnerselectserviceoptions">
+    <select>
+        <option selected disabled>Select Service</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="flooring">Flooring</option>
+        <option value="tc">Technical services</option>
+     </select>
+     </div>
+     
+    <div class="partnerselectnonprofitoptions">
+    <select>
+        <option selected disabled>Select Non Profit organization</option>
+        <option value="o1">Special Strides</option>
+        <option value="o2">Weidhorn Family Foundation Inc</option>
+        <option value="o3">John F Carroll Columbain Club</option>
+     </select>
+     </div>
+   
+    
+    <div class="reqsubmitbutton">
+    <form onSubmit={handlePartnersuccess}>
+     <button className="Reqbutton">Submit</button>
+    </form>
+    </div>
+    
+   
+    
+    <div class="partnercards1">
+     <img className="plumbing"src="https://images.ctfassets.net/990581qemznk/2ZMxpLuwAjAXUUjVQGIEYa/7f00a576456a0233c20f1cfb5089732e/PlumbingLogoWithWrench.jpg" alt="plumbing"/>
+     </div>
+     
+     <div class="partnercards2">
+     <img className="flooring"src="https://i.pinimg.com/originals/de/8a/0d/de8a0dafad4d7090d1a68f59aad68688.jpg" alt="flooring"/>
+     </div>
+     
+     <div class="partnercards3">
+     <img className="TC"src="https://i.pinimg.com/originals/49/d8/df/49d8df555c1447c8e2c69142186c8a4c.jpg" alt="TC"/>
+     </div>
+     
+     <div class="partnercards4">
+     <img className="oneteam"src="https://cdn2.f-cdn.com/contestentries/1000549/23103778/58f5efdc7f196_thumb420.jpg" alt="oneteam"/>
+     </div>
+ 
+    <div className="partnernonprofimidheader">
+      <h1>Our Mission</h1>
+    </div>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+      <div className="pbulletpoints">
+      <div className="plightbulb">
+        <i class="fa fa-star-o"></i>
+      </div>
+      <h3>First Goal</h3>
+      <div className="pnonprofittextbox">
+        <p>To create a better everyday life for the many people.</p>
+      </div>
+    </div>
+    <div className="pbulletpoints1">
+      <div className="plightbulb">
+        <i class="fa fa-star-o"></i>
+      </div>
+      <h3 className="psecondbenefit">Second Goal</h3>
+      <div className="pnonprofittextbox">
+        <p>To give customers the most compelling experience possible.</p>
+      </div>
+    </div>
+    <div className="pbulletpoints2">
+      <div className="plightbulb">
+        <i class="fa fa-star-o"></i>
+      </div>
+      <h3 className="pthirdbenefit">Third Goal</h3>
+      <div className="pnonprofittextbox">
+        <p>Our goal is to provide the highest level of service,and the most competitive prices.</p>
+      </div>
+    </div>
+   
+     <div class="partnerverticalline"></div> 
+    
+    <footer class="partner-site-footer">
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -483,6 +447,7 @@ function App() {
                             
                         
                         
+                        
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
                         </form>                        
@@ -494,9 +459,11 @@ function App() {
                     </div>
                 
                 </footer>
-        </div>
-        </div>
-    );
+    
+    </div>
+    </div>
+    
+  );
 }
 
-export default App;
+export default Partnerapplications;
