@@ -34,7 +34,8 @@ import Caprivacy from './caprivacy';
 import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
-import AnimatedButton from 'react-animated-buttons';
+import AnimatedButton from 'react-animated-button';
+
 
 
 
