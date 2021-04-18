@@ -50,7 +50,7 @@ b. 'add more info as we go here''add more info as we go here'
 c. 'add more info as we go here'
 
 ## Sign In Info
-`Sellers: `
+`Admin/Owner: `
  `email: admin@admin.com`
 ` password: admin1`
 `Buyer:`
@@ -59,3 +59,6 @@ c. 'add more info as we go here'
 `Nonprofit:`
  `email: nonprofit@nonprofit.com`
  `password: nonprofit`
+`Sellers: `
+ `email: seller@seller.com`
+` password: seller`
