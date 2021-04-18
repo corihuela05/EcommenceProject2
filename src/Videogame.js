@@ -30,7 +30,8 @@ import Church from './Church';
 import Gettoknowus from './Gettoknowus';
 import Item_Display from './item_display';
 import axios from 'axios'
-
+import Next from "./Shipping";
+import Header from "./Header";
 import { useState } from 'react';
 const PAGE_PRODUCT='products';
 const PAGE_CART = 'cart';
@@ -115,7 +116,7 @@ function Videogames () {
   
   const addToCart = (product)=>{
     console.log('add to cart');
-    setCart([...cart, product])
+    setCart([...cart, {...product}])
   }
   
   const renderProducts = () => (
@@ -133,25 +134,21 @@ function Videogames () {
     ))}
      </div>  
   );
-  
   const removeFromCart = (productToRemove)=>{
-    console.log("hey there")
     setCart(cart.filter((product) => product !== productToRemove));
   }
   const renderCart = () =>{
-     //ReactDOM.render(
-    //<div className="cart">
-    //<button onClick={handlevideogame}>Go Back</button>
-    //<h1>Cart</h1>
-   // {cart.map((product,index) =>(
-    //<div class="product" key={index}>
-        //<img src={product.image} alt="Xbox one" height="130" width="180"/>
-        //<h1>{product.name}</h1>
-       // <p class="price">{product.cost}</p>
+      cart.map((product,index) =>(
+    <div class="product" key={index}>
+        <img src={product.image} alt="Xbox one" height="130" width="180"/>
+        <h1>{product.name}</h1>
+       <p class="price">{product.cost}</p>
+       <p class="productinfo">{product.text}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
-        //<hr />
-   // </div>
-    //))}
+        <hr />
+    
+    </div>
+    ))
     //<h5>Select which Non Profit organization you want to donate to:</h5>
       //<select>
         //<option selected disabled>Select option</option>
@@ -164,6 +161,8 @@ function Videogames () {
      //</div>  
        //,document.getElementById('root'));
   }
+  
+
   
   const navigateTo = (nextpage) =>{
     setPages(nextpage);
@@ -194,12 +193,12 @@ function Videogames () {
   ReactDOM.render(<Church/>,document.getElementById('root'));
  }
  
- 
    function handleGetknowus(){
   ReactDOM.render(<Gettoknowus/>,document.getElementById('root'));
  }
-
-
+  function handleCancle(){
+  ReactDOM.render(<Videog/>,document.getElementById('root'));
+ }
   function handleHome(){
     ReactDOM.render(<Home />,document.getElementById('root'));
   }
@@ -209,8 +208,63 @@ function Videogames () {
   function handleShop(){
     ReactDOM.render(<Shop />,document.getElementById('root'));
   }
+      function handleNext(){
+      ReactDOM.render(<Next />,document.getElementById('root'));
+    }
+    
   function handleCart(){
-    ReactDOM.render(<Cart />,document.getElementById('root'));
+    ReactDOM.render(
+        <div className="App">
+        <Header/>
+         <div className="sliderslide">
+    <div className="threesteps">
+      <button className="b7">1.Shopping Cart</button>
+      <button className="b8">2.Shipping Details</button>
+      <button className="b9">3.Payment Options</button>
+    </div>
+
+    
+    <div className="detailsinfo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <h1>Shopping Cart</h1>
+      {cart.map((product,index) =>(
+    <div class="prod" key={index}>
+        <img src={product.image} alt="Xbox one" height="130" width="180"/>
+        <p class="carttitle">{product.name}</p>
+        <p class="price">{product.cost}</p>
+    </div>
+    ))}
+    
+    <form onSubmit={handleNext}>
+        <button className="cn12">Next</button>
+    </form>
+    <form onSubmit={handleCancle}>
+      <button className="cn22">Cancel</button>
+    </form>
+    </div>
+      
+    <div className="summaryinfo">
+      <h1>Summary</h1>
+    </div>
+    
+     
+    <div class="amount1">
+     <p className="sub1">SUBTOTAL $799.98</p>
+     <p className="ship1">SHIPPING  FREE</p>
+     <p className="tax1">TAXES  $4.90</p>
+     <p className="total1">TOTAL  $804.88</p>
+     <p className="voucher1">HAVE A DISCOUNT CODE??</p>
+    </div>
+    
+    <input type="text10" id="fname" name="copoun" placeholder="Voucher #"/>
+    
+    <div class="verticalline7"></div>
+    
+
+    
+    </div>
+    </div>
+    ,document.getElementById('root'));
   }
    function handleNonprofit(){
     ReactDOM.render(<Nonprofit />,document.getElementById('root'));
@@ -327,7 +381,7 @@ function Videogames () {
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
         <p class="productinfo">{product.text}</p>
-        {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
+        <button className='btn1' onClick={() => removeFromCart(product)}>Remove</button>
     </div>
     ))}
     <h5>Select which Non Profit organization you want to donate to:</h5>
@@ -613,10 +667,6 @@ function Videogames () {
       <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
     </div>
                 </footer>
-=======
-    
->>>>>>> f34855ef3e829def13481b14708c8b920e9cacf1
-    
     </div>*/}
    </div>
    </div>

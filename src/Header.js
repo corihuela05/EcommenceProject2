@@ -1,14 +1,8 @@
 import React from "react";
-import './Shipping.css';
-import Paynext from"./Payment";
-import Shop from "./Shop";
 import ReactDOM from 'react-dom';
-import App from "./App";
-import Shipcancel from "./Cart";
-import Shiphome from "./App";
-import Shipshop from "./Shop";
+import Shop from "./Shop";
 import Product from "./Product";
-import Home from "./App"
+import App from "./App"
 import './App.css';
 import Cart from './Cart';
 import Nonprofit from "./Nonprofit";
@@ -41,30 +35,55 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 
-function Shipping() {
-    
-    function handlePaynext(){
-      ReactDOM.render(<Paynext />,document.getElementById('root'));
+
+
+import { useState } from "react";
+
+//import CAPrivacyRights from '/CAPrivacyRights';
+//import DoNotSellMyInformation from '/DoNotSellMyInformation';
+//import TaxExemptProgram from 'TaxExemptProgram';
+
+
+
+function Header() {
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("isLoggedIn")
+    );
+
+    const [username, setUsername] = useState(localStorage.getItem("username"));
+
+    function loginButton(props) {
+        <div>
+            <form onSubmit={handleuserlogin}>
+                <button id="info">Login</button>
+            </form>
+            <form onSubmit={handleAccount}>
+                <button id="info1">Sign Up</button>
+            </form>
+        </div>;
     }
-    function handleHome(){
-     ReactDOM.render(<App />,document.getElementById('root'));
+
+  /*  function logout(props) {
+        <form onSubmit={handleuserlogout}>
+            <button id="info">Logout</button>
+        </form>;
+        isLoggedIn = false;
+    }*/
+    function handleuserlogout() {
+        /*ReactDOM.render(
+            <App isLoggedIn={false} />,
+            document.getElementById("root")
+            );*/
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
     }
-    function handleShop(){
-     ReactDOM.render(<Shop />,document.getElementById('root'));
-    }
-    function handleShipcancel(){
-     ReactDOM.render(<Videog />,document.getElementById('root'));
-   }
-   function handleShiphome(){
-     ReactDOM.render(<Shiphome />,document.getElementById('root'));
-   }
-   function handleShipshop(){
-     ReactDOM.render(<Shipshop />,document.getElementById('root'));
-   }
+
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
-
+    
+    
+    
     function handlePrivacyandsecurity() {
     ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
     }
@@ -199,8 +218,9 @@ function Shipping() {
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
 
-  return (
-    <div className="App">
+
+    return (
+        <div className="App">
             <div className="Appheader">
                 <img src="logo.png" alt="company logo" className="companylogo" />
                 <img
@@ -215,13 +235,32 @@ function Shipping() {
                 <form onSubmit={handleHome}>
                     <button id="homebutton">Home</button>
                 </form>
-                 <form onSubmit={handleuserlogin}>
+
+                {isLoggedIn ? (
+                    <div>
+                        <div>
+                            <form>
+                                <button id="info">{username}</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form onSubmit={handleuserlogout}>
+                                <button id="info1">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                ) : (
+                        <>
+                            <form onSubmit={handleuserlogin}>
                                 <button id="info">Login</button>
                             </form>
                             <form onSubmit={handleAccount}>
                                 <button id="info1">Sign Up</button>
                             </form>
-                             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+                        </>
+                    )}
+
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
                 <form onSubmit={handleCart}>
                     <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
                 </form>
@@ -301,156 +340,9 @@ function Shipping() {
                     <button>Gift Cards</button>
                 </div>
             </div>
-      <div className="sliderslide">
-      <div className="threesteps">
-      <button className="b1">1.Shopping Cart</button>
-      <button className="b2">2.Shipping Details</button>
-      <button className="b3">3.Payment Options</button>
-      </div>
-      
-      <div className="details">
-      <h1>Shipping Details</h1>
-      </div>
-      
-      <div class="verticalline"></div> 
-      
-      <div className="summary">
-      <h1>Summary</h1>
-      </div>
-      
-      <input type="text1" id="fname" name="firstname" placeholder="First Name"/>
-      <input type="text2" id="lname" name="lastname" placeholder="Last Name"/>
-      <input type="text3" id="lname" name="address" placeholder="Address"/>
-      <input type="text4" id="lname" name="address2" placeholder="Address 2"/>
-      <input type="text5" id="lname" name="country" placeholder="Country"/>
-      <input type="text6" id="lname" name="city" placeholder="City"/>
-      <input type="text7" id="lname" name="zip/postal code" placeholder="Zip/Postal Code"/>
-      <input type="text8" id="lname" name="phone number" placeholder="Phone Number"/>
-      <input type="text9" id="fname" name="copoun" placeholder="Voucher #"/>
-      
-      <div class="horline2"></div>
-      
-      <div className="bottom">
-      <form onSubmit={handlePaynext}>
-        <button className="n1">Next</button>
-      </form>
-      <form onSubmit={handleShipcancel}>
-        <button className="n2">Cancel</button>
-       </form>
-      </div>
-      
-     
-     <input className="option1" type="checkbox" id="shipping" name="type 1" value="Free"/>
-     <label className="option2" for="type 1"> Free Shipping (2-5 business days) </label>
-     <input  className="option3" type="checkbox" id="vehicle2" name="type 2" value="Paid"/>
-     <label  className="option4" for="type 2">Next day delivery - $20 (24 hours from checkout)  </label>
-      
-     <div class="cards1">
-     <img className="pantc1"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6344/6344118_sd.jpg" alt="Pant"/>
-     <p6 className="productnameofcart">Microsoft - Xbox Series S 512 GB</p6>
-     <p5 className="price1">$299.99</p5>
-     </div>
-     
-     <div class="cards2">
-     <img className="tshirtc2"src="https://specials-images.forbesimg.com/imageserve/5eeb7b50706cd80006e3154c/960x0.jpg?cropX1=0&cropX2=680&cropY1=0&cropY2=453" alt="Tshirt"/>
-     <p8 className="productnameofcart2">Sony - PlayStation 5 Console</p8>
-     <p7 className="price2">$499.99</p7>
-     </div>
-     
-     <div class="amount">
-     <p4 className="sub">SUBTOTAL $799.98</p4>
-     <p2 className="ship">SHIPPING  FREE</p2>
-     <p3 className="tax">TAXES  $4.90</p3>
-     <p12 className="total">TOTAL  $804.88</p12>
-     <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
-     </div>
-    
-    <footer class="shipping-site-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
-
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
-
-
-                        
-                        <form onSubmit={handleOurcompany}>
-                        <button>OUR COMPANY</button>
-                        </form>                        
-                        
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    
-                    </div>
-                    <div className="footer3">
-                    
-                   
-                            
-                            
-                        <form onSubmit={handleReturnpage}>
-                        <button>RETURNS</button>
-                        </form>         
-                        
-                        <button>PRODUCT RECALLS</button>
-                        
-                        <form onSubmit={handleAccessibility}>
-                        <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
-                        <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                        <button>TERMS OF SERVICE </button>
-                        </form>
-                       
-                        <form onSubmit={handlePrivacyandsecurity}>
-                        <button>PRIVACY & SECURITY</button>
-                        </form>
-                        
-                        
-                        <form onSubmit={handleCaprivacy}>
-                        <button>CA PRIVACY RIGHTS</button>
-                        </form>
-                        
-                        <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                        </form>
-                        
-                            
-                         
-                            
-                        
-                        
-                        <form onSubmit={handleTaxExcemptpage}>
-                        <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
-                        <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
-    </div>
-
-    </div>
-    
-  );
+            
+        </div>
+    );
 }
-export default Shipping;
+
+export default Header;
