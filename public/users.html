@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Dashboard</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="./bootstrap/css/bootplus.css" rel="stylesheet">
+	<style type="text/css">
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	.hero-unit {
+		padding: 30px;
+	}
+	@media (max-width: 980px) {
+		.navbar-text.pull-right {
+			float: none;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+</style>
+<link href="./bootstrap/css/bootplus-responsive.css" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+<link rel="apple-touch-icon-precomposed" href="#">
+<link rel="shortcut icon" href="#">
+<script>
+	function myFunction() {
+		confirm("Are you sure you want to delete this user?");
+	}
+</script>
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Greyson Management Portal</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+						Logged in as <a href="#" class="navbar-link">Admin</a>
+					</p>
+					<ul class="nav">
+						<li class="active"><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<div class="sidebar-nav">
+					<ul class="nav nav-list">
+		            	<li class="nav-header">Account Management</li>
+			            <li><a href="account.html">Account Settings</a></li>
+			            <li class="active"><a href="users.html">User Settings</a></li>
+			            <li><a href="shipping.html">Shipping Settings</a></li>
+			            <li class="nav-header">Item Management</li>
+			            <li><a href="create-sku.html">Create New Listing</a></li>
+			            <li><a href="edit-sku.html">View Item Listings</a></li>
+			            <li class="nav-header">Order Management</li>
+			            <li><a href="orders.html">View Orders</a></li>
+			            <li><a href="returns.html">Returns</a></li>
+			            <li><a href="preorders.html">Pre-Orders</a></li>
+			            <li><a href="messages.html">Customer Messages</a></li>
+			            <li class="nav-header">Sponsors</li>
+			            <li><a href="sponsors.html">Edit Information</a></li>
+
+					</ul>
+				</div><!--/.well -->
+			</div><!--/span-->
+
+			<div class="span5">
+				<h2>Create New User Account</h2>
+
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label">Username</label>
+						<div class="controls">
+							<input type="text">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Password</label>
+						<div class="controls">
+							<input type="password">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Email Address</label>
+						<div class="controls">
+							<input class="input-large" type="text">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Role</label>
+						<div class="controls"><select>
+							<option>User</option>
+							<option>Guest</option>
+							<option>Admin</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="index.html"><button type="button" class="btn">Go back</button></a>
+					</div>
+				</div>
+			</form>
+
+
+		</div><!--/span-->
+		<div class="span3">
+			<h3>User Accounts</h3>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Role</th>
+						<th>Username</th>
+						<th>Email</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Admin</td>
+						<td>Admin</td>
+						<td>admin@greyson.com</td>
+						<td><a onclick="myFunction()">Delete</a></td>
+					</tr>
+					<tr>
+						<td>User</td>
+						<td>Gary</td>
+						<td>gary@greyson.com</td>
+						<td><a onclick="myFunction()">Delete</a></td>
+					</tr>
+					<tr>
+						<td>User</td>
+						<td>Mark</td>
+						<td>mark@greyson.com</td>
+						<td><a onclick="myFunction()">Delete</a></td>
+					</tr>
+					<tr>
+						<td>Guest</td>
+						<td>Sharon</td>
+						<td>sharon@greyson.com</td>
+						<td><a onclick="myFunction()">Delete</a></td>
+					</tr>
+				</table>
+			</div>
+		</div><!--/row-->
+
+		<hr>
+
+		<footer>
+			<p>© Greyson 2021</p>
+		</footer>
+
+	</div>
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="./bootstrap/js/bootstrap-min.js"></script>
+
+</body></html>

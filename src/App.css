@@ -288,7 +288,7 @@ text-align: left;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0065ff;
+ background-color: transparent;
   border-radius: 10px;
 
 }

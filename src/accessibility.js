@@ -18,6 +18,8 @@ import School from './Schools';
 
 
 
+
+
 function Accessibilitty() {
   function handlebeautyProducts(){
     ReactDOM.render(<BeautyProducts />,document.getElementById('root'));

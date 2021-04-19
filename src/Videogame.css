@@ -1,9 +1,9 @@
 
 .vproduct{
-  display:grid;
-  grid-template-column: 1fr 1fr;
-
-  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .vproduct img{
@@ -11,6 +11,7 @@
 }
 
 .vproduct button {
+  position: relative;
   border: none;
   outline: 0;
   padding: 12px;
@@ -20,6 +21,7 @@
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  button:10px;
 }
 
 .vproduct button:hover {
@@ -28,8 +30,18 @@
 
 .product{
   padding:40px;
+  font-size: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
 }
-
+.product h1{
+  font-size: 25px;
+  font-weight: bold;
+}
 
 .price {
   color: grey;
@@ -71,7 +83,7 @@
 .vsite-footer
 {
   position:absolute;
-  top:4800px;
+  top:1360px;
   width:100%;
   height:430px;
   background-color:#0065ff;
@@ -162,4 +174,121 @@ p {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
+}
+.sidebarcart{
+  position:absolute;
+  left:50%;
+}
+
+.sidebars {
+  position: fixed;
+  top:0px;
+  left:-870px;
+  height: 100%;
+  width: 740px;
+  overflow:scroll;
+  overflow-x:hidden;
+  z-index: 5;
+}
+
+label #openbutton1{
+ position: fixed;
+  left:82%;
+  top: 20px;
+  width:10%;
+  background-color: white;
+  color: black;
+  padding: 8px 10px ;
+  border:none;
+  font-size: 18px;
+  outline: none;
+  text-align:left;
+  background-color: #4d94ff;
+  color: white;
+  border-radius: 5px;
+}
+label #openbutton1 p{
+  position: absolute;
+  top:25%;
+  left:20%;
+}
+label #cancelbutton1{
+  position: fixed;
+  cursor: pointer;
+  left:160px;
+  height:5px;
+  top: -100px;
+  font-size: 28px;
+  padding: 14.5px 12px;
+  z-index: 5;
+  
+}
+.carts{
+  position: absolute;
+  cursor: pointer;
+  left:7.8%;
+  background:#041e42;
+}
+#check1{
+  display: none;
+}
+#check1:checked ~ .sidebars{
+  left: 72%;
+  background:#041e42;
+  opacity:1;
+}
+#check1:checked ~ label #openbutton1{
+  left:82%;
+  top: 15px;
+}
+#check1:checked ~ label #cancelbutton1{
+  left: 0%;
+  top:-10px;
+  color:blue;
+  width:100%;
+  height:110%;
+  text-align:left;
+  padding-left:70%;
+  background:black;
+  opacity:.8;
+ 
+} 
+
+
+.carts .btn{
+  background-color: green;
+  width:88%;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.carts h1{
+  color:white;
+}
+
+.carts h5{
+  color:white;
+  text-align:center;
+  font-size:12px;
+}
+
+.productsss{
+  border-top:4px solid white;
+  padding:40px;
+  font-size: 10px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #041e42;
+    color:white;
+}
+.productsss h1{
+  font-size: 25px;
+  font-weight: bold;
 }
