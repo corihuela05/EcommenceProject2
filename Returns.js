@@ -151,9 +151,8 @@ function Returns() {
     <div className="sliderslide">
     <div className="slider">
     
-      <div class="title">
+    
       <h1>Returns</h1>
-      </div>
            <p>
 
 

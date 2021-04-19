@@ -36,9 +36,7 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 
-import CAS from './chancelloravenueschool'
-import CES from './clevelandelementaryschool'
-import DEAFS from './flaggschool'
+
 
 import { useState } from "react";
 
@@ -193,22 +191,6 @@ function Schools() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
-    
-    function handleSearch(event) {
-    event.preventDefault()
-    const name = event.target[0].value;
-    switch (name) {
-      case "Chancellor":
-        ReactDOM.render(<CAS />, document.getElementById('root'));
-        break;
-      case "Cleveland":
-        ReactDOM.render(<CES />, document.getElementById('root'));
-        break;
-      case "Flagg":
-        ReactDOM.render(<DEAFS />, document.getElementById('root'));
-        break;
-    }
-  }
 
   return (
     <div className="nonprofit">
@@ -366,14 +348,13 @@ function Schools() {
     </div>
     
     <div className="nonprofisearch">
-      <form onSubmit={handleSearch}>
       <h3>Search for your school</h3>
       <h5>Name of schools:</h5>
       <select>
         <option selected disabled>Select option</option>
-        <option value="Chancellor">Chancellor Avenue School</option>
-        <option value="Cleveland">Cleveland Elementary School</option>
-        <option value="Flagg">Dr. E. Alma Flagg School </option>
+        <option value="name1">Chancellor Avenue School</option>
+        <option value="name2">Cleveland Elementary School</option>
+        <option value="name3">Dr. E. Alma Flagg School </option>
       </select>
       <h5>Type:</h5>
       <select>
@@ -397,6 +378,8 @@ function Schools() {
         <option value="location3">Springfield NJ</option>
       </select>
       
+      
+       <form onSubmit={handleProfile}>
          <button className="nonprofitsearch">SEARCH</button>
       </form>
     
