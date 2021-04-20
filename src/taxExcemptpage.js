@@ -149,9 +149,8 @@ function TaxExcemptpage() {
     </div>
     <div className="sliderslide">
     <div className="slider">
-    <div class="title">
+    
       <h1>Tax Exempt Program</h1>
-      </div>
 
 
 
@@ -183,7 +182,7 @@ seven days a week. You can also renew your account and add exemption certificate
 
     
     
-     <footer class="site-footer">
+    <footer class="site-footer">
     <h1>About Greyson</h1>
     <div className="footer1">
       <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
