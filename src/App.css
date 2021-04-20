@@ -664,16 +664,17 @@ text-align: left;
 }
 
 .titleBox{
-  top:1475px;
+  position: absolute;
+  top: 1325px;
   margin-left: 17%;
-  width:625px;
+  width:600px;
   height:150px;
   background-color: white;
 }
 
 .category h1{
-  padding-top: 45px;
-  padding-left: 10%;
+  padding-top: 25px;
+  padding-left: 20%;
   text-align: left;
   font-size: 30px;
 }
