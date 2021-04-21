@@ -303,8 +303,7 @@ text-align: left;
   left: 1.2px ;
   height: 480px;
   width: 100%;
-  transition: all .15%s ease;
-  border: 1px solid black;
+  transition: all 1.5s ease;
 }
 
 .images input{
@@ -338,11 +337,21 @@ text-align: left;
 }
 
 #image1:checked ~ .img1{
-  margin-left:0;
+  opacity: 100%;
+  animation: 5s ease-in;
+
 }
+
+#image2 .image2 @keyframes transition {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
 #image2:checked ~ .img2{
-  margin-left:-100%;
+    opacity: 0%;
 }
+
+
 
 .church{
   position: absolute;
