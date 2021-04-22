@@ -251,7 +251,7 @@ function App() {
                     <div>
                         <div>
                             <form>
-                            <button id="info" ><a href={url}>{username}</a></button>
+                            <button id="info" ><a id="info" href={url}>{username}</a></button>
                             </form>
                         </div>
                         <div>
