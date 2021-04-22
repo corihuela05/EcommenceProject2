@@ -308,11 +308,11 @@ text-align: left;
 .img2 {
   opacity: 0%;
   animation-name: fading;
-  animation-delay: 5s;
-  animation-duration: 7s;
+  animation-delay: 3s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 
 }
 
@@ -321,13 +321,39 @@ text-align: left;
 }
 
 @keyframes fading {
- 100% {
-   opacity: 100%;
-
+100% {
+  opacity: 0%;
  }
- 0% {
+ 90% {
    opacity: 0%;
  }
+   80% {
+     opacity: 0%;
+   }
+     70% {
+       opacity: 100%;
+     }
+       60% {
+         opacity: 100%;
+       }
+         50% {
+           opacity: 100%;
+         }
+           40% {
+             opacity: 100%;
+           }
+             30% {
+               opacity: 100%;
+             }
+               20% {
+                 opacity: 0%;
+               }
+                 10% {
+                   opacity: 0%;
+                 }
+                   0% {
+                     opacity: 0%;
+                   }
 }
 
 .images input{
