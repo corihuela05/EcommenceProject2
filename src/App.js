@@ -368,6 +368,7 @@ function App() {
                   </div>
                 </div>
                 <div className="threebox" >
+                  <div className="boxHolder">
               <form onSubmit={handleChurch}>
                         <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
@@ -385,11 +386,12 @@ function App() {
                         <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
                     </form>
                 </div>
-
+                </div>
                 <div className="addspace">
                     <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
+                  <div className="catContainer">
                 <div className="titleBox">
                 <h1> Currently available to you: </h1>
                 <p> Choose from one of our categories to begin shopping </p>
@@ -401,6 +403,7 @@ function App() {
                 <h3>How do I contribute?</h3>
                 <div className="nonprofittextboxHP">
                   <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
+                </div>
                 </div>
 
                     <form onSubmit={handlevideogame}>
@@ -447,6 +450,7 @@ function App() {
                         <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
+                </div>
                 </div>
                 <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
                 <div className="newsletter">
@@ -539,7 +543,7 @@ function App() {
                 </footer>
             </div>
             </div>
-    </div>
+
     );
 }
 
