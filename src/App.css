@@ -213,19 +213,20 @@ label #cancelbutton{
 }
 
 .threebox{
-  margin-top: 450px;
+  margin-top: 0px;
   margin-left: 0%;
   width: 100%;
-  height: 600px;
+  height: 515px;
   background-image: linear-gradient(#0065ff, #f0f5f5);
+
 
 }
 
 .bulletpointsHP{
   position:absolute;
-  top:1325px;
-  left:51%;
-  width:625px;
+  top:400px;
+  margin-left: 51%;
+  width:700px;
   height:150px;
   background-color: white;
 }
@@ -266,14 +267,20 @@ text-align: left;
 }
 
 .category{
-  margin-top: 275px;
+  margin-top: 0px;
   height: 1200px;
   width: 100%;
+  justify-content: center;
+  position: absolute;
+  opacity: 100%;
+  margin-left: 0%;
+
+
 }
 
 .sliderslide{
   position:absolute;
-  top:150px;
+  top:130px;
   width:100%;
   height:77%;
   left:0%;
@@ -281,6 +288,8 @@ text-align: left;
   overflow-x:hidden;
   background-color: #f0f5f5;
 }
+
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -297,26 +306,59 @@ text-align: left;
   background: #ffc220;
 }
 /* #Slideshow */
-.images img{
-  position:absolute;
-  top:0px;
-  left: 0px ;
+
+.images {
   height: 480px;
-  width: 100%;
+  background-color: #0065ff;
+
 }
 
-.img2 {
+.imageBackground2 {
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  height: 480px;
   opacity: 0%;
   animation-name: fading;
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  position: absolute;
+
 
 }
 
+.imageBackground1 {
+  margin-left: 0%;
+  width: 100% ;
+  height: 480px;
+  position: absolute;
+  background-image: url(ECOMMERCE.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px 10px 10px 10px rgba(0.15, 0, 0, 0.15);
+
+}
+
+.img2 {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  left: 33%;
+  height: 500px;
+  width: 30%;
+  display: block;
+  position: absolute;
+}
+
 .img1 {
-  opacity: 100%
+  opacity: 100%;
+  position: absolute;
+  top: 0px;
+  left: 19% ;
+  height: 480px;
+  width: 60%;
+  box-shadow: 10px 0px 10px 10px rgba(0.15, 0, 0, 0.15);
 }
 
 @keyframes fading {
@@ -393,8 +435,8 @@ text-align: left;
 .church{
   position: absolute;
   top:540px;
-  left:7%;
-  width:400px;
+  left:16%;
+  width: 390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -405,8 +447,8 @@ text-align: left;
 .school{
   position: absolute;
   top:540px;
-  left:29%;
-  width:400px;
+  left:33%;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -417,8 +459,8 @@ text-align: left;
 .organization{
   position: absolute;
   top:540px;
-  left:51%;
-  width:400px;
+  left:50%;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -429,8 +471,8 @@ text-align: left;
 .organization1{
   position: absolute;
   top:540px;
-  left: 73%;
-  width:400px;
+  left: 67%;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -458,7 +500,7 @@ text-align: left;
 #games{
   position: absolute;
   top:1495px;
-  left:17%;
+  left:21%;
   width:300px;
   height:350px;
   background-color: white;
@@ -477,7 +519,7 @@ text-align: left;
 #baby{
   position: absolute;
   top:1495px;
-  left:34%;
+  left:37%;
   width:300px;
   height:350px;
   background-color: white;
@@ -530,7 +572,7 @@ text-align: left;
 #pets{
   position: absolute;
   top:1865px;
-  left:17%;
+  left:21%;
   width:300px;
   height:350px;
   background-color:white;
@@ -597,7 +639,7 @@ text-align: left;
 #sports{
   position: absolute;
   top:2235px;
-  left:17%;
+  left:21%;
   width:300px;
   height:350px;
   background-color:white;
@@ -711,9 +753,9 @@ text-align: left;
 
 .titleBox{
   position: absolute;
-  top: 1325px;
-  margin-left: 17%;
-  width:620px;
+  top: 400px;
+  margin-left: 6%;
+  width: 700px;
   height:150px;
   background-color: white;
 }
@@ -738,7 +780,7 @@ text-align: left;
 
 .site-footer h1{
   position:absolute;
-  left:42%;
+  left:25%;
 }
 
 .site-footer .footer1 button{
