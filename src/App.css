@@ -299,12 +299,60 @@ text-align: left;
 /* #Slideshow */
 .images img{
   position:absolute;
-  top:10px;
-  left: 1.2px ;
+  top:0px;
+  left: 0px ;
   height: 480px;
   width: 100%;
-  transition: all .15%s ease;
-  border: 1px solid black;
+}
+
+.img2 {
+  opacity: 0%;
+  animation-name: fading;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+}
+
+.img1 {
+  opacity: 100%
+}
+
+@keyframes fading {
+100% {
+  opacity: 100%;
+ }
+ 90% {
+   opacity: 100%;
+ }
+   80% {
+     opacity: 100%;
+   }
+     70% {
+       opacity: 100%;
+     }
+       60% {
+         opacity: 100%;
+       }
+         50% {
+           opacity: 0%;
+         }
+           40% {
+             opacity: 0%;
+           }
+             30% {
+               opacity: 0%;
+             }
+               20% {
+                 opacity: 0%;
+               }
+                 10% {
+                   opacity: 0%;
+                 }
+                   0% {
+                     opacity: 0%;
+                   }
 }
 
 .images input{
@@ -323,6 +371,7 @@ text-align: left;
   padding:8px;
   border-radius:15px;
   opacity: 0.8;
+  display: none;
 }
 .dot label{
   height:18px;
@@ -332,17 +381,14 @@ text-align: left;
   cursor: pointer;
   margin: 5px;
   opacity: 0.8;
+  display: none;
 }
 .dot label:hover{
   background: white;
 }
 
-#image1:checked ~ .img1{
-  margin-left:0;
-}
-#image2:checked ~ .img2{
-  margin-left:-100%;
-}
+
+
 
 .church{
   position: absolute;
