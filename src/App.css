@@ -213,19 +213,37 @@ label #cancelbutton{
 }
 
 .threebox{
-  margin-top: 450px;
-  margin-left: 0%;
+  margin-top: 0px;
+  margin: auto ;
+  position: relative;
   width: 100%;
-  height: 600px;
+  height: 515px;
   background-image: linear-gradient(#0065ff, #f0f5f5);
 
+
+}
+
+.catContainer{
+  height: 2000px;
+  position: relative;
+  width: 2000px;
+  margin: auto;
+  top: 400px;
+}
+
+.boxHolder{
+  margin: auto ;
+  width: 2000px;
+  position: relative;
+  height: 515px;
+  display: block;
 }
 
 .bulletpointsHP{
   position:absolute;
-  top:1325px;
-  left:51%;
-  width:625px;
+  top: 0px;
+  left: 50%;
+  width:700px;
   height:150px;
   background-color: white;
 }
@@ -233,7 +251,7 @@ label #cancelbutton{
 .lightbulbHP{
   position:absolute;
   top:35%;
-  left:51%;
+  left:49%;
   background-color:#f0f5f5;
   width:40px;
   height:auto;
@@ -266,21 +284,29 @@ text-align: left;
 }
 
 .category{
-  margin-top: 275px;
+  margin-top: 0px;
   height: 1200px;
   width: 100%;
+  justify-content: center;
+  position: absolute;
+  opacity: 100%;
+  margin-left: 0%;
+
+
 }
 
 .sliderslide{
   position:absolute;
-  top:150px;
+  top:130px;
   width:100%;
-  height:77%;
+  height:80%;
   left:0%;
   overflow:scroll;
   overflow-x:hidden;
   background-color: #f0f5f5;
 }
+
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -297,26 +323,59 @@ text-align: left;
   background: #ffc220;
 }
 /* #Slideshow */
-.images img{
-  position:absolute;
-  top:0px;
-  left: 0px ;
+
+.images {
   height: 480px;
-  width: 100%;
+  background-color: #0065ff;
+
 }
 
-.img2 {
+.imageBackground2 {
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  height: 480px;
   opacity: 0%;
   animation-name: fading;
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  position: absolute;
+
 
 }
 
+.imageBackground1 {
+  margin-left: 0%;
+  width: 100% ;
+  height: 480px;
+  position: absolute;
+  background-image: url(ECOMMERCE.png);
+  background-size: cover;
+  background-position: top;
+  box-shadow: 10px 10px 10px 10px rgba(0.15, 0, 0, 0.15);
+
+}
+
+.img2 {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  left: 33%;
+  height: 500px;
+  width: 30%;
+  display: block;
+  position: absolute;
+}
+
 .img1 {
-  opacity: 100%
+  opacity: 100%;
+  position: absolute;
+  top: 0px;
+  left: 19% ;
+  height: 480px;
+  width: 60%;
+  box-shadow: 10px 0px 10px 10px rgba(0.15, 0, 0, 0.15);
 }
 
 @keyframes fading {
@@ -392,9 +451,9 @@ text-align: left;
 
 .church{
   position: absolute;
-  top:540px;
-  left:7%;
-  width:400px;
+  top:45px;
+  left: 8%;
+  width: 390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -404,9 +463,9 @@ text-align: left;
 
 .school{
   position: absolute;
-  top:540px;
+  top:45px;
   left:29%;
-  width:400px;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -416,9 +475,9 @@ text-align: left;
 
 .organization{
   position: absolute;
-  top:540px;
-  left:51%;
-  width:400px;
+  top:45px;
+  left:50%;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -428,9 +487,9 @@ text-align: left;
 
 .organization1{
   position: absolute;
-  top:540px;
-  left: 73%;
-  width:400px;
+  top:45px;
+  left: 71%;
+  width:390px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
@@ -457,14 +516,15 @@ text-align: left;
 
 #games{
   position: absolute;
-  top:1495px;
-  left:17%;
-  width:300px;
-  height:350px;
+  top:170px;
+  left:14%;
+  width:340px;
+  height:375px;
   background-color: white;
   border: none;
   outline:none;
   font-size:20px;
+  margin: auto;
 
 
 }
@@ -472,14 +532,15 @@ text-align: left;
   background-color:white;
   border: none;
   border-radius: 500px;
+  margin: auto;
 }
 
 #baby{
   position: absolute;
-  top:1495px;
-  left:34%;
-  width:300px;
-  height:350px;
+  top:170px;
+  left:32%;
+  width:340px;
+  height:375px;
   background-color: white;
   border:none;
   outline:none;
@@ -490,14 +551,15 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background: none;
+  margin: auto;
 }
 
 #patio{
   position: absolute;
-  top:1495px;
+  top:170px;
   left: 68%;
-  width:300px;
-  height:350px;
+  width:340px;
+  height:375px;
   background-color: white;
   border:none;
   outline:none;
@@ -506,15 +568,16 @@ text-align: left;
 #patio img{
   border-radius: 500px;
   border: none;
+  margin: auto;
 
 }
 
 #patio1{
   position: absolute;
-  top:1495px;
-  left:51%;
-  width:300px;
-  height:350px;
+  top:170px;
+  left:50%;
+  width:340px;
+  height:375px;
   background-color: white;
   border:none;
   outline:none;
@@ -523,16 +586,17 @@ text-align: left;
 #patio1 img{
   border-radius: 500px;
   border: none;
+  margin: auto;
 
 }
 
 
 #pets{
   position: absolute;
-  top:1865px;
-  left:17%;
-  width:300px;
-  height:350px;
+  top:565px;
+  left:14%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -542,13 +606,14 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 #pharmacy{
   position: absolute;
-  top:1865px;
-  left:34%;
-  width:300px;
-  height:350px;
+  top:565px;
+  left:32%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -558,14 +623,15 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 
 #pharmacy1{
   position: absolute;
-  top:1865px;
-  left:51%;
-  width:300px;
-  height:350px;
+  top:565px;
+  left:50%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -576,14 +642,15 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 
 #beauty{
   position: absolute;
-  top:1865px;
+  top:565px;
   left:68%;
-  width:300px;
-  height:350px;
+  width:340px;
+  height:375px;
   background-color: white;
   border:none;
   outline:none;
@@ -593,13 +660,14 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 #sports{
   position: absolute;
-  top:2235px;
-  left:17%;
-  width:300px;
-  height:350px;
+  top:960px;
+  left:14%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -609,13 +677,14 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 #auto{
   position: absolute;
-  top:2235px;
-  left:34%;
-  width:300px;
-  height:350px;
+  top:960px;
+  left:32%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -626,13 +695,14 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 #music{
   position: absolute;
-  top:2235px;
+  top:960px;
   left:68%;
-  width:300px;
-  height:350px;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -642,15 +712,16 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 
 
 #music1 {
   position: absolute;
-  top:2235px;
-  left:51%;
-  width:300px;
-  height:350px;
+  top:960px;
+  left:50%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -660,12 +731,13 @@ text-align: left;
   border-radius: 500px;
   border: none;
   background:none;
+  margin: auto;
 }
 
 .letterpic{
   position: absolute;
-  top:2700px;
-  left:25%;
+  top:2900px;
+  left:37%;
   border:1px solid black;
   border-radius: 20px;
   width:250px;
@@ -693,14 +765,14 @@ text-align: left;
 }
 .newsletter{
   position: absolute;
-  top:2700px;
-  left:40%;
+  top:2900px;
+  left:46%;
 }
 
 .site-footer
 {
   position:absolute;
-  top:2900px;
+  top:3200px;
   width:100%;
   height:430px;
   background-color:#0065ff;
@@ -710,17 +782,17 @@ text-align: left;
 }
 
 .titleBox{
-  position: absolute;
-  top: 1325px;
-  margin-left: 17%;
-  width:620px;
+  position: relative;
+  top: 0px;
+  margin-left: 14%;
+  width: 700px;
   height:150px;
   background-color: white;
 }
 
 .category h1{
-  padding-top: 25px;
-  padding-left: 20%;
+  padding-top: 40px;
+  padding-left: 15%;
   text-align: left;
   font-size: 30px;
 }
@@ -738,7 +810,7 @@ text-align: left;
 
 .site-footer h1{
   position:absolute;
-  left:42%;
+  left:45%;
 }
 
 .site-footer .footer1 button{
