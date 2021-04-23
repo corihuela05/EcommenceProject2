@@ -353,7 +353,7 @@ text-align: left;
   position: absolute;
   background-image: url(ECOMMERCE.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   box-shadow: 10px 10px 10px 10px rgba(0.15, 0, 0, 0.15);
 
 }
