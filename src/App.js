@@ -35,9 +35,9 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 import AnimatedButton from 'react-animated-button';
+import 'animate.css/animate.min.css';
 
-
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useState } from "react";
 
@@ -402,7 +402,7 @@ function App() {
               </div>
                     <form onSubmit={handlevideogame}>
                         <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
-                    </form>
+                        </form>
                     <form onSubmit={handlebaby}>
                         <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
