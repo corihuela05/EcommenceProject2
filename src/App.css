@@ -228,8 +228,6 @@ label #cancelbutton{
   position: relative;
   width: 2000px;
   margin: auto;
-  background-color: red;
-  opacity: 50%;
   top: 400px;
 }
 
@@ -238,8 +236,6 @@ label #cancelbutton{
   width: 2000px;
   position: relative;
   height: 515px;
-  background-color: red;
-  opacity: 50%;
   display: block;
 }
 
