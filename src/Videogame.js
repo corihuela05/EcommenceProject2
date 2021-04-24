@@ -132,6 +132,7 @@ function Videogames () {
             <button onClick={()=>addToCart(product)}>Add to Cart</button>
         </div>
         </div>
+        
     </div>
     ))}
      </div>  
@@ -148,7 +149,6 @@ function Videogames () {
        <p class="productinfo">{product.text}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
         <hr />
-    
     </div>
     ))
     //<h5>Select which Non Profit organization you want to donate to:</h5>
@@ -630,6 +630,7 @@ function Videogames () {
         <p>Step up your game with this Logitech HERO Core wired gaming mouse. Easy to enhance your performance.</p>
         <p><button onClick={()=>itemDisplay(24)}>Add to Cart</button></p>
     </div>
+<<<<<<< HEAD
   
     <footer class="videogame-site-footer1">
     <h1>About Greyson</h1>
