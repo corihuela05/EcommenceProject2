@@ -1,12 +1,12 @@
 
 .App {
   text-align: center;
-  background-color:white;
+  background-color:#f0f5f5;
   position:absolute;
   width:100%;
   height:100%;
   overflow:hidden;
-  
+  zoom: 80%;
 }
 
 .Appheader{
@@ -18,7 +18,7 @@
   position: fixed;
   left: 1%;
   top:-20px;
-  width:180px; 
+  width:180px;
   height:125px;
 }
 
@@ -26,7 +26,7 @@
   position: absolute;
   left: 1px;
   top:1px;
-  width:180px; 
+  width:180px;
   height:125px;
 }
 
@@ -40,7 +40,7 @@
 }
 input[type=text] {
   position: fixed;
-  
+
   top: 20px;
   width: 33%;
   height: 38px;
@@ -121,14 +121,14 @@ button[type=submitsearch]{
   background-color: #4d94ff;
   color: white;
   border-radius: 5px;
-  
+
 }
 
 .flag{
   position: fixed;
   left:91%;
   top:16px;
-  width:65px; 
+  width:65px;
   height:40px;
 }
 
@@ -178,7 +178,7 @@ label #openbutton{
   color: white;
   padding: 10px 12px;
   border: 1px solid #041e42;
-  
+
 }
 label #cancelbutton{
   position: fixed;
@@ -189,7 +189,7 @@ label #cancelbutton{
   font-size: 28px;
   padding: 14.5px 12px;
   z-index: 5;
-  
+
 }
 #check{
   display: none;
@@ -212,16 +212,101 @@ label #cancelbutton{
   padding-left:30px;
 }
 
+.threebox{
+  margin-top: 0px;
+  margin: auto ;
+  position: relative;
+  width: 100%;
+  height: 515px;
+  background-image: linear-gradient(#0065ff, #f0f5f5);
+
+
+}
+
+.catContainer{
+  height: 2000px;
+  position: relative;
+  width: 2000px;
+  margin: auto;
+  top: 400px;
+}
+
+.boxHolder{
+  margin: auto ;
+  width: 2000px;
+  position: relative;
+  height: 515px;
+  display: block;
+}
+
+.bulletpointsHP{
+  position:absolute;
+  top: 0px;
+  left: 50%;
+  width:700px;
+  height:150px;
+  background-color: white;
+}
+
+.lightbulbHP{
+  position:absolute;
+  top:35%;
+  left:49%;
+  background-color:#f0f5f5;
+  width:40px;
+  height:auto;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 80%;
+}
+
+.nonprofittextboxHP{
+  position:absolute;
+  top:30%;
+  left:55%;
+  width: 40%;
+}
+
+.bulletpointsHP h3{
+  position:absolute;
+  top: 5px;
+  left:35px;
+  padding-top: 30px;
+  padding-left: 0%;
+  text-align: left;
+  font-size: 30px;
+}
+
+.bulletpointsHP h1{
+padding-top: 30px;
+padding-left: 15%;
+text-align: left;
+}
+
+.category{
+  margin-top: 0px;
+  height: 1200px;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  opacity: 100%;
+  margin-left: 0%;
+
+
+}
+
 .sliderslide{
   position:absolute;
-  top:150px;
+  top:130px;
   width:100%;
-  height:77%;
+  height:80%;
   left:0%;
   overflow:scroll;
   overflow-x:hidden;
-  
+  background-color: #f0f5f5;
 }
+
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -231,28 +316,102 @@ label #cancelbutton{
 ::-webkit-scrollbar-thumb {
  background-color: transparent;
   border-radius: 10px;
-  
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffc220; 
+  background: #ffc220;
 }
 /* #Slideshow */
-.images img{
-  position:absolute;
-  top:10px;
-  left:1.2px;
+
+.images {
   height: 480px;
-  width: 100%;
-  transition: all .15%s ease;
-  border: 1px solid black;
+  background-color: #0065ff;
+
 }
-.imgRound {
-        width:225px;
-        height:225px;
-        border-radius:160px;
-        border:10px solid rgb(162, 178, 202);
-        margin-top: 20px;
+
+.imageBackground2 {
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  height: 480px;
+  opacity: 0%;
+  animation-name: fading;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  position: absolute;
+
+
+}
+
+.imageBackground1 {
+  margin-left: 0%;
+  width: 100% ;
+  height: 480px;
+  position: absolute;
+  background-image: url(ECOMMERCE.png);
+  background-size: cover;
+  background-position: top;
+  box-shadow: 10px 10px 10px 10px rgba(0.15, 0, 0, 0.15);
+
+}
+
+.img2 {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  left: 33%;
+  height: 500px;
+  width: 30%;
+  display: block;
+  position: absolute;
+}
+
+.img1 {
+  opacity: 100%;
+  position: absolute;
+  top: 0px;
+  left: 19% ;
+  height: 480px;
+  width: 60%;
+  box-shadow: 10px 0px 10px 10px rgba(0.15, 0, 0, 0.15);
+}
+
+@keyframes fading {
+100% {
+  opacity: 100%;
+ }
+ 90% {
+   opacity: 100%;
+ }
+   80% {
+     opacity: 100%;
+   }
+     70% {
+       opacity: 100%;
+     }
+       60% {
+         opacity: 100%;
+       }
+         50% {
+           opacity: 0%;
+         }
+           40% {
+             opacity: 0%;
+           }
+             30% {
+               opacity: 0%;
+             }
+               20% {
+                 opacity: 0%;
+               }
+                 10% {
+                   opacity: 0%;
+                 }
+                   0% {
+                     opacity: 0%;
+                   }
 }
 
 .images input{
@@ -271,6 +430,7 @@ label #cancelbutton{
   padding:8px;
   border-radius:15px;
   opacity: 0.8;
+  display: none;
 }
 .dot label{
   height:18px;
@@ -280,25 +440,22 @@ label #cancelbutton{
   cursor: pointer;
   margin: 5px;
   opacity: 0.8;
+  display: none;
 }
 .dot label:hover{
   background: white;
 }
 
-#image1:checked ~ .img1{
-  margin-left:0;
-}
-#image2:checked ~ .img2{
-  margin-left:-100%;
-}
+
+
 
 .church{
   position: absolute;
-  top:510px;
-  left:2%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:45px;
+  left: 8%;
+  width: 390px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
@@ -306,97 +463,140 @@ label #cancelbutton{
 
 .school{
   position: absolute;
-  top:510px;
-  left:35%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:45px;
+  left:29%;
+  width:390px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
 }
-  
+
 .organization{
   position: absolute;
-  top:510px;
-  left:68%;
-  width:430px;
-  background-color:#F8F2FC ;
-  border: solid #F8F2FC  5px;
+  top:45px;
+  left:50%;
+  width:390px;
+  background-color:white ;
+  border: solid white  5px;
   outline: none;
   padding-top:10px;
   font-size:20px;
 }
+
+.organization1{
+  position: absolute;
+  top:45px;
+  left: 71%;
+  width:390px;
+  background-color:white ;
+  border: solid white  5px;
+  outline: none;
+  padding-top:10px;
+  font-size:20px;
+}
+
+
 .spaces{
   position: absolute;
-  top:920px;
+  top:1000px;
   left:0px;
   width:100%;
   height:250px;
-  background-color:white;
-  border: solid white 2px;
+  background-color:#f0f5f5;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
   font-size:45px;
+  margin-top: 50px;
 }
+
 
 #games{
   position: absolute;
-  top:1200px;
-  left:11%;
-  width:300px;
-  height:250px;
-  background-color:white;
-  border:none;
+  top:170px;
+  left:14%;
+  width:340px;
+  height:375px;
+  background-color: white;
+  border: none;
   outline:none;
   font-size:20px;
-  
-  
+  margin: auto;
+
+
 }
 #games img{
+  background-color:white;
+  border: none;
   border-radius: 500px;
-  border:none;
-  background:none;
+  margin: auto;
 }
 
 #baby{
   position: absolute;
-  top:1200px;
-  left:41%;
-  width:300px;
-  height:250px;
-  background-color:white;
+  top:170px;
+  left:32%;
+  width:340px;
+  height:375px;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
-  
+
 }
 #baby img{
   border-radius: 500px;
-  border:none;
-  background:none;
+  border: none;
+  background: none;
+  margin: auto;
 }
+
 #patio{
   position: absolute;
-  top:1200px;
-  left:71%;
-  width:300px;
-  height:250px;
-  background-color:white;
+  top:170px;
+  left: 68%;
+  width:340px;
+  height:375px;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
 }
 #patio img{
   border-radius: 500px;
-  border:none;
+  border: none;
+  margin: auto;
 
 }
 
+#patio1{
+  position: absolute;
+  top:170px;
+  left:50%;
+  width:340px;
+  height:375px;
+  background-color: white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+#patio1 img{
+  border-radius: 500px;
+  border: none;
+  margin: auto;
+
+}
+
+
 #pets{
   position: absolute;
-  top:1600px;
-  left:11%;
-  width:300px;
-  height:250px;
+  top:565px;
+  left:14%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -404,15 +604,16 @@ label #cancelbutton{
 }
 #pets img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
 }
 #pharmacy{
   position: absolute;
-  top:1600px;
-  left:41%;
-  width:300px;
-  height:250px;
+  top:565px;
+  left:32%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -420,31 +621,53 @@ label #cancelbutton{
 }
 #pharmacy img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
 }
+
+#pharmacy1{
+  position: absolute;
+  top:565px;
+  left:50%;
+  width:340px;
+  height:375px;
+  background-color:white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+
+#pharmacy1 img{
+  border-radius: 500px;
+  border: none;
+  background:none;
+  margin: auto;
+}
+
 #beauty{
   position: absolute;
-  top:1600px;
-  left:71%;
-  width:300px;
-  height:250px;
-  background-color:white;
+  top:565px;
+  left:68%;
+  width:340px;
+  height:375px;
+  background-color: white;
   border:none;
   outline:none;
   font-size:20px;
 }
 #beauty img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
 }
 #sports{
   position: absolute;
-  top:2000px;
-  left:11%;
-  width:300px;
-  height:250px;
+  top:960px;
+  left:14%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -452,32 +675,34 @@ label #cancelbutton{
 }
 #sports img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
 }
 #auto{
   position: absolute;
-  top:2000px;
-  left:41%;
-  width:300px;
-  height:250px;
+  top:960px;
+  left:32%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
-  
+
 }
 #auto img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
 }
 #music{
   position: absolute;
-  top:2000px;
-  left:71%;
-  width:300px;
-  height:250px;
+  top:960px;
+  left:68%;
+  width:340px;
+  height:375px;
   background-color:white;
   border:none;
   outline:none;
@@ -485,14 +710,34 @@ label #cancelbutton{
 }
 #music img{
   border-radius: 500px;
-  border:none;
+  border: none;
   background:none;
+  margin: auto;
+}
+
+
+#music1 {
+  position: absolute;
+  top:960px;
+  left:50%;
+  width:340px;
+  height:375px;
+  background-color:white;
+  border:none;
+  outline:none;
+  font-size:20px;
+}
+#music1 img{
+  border-radius: 500px;
+  border: none;
+  background:none;
+  margin: auto;
 }
 
 .letterpic{
   position: absolute;
-  top:2400px;
-  left:25%;
+  top:2900px;
+  left:37%;
   border:1px solid black;
   border-radius: 20px;
   width:250px;
@@ -501,16 +746,16 @@ label #cancelbutton{
 
 #email{
   position:absolute;
-  top:25px;
+  top:60px;
   left:90px;
   width:300px;
   height:35px;
   outline:none;
-  
+
 }
 #subscribe{
   position:absolute;
-  top:25px;
+  top:60px;
   left:388px;
   height:35px;
   background-color:black;
@@ -520,21 +765,44 @@ label #cancelbutton{
 }
 .newsletter{
   position: absolute;
-  top:2430px;
-  left:40%;
+  top:2900px;
+  left:46%;
 }
 
 .site-footer
 {
   position:absolute;
-  top:2600px;
+  top:3200px;
   width:100%;
-  height:400px;
+  height:430px;
   background-color:#0065ff;
   color:white;
   padding:15px;
-  
+
 }
+
+.titleBox{
+  position: relative;
+  top: 0px;
+  margin-left: 14%;
+  width: 700px;
+  height:150px;
+  background-color: white;
+}
+
+.category h1{
+  padding-top: 40px;
+  padding-left: 15%;
+  text-align: left;
+  font-size: 30px;
+}
+
+.category p{
+  text-align: left;
+  padding-left: 15%;
+
+}
+
 .site-footer h1{
   position:absolute;
   left:560px;
@@ -542,9 +810,9 @@ label #cancelbutton{
 
 .site-footer h1{
   position:absolute;
-  left:42%;
+  left:45%;
 }
-  
+
 .site-footer .footer1 button{
   position:absolute;
   left:21%;
@@ -618,16 +886,4 @@ p {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-}
-
-.title {
-        color: #0065FF;
-        margin: 1rem;
-        padding: 1rem;
-        text-align: center;
-      }
-.caption{
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }

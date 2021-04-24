@@ -151,53 +151,43 @@ function Returns() {
     <div className="sliderslide">
     <div className="slider">
     
-    <div class="title">
+    
       <h1>Returns</h1>
-      </div>
            <p>
 
 
 
-<div class="title">
 
-<h2>Option 1 – No Refunds/Exchanges:</h2>
-
-</div>
+<h2>Option 1 – No Refunds/Exchanges:<h2>
 
 <p> We do not accept returns or exchanges unless the item you purchased is defective. 
 If you receive a defective item, please contact us at [•] with details of the product and the defect. 
-You can send the item you consider defective to: </p>
+You can send the item you consider defective to:
 
 [Address]
 
-<p>Upon receipt of the returned product, we will fully examine it and
-notify you via e-mail, within a reasonable period of time, whether 
-you are entitled to a refund or a replacement as a result of the defect. If you are entitled 
-to a replacement or refund, we will replace the product or 
-refund the purchase price, using the original method of payment.</p>
+Upon receipt of the returned product, we will fully examine it and notify you via e-mail, within a reasonable period of time, whether you are entitled to a refund or a replacement as a result of the defect. If you are entitled to a replacement or refund, we will replace the product or refund the purchase price, using the original method of payment.
 
 
-<div class="title">
-<h2>Option 2 – Refunds Permitted: </h2>
-</div>
 
-<p> We accept returns. You can return unopened items in the original packaging within 30 days of your purchase with receipt or proof of purchase. If 30 days or more have passed since your purchase, we cannot offer you a refund or an exchange.
+<h2>Option 2 – Refunds Permitted: <h2>
+
+We accept returns. You can return unopened items in the original packaging within 30 days of your purchase with receipt or proof of purchase. If 30 days or more have passed since your purchase, we cannot offer you a refund or an exchange.
 
 Upon receipt of the returned item, we will fully examine it and notify you via email, within a reasonable period of time, whether you are entitled to a return. If you are entitled to a return, we will refund your purchase price and a credit will automatically be applied to your original method of payment.
 
 Only regular priced items may be refunded. Sale items are non-refundable.
 
-To follow-up on the status of your return, please contact us at [248-901-6791].</p>
+To follow-up on the status of your return, please contact us at [•].
 
  
-<div class="title">
-<h2> 2. Exchanges [Delete if you select Option 1]</h2>
-</div>
+
+<h2> 2. Exchanges [Delete if you select Option 1]<h2>
 
 <p>We only exchange goods if they are defective or damaged. 
 In circumstances where you consider that a product is defective, 
 you should promptly contact us at [•] with details of the product and the defect.
-You can send the item you consider defective to:</p>
+You can send the item you consider defective to:<p>
 
  
 
@@ -207,19 +197,17 @@ You can send the item you consider defective to:</p>
 
 <p>Upon receipt of the returned product, we will fully examine it and notify you via e-mail,
 within a reasonable period of time, whether you are entitled to a replacement as a result of the defect. 
-If you are eligible, we will send you a replacement product. </p>
+If you are eligible, we will send you a replacement product. <p/>
 
  
-<div class="title">
-<b>3. Exceptions [May be included if you select Option 2]</b>
-</div>
+
+<b>3. Exceptions [May be included if you select Option 2]<b/>
 
 <p>Some items are non-refundable and non-exchangeable. These include: [list items]<p/>
 
  
-<div class="title">
-<h2>4. Shipping </h2>
-</div>
+
+<h2>4. Shipping <h2/>
 
 <p>To return the item you purchased, please mail it to:
 
@@ -232,6 +220,7 @@ If you are eligible, we will send you a replacement product. </p>
 Refunds do not include any shipping and handling charges shown on the packaging slip or invoice. Shipping charges for all returns must be prepaid and insured by you. You are responsible for any loss or damage to hardware during shipment. We do not guarantee that we will receive your returned item. Shipping and handling charges are not refundable.
 Any amounts refunded will not include the cost of shipping.<p/>
 
+</p>
       
       <div className="dot">
       
@@ -252,84 +241,37 @@ Any amounts refunded will not include the cost of shipping.<p/>
   
     
     
-       <footer class="site-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
-
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
-
-
-                        
-                        <form onSubmit={handleOurcompany}>
-                        <button>OUR COMPANY</button>
-                        </form>                        
-                        
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    
-                    </div>
-                    <div className="footer3">
-                    
-                   
-                            
-                            
-                        <form onSubmit={handleReturnpage}>
-                        <button>RETURNS</button>
-                        </form>         
-                        
-                        <button>PRODUCT RECALLS</button>
-                        
-                        <form onSubmit={handleAccessibility}>
-                        <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div classNam e="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
-                        <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                        <button>TERMS OF SERVICE </button>
-                        </form>
-                       
-                        <form onSubmit={handlePrivacyandsecurity}>
-                        <button>PRIVACY & SECURITY</button>
-                        </form>
-                        
-                        
-                        <form onSubmit={handleCaprivacy}>
-                        <button>CA PRIVACY RIGHTS</button>
-                        </form>
-                        
-                        <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                        </form>
-                        <form onSubmit={handleTaxExcemptpage}>
-                        <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
-                        <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
-        </div>
-        </div>
+    <footer class="site-footer">
+    <h1>About Greyson</h1>
+    <div className="footer1">
+      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
+    </div>
+    <div className="footer2">
+     <button>OUR COMPANY</button>
+      <button>VENDOR DIRECTORY</button>
+      <button>HELP CENTER</button>
+      <button>COSTUMER SERVICE</button>
+    </div>
+    <div className="footer3">
+      <button>RETURNS</button>
+      <button>PRODUCT RECALLS</button>
+      <button>ACCESSIBILTY</button>
+    </div>
+    <div className="footer4">
+      <button>TERMS OF SERVICE</button>
+      <button>PRIVACY & SECURITY</button>
+      <button>CA Privacy Rights</button>
+      <button>Do Not Sell My information</button>
+      <button>Request My information</button>
+      <button>Tax Exempt Program</button>
+    </div>
+    <div className="footer5">
+      <hr/>
+      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
+    </div>
+    </footer>
+    </div>
+    </div>
   );
 }
 

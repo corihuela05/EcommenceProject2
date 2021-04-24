@@ -14,7 +14,7 @@ import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
 import Patio from './Patio';
-import Auto from './Auto';
+import Auto from './Partnerapplication';
 import Pets from './Pets';
 import Pharmacy from './Pharmacy';
 import Music from './Music';
@@ -35,9 +35,9 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 import AnimatedButton from 'react-animated-button';
+import 'animate.css/animate.min.css';
 
-
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useState } from "react";
 
@@ -83,40 +83,40 @@ function App() {
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
-    
-    
-    
+
+
+
     function handlePrivacyandsecurity() {
     ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
     }
-    
+
     function handleOurcompany() {
     ReactDOM.render(<Ourcompany />, document.getElementById('root'));
-    }  
-    
-    
+    }
+
+
     function handleTaxExcemptpage() {
     ReactDOM.render(<TaxExcemptpage />, document.getElementById('root'));
-    }      
+    }
     function handlefoodProducts() {
         ReactDOM.render(<FoodProducts />, document.getElementById('root'));
     }
-   
+
     function handleReturnpage () {
         ReactDOM.render(<Returnpage  />, document.getElementById('root'));
-    }    
+    }
     function handleCaprivacy() {
         ReactDOM.render(<Caprivacy />, document.getElementById('root'));
-    }    
-    
-    
+    }
+
+
     function handleAccessibility() {
         ReactDOM.render(<Accessibilitty />, document.getElementById('root'));
-    }    
-        
+    }
+
     function handleDonotsellmyinfo() {
         ReactDOM.render(<Donotsellmyinfo />, document.getElementById('root'));
-    }    
+    }
     function handleartProducts() {
         ReactDOM.render(<ArtProducts />, document.getElementById('root'));
     }
@@ -199,23 +199,23 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-    
-    
+
+
     function CAPrivacyRights() {
-        
+
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
-    
-    
+
+
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
-    
+
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
     }
-    
-    
+
+
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
@@ -251,7 +251,7 @@ function App() {
                     <div>
                         <div>
                             <form>
-                            <button id="info" ><a href={url}>{username}</a></button>
+                            <button id="info" ><a id="info" href={url}>{username}</a></button>
                             </form>
                         </div>
                         <div>
@@ -282,82 +282,62 @@ function App() {
                         <i class="fa fa-bars" id="openbutton"></i>
                         <i class="fa fa-close" id="cancelbutton"></i>
                     </label>
-                    <div className="sidebar">
-                    
+                     <div className="sidebar">
                         <form onSubmit={handleHome}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Home</AnimatedButton>
+                            <button>Home</button>
                         </form>
                         <form onSubmit={handleProduct}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Products</AnimatedButton>
+                            <button>Products</button>
                         </form>
                         <form onSubmit={handleProfile}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Profile</AnimatedButton>
+                            <button>Profile</button>
                         </form>
                         <form onSubmit={handleShop}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Shop</AnimatedButton>
+                            <button>Shop</button>
                         </form>
                         <form onSubmit={handleNonprofit}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" >Non Profits</AnimatedButton>
+                            <button>Non Profits</button>
                         </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Buy Again</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">List</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Registry</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Gift Finder</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Gift Card</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton  color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Black Owned Businesses</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Women Owned Businesses </AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Help</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" >Departments</AnimatedButton>
-                        </form>
-                        <form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" >Electronics & Office</AnimatedButton>
-                        </form>
+                        <button>Buy Again</button>
+                        <button>List</button>
+                        <button>Registry</button>
+                        <button>Gift Finder</button>
+                        <button>Gift Card</button>
+                        <button>Black Owned Businesses</button>
+                        <button>Women Owned Businesses</button>
+                        <button>Help</button>
+                        <button>Departments</button>
+                        <button>Electronics & Office</button>
+
 
 
 
                         <form onSubmit={handlevideogame}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" >Toys, Games and Video Games</AnimatedButton>
+                            <button>Toys, Games and Video Games</button>
                         </form>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</AnimatedButton>
+                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
 
                         <form onSubmit={handleHomeandfurnitures}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" > Home, Furniture & Appliances</AnimatedButton>
+                            <button>Home, Furniture & Appliances</button>
                         </form>
 
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" > Home Improvement</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Music</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Patio & Garden</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" onClick={handlefoodProducts}>Food</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness">Pets</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Pharmacy, Health & Personal Care</AnimatedButton>
+                        <button>Home Improvement</button>
+                        <button>Music</button>
+                        <button>Patio & Garden</button>
+                        <button onClick={handlefoodProducts} >Food</button>
+                        <button>Pets</button>
+                        <button>Pharmacy, Health & Personal Care</button>
 
                         <form onSubmit={handlesports}>
-                            <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Sports, Fitness & Outdoors</AnimatedButton>
+                            <button>Sports, Fitness & Outdoors</button>
                         </form>
 
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" onClick={handlebeautyProducts} >Beauty</AnimatedButton>
+                        <button onClick={handlebeautyProducts} >Beauty</button>
 
 
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Auto & Tire</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness"> Photos</AnimatedButton>
-                        <AnimatedButton color="success" animationDuration={1} color="#4bcffa" animationType="brighness" onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</AnimatedButton>
+                        <button>Auto & Tire</button>
+                        <button>Photos</button>
+                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
                 <div className="tabs">
@@ -373,66 +353,104 @@ function App() {
             </div>
             <div className="sliderslide">
                 <div className="slider">
-                    <div className="images">
-                        <input type="radio" name="slide" id="image1" checked />
-                        <input type="radio" name="slide" id="image2" checked />
-
-                        <img src="ECOMMERCE.png" class="img1" alt="image1" />
-                        <img src="Electronics.jpg" class="img2" alt="image2" />
+                  <div className="images">
+                    <div className="imageBackground1">
+                        
+                        <div className="imageBackground2">
+                            <img src="Electronics.jpg" class="img2" alt="image2" />
+                        </div>
                     </div>
+
                     <div className="dot">
                         <label for="image1"></label>
                         <label for="image2"></label>
                     </div>
+                  </div>
                 </div>
-                <div className="threebox">
-                
+                <div className="threebox" >
+                  <div className="boxHolder">
               <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
+                        <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
+                        <button className="school"><img src="school.png" alt='school' width="350" height="250" /><b> School</b><p>1,023 videos</p></button>
                     </form>
-
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
+
+                    <form onSubmit={handleNonprofit}>
+                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                    </form>
+                </div>
+                </div>
                 <div className="addspace">
                     <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
+                  <div className="catContainer">
+                <div className="titleBox">
+                <h1> Currently available to you: </h1>
+                <p> Choose from one of our categories to begin shopping </p>
+                </div>
+                <div className="bulletpointsHP">
+                <div className="lightbulbHP">
+                  <i class="fa fa-lightbulb-o"></i>
+                </div>
+                <h3>How do I contribute?</h3>
+                <div className="nonprofittextboxHP">
+                  <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
+                </div>
+                </div>
+
                     <form onSubmit={handlevideogame}>
-                        <button id="games"><img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" />VIDEO GAMES</button>
-                    </form>
+                        <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
+                        </form>
                     <form onSubmit={handlebaby}>
-                        <button id="baby"><img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" />BABY</button>
+                        <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button id="patio"><img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" />PATIO</button>
+                        <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
+
+                    <form onSubmit={handlepatio}>
+                        <button id="patio1">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                    </form>
+
+
                     <form onSubmit={handlepets}>
-                        <button id="pets"><img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" />PETS</button>
+                        <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy"><img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" />PHARMACY</button>
+                        <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
-                    <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
+
+                    <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+
+                    <form onSubmit={handlepharmacy}>
+                        <button id="pharmacy1">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                    </form>
 
                     <form onSubmit={handlesports}>
-                        <button id="sports"><img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />SPORT</button>
+                        <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button id="auto"><img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" />AUTO</button>
+                        <button id="auto">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music"><img src="music.png" alt='music' class="thumbnail" width="280" height="280" />MUSIC</button>
+                        <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
+                    <form onSubmit={handlemusic}>
+                        <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                    </form>
+
+                </div>
                 </div>
                 <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
                 <div className="newsletter">
@@ -445,65 +463,87 @@ function App() {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
+
                     </div>
                     <div className="footer2">
+
+                        <form onSubmit={handleGetknowus}>
+                            <button>GET TO KNOW US</button>
+                        </form>
+
+
+
                         <form onSubmit={handleOurcompany}>
                         <button>OUR COMPANY</button>
-                        </form>                        
+                        </form>
+
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
-                        <button> COSTUMER SERVICE </button>
                         <button>CONTACT US</button>
-                    
+
                     </div>
                     <div className="footer3">
-                            
+
+
+
+
                         <form onSubmit={handleReturnpage}>
                         <button>RETURNS</button>
-                        </form>         
-                        
+                        </form>
+
                         <button>PRODUCT RECALLS</button>
-                        
+
                         <form onSubmit={handleAccessibility}>
                         <button>ACCESSIBILITY</button>
-                        </form>                        
-                        <form onsubmit={handleOurads}>
-                        <button>OUR ADS</button>
                         </form>
+
+                        <button>ADVERTISE WITH US</button>
                          </div>
                           <div className="footer4">
-                    
+
+
+                        <button>GREYSON'S</button>
+
+                        <form onSubmit={handleOurads}>
+                        <button>OUR ADS</button>
+                        </form>
+
                         <form onSubmit ={handleTermofservices}>
                         <button>TERMS OF SERVICE </button>
                         </form>
-                       
+
                         <form onSubmit={handlePrivacyandsecurity}>
                         <button>PRIVACY & SECURITY</button>
                         </form>
-                        
-                        
+
+
                         <form onSubmit={handleCaprivacy}>
                         <button>CA PRIVACY RIGHTS</button>
                         </form>
-                        
+
                         <form onSubmit={handleDonotsellmyinfo}>
                         <button>Do Not Sell My Information</button>
                         </form>
+
+
+
+
+
+
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
+                        </form>
+
+                    </div>
                         <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
-                
+
                 </footer>
-                </div>
-        </div>
-    </div>
+            </div>
+            </div>
+
     );
 }
 

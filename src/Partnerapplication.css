@@ -1,0 +1,317 @@
+.inputdetails{
+    position: absolute;
+    top:30px;
+}
+
+.partnerinputdetails{
+    position: absolute;
+    top:-200px;
+}
+.partnerselectserviceoptions{
+    position: absolute;
+    top:315px;
+    left:12px;
+}
+
+.partnerselectnonprofitoptions{
+    position: absolute;
+    top: 315px;
+    left:250px;
+}
+
+.reqsubmitbutton{
+    position: absolute;
+    top:380px;
+    left: 12px;
+}
+
+.Reqbutton{
+  width:150px;
+  height:60px;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+}
+
+.partner-site-footer
+{
+  position:absolute;
+  top:900px;
+  width:100%;
+  height:430px;
+  background-color:#0065ff;
+  color:white;
+  padding:15px;
+  
+}
+.partner-site-footer h1{
+  position:absolute;
+  left:560px;
+}
+
+.partner-site-footer h1{
+  position:absolute;
+  left:42%;
+}
+  
+.partner-site-footer .footer1 button{
+  position:absolute;
+  left:21%;
+  top:80px;
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  outline:none;
+}
+
+.partner-site-footer .footer2 {
+  position:absolute;
+  top:110px;
+  left:37%;
+  width:180px;
+}
+.partner-site-footer .footer2 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.partner-site-footer .footer3 {
+  position:absolute;
+  top:110px;
+  left:51%;
+  width:180px;
+}
+.partner-site-footer .footer3 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.partner-site-footer .footer4 {
+  position:absolute;
+  top:110px;
+  left:66%;
+  width:180px;
+}
+.partner-site-footer .footer4 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.partner-site-footer .footer5 {
+  position:absolute;
+  top:350px;
+  left:15%;
+  width:70%;
+  text-align:left;
+}
+.partner-site-footer .footer5 button{
+  width:400px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.partnerverticalline{
+  position: absolute;
+  border-left: 3px solid grey;
+  height: 430px;
+  top:120px;
+  left: 750px;
+}
+
+.plumbing {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px;
+  width: 250px;
+  top:140px;
+  left:830px;
+  height:160px;
+}
+
+.oneteam {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px;
+  width: 250px;
+  top:360px;
+  left:1200px;
+  height:160px;
+}
+
+
+.flooring {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px;
+  width: 250px;
+  top:140px;
+  left:1200px;
+  height:160px;
+}
+
+.TC {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px;
+  width: 250px;
+  top:360px;
+  left:830px;
+  height:160px;
+}
+
+.partnernonprofimidheader{
+  position:absolute;
+  top:600px;
+  left:0px;
+  background-color: lightgreen;
+  width:100%;
+  height:160px;
+  text-align:center;
+  padding-top:80px;
+}
+.pbulletpoints{
+  position:absolute;
+  top:770px;
+  left:70px;
+  width:350px;
+  height:120px;
+}
+.plightbulb{
+  position:absolute;
+  top:10px;
+  left:30px;
+  background-color:lightgrey;
+  width:40px;
+  height:auto;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+}
+.pbulletpoints h3{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.pnonprofittextbox{
+  position:absolute;
+  top:30px;
+  left:80px;
+}
+.pbulletpoints1{
+  position:absolute;
+  top:770px;
+  left:470px;
+  width:350px;
+  height:120px;
+}
+.pbulletpoints1 h3{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.psecondbenefit{
+  position:absolute;
+  top:0px;
+  left:80px;
+}
+.pbulletpoints2{
+  position:absolute;
+  top:770px;
+  left:870px;
+  width:350px;
+  height:120px;
+}
+.pbulletpoints2 h3{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.pthirdbenefit{
+  position:absolute;
+  top:0px;
+  left:80px;
+}
+
+.pbulletpoints3{
+  position:absolute;
+  top:770px;
+  left:80px;
+  width:350px;
+  height:120px;
+}
+.pbulletpoints3 h3{
+  position:absolute;
+  top:-15px;
+  left:70px;
+}
+.pbulletpoints3 p{
+  position:absolute;
+  top:0px;
+  left:-10px;
+  width:270px;
+}
+.pfirstfeature{
+  position:absolute;
+  top:0px;
+  left:65px;
+} 
+.plightbulb1{
+  position:absolute;
+  top:10px;
+  left:16px;
+  background-color:lightgrey;
+  width:40px;
+  height:auto;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+}
+.pbulletpoints4{
+  position:absolute;
+  top:770px;
+  left:470px;
+  width:350px;
+  height:120px;
+}
+.pbulletpoints4 h3{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.psecondfeature{
+  position:absolute;
+  top:0px;
+  left:80px;
+}
+.pbulletpoints5{
+  position:absolute;
+  top:770px;
+  left:870px;
+  width:350px;
+  height:120px;
+}
+.pbulletpoints5 h3{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.pthirdfeature{
+  position:absolute;
+  top:0px;
+  left:80px;
+}

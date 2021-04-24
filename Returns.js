@@ -91,51 +91,41 @@ function Returns() {
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
     </label>
-    <div className="sidebar">
-      <form onSubmit={handleHome}>
-        <button>Home</button>
-      </form>
-      <form onSubmit={handleProduct}>
-        <button>Products</button>
-      </form>
-      <form onSubmit={handleProfile}>
-        <button>Profile</button>
-      </form>
-      <form onSubmit={handleShop}>
-        <button>Shop</button>
-      </form>
-      <form onSubmit={handleNonprofit}>
-      <button>Non Profits</button>
-    </form>
-    <button>Buy Again</button>
-    <button>List</button>
-    <button>Registry</button>
-    <button>Gift Finder</button>
-    <button>Gift Card</button>
-    <button>Black Owned Businesses</button>
-    <button>Women Owned Businesses</button>
-    <button>Help</button>
-    <button>Departments</button>
-    <button>Electronics & Office</button>
-    <button>Clothing, Shoes, & Accessories</button>
-    
-      <form onSubmit={handleHomeandfurnitures}>
-       <button>Home, Furniture & Appliances</button>
-    </form>
-   
-    <button>Toys, Games and Video Games</button>
-    <button>Home Improvement</button>
-    <button>Movies, Music & Books</button>
-    <button>Patio & Garden</button>
-    <button>Food</button>
-    <button>Pets</button>
-    <button>Pharmacy, Health & Personal Care</button>
-    <button>Beauty</button>
-    <button>Sports, Fitness & Outdoors</button>
-    <button>Auto & Tire</button>
-    <button>Photos</button>
-    <button>Art, Craft, Sewing & Party Supplies</button>
-    </div> 
+                  <div className="sidebar">
+                      <form onSubmit={handleHome}>
+                          <button>Home</button>
+                      </form>
+                      <form onSubmit={handleProduct}>
+                          <button>Products</button>
+                      </form>
+                      <form onSubmit={handleProfile}>
+                          <button>Profile</button>
+                      </form>
+                      <form onSubmit={handleShop}>
+                          <button>Shop</button>
+                      </form>
+                      <form onSubmit={handleNonprofit}>
+                          <button>Non Profits</button>
+                      </form>
+                      <form onSubmit={handlevideogame}>
+                          <button>Toys, Games and Video Games</button>
+                      </form>
+                      <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                      <form onSubmit={handleHomeandfurnitures}>
+                          <button>Home, Furniture & Appliances</button>
+                      </form>
+                      <button onClick={handlemusic} >Music</button>
+                      <button onClick={handlepatio} >Patio & Garden</button>
+                      <button onClick={handlefoodProducts} >Food</button>
+                      <button onClick={handlepets} >Pets</button>
+                      <button onClick={handlepharmacy}>Pharmacy, Health & Personal Care</button>
+                      <form onSubmit={handlesports}>
+                          <button>Sports, Fitness & Outdoors</button>
+                      </form>
+                      <button onClick={handlebeautyProducts} >Beauty</button>
+                      <button onClick={handleauto}>Auto & Tire</button>
+                      <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                  </div>
     </div>
     <div className="tabs">
       <button>Best Sellers</button>
@@ -151,9 +141,8 @@ function Returns() {
     <div className="sliderslide">
     <div className="slider">
     
-      <div class="title">
+    
       <h1>Returns</h1>
-      </div>
            <p>
 
 
@@ -243,34 +232,76 @@ Any amounts refunded will not include the cost of shipping.<p/>
     
     
     <footer class="site-footer">
-    <h1>About Greyson</h1>
-    <div className="footer1">
-      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
-    </div>
-    <div className="footer2">
-     <button>OUR COMPANY</button>
-      <button>VENDOR DIRECTORY</button>
-      <button>HELP CENTER</button>
-      <button>COSTUMER SERVICE</button>
-    </div>
-    <div className="footer3">
-      <button>RETURNS</button>
-      <button>PRODUCT RECALLS</button>
-      <button>ACCESSIBILTY</button>
-    </div>
-    <div className="footer4">
-      <button>TERMS OF SERVICE</button>
-      <button>PRIVACY & SECURITY</button>
-      <button>CA Privacy Rights</button>
-      <button>Do Not Sell My information</button>
-      <button>Request My information</button>
-      <button>Tax Exempt Program</button>
-    </div>
-    <div className="footer5">
-      <hr/>
-      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
-    </div>
-    </footer>
+                                                                      <h1>About Greyson</h1>
+                                                                      <div className="footer1">
+                                                                          <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
+
+                                                                      </div>
+                                                                      <div className="footer2">
+
+                                                                          <form onSubmit={handleGetknowus}>
+                                                                              <button>GET TO KNOW US</button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handleOurcompany}>
+                                                                              <button>OUR COMPANY</button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handleTaxExcemptpage}>
+                                                                              <button>Tax Exempt Program</button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handleDonotsellmyinfo}>
+                                                                              <button>Do Not Sell My Information</button>
+                                                                          </form>
+
+                                                                      </div>
+                                                                      <div className="footer3">
+
+
+
+
+                                                                          <form onSubmit={handleReturnpage}>
+                                                                              <button>RETURNS</button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handleAccessibility}>
+                                                                              <button>ACCESSIBILITY</button>
+                                                                          </form>
+
+                                                                          <button>ADVERTISE WITH US</button>
+                                                                      </div>
+                                                                      <div className="footer4">
+
+
+                                                                          <form onSubmit={handleOurads}>
+                                                                              <button>OUR ADS</button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handleTermofservices}>
+                                                                              <button>TERMS OF SERVICE </button>
+                                                                          </form>
+
+                                                                          <form onSubmit={handlePrivacyandsecurity}>
+                                                                              <button>PRIVACY & SECURITY</button>
+                                                                          </form>
+
+
+                                                                          <form onSubmit={handleCaprivacy}>
+                                                                              <button>CA PRIVACY RIGHTS</button>
+                                                                          </form>
+
+
+
+
+
+                                                                      </div>
+                                                                      <div className="footer5">
+                                                                          <hr />
+                                                                          <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                                                                      </div>
+
+                                                                  </footer>
     </div>
     </div>
   );
