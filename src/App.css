@@ -887,3 +887,19 @@ p {
   margin-left: 0;
   margin-right: 0;
 }
+.fade{
+  opacity:0
+}
+.in-view {
+  animation:fade-in;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+@keyframes fade-in{
+    from{
+      opacity:0
+    }
+    to{
+      opacity:1
+    }
+}

@@ -44,6 +44,33 @@ import { useState } from "react";
 //import CAPrivacyRights from '/CAPrivacyRights';
 //import DoNotSellMyInformation from '/DoNotSellMyInformation';
 //import TaxExemptProgram from 'TaxExemptProgram';
+const handleScroll=()=>{
+    var animation_elements = document.getElementsByClassName("fade");
+
+
+    //console.log(animation_elements)
+    for(var i = 0; i < animation_elements.length;i++){
+        var element=animation_elements[i]
+
+        var use =element.getBoundingClientRect();
+
+
+        if (use.top <= 860 && use.bottom>133) {
+            element.classList.add('in-view');
+        } 
+        else {
+            element.classList.remove('in-view'); 
+        }
+    }
+    console.log()
+}
+
+
+
+window.onload = function(){
+   document.getElementById("sliderslide").addEventListener('scroll', handleScroll)
+}
+
 
 
 
@@ -231,7 +258,7 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" id="App">
             <div className="Appheader">
                 <img src="logo.png" alt="company logo" className="companylogo" />
                 <img
@@ -351,7 +378,7 @@ function App() {
                     <button>Gift Cards</button>
                 </div>
             </div>
-            <div className="sliderslide">
+            <div className="sliderslide" id="sliderslide">
                 <div className="slider">
                   <div className="images">
                     <div className="imageBackground1">
@@ -407,47 +434,47 @@ function App() {
                 </div>
 
                     <form onSubmit={handlevideogame}>
-                        <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
+                        <button id="games" className='fade'>VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
                         </form>
                     <form onSubmit={handlebaby}>
-                        <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="baby" className='fade'>BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button  id="patio" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlepatio}>
-                        <button id="patio1">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button  id="patio1" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
 
                     <form onSubmit={handlepets}>
-                        <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pets"  className='fade'>PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pharmacy" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
-                    <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                    <button  id="beauty" className='fade'>BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy1">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pharmacy1" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlesports}>
-                        <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                        <button  id="sports" className='fade' className='fade'>SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button id="auto">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="auto" className='fade'>AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="music" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="music1" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                 </div>
