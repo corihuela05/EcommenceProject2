@@ -206,10 +206,17 @@ function Returnpage() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -281,8 +288,8 @@ function Returnpage() {
     <div className="sliderslide">
     <div className="slider">
     
-    
-    <h1>RETURNS POLICY AND REFUNDS</h1>
+  <div className="footerinfo"> 
+    <h1>Returns Policy And Refunds</h1>
            <p>
 
 If you are not 100% satisfied with your purchase,
@@ -301,7 +308,7 @@ Please keep the receipt.
 
 </p>
       
-   
+  </div> 
     </div>
   
     
@@ -326,14 +333,8 @@ Please keep the receipt.
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
-
                   </div>
                   <div className="footer3">
-
-
 
 
                       <form onSubmit={handleReturnpage}>
@@ -344,7 +345,9 @@ Please keep the receipt.
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 
@@ -365,10 +368,6 @@ Please keep the receipt.
                       <form onSubmit={handleCaprivacy}>
                           <button>CA PRIVACY RIGHTS</button>
                       </form>
-
-
-
-
 
                   </div>
                   <div className="footer5">

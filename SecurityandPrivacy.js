@@ -67,10 +67,17 @@ function SecurityandPrivacy() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -128,13 +135,11 @@ function SecurityandPrivacy() {
                       <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
                   </div>
     </div>
-    <div className="sliderslide">
-    <div className="slider">
     
     
       <h1>Privacy and Security </h1>
  <p>
- <b>Introduction<b>
+ <b>Introduction</b>
 This Privacy Policy (‘policy’) applies to Open Text Corporation and its affiliates (‘OpenText’, ‘we’, ‘us’, ‘our’) and provides information on the collection, use and sharing (‘processing’ or ‘process’) of your personal data (‘personal information’). This includes personal information collected via our websites (‘Website’), our products or personal information collected from you directly, such as in person, via telephone or email, or indirectly through third parties in the course of our business.
 
 OpenText supports the right to privacy and
@@ -145,7 +150,7 @@ regarding this policy and the processing of your personal information.
 For details on how to contact us, see the Contact Information section.
 
 
- <b>What Data We Collect<b/>
+ <b>What Data We Collect</b>
 The personal information we process about you and how we collect 
 it can vary depending on (a) the product(s) or service(s) you use; 
 (b) how you use the product or service; (c) 
@@ -168,33 +173,18 @@ OpenText’s vendors and/or partners.
 Refer to Personal Information Collected from Third Parties for 
 additional information.
 
-<b>How Long We Store Your Data<b/>
+<b>How Long We Store Your Data</b>
 OpenText will retain personal information for as long as needed to provide the relevant product or services or to fulfil the purposes for which the information was collected. OpenText may also retain and use this information for a longer period as permitted or required by law, to comply with our legal, tax or regulatory obligations (e.g. audit and accounting requirements), handle disputes, to exercise or defend claims, and enforce our agreements. 
 We ensure that personal information we dispose of, is de-identified or destroyed in a secure manner.
 
-<b>Your Privacy Rights<b/>
+<b>Your Privacy Rights</b>
 Your local applicable law may provide certain rights regarding the use of your personal information. You may request from OpenText access to, correction of, updating of and/or deletion of your personal information, or object our use of your personal information in certain circumstances, in line with applicable data protection law. Your rights may differ according to your place of residence.
 
 Choice/Opting out of Marketing: OpenText offers you the choice of receiving different types of communication and information related to our products and services. You may subscribe to e-newsletters or other publications; you may also elect to receive marketing communications and other special offers from us via email. If at any time you would like to change your communication preferences, we provide unsubscribe links and an opt-out mechanism in all our communications or contact us.
 
 </p>
       
-      <div className="dot">
-      
-    <div>
-    
-    
-      
- 
-      
-    </div>
-    
-    
-  
 
-      
-      </div>
-    </div>
   
     
     
@@ -269,7 +259,7 @@ Choice/Opting out of Marketing: OpenText offers you the choice of receiving diff
                                   </div>
 
                               </footer>
-    </div>
+    </div> 
     </div>
   );
 }

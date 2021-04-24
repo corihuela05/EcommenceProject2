@@ -200,71 +200,49 @@ function Art() {
     <form onSubmit={handleCart}>
       <button id="cart"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
     </form>
-    <div className="homepagesidebar">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <input type="checkbox" id="check"/>
-    <label for="check">
-      <i class="fa fa-bars" id="openbutton"></i>
-      <i class="fa fa-close" id="cancelbutton"></i>
-    </label>
-    <div className="sidebar">
-                        <form onSubmit={handleHome}>
-                            <button>Home</button>
-                        </form>
-                        <form onSubmit={handleProduct}>
-                            <button>Products</button>
-                        </form>
-                        <form onSubmit={handleProfile}>
-                            <button>Profile</button>
-                        </form>
-                        <form onSubmit={handleShop}>
-                            <button>Shop</button>
-                        </form>
-                        <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
-                        </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
-
-
-
-
-                        <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
-                        </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-
-                        <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
-                        </form>
-
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
-                        <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
-
-                        <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
-                        </form>
-
-                        <button onClick={handlebeautyProducts} >Beauty</button>
-
-
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
-                    </div>
-                </div>
+          <div className="homepagesidebar">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+              <input type="checkbox" id="check" />
+              <label for="check">
+                  <i class="fa fa-bars" id="openbutton"></i>
+                  <i class="fa fa-close" id="cancelbutton"></i>
+              </label>
+              <div className="sidebar">
+                  <form onSubmit={handleHome}>
+                      <button>Home</button>
+                  </form>
+                  <form onSubmit={handleProduct}>
+                      <button>Products</button>
+                  </form>
+                  <form onSubmit={handleProfile}>
+                      <button>Profile</button>
+                  </form>
+                  <form onSubmit={handleShop}>
+                      <button>Shop</button>
+                  </form>
+                  <form onSubmit={handleNonprofit}>
+                      <button>Non Profits</button>
+                  </form>
+                  <form onSubmit={handlevideogame}>
+                      <button>Toys, Games and Video Games</button>
+                  </form>
+                  <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                  <form onSubmit={handleHomeandfurnitures}>
+                      <button>Home, Furniture & Appliances</button>
+                  </form>
+                  <button onClick={handlemusic} >Music</button>
+                  <button onClick={handlepatio} >Patio & Garden</button>
+                  <button onClick={handlefoodProducts} >Food</button>
+                  <button onClick={handlepets} >Pets</button>
+                  <button onClick={handlepharmacy}>Pharmacy, Health & Personal Care</button>
+                  <form onSubmit={handlesports}>
+                      <button>Sports, Fitness & Outdoors</button>
+                  </form>
+                  <button onClick={handlebeautyProducts} >Beauty</button>
+                  <button onClick={handleauto}>Auto & Tire</button>
+                  <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+              </div>
+          </div>
                 <div className="tabs">
                     <button>Best Sellers</button>
                     <button>Today's Deals</button>
@@ -374,89 +352,75 @@ function Art() {
     </div>
     
     <footer class="products-site-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
+                      <h1>About Greyson</h1>
+                      <div className="footer1">
+                          <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
 
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
+                      </div>
+                      <div className="footer2">
+
+                          <form onSubmit={handleGetknowus}>
+                              <button>GET TO KNOW US</button>
+                          </form>
+
+                          <form onSubmit={handleOurcompany}>
+                              <button>OUR COMPANY</button>
+                          </form>
+
+                          <form onSubmit={handleTaxExcemptpage}>
+                              <button>Tax Exempt Program</button>
+                          </form>
 
 
-                        
-                        <form onSubmit={handleOurcompany}>
-                        <button>OUR COMPANY</button>
-                        </form>                        
-                        
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    
-                    </div>
-                    <div className="footer3">
-                    
-                   
-                            
-                            
-                        <form onSubmit={handleReturnpage}>
-                        <button>RETURNS</button>
-                        </form>         
-                        
-                        <button>PRODUCT RECALLS</button>
-                        
-                        <form onSubmit={handleAccessibility}>
-                        <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
+                      </div>
+                      <div className="footer3">
 
-                        <form onSubmit={handleOurads}>
-                        <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                        <button>TERMS OF SERVICE </button>
-                        </form>
-                       
-                        <form onSubmit={handlePrivacyandsecurity}>
-                        <button>PRIVACY & SECURITY</button>
-                        </form>
-                        
-                        
-                        <form onSubmit={handleCaprivacy}>
-                        <button>CA PRIVACY RIGHTS</button>
-                        </form>
-                        
-                        <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                        </form>
-                        
-                            
-                         
-                            
-                        
-                        
-                        
-                        <form onSubmit={handleTaxExcemptpage}>
-                        <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
-                        <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
 
+
+
+                          <form onSubmit={handleReturnpage}>
+                              <button>RETURNS</button>
+                          </form>
+
+                          <form onSubmit={handleAccessibility}>
+                              <button>ACCESSIBILITY</button>
+                          </form>
+
+                          <form onSubmit={handleDonotsellmyinfo}>
+                              <button>Do Not Sell My Information</button>
+                          </form>
+                      </div>
+                      <div className="footer4">
+
+
+                          <form onSubmit={handleOurads}>
+                              <button>OUR ADS</button>
+                          </form>
+
+                          <form onSubmit={handleTermofservices}>
+                              <button>TERMS OF SERVICE </button>
+                          </form>
+
+                          <form onSubmit={handlePrivacyandsecurity}>
+                              <button>PRIVACY & SECURITY</button>
+                          </form>
+
+
+                          <form onSubmit={handleCaprivacy}>
+                              <button>CA PRIVACY RIGHTS</button>
+                          </form>
+
+
+
+
+
+                      </div>
+                      <div className="footer5">
+                          <hr />
+                          <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                      </div>
+
+                  </footer>
 
     </div>
    </div>

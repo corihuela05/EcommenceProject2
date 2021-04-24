@@ -222,9 +222,6 @@ function Cart() {
                       <button>Tax Exempt Program</button>
                   </form>
 
-                  <form onSubmit={handleDonotsellmyinfo}>
-                      <button>Do Not Sell My Information</button>
-                  </form>
 
               </div>
               <div className="footer3">
@@ -240,7 +237,9 @@ function Cart() {
                       <button>ACCESSIBILITY</button>
                   </form>
 
-                  <button>ADVERTISE WITH US</button>
+                  <form onSubmit={handleDonotsellmyinfo}>
+                      <button>Do Not Sell My Information</button>
+                  </form>
               </div>
               <div className="footer4">
 

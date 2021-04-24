@@ -224,10 +224,17 @@ function Caprivacy() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+            <div className="Appheader">
+                <img src="logo.png" alt="company logo" className="companylogo" />
+                <img
+                    src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                    alt="flag"
+                    className="flag"
+                />
+                    <div className="searchbar">
+                    <input type="text" name="search" placeholder="Search.." />
+                    <button type="submitsearch"><i class="fa fa-search"></i></button>
+                    </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -297,8 +304,9 @@ function Caprivacy() {
     </div>
     </div>
     <div className="sliderslide">
-<div className="slider">
 
+    <div className="slider">
+    <div className="footerinfo">
 
                     <h1>CA Privacy Rights </h1>
                     <b>What Data We Collect</b>
@@ -320,11 +328,11 @@ function Caprivacy() {
                         </p>
 
     </div>
-
+    </div>
   
     
     
-              <footer class="site-footer">
+              <footer class="products-site-footer">
                   <h1>About Greyson</h1>
                   <div className="footer1">
                       <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -344,15 +352,8 @@ function Caprivacy() {
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
-
                   </div>
                   <div className="footer3">
-
-
-
 
                       <form onSubmit={handleReturnpage}>
                           <button>RETURNS</button>
@@ -362,7 +363,9 @@ function Caprivacy() {
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 

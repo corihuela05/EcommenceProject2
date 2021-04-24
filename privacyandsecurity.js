@@ -207,10 +207,17 @@ function Privacyandsecurity() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -281,31 +288,32 @@ function Privacyandsecurity() {
     </div>
     <div className="sliderslide">
     <div className="slider">
+    <div className="footerinfo">
     
-    
-      <h1>PRIVACY & SECURITY </h1>
-           <p>
+                      <h1>Privacy & Security </h1>
+                      <p>
 
-WHEN YOU SIGN UP TO THE GRAYSON WEBSITE, YOU GIVE US CERTAIN INFORMATION VOLUNTARILY. 
-INCLUDES NAME, EMAIL ADDRESS, PHONE NUMBER, PROFILE PHOTO. 
-YOU CAN ALSO CHOOSE TO SHARE THE LOCATION OF THE PHOTOS YOU GIVE US.
-IF YOU BUY PRODUCTS OFF THIS SITE. WE COLLECT PAYMENT YOU GIVE TO US AND
-CONTACT INFORMATION (ADDRESS AND PHONE NUMBER) AND DETAILS OF WHAT YOU BOUGHT.
-IF YOU SOMETHING FOR FOR SOMEONE ELSE ON THE SITE. 
-WE ALSO COLLECT THIER DELIVERY DETAILS AND CONTACT INFORMATION.
+                          When you sign up to the grayson website, you give us certain information voluntarily. 
+                          Includes name, email address, phone number, profile photo. 
+                          You can also choose to share the location of the photos you give us.
+                          If you buy products off this site. We collect payment you give to us and
+                          Contact information (address and phone number) and details of what you bought.
+                          If you something for for someone else on the site. 
+                          We also collect thier delivery details and contact information.
 
-IF YOU LINK ANY SOCIAL MEDIA SUCH AS FACEBOOK OR GOOGLE OR THER THIRD PARTY WEBSITES. 
-WE ALSO GET THE INFORMATION FROM THOSE ACCOUNTS. THE INFORMATION WE TAKE FROM THOSE SITES DEPEND 
-ON THE SITTINGS OF AND THIER PRIVACY POLICIES SO PLEASE CHECK WHAT THEY ARE.
+                          If you link any social media such as facebook or google or ther third party websites. 
+                          We also get the information from those accounts. The information we take from those sites depend 
+                          On the sittings of and thier privacy policies so please check what they are.
+
 
 </p>
-      
+      </div>
    
     </div>
   
     
     
-    <footer class="site-footer">
+              <footer class="products-site-footer">
                   <h1>About Greyson</h1>
                   <div className="footer1">
                       <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -325,15 +333,9 @@ ON THE SITTINGS OF AND THIER PRIVACY POLICIES SO PLEASE CHECK WHAT THEY ARE.
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
 
                   </div>
                   <div className="footer3">
-
-
-
 
                       <form onSubmit={handleReturnpage}>
                           <button>RETURNS</button>
@@ -343,7 +345,9 @@ ON THE SITTINGS OF AND THIER PRIVACY POLICIES SO PLEASE CHECK WHAT THEY ARE.
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 

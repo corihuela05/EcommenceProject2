@@ -285,12 +285,12 @@ function flaggschool () {
                                  <button>Tax Exempt Program</button>
                              </form>
 
-                             <form onSubmit={handleDonotsellmyinfo}>
-                                 <button>Do Not Sell My Information</button>
-                             </form>
 
                          </div>
                          <div className="footer3">
+
+
+
 
                              <form onSubmit={handleReturnpage}>
                                  <button>RETURNS</button>
@@ -300,7 +300,9 @@ function flaggschool () {
                                  <button>ACCESSIBILITY</button>
                              </form>
 
-                             <button>ADVERTISE WITH US</button>
+                             <form onSubmit={handleDonotsellmyinfo}>
+                                 <button>Do Not Sell My Information</button>
+                             </form>
                          </div>
                          <div className="footer4">
 
@@ -321,7 +323,8 @@ function flaggschool () {
                              <form onSubmit={handleCaprivacy}>
                                  <button>CA PRIVACY RIGHTS</button>
                              </form>
-                          </div>
+
+                         </div>
                          <div className="footer5">
                              <hr />
                              <p> Copyright © 2021 All Rights Reserved by Greyson</p>

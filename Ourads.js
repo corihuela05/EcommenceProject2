@@ -204,10 +204,17 @@ function Ourads() {
     }
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -292,8 +299,10 @@ function Ourads() {
       <button>Gift Cards</button>
     </div>
     </div>
-    <div className="ouradsslideslider">
-    <div className="ourads">
+          <div className="sliderslide">
+
+              <div className="slider">
+                  <div className="footerinfo">
       <img src="logo.jpg" alt="Avatar" class="sponsorprofile"/>
       <h4><b>Greyson</b></h4>
       <p>Sponsored by GMF</p>
@@ -316,7 +325,8 @@ function Ourads() {
       <img src="https://www.nba.com/resources/static/team/v2/warriors/images/community-foundation-2016-videobg-header-3-1280x720.jpg" alt="Girl in a jacket" className="sponsorpicture"/>
       <a href="https://www.nba.com/warriors/foundation" target="_blank">Learn More</a>
     </div>
-    <footer class="ourads-site-footer">
+     </div>
+              <footer class="products-site-footer">
                   <h1>About Greyson</h1>
                   <div className="footer1">
                       <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -336,14 +346,9 @@ function Ourads() {
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
 
                   </div>
                   <div className="footer3">
-
-
 
 
                       <form onSubmit={handleReturnpage}>
@@ -354,7 +359,9 @@ function Ourads() {
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 

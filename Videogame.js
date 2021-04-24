@@ -32,6 +32,13 @@ import Item_Display from './item_display';
 import axios from 'axios'
 import Next from "./Shipping";
 import Header from "./Header";
+import Privacyandsecurity from './privacyandsecurity';
+import Donotsellmyinfo from './donotsellmyinfo';
+import Ourcompany from './ourcompany';
+import Caprivacy from './caprivacy';
+import Accessibilitty from './accessibility';
+import Returnpage from './returnpage';
+import TaxExcemptpage from './taxExcemptpage';
 import { useState } from 'react';
 const PAGE_PRODUCT='products';
 const PAGE_CART = 'cart';
@@ -168,7 +175,22 @@ function Videogames () {
     setPages(nextpage);
     
   };
-  
+
+    function handleReturnpage() {
+        ReactDOM.render(<Returnpage />, document.getElementById('root'));
+    }
+    function handleCaprivacy() {
+        ReactDOM.render(<Caprivacy />, document.getElementById('root'));
+    }
+
+
+    function handleAccessibility() {
+        ReactDOM.render(<Accessibilitty />, document.getElementById('root'));
+    }
+
+    function handleDonotsellmyinfo() {
+        ReactDOM.render(<Donotsellmyinfo />, document.getElementById('root'));
+    }
   function handleclothingProducts(){
     ReactDOM.render(<ClothingProducts />,document.getElementById('root'));
   }
@@ -210,6 +232,19 @@ function Videogames () {
   }
       function handleNext(){
       ReactDOM.render(<Next />,document.getElementById('root'));
+    }
+
+    function handlePrivacyandsecurity() {
+        ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
+    }
+
+    function handleOurcompany() {
+        ReactDOM.render(<Ourcompany />, document.getElementById('root'));
+    }
+
+
+    function handleTaxExcemptpage() {
+        ReactDOM.render(<TaxExcemptpage />, document.getElementById('root'));
     }
     
   function handleCart(){
@@ -455,59 +490,73 @@ function Videogames () {
     {page === PAGE_PRODUCT && renderProducts()}
     {page === PAGE_CART && renderCart()}
     <footer class="vsite-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
+                  <h1>About Greyson</h1>
+                  <div className="footer1">
+                      <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
 
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
+                  </div>
+                  <div className="footer2">
 
-                        <button>OUR COMPANY</button>
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    </div>
-                    <div className="footer3">
-                        <form onsubmit={Returns}>
-                            <button>RETURNS</button>
-                        </form>
-                        <button>PRODUCT RECALLS</button>
-                        <form onsubmit={Accessibility}>
-                            <button>ACCESSIBILTY</button>
-                        </form>
-                        <button>ADVERTISE WITH US</button>
-                    </div>
-                    <div className="footer4">
-                        <button>GREYSON'S</button>
+                      <form onSubmit={handleGetknowus}>
+                          <button>GET TO KNOW US</button>
+                      </form>
 
-                        <form onSubmit={handleOurads}>
-                            <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                            <button>TERMS OF SERVICE </button>
-                          </form>
-                       
-                            <button>PRIVACY & SECURITY</button>
-                    
-                           <button>CA Privacy Rights</button>
-                           
-                        
-                            <button>Do Not Sell My Information</button>
-                         
-                            
-                            <button>Tax Exempt Program</button>
-                    </div>   
-                   <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
+                      <form onSubmit={handleOurcompany}>
+                          <button>OUR COMPANY</button>
+                      </form>
+
+                      <form onSubmit={handleTaxExcemptpage}>
+                          <button>Tax Exempt Program</button>
+                      </form>
+
+
+                  </div>
+                  <div className="footer3">
+
+
+
+
+                      <form onSubmit={handleReturnpage}>
+                          <button>RETURNS</button>
+                      </form>
+
+                      <form onSubmit={handleAccessibility}>
+                          <button>ACCESSIBILITY</button>
+                      </form>
+
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
+                  </div>
+                  <div className="footer4">
+
+
+                      <form onSubmit={handleOurads}>
+                          <button>OUR ADS</button>
+                      </form>
+
+                      <form onSubmit={handleTermofservices}>
+                          <button>TERMS OF SERVICE </button>
+                      </form>
+
+                      <form onSubmit={handlePrivacyandsecurity}>
+                          <button>PRIVACY & SECURITY</button>
+                      </form>
+
+
+                      <form onSubmit={handleCaprivacy}>
+                          <button>CA PRIVACY RIGHTS</button>
+                      </form>
+
+
+
+                  </div>
+                  <div className="footer5">
+                      <hr />
+                      <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                  </div>
+
+              </footer>
 
   {/*  <div class="Videogameadjust">
     <div class="videogcard1">
@@ -608,41 +657,75 @@ function Videogames () {
     </div>
   
     <footer class="videogame-site-footer1">
-    <h1>About Greyson</h1>
-    <div className="footer1">
-      <button><img src="logo.png" alt='logo' width="150" height="150"/>1717 Harrison St. Newark, NJ 07028,USA</button>
-    </div>
-    <div className="footer2">
-      <button>GET TO KNOW US</button>
-      <button>OUR COMPANY</button>
-      <button>DIRECTORY</button>
-      <button>OUR SUPPLIERS</button>
-      <button>ADVERTISE WITH US</button>
-      <button>OUR SUPPLIERS</button>
-      <button>CONTACT US</button>
-    </div>
-    <div className="footer3">
-    <button>CUSTOMER SERVICE</button>
-      <button>HELP CENTER</button>
-      <button>RETURNS</button>
-      <button>PRODUCT RECALLS</button>
-      <button>ACCESSIBILTY</button>
-      <button>CONTACT US</button>
-    </div>
-    <div className="footer4">
-      <button>GREYSON'S</button>
-      <button>OUR ADS</button>
-      <button>TERMS OF SERVICE</button>
-      <button>PRIVACY & SECURITY</button>
-      <button>CA Privacy Rights</button>
-      <button>Do Not Sell My information</button>
-      <button>Request My information</button>
-      <button>Tax Exempt Program</button>
-    </div>
-    <div className="footer5">
-      <hr/>
-      <p> Copyright © 2021 All Rights Reserved by Greyson</p>  
-    </div>
+                 <footer class="site-footer">
+                    <h1>About Greyson</h1>
+                    <div className="footer1">
+                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
+
+                    </div>
+                    <div className="footer2">
+
+                        <form onSubmit={handleGetknowus}>
+                            <button>GET TO KNOW US</button>
+                        </form>
+
+                        <form onSubmit={handleOurcompany}>
+                        <button>OUR COMPANY</button>
+                         </form>
+
+                        <form onSubmit={handleTaxExcemptpage}>
+                        <button>Tax Exempt Program</button>
+                        </form>
+
+
+                    </div>
+                    <div className="footer3">
+
+
+
+
+                        <form onSubmit={handleReturnpage}>
+                        <button>RETURNS</button>
+                        </form>
+
+                        <form onSubmit={handleAccessibility}>
+                        <button>ACCESSIBILITY</button>
+                        </form>
+
+                            <form onSubmit={handleDonotsellmyinfo}>
+                                <button>Do Not Sell My Information</button>
+                            </form>
+                         </div>
+                          <div className="footer4">
+
+
+                        <form onSubmit={handleOurads}>
+                        <button>OUR ADS</button>
+                        </form>
+
+                        <form onSubmit ={handleTermofservices}>
+                        <button>TERMS OF SERVICE </button>
+                        </form>
+
+                        <form onSubmit={handlePrivacyandsecurity}>
+                        <button>PRIVACY & SECURITY</button>
+                        </form>
+
+
+                        <form onSubmit={handleCaprivacy}>
+                        <button>CA PRIVACY RIGHTS</button>
+                        </form>
+
+
+
+
+
+                    </div>
+                        <div className="footer5">
+                        <hr />
+                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                    </div>
+
                 </footer>
     </div>*/}
    </div>

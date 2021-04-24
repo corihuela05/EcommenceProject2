@@ -371,12 +371,12 @@ function Food() {
                               <button>Tax Exempt Program</button>
                           </form>
 
-                          <form onSubmit={handleDonotsellmyinfo}>
-                              <button>Do Not Sell My Information</button>
-                          </form>
 
                       </div>
                       <div className="footer3">
+
+
+
 
                           <form onSubmit={handleReturnpage}>
                               <button>RETURNS</button>
@@ -386,7 +386,9 @@ function Food() {
                               <button>ACCESSIBILITY</button>
                           </form>
 
-                          <button>ADVERTISE WITH US</button>
+                          <form onSubmit={handleDonotsellmyinfo}>
+                              <button>Do Not Sell My Information</button>
+                          </form>
                       </div>
                       <div className="footer4">
 
@@ -415,7 +417,6 @@ function Food() {
                       </div>
 
                   </footer>
-
 
     </div>
    </div>

@@ -405,9 +405,6 @@ function Pet () {
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
 
                   </div>
                   <div className="footer3">
@@ -423,7 +420,9 @@ function Pet () {
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 
@@ -444,9 +443,6 @@ function Pet () {
                       <form onSubmit={handleCaprivacy}>
                           <button>CA PRIVACY RIGHTS</button>
                       </form>
-
-
-
 
 
                   </div>

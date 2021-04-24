@@ -210,10 +210,17 @@ function Donotsellmyinfo() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -284,7 +291,7 @@ function Donotsellmyinfo() {
     </div>
     <div className="sliderslide">
     <div className="slider">
-    
+    <div className="footerinfo">
     
       <h1>Do Not Sell My Information </h1>
 
@@ -317,7 +324,7 @@ an event).
 </p>
     </div>
   
-    
+    </div>
     
               <footer class="products-site-footer">
                   <h1>About Greyson</h1>
@@ -339,15 +346,8 @@ an event).
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
-
                   </div>
                   <div className="footer3">
-
-
-
 
                       <form onSubmit={handleReturnpage}>
                           <button>RETURNS</button>
@@ -357,7 +357,9 @@ an event).
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 

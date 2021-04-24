@@ -304,7 +304,6 @@ function Item_Display(props){
         </div>
             <footer class="products-site-footer">
                 <h1>About Greyson</h1>
-                <h1>About Greyson</h1>
                 <div className="footer1">
                     <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
 
@@ -323,12 +322,11 @@ function Item_Display(props){
                         <button>Tax Exempt Program</button>
                     </form>
 
-                    <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                    </form>
 
                 </div>
                 <div className="footer3">
+
+
 
 
                     <form onSubmit={handleReturnpage}>
@@ -339,7 +337,9 @@ function Item_Display(props){
                         <button>ACCESSIBILITY</button>
                     </form>
 
-                    <button>ADVERTISE WITH US</button>
+                    <form onSubmit={handleDonotsellmyinfo}>
+                        <button>Do Not Sell My Information</button>
+                    </form>
                 </div>
                 <div className="footer4">
 
@@ -360,6 +360,7 @@ function Item_Display(props){
                     <form onSubmit={handleCaprivacy}>
                         <button>CA PRIVACY RIGHTS</button>
                     </form>
+
 
                 </div>
                 <div className="footer5">

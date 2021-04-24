@@ -356,83 +356,72 @@ function Sport () {
     </div>
    
     <footer class="products-site-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
+                  <h1>About Greyson</h1>
+                  <div className="footer1">
+                      <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
 
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
+                  </div>
+                  <div className="footer2">
+
+                      <form onSubmit={handleGetknowus}>
+                          <button>GET TO KNOW US</button>
+                      </form>
+
+                      <form onSubmit={handleOurcompany}>
+                          <button>OUR COMPANY</button>
+                      </form>
+
+                      <form onSubmit={handleTaxExcemptpage}>
+                          <button>Tax Exempt Program</button>
+                      </form>
 
 
-                        
-                        <form onSubmit={handleOurcompany}>
-                        <button>OUR COMPANY</button>
-                        </form>                        
-                        
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    
-                    </div>
-                    <div className="footer3">
-                    
-                   
-                            
-                            
-                        <form onSubmit={handleReturnpage}>
-                        <button>RETURNS</button>
-                        </form>         
-                        
-                        <button>PRODUCT RECALLS</button>
-                        
-                        <form onSubmit={handleAccessibility}>
-                        <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
+                  </div>
+                  <div className="footer3">
 
-                        <form onSubmit={handleOurads}>
-                        <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                        <button>TERMS OF SERVICE </button>
-                        </form>
-                       
-                        <form onSubmit={handlePrivacyandsecurity}>
-                        <button>PRIVACY & SECURITY</button>
-                        </form>
-                        
-                        
-                        <form onSubmit={handleCaprivacy}>
-                        <button>CA PRIVACY RIGHTS</button>
-                        </form>
-                        
-                        <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                        </form>
-                        
-                        <form onSubmit={handleTaxExcemptpage}>
-                        <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
-                        <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
 
+
+
+                      <form onSubmit={handleReturnpage}>
+                          <button>RETURNS</button>
+                      </form>
+
+                      <form onSubmit={handleAccessibility}>
+                          <button>ACCESSIBILITY</button>
+                      </form>
+
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
+                  </div>
+                  <div className="footer4">
+
+
+                      <form onSubmit={handleOurads}>
+                          <button>OUR ADS</button>
+                      </form>
+
+                      <form onSubmit={handleTermofservices}>
+                          <button>TERMS OF SERVICE </button>
+                      </form>
+
+                      <form onSubmit={handlePrivacyandsecurity}>
+                          <button>PRIVACY & SECURITY</button>
+                      </form>
+
+
+                      <form onSubmit={handleCaprivacy}>
+                          <button>CA PRIVACY RIGHTS</button>
+                      </form>
+
+
+                  </div>
+                  <div className="footer5">
+                      <hr />
+                      <p> Copyright © 2021 All Rights Reserved by Greyson</p>
+                  </div>
+
+              </footer>
 
     </div>
    </div>

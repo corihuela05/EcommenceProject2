@@ -207,10 +207,17 @@ function Ourcompany() {
   
   return (
     <div className="App">
-    <div className="Appheader">
-    <img src="logo.png" alt='company logo' className="companylogo" />
-    <img src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892" alt='flag' className="flag" />
-    <input type="text" name="search" placeholder="Search.."/>
+          <div className="Appheader">
+              <img src="logo.png" alt="company logo" className="companylogo" />
+              <img
+                  src="https://media1.tenor.com/images/3ced764a2cb7ad33ddf2145edb9904ae/tenor.gif?itemid=4320892"
+                  alt="flag"
+                  className="flag"
+              />
+              <div className="searchbar">
+                  <input type="text" name="search" placeholder="Search.." />
+                  <button type="submitsearch"><i class="fa fa-search"></i></button>
+              </div>
     <form onSubmit={handleHome}>
       <button id="homebutton">Home</button>
     </form>
@@ -282,68 +289,54 @@ function Ourcompany() {
     <div className="sliderslide">
     <div className="slider">
     
-    
-      <h1>Our company </h1>
-<p>
+    <div className="footerinfo">
+    <h1>Our Company </h1>
+    <p>
 
-<b> GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profitorganizations.
-</p>
+    <b> GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profitorganizations.
+    </p>
 
-<p><b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, 
-together with the enormous reach of social media, video, and Internet marketing to promote ,
-support and exceed the fund raising efforts of organizations worldwide. </p>
-
-
-<p> <b>Greyson's</b> offers fund raising campaigns the fastest path to market, and even before their 
-fund raising campaign begins Greyson's has identified thousands of 
-opt-in supporters (Buyers) who have expressed a willingness to purchase 
-products & services in an effort to support select school(s), churches(s) 
-and/or non-profits fund raising efforts.</p>
-
-<p> 
-
-We view as essential the existence, sustainability and growth of public and private educational institutions, non-profit and religious 
-organizations to support, enhance and enrich our communities, neighborhoods and world.</p> 
-
-<p>Our mission is to support these essential and treasured institutions by helping them
-raise the funds necessary to support their mission, programs and objectives. </p>
-
-<p><b>GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profit 
-organizations. <p/>
-
-<b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, together with the enormous reach of social media, video, and Internet marketing to promote , 
-support and exceed the fund raising efforts of organizations worldwide. and even before their fund raising campaign begins Greyson's has identified thousands of
-opt-in supporters (Buyers) who have expressed a willingness to purchase products
-& services in an effort to support select school(s), churches and/or non-profits fund raising efforts. </p>
+    <p><b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, 
+    together with the enormous reach of social media, video, and Internet marketing to promote ,
+    support and exceed the fund raising efforts of organizations worldwide. </p>
 
 
-<p>We view as essential the existence, sustainability and growth of public and private 
-educational institutions, non-profit and religious organizations to support, 
-enhance and enrich our communities, neighborhoods and world. </p>
+    <p> <b>Greyson's</b> offers fund raising campaigns the fastest path to market, and even before their 
+    fund raising campaign begins Greyson's has identified thousands of 
+    opt-in supporters (Buyers) who have expressed a willingness to purchase 
+    products & services in an effort to support select school(s), churches(s) 
+    and/or non-profits fund raising efforts.</p>
 
-<p>Our mission is to support these essential and treasured institutions 
-by helping them raise the funds necessary to support their mission, programs and objectives.
+    <p> 
 
-</p>
-         
-      <div className="dot">
-      
-    <div>
-    
-    
-      
- 
-      
-    </div>
-    
-    
-  
+    We view as essential the existence, sustainability and growth of public and private educational institutions, non-profit and religious 
+    organizations to support, enhance and enrich our communities, neighborhoods and world.</p> 
 
-      
+    <p>Our mission is to support these essential and treasured institutions by helping them
+    raise the funds necessary to support their mission, programs and objectives. </p>
+
+    <p><b>GREYSON'S</b> is an on-line fund raising platform for schools, churches & non-profit 
+    organizations. <p/>
+
+    <b>GREYSON'S</b> uses the ever increasing popularity, convenience, and benefits of on-line shopping, together with the enormous reach of social media, video, and Internet marketing to promote , 
+    support and exceed the fund raising efforts of organizations worldwide. and even before their fund raising campaign begins Greyson's has identified thousands of
+    opt-in supporters (Buyers) who have expressed a willingness to purchase products
+    & services in an effort to support select school(s), churches and/or non-profits fund raising efforts. </p>
+
+
+    <p>We view as essential the existence, sustainability and growth of public and private 
+    educational institutions, non-profit and religious organizations to support, 
+    enhance and enrich our communities, neighborhoods and world. </p>
+
+    <p>Our mission is to support these essential and treasured institutions 
+    by helping them raise the funds necessary to support their mission, programs and objectives.
+
+    </p>
       </div>
+
     </div>
   
-    <footer class="site-footer">
+              <footer class="products-site-footer">
                   <h1>About Greyson</h1>
                   <div className="footer1">
                       <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
@@ -363,14 +356,9 @@ by helping them raise the funds necessary to support their mission, programs and
                           <button>Tax Exempt Program</button>
                       </form>
 
-                      <form onSubmit={handleDonotsellmyinfo}>
-                          <button>Do Not Sell My Information</button>
-                      </form>
 
                   </div>
                   <div className="footer3">
-
-
 
 
                       <form onSubmit={handleReturnpage}>
@@ -381,7 +369,9 @@ by helping them raise the funds necessary to support their mission, programs and
                           <button>ACCESSIBILITY</button>
                       </form>
 
-                      <button>ADVERTISE WITH US</button>
+                      <form onSubmit={handleDonotsellmyinfo}>
+                          <button>Do Not Sell My Information</button>
+                      </form>
                   </div>
                   <div className="footer4">
 
@@ -402,9 +392,6 @@ by helping them raise the funds necessary to support their mission, programs and
                       <form onSubmit={handleCaprivacy}>
                           <button>CA PRIVACY RIGHTS</button>
                       </form>
-
-
-
 
 
                   </div>
