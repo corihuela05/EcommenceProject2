@@ -120,15 +120,17 @@ function Videogames () {
   }
   
   const renderProducts = () => (
-    <div className="vproduct">
+    <div className="vproduct" >
     {products.map((product,index) =>(
     <div class="product" key={index}>
+    <div class="thumbnails">
         <img src={product.image} alt="Xbox one" height="130" width="180"/>
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
         <p>{product.text}</p>
         <div className='addtocarts'>
             <button onClick={()=>addToCart(product)}>Add to Cart</button>
+        </div>
         </div>
     </div>
     ))}
