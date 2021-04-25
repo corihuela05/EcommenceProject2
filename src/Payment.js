@@ -6,7 +6,7 @@ import App from "./App";
 import Paycancel from "./Shipping";
 import Payhome from "./App";
 import Payshop from "./Shop";
-
+import Header from "./Header";
 function Payment() {
     
     function handleHome(){
@@ -26,22 +26,11 @@ function Payment() {
    }
   return (
     <div>
-      <div className="topright">
-      <form onSubmit={handlePayhome}>
-      <button className="tophome">Home</button>
-      </form>
-      <button className="topabout">About</button>
-      <form onSubmit={handlePayshop}>
-      <button className="topshop">Shop</button>
-      </form>
-      <button className="tophelp">Help</button>
-      <button className="carts"><span className="glyphicon glyphicon-shopping-cart"></span>  Your Cart</button>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    </div>
-    
+    <Header/>
+      <div className="payementsliderslide">
     <div className="threesteps">
       <button className="b4">1.Shopping Cart</button>
-      <button className="b5">2.Shipping Details</button>
+      <button className="b36">2.Shipping Details</button>
       <button className="b6">3.Payment Options</button>
     </div>
     
@@ -72,38 +61,38 @@ function Payment() {
     </div>
     
     <div className="bottombutton">
-      <button className="n3">Pay Now</button>
+      <button className="n3" id="paymentthumbnail">Pay Now</button>
       <form onSubmit={handlepaycancel}>
-        <button className="n4">Cancel</button>
+        <button className="n4" id="paymentthumbnail1">Cancel</button>
       </form>
     </div>
     
     <div class="horline3"></div>
     
     <div class="cards1">
-     <img className="pantc1"src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9c7058d8677742ac8519ac3f009cdcf4_9366/Tiro_21_Track_Pants_Black_GH7305_21_model.jpg" alt="Pant"/>
-     <p6 className="productnameofcart">TIRO 21 TRACK PANTS</p6>
-     <p5 className="price1">$45</p5>
+     <img className="pantc1"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6344/6344118_sd.jpg" alt="Pant"/>
+     <p6 className="productnameofcart">Microsoft - Xbox Series S 512 GB</p6>
+     <p5 className="price1">$299.99</p5>
     </div>
      
     <div class="cardsc2">
-     <img className="tshirtc2"src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/913bf76315384452a583aa12002a1311_9366/Badge_of_Sport_Tee_Red_FI7031_41_detail.jpg" alt="Tshirt"/>
-     <p8 className="productnameofcart2">BADGE OF SPORT TEE</p8>
-     <p7 className="price2">$25</p7>
+     <img className="tshirtc2"src="https://specials-images.forbesimg.com/imageserve/5eeb7b50706cd80006e3154c/960x0.jpg?cropX1=0&cropX2=680&cropY1=0&cropY2=453" alt="Tshirt"/>
+     <p8 className="productnameofcart2">Sony - PlayStation 5 Console</p8>
+     <p7 className="price2">$499.99</p7>
     </div>
     
     <input type="text9" id="fname" name="copoun" placeholder="Voucher #"/>
       
   
     <div class="amount">
-     <p4 className="sub">SUBTOTAL $70</p4>
+     <p4 className="sub">SUBTOTAL $799.98</p4>
      <p2 className="ship">SHIPPING  FREE</p2>
-     <p3 className="tax">TAXES  $4.90</p3>
-     <p12 className="total">TOTAL  $74.90</p12>
+     <p3 className="tax">TAXES  $52.99</p3>
+     <p12 className="total">TOTAL  $852.97</p12>
      <p11 className="voucher">HAVE A VOUCHER?</p11>
     </div>
     
-    <div className="productfooter">
+  {/*  <div className="productfooter">
     <form onSubmit={handleHome}>
       <button className="homePosition">Home</button>
     </form>  
@@ -115,8 +104,8 @@ function Payment() {
     </div>
     <div className="productcopyright">
       <p>© Greyson</p>
-    </div>
-     
+    </div> */}
+     </div>
     </div>
     
   );
