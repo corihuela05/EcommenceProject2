@@ -14,7 +14,7 @@ import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
 import Patio from './Patio';
-import Auto from './Auto';
+import Auto from './Partnerapplication';
 import Pets from './Pets';
 import Pharmacy from './Pharmacy';
 import Music from './Music';
@@ -34,44 +34,16 @@ import Caprivacy from './caprivacy';
 import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
-import { Keyframes, config } from "react-spring";
-import delay from "delay";
 import AnimatedButton from 'react-animated-button';
-import 'animate.css/animate.min.css';
-import ScrollAnimation from 'react-animate-on-scroll';
+
+
+
 
 import { useState } from "react";
 
 //import CAPrivacyRights from '/CAPrivacyRights';
 //import DoNotSellMyInformation from '/DoNotSellMyInformation';
 //import TaxExemptProgram from 'TaxExemptProgram';
-const handleScroll=()=>{
-    var animation_elements = document.getElementsByClassName("fade");
-
-
-    //console.log(animation_elements)
-    for(var i = 0; i < animation_elements.length;i++){
-        var element=animation_elements[i]
-
-        var use =element.getBoundingClientRect();
-
-
-        if (use.top <= 860 && use.bottom>133) {
-            element.classList.add('in-view');
-        } 
-        else {
-            element.classList.remove('in-view'); 
-        }
-    }
-    console.log()
-}
-
-
-
-window.onload = function(){
-   document.getElementById("sliderslide").addEventListener('scroll', handleScroll)
-}
-
 
 
 
@@ -111,40 +83,40 @@ function App() {
     function handleclothingProducts() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
-    
-    
-    
+
+
+
     function handlePrivacyandsecurity() {
     ReactDOM.render(<Privacyandsecurity />, document.getElementById('root'));
     }
-    
+
     function handleOurcompany() {
     ReactDOM.render(<Ourcompany />, document.getElementById('root'));
-    }  
-    
-    
+    }
+
+
     function handleTaxExcemptpage() {
     ReactDOM.render(<TaxExcemptpage />, document.getElementById('root'));
-    }      
+    }
     function handlefoodProducts() {
         ReactDOM.render(<FoodProducts />, document.getElementById('root'));
     }
-   
+
     function handleReturnpage () {
         ReactDOM.render(<Returnpage  />, document.getElementById('root'));
-    }    
+    }
     function handleCaprivacy() {
         ReactDOM.render(<Caprivacy />, document.getElementById('root'));
-    }    
-    
-    
+    }
+
+
     function handleAccessibility() {
         ReactDOM.render(<Accessibilitty />, document.getElementById('root'));
-    }    
-        
+    }
+
     function handleDonotsellmyinfo() {
         ReactDOM.render(<Donotsellmyinfo />, document.getElementById('root'));
-    }    
+    }
     function handleartProducts() {
         ReactDOM.render(<ArtProducts />, document.getElementById('root'));
     }
@@ -227,30 +199,39 @@ function App() {
     function handleOurads() {
         ReactDOM.render(<Ourads />, document.getElementById('root'));
     }
-    
-    
+
+
     function CAPrivacyRights() {
-        
+
         ReactDOM.render(<CAPrivacyRights />, document.getElementById('root'));
     }
-    
-    
+
+
     function TaxExemptProgram() {
         ReactDOM.render(<TaxExemptProgram/>, document.getElementById('root'));
 }
-    
+
     function Accessibility() {
         ReactDOM.render(<Accessibility/>, document.getElementById('root'));
     }
-    
-    
+
+
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
-
+    var url=""
+    if (username==="admin"){
+        url="ownerdashboard.html"
+    }
+    else if (username==="nonprofit"){
+        url="sponsordashboard.html"
+    }
+    else if (username==="seller"){
+        url="account.html"
+    }
 
     return (
-        <div className="App" id="App">
+        <div className="App">
             <div className="Appheader">
                 <img src="logo.png" alt="company logo" className="companylogo" />
                 <img
@@ -270,9 +251,7 @@ function App() {
                     <div>
                         <div>
                             <form>
-
                             <button id="info" ><a id="info" href={url}>{username}</a></button>
-
                             </form>
                         </div>
                         <div>
@@ -303,218 +282,50 @@ function App() {
                         <i class="fa fa-bars" id="openbutton"></i>
                         <i class="fa fa-close" id="cancelbutton"></i>
                     </label>
-                    <div className="sidebar"> 
-                      const items = {
-                        key: 1,
-                        content: 'Home',
-                      },
-                      {
-                      key 2,
-                      content: 'Products',
-                      
-                      },
-                      {
-                      key 3,
-                      content: 'Profile',
-                      
-                      },
-                      {
-                      key 4,
-                      content: 'Shop',
-                      
-                      },
-                      {
-                      key 5,
-                      content: 'Nonprofits',
-                      },
-                     
-                    {
-                       key 6,
-                      content: "Toys, Games and Video Games",
-                      },
-                       {
-                       key 7,
-                      content: "Clothes, Shoes and Accessories",
-                      },
-                       {
-                       key 8,
-                      content: "Home and Improvement ",
-                      },
-                       {
-                       key 9,
-                      content: 'Music',
-                      },
-                    {
-                       key 10,
-                      content: 'Patio and Garden',
-                      },
-                      {
-                       key 11,
-                      content: 'Food',
-                      }
-                      {
-                       key 12,
-                      content: 'Pets',
-                      },
-                       {
-                       key 13,
-                      content: 'Clothes, Shoes, and Accessories'
-                      },
-                      {
-                       key 14,
-                      content: 'Peronsal, Health, Health Care',
-                      
-                       },
-                      {
-                       key 15,
-                      content: 'Sports, Fitness and Outdoors'
-                      
-                    },
-    
-                       {
-                       key 16,
-                      content: 'Beauty ';
-                       },
-                       {
-                       key 17,
-                      content: 'Auto and Tire '
-                      
-                       },
-                      
-                       {
-                       key 19,
-                      content: 'Art Craft and Party Supplies '
-                      
-                       },
-            
-                      ];
-
-
-const Menu = Keyframes.Spring({
-  in: async next => {
-    await next({
-      transform: 'translateX(0%)',
-    });
-  },
-  out: async next => {
-    await delay(700);
-    await next({
-      transform: 'translateX(-100%)',
-    });
-  },
-}
-
-const MenuItems = Keyframes.Trail({
-  in: async next => {
-    await delay(600);
-    await next({
-      opacity: 1,
-      transform: 'translateX(0px)',
-    });
-  },
-  out: async next => {
-    await next({
-      opacity: 0,
-      transform: 'translateX(-40px)',
-    });
-  },
-});
-
-class Sidebarnav extends React.Component {
-  state = {
-    menuOpen: false,
-  };
-
-  handleBtnClick = () => {
-    this.setState(prevState => ({
-      menuOpen: !prevState.menuOpen,
-    }));
-  };
-
-  render() {
-    return (
-      <div className="Sidebarnav">
-      <Menu
-          config={config.gentle}
-          unique
-          state={this.state.menuOpen ? 'in' : 'out'}
-        >
-          {props => (
-            <nav style={props}>
-              <ul>
-                <MenuItems
-                  keys={item => item.key}
-                  items={items}
-                  state={this.state.menuOpen ? 'in' : 'out'}
-                  reverse={!this.state.menuOpen}
-                >
-                  {trailitem => trailprops => (
-                    <li style={trailprops}>{trailitem.content}</li>
-                  )}
-                </MenuItems>
-              </ul>
-            </nav>
-          )}
-        </Menu>
-      </div>
-    );
-  }
-}
+                     <div className="sidebar">
                         <form onSubmit={handleHome}>
-                            <button>Home</button>
+                            <button class="homex">Home</button>
                         </form>
                         <form onSubmit={handleProduct}>
-                            <button>Products</button>
+                            <button class="productx">Products</button>
                         </form>
                         <form onSubmit={handleProfile}>
-                            <button>Profile</button>
+                            <button class="profilex"> Profile</button>
                         </form>
                         <form onSubmit={handleShop}>
-                            <button>Shop</button>
+                            <button class="shopx"> Shop</button>
                         </form>
                         <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
+                            <button class="nonprofitx"> Non Profits</button>
                         </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
-
-
-
-
                         <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
+                            <button class="toysandgamesx"> Toys, Games and Video Games</button>
                         </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
 
                         <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
 
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
-                        <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
+                       
+                        <button class="musicx">Music</button>
+                        <button class="patiox" >Patio & Garden</button>
+                        <button onClick={handlefoodProducts} class="foodx" >Food</button>
+                        <button class="petsx">Pets</button>
+                        <button class="pharmarcyandcarex">Pharmacy, Health & Personal Care</button>
 
                         <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
+                            <button class="sportsx"> Sports, Fitness & Outdoors</button>
                         </form>
 
-                        <button onClick={handlebeautyProducts} >Beauty</button>
+                        <button class="beautyx" onClick={handlebeautyProducts} >Beauty</button>
 
 
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                        <button class="autox">Auto & Tire</button>
+    
+                        <button onClick={handleartProducts} class="artproductsx">Art, Craft, Sewing & Party Supplies</button>
+                       </div>
+                </div>
                     </div>
                 </div>
                 <div className="tabs">
@@ -528,52 +339,42 @@ class Sidebarnav extends React.Component {
                     <button>Gift Cards</button>
                 </div>
             </div>
-            <div className="sliderslide" id="sliderslide">
+            <div className="sliderslide">
                 <div className="slider">
-                  <div className="images">
-                    <div className="imageBackground1">
-                        
-                        <div className="imageBackground2">
-                            <img src="Electronics.jpg" class="img2" alt="image2" />
-                        </div>
-                    </div>
+                    <div className="images">
+                        <input type="radio" name="slide" id="image1" checked />
+                        <input type="radio" name="slide" id="image2" checked />
 
+                        <img src="ECOMMERCE.png" class="img1" alt="image1" />
+                        <img src="Electronics.jpg" class="img2" alt="image2" />
+                    </div>
                     <div className="dot">
                         <label for="image1"></label>
                         <label for="image2"></label>
                     </div>
-                  </div>
                 </div>
-
-                <div className="threebox" >
-                  <div className="boxHolder">
+                <div className="threebox" >                
               <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
-
+                        <button className="church"><img src="church.png" alt='church' width="370" height="270" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-
-                        <button className="school"><img src="school.png" alt='school' width="350" height="250" /><b> School</b><p>1,023 videos</p></button>
+                        <button className="school"><img src="school.png" alt='school' width="370" height="270" /><b> School</b><p>1,023 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img src="nonprofit.png" alt='organization' width="370" height="270" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="370" height="270" /><b> Non-Profits</b><p>2,416 videos</p></button>
                     </form>
-                </div>
 
-                </div>
                 <div className="addspace">
                     <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
-
-                  <div className="catContainer">
                 <div className="titleBox">
                 <h1> Currently available to you: </h1>
                 <p> Choose from one of our categories to begin shopping </p>
@@ -586,57 +387,51 @@ class Sidebarnav extends React.Component {
                 <div className="nonprofittextboxHP">
                   <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
                 </div>
-                </div>
-
+              </div>
                     <form onSubmit={handlevideogame}>
-                        <button id="games" className='fade'>VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
-                        </form>
+                        <button id="games">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
+                    </form>
                     <form onSubmit={handlebaby}>
-                        <button  id="baby" className='fade'>BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
+                        <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button  id="patio" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlepatio}>
-                        <button  id="patio1" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button id="patio1">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
 
                     <form onSubmit={handlepets}>
-                        <button  id="pets"  className='fade'>PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
+                        <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
-                    <button  id="beauty" className='fade'>BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                    <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy1" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
-
+                        <button id="pharmacy1">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
-                    <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
 
                     <form onSubmit={handlesports}>
-
-                        <button  id="sports" className='fade' className='fade'>SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                        <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button  id="auto" className='fade'>AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
+                        <button id="auto">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music1" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
-
+                        <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
-                </div>
                 </div>
                 <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
                 <div className="newsletter">
@@ -649,69 +444,84 @@ class Sidebarnav extends React.Component {
                     <h1>About Greyson</h1>
                     <div className="footer1">
                         <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
+
                     </div>
                     <div className="footer2">
+
+                        <form onSubmit={handleGetknowus}>
+                            <button>GET TO KNOW US</button>
+                        </form>
+
+
+
                         <form onSubmit={handleOurcompany}>
                         <button>OUR COMPANY</button>
-                        </form>                        
+                        </form>
+
                         <button> VENDOR DIRECTORY</button>
                         <button>HELP CENTER</button>
-                        <button> COSTUMER SERVICE </button>
                         <button>CONTACT US</button>
-                    
+
                     </div>
                     <div className="footer3">
-                            
+
+
                         <form onSubmit={handleReturnpage}>
                         <button>RETURNS</button>
-                        </form>         
-                        
+                        </form>
+
                         <button>PRODUCT RECALLS</button>
-                        
+
                         <form onSubmit={handleAccessibility}>
                         <button>ACCESSIBILITY</button>
-                        </form>                        
-                        <form onsubmit={handleOurads}>
-                        <button>OUR ADS</button>
                         </form>
+
+                        <button>ADVERTISE WITH US</button>
                          </div>
                           <div className="footer4">
-                    
+
+
+                        <button>GREYSON'S</button>
+
+                        <form onSubmit={handleOurads}>
+                        <button>OUR ADS</button>
+                        </form>
+
                         <form onSubmit ={handleTermofservices}>
                         <button>TERMS OF SERVICE </button>
                         </form>
-                       
+
                         <form onSubmit={handlePrivacyandsecurity}>
                         <button>PRIVACY & SECURITY</button>
                         </form>
-                        
-                        
+
+
                         <form onSubmit={handleCaprivacy}>
                         <button>CA PRIVACY RIGHTS</button>
                         </form>
-                        
+
                         <form onSubmit={handleDonotsellmyinfo}>
                         <button>Do Not Sell My Information</button>
                         </form>
+
+
+
+
+
+
                         <form onSubmit={handleTaxExcemptpage}>
                         <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
+                        </form>
+
+                    </div>
                         <div className="footer5">
                         <hr />
                         <p> Copyright © 2021 All Rights Reserved by Greyson</p>
                     </div>
-                
+
                 </footer>
-
-            </div>
-            </div>
-
-
-    );
-}
-
+                </div>
+        </div>
+    </div>
 export default App;
 
