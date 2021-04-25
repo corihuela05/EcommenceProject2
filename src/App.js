@@ -36,14 +36,42 @@ import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 import { Keyframes, config } from "react-spring";
 import delay from "delay";
-
-
+import AnimatedButton from 'react-animated-button';
+import 'animate.css/animate.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useState } from "react";
 
 //import CAPrivacyRights from '/CAPrivacyRights';
 //import DoNotSellMyInformation from '/DoNotSellMyInformation';
 //import TaxExemptProgram from 'TaxExemptProgram';
+const handleScroll=()=>{
+    var animation_elements = document.getElementsByClassName("fade");
+
+
+    //console.log(animation_elements)
+    for(var i = 0; i < animation_elements.length;i++){
+        var element=animation_elements[i]
+
+        var use =element.getBoundingClientRect();
+
+
+        if (use.top <= 860 && use.bottom>133) {
+            element.classList.add('in-view');
+        } 
+        else {
+            element.classList.remove('in-view'); 
+        }
+    }
+    console.log()
+}
+
+
+
+window.onload = function(){
+   document.getElementById("sliderslide").addEventListener('scroll', handleScroll)
+}
+
 
 
 
@@ -222,7 +250,7 @@ function App() {
 
 
     return (
-        <div className="App">
+        <div className="App" id="App">
             <div className="Appheader">
                 <img src="logo.png" alt="company logo" className="companylogo" />
                 <img
@@ -242,7 +270,9 @@ function App() {
                     <div>
                         <div>
                             <form>
-                                <button id="info">{username}</button>
+
+                            <button id="info" ><a id="info" href={url}>{username}</a></button>
+
                             </form>
                         </div>
                         <div>
@@ -498,70 +528,115 @@ class Sidebarnav extends React.Component {
                     <button>Gift Cards</button>
                 </div>
             </div>
-            <div className="sliderslide">
+            <div className="sliderslide" id="sliderslide">
                 <div className="slider">
-                    <div className="images">
-                        <input type="radio" name="slide" id="image1" checked />
-                        <input type="radio" name="slide" id="image2" checked />
-
-                        <img src="ECOMMERCE.png" class="img1" alt="image1" />
-                        <img src="Electronics.jpg" class="img2" alt="image2" />
+                  <div className="images">
+                    <div className="imageBackground1">
+                        
+                        <div className="imageBackground2">
+                            <img src="Electronics.jpg" class="img2" alt="image2" />
+                        </div>
                     </div>
+
                     <div className="dot">
                         <label for="image1"></label>
                         <label for="image2"></label>
                     </div>
+                  </div>
                 </div>
-                <div className="threebox">
 
-                    <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="390" height="300" /><b>Church</b><p>1,782 videos</p></button>
+                <div className="threebox" >
+                  <div className="boxHolder">
+              <form onSubmit={handleChurch}>
+                        <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
+
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="390" height="300" /><b>School</b><p>1,023 videos</p></button>
-                    </form>
 
+                        <button className="school"><img src="school.png" alt='school' width="350" height="250" /><b> School</b><p>1,023 videos</p></button>
+                    </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="390" height="300" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
+
+                    <form onSubmit={handleNonprofit}>
+                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                    </form>
+                </div>
 
                 </div>
                 <div className="addspace">
                     <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
+
+                  <div className="catContainer">
+                <div className="titleBox">
+                <h1> Currently available to you: </h1>
+                <p> Choose from one of our categories to begin shopping </p>
+                </div>
+                <div className="bulletpointsHP">
+                <div className="lightbulbHP">
+                  <i class="fa fa-lightbulb-o"></i>
+                </div>
+                <h3>How do I contribute?</h3>
+                <div className="nonprofittextboxHP">
+                  <p>You will be able to select a non-profit from our list of organizations at checkout! </p>
+                </div>
+                </div>
+
                     <form onSubmit={handlevideogame}>
-                        <button id="games"><img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" />VIDEO GAMES</button>
-                    </form>
+                        <button id="games" className='fade'>VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
+                        </form>
                     <form onSubmit={handlebaby}>
-                        <button id="baby"><img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" />BABY</button>
+                        <button  id="baby" className='fade'>BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button id="patio"><img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" />PATIO</button>
+                        <button  id="patio" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
+
+                    <form onSubmit={handlepatio}>
+                        <button  id="patio1" className='fade'>PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                    </form>
+
+
                     <form onSubmit={handlepets}>
-                        <button id="pets"><img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" />PETS</button>
+                        <button  id="pets"  className='fade'>PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy"><img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" />PHARMACY</button>
+                        <button  id="pharmacy" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                    </form>
+
+                    <button  id="beauty" className='fade'>BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+
+                    <form onSubmit={handlepharmacy}>
+                        <button  id="pharmacy1" className='fade'>PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+
                     </form>
                     <button id="beauty"><img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />BEAUTY</button>
 
                     <form onSubmit={handlesports}>
-                        <button id="sports"><img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} />SPORT</button>
+
+                        <button  id="sports" className='fade' className='fade'>SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button id="auto"><img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" />AUTO</button>
+                        <button  id="auto" className='fade'>AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music"><img src="music.png" alt='music' class="thumbnail" width="280" height="280" />MUSIC</button>
+                        <button  id="music" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
+                    <form onSubmit={handlemusic}>
+                        <button  id="music1" className='fade'>MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+
+                    </form>
+
+                </div>
                 </div>
                 <img src="https://media1.giphy.com/media/U4XWNZCSqI9BANEKx9/giphy.gif" alt='newsletter' className="letterpic" width="200" height="150" />
                 <div className="newsletter">
@@ -630,8 +705,11 @@ class Sidebarnav extends React.Component {
                     </div>
                 
                 </footer>
-        </div>
-        </div>
+
+            </div>
+            </div>
+
+
     );
 }
 
