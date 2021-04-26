@@ -81,7 +81,7 @@ function Payment() {
      <p7 className="price2">$499.99</p7>
     </div>
     
-    <input type="text9" id="fname" name="copoun" placeholder="Voucher #"/>
+    <input type="text9" id="fname" name="copoun" placeholder="Coupon Code"/>
       
   
     <div class="amount">
@@ -89,7 +89,9 @@ function Payment() {
      <p2 className="ship">SHIPPING  FREE</p2>
      <p3 className="tax">TAXES  $52.99</p3>
      <p12 className="total">TOTAL  $852.97</p12>
-     <p11 className="voucher">HAVE A VOUCHER?</p11>
+     <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
+      <p77 className="contri">Total contribution to Special Strides</p77>
+     <p78 className="contriNum1">$70</p78>
     </div>
     
   {/*  <div className="productfooter">

@@ -263,6 +263,21 @@ input[type=text8]{
 
 }
 
+.contri{
+  position: absolute;
+  top:760px;
+  left: 67%;
+  font-size: 17px;
+}
+
+.contriNum{
+  position: absolute;
+  top:760px;
+  left: 85%;
+  font-size: 17px;
+}
+
+
 input[type=text9]{
   position: absolute;
   top:630px;

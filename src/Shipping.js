@@ -328,7 +328,7 @@ function Shipping() {
       <input type="text6" id="lname" name="city" placeholder="City"/>
       <input type="text7" id="lname" name="zip/postal code" placeholder="Zip/Postal Code"/>
       <input type="text8" id="lname" name="phone number" placeholder="Phone Number"/>
-      <input type="text9" id="fname" name="copoun" placeholder="Voucher #"/>
+      <input type="text9" id="fname" name="copoun" placeholder="Coupon Code"/>
       
       <div class="horline2"></div>
       
@@ -365,6 +365,8 @@ function Shipping() {
      <p3 className="tax">TAXES  $52.99</p3>
      <p12 className="total">TOTAL  $852.97</p12>
      <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
+     <p77 className="contri">Total contribution to Special Strides</p77>
+     <p78 className="contriNum">$70</p78>
      </div>
     
     </div>

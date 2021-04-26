@@ -313,9 +313,14 @@ label #cancelbutton1{
     width: 780px;
     text-align: left;
     font-family: arial;
-    background-color: white;
     color:black;
    
+}
+
+.prod img{
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px;
 }
 .prod .carttitle{
   position:relative;
@@ -425,4 +430,12 @@ label #cancelbutton1{
     z-index:999;
     border:3px solid black;
     background:green;
+}
+
+.contriNum3690{
+  position: absolute;
+  top:380px;
+  left: 85%;
+  font-size: 17px;
+
 }

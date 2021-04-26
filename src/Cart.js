@@ -138,10 +138,12 @@ function Cart() {
      <p className="ship1">SHIPPING  FREE</p>
      <p className="tax1">TAXES  $52.99</p>
      <p className="total1">TOTAL  $852.97</p>
-     <p className="voucher1">HAVE A VOUCHER?</p>
+     <p className="voucher1">HAVE A DISCOUNT CODE?</p>
+      <p77 className="contri36">Total contribution to Special Strides</p77>
+     <p78 className="contriNum369">$70</p78>
     </div>
     
-    <input type="text10" id="fname" name="copoun" placeholder="Voucher #"/>
+    <input type="text10" id="fname" name="copoun" placeholder="Coupon Code"/>
     
     <div class="verticalline7"></div>
     

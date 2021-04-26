@@ -199,3 +199,10 @@ input[type=cardholname]{
     border:3px solid black;
     background:red;
 }
+
+.contriNum1{
+  position: absolute;
+  top:760px;
+  left: 89.5%;
+  font-size: 17px;
+}
