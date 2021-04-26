@@ -370,20 +370,20 @@ function App() {
                 <div className="threebox" >
                   <div className="boxHolder">
               <form onSubmit={handleChurch}>
-                        <button className="church"><img class="churchin" src="church.png" alt='church' width="300" height="200" /><b>Church</b><p>1,782 videos</p></button>
+                        <button className="church"><img class="churchin" src="church.png" alt='church' width="320" height="230" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img class="schoolin" src="school.png" alt='school' width="300" height="200" /><b> School</b><p>1,023 videos</p></button>
+                        <button className="school"><img class="schoolin" src="school.png" alt='school' width="320" height="230" /><b> School</b><p>1,023 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img class="nonprofitin" src="nonprofit.png" alt='organization' width="300" height="200" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img class="nonprofitin" src="nonprofit.png" alt='organization' width="320" height="230" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="300" height="200" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="320" height="230" /><b> Non-Profits</b><p>2,416 videos</p></button>
                     </form>
                 </div>
                 </div>

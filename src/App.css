@@ -217,7 +217,7 @@ label #cancelbutton{
   margin: auto ;
   position: relative;
   width: 100%;
-  height: 715px;
+  height: 480px;
   background-image: linear-gradient(#0065ff, #f0f5f5);
 
 
@@ -284,7 +284,7 @@ text-align: left;
 }
 
 .category{
-  margin-top: -400px;
+  margin-top: -155px;
   height: 1200px;
   width: 100%;
   justify-content: center;
@@ -453,69 +453,69 @@ text-align: left;
   position: absolute;
   top:45px;
   left: 14%;
-  height: 300px;
-  width: 330px;
+  height: 310px;
+  width: 345px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
   padding-top:10px;
-  font-size:25px;
+  font-size:20px;
 }
 
 .church .churchin {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .school .schoolin {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .nonprofitin {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .nonprofitin1 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 
 .school{
   position: absolute;
   top: 45px;
-  left:50%;
-  height: 300px;
-  width: 330px;
+  left:1010px;
+  height: 310px;
+  width: 345px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
   padding-top:10px;
-  font-size:25px;
+  font-size:20px;
 }
 
 
 .organization{
   position: absolute;
   top:45px;
-  left:1380px;
-  height: 300px;
-  width: 330px;
+  left:1375px;
+  height: 310px;
+  width: 345px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
   padding-top:10px;
-  font-size:25px;
+  font-size:20px;
 }
 
 .organization1{
   position: absolute;
   top:45px;
-  left: 625px;
-  height: 300px;
-  width: 330px;
+  left: 645px;
+  height: 310px;
+  width: 345px;
   background-color:white ;
   border: solid white  5px;
   outline: none;
   padding-top:10px;
-  font-size:25px;
+  font-size:20px;
 }
 
 
