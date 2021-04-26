@@ -214,10 +214,10 @@ label #cancelbutton{
 
 .threebox{
   margin-top: 0px;
-  margin: auto ;
+  margin: auto;
   position: relative;
-  width: 100%;
-  height: 480px;
+  width: 1520px;
+  height: 450px;
   background-image: linear-gradient(#0065ff, #f0f5f5);
 
 
@@ -284,7 +284,7 @@ text-align: left;
 }
 
 .category{
-  margin-top: -155px;
+  margin-top: -125px;
   height: 1200px;
   width: 100%;
   justify-content: center;
@@ -327,6 +327,8 @@ text-align: left;
 .images {
   height: 480px;
   background-color: #0065ff;
+  width: 1520px;
+  margin: auto;
 
 }
 
@@ -342,30 +344,31 @@ text-align: left;
   animation-direction: alternate;
   animation-timing-function: linear;
   position: absolute;
+  margin:auto;
 
 
 }
 
 .imageBackground1 {
-  margin-left: 0%;
-  width: 100% ;
-  height: 480px;
-  position: absolute;
+  margin: auto;
+  width: 1440px;
+  height: 500px;
+  position: relative;
   background-image: url(ECOMMERCE.png);
   background-size: cover;
   background-position: top;
-  box-shadow: 10px 10px 10px 10px rgba(0.15, 0, 0, 0.15);
 
 }
 
 .img2 {
-  padding-top: 5px;
+  padding-top: 40px;
   padding-bottom: 30px;
   left: 33%;
-  height: 500px;
-  width: 30%;
+  height: 400px;
+  width: 280px;
   display: block;
   position: absolute;
+  margin: auto;
 }
 
 .img1 {
@@ -375,7 +378,6 @@ text-align: left;
   left: 19% ;
   height: 480px;
   width: 60%;
-  box-shadow: 10px 0px 10px 10px rgba(0.15, 0, 0, 0.15);
 }
 
 @keyframes fading {
@@ -452,7 +454,7 @@ text-align: left;
 .church{
   position: absolute;
   top:45px;
-  left: 14%;
+  left: 2%;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -481,7 +483,7 @@ text-align: left;
 .school{
   position: absolute;
   top: 45px;
-  left:1010px;
+  left:770px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -495,7 +497,7 @@ text-align: left;
 .organization{
   position: absolute;
   top:45px;
-  left:1375px;
+  left:1135px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -508,7 +510,7 @@ text-align: left;
 .organization1{
   position: absolute;
   top:45px;
-  left: 645px;
+  left: 405px;
   height: 310px;
   width: 345px;
   background-color:white ;
