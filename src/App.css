@@ -216,15 +216,15 @@ label #cancelbutton{
   margin-top: 0px;
   margin: auto;
   position: relative;
-  width: 1520px;
-  height: 450px;
+  width: 1540px;
+  height: 250px;
   background-image: linear-gradient(#0065ff, #f0f5f5);
 
 
 }
 
 .catContainer{
-  height: 2000px;
+  height: 1800px;
   position: relative;
   width: 2000px;
   margin: auto;
@@ -284,7 +284,7 @@ text-align: left;
 }
 
 .category{
-  margin-top: -125px;
+  margin-top: 50px;
   height: 1200px;
   width: 100%;
   justify-content: center;
@@ -327,7 +327,7 @@ text-align: left;
 .images {
   height: 480px;
   background-color: #0065ff;
-  width: 1520px;
+  width: 1540px;
   margin: auto;
 
 }
@@ -361,13 +361,12 @@ text-align: left;
 }
 
 .img2 {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 30px;
-  left: 33%;
-  height: 400px;
-  width: 280px;
-  display: block;
-  position: absolute;
+  left: 0%;
+  height: 420px;
+  width: 300px;
+  position: relative;
   margin: auto;
 }
 
@@ -448,13 +447,23 @@ text-align: left;
   background: white;
 }
 
+.contentFill {
+  width: 1440px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+  top: 1665px;
+}
 
-
+.contentFill h1 {
+  padding-top: 80px;
+}
 
 .church{
   position: absolute;
-  top:45px;
-  left: 2%;
+  top:20px;
+  left: 50px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -482,8 +491,8 @@ text-align: left;
 
 .school{
   position: absolute;
-  top: 45px;
-  left:770px;
+  top: 20px;
+  left:780px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -496,8 +505,8 @@ text-align: left;
 
 .organization{
   position: absolute;
-  top:45px;
-  left:1135px;
+  top:20px;
+  left:1145px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -509,8 +518,8 @@ text-align: left;
 
 .organization1{
   position: absolute;
-  top:45px;
-  left: 405px;
+  top:20px;
+  left: 415px;
   height: 310px;
   width: 345px;
   background-color:white ;
@@ -816,7 +825,7 @@ text-align: left;
 
 .letterpic{
   position: absolute;
-  top:2900px;
+  top:2750px;
   left:37%;
   border:1px solid black;
   border-radius: 20px;
@@ -845,7 +854,7 @@ text-align: left;
 }
 .newsletter{
   position: absolute;
-  top:2900px;
+  top:2750px;
   left:46%;
 }
 
