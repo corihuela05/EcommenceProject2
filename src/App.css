@@ -242,8 +242,8 @@ label #cancelbutton{
 .bulletpointsHP{
   position:absolute;
   top: 0px;
-  left: 50%;
-  width:700px;
+  left: 1010px;
+  width:710px;
   height:150px;
   background-color: white;
 }
@@ -502,7 +502,7 @@ text-align: left;
   position: relative;
   top:0px;
   margin-left: 0px;
-  width: 1000px;
+  width: 1440px;
   height:250px;
   background-color:white;
   border-top: 0;
@@ -514,8 +514,12 @@ text-align: left;
 }
 
 .addspace {
-  width: 1000px;
+  width: 1450px;
   position: relative;
+  margin: auto;
+  padding-left: 0px;
+
+
 }
 
 
@@ -523,76 +527,92 @@ text-align: left;
   position: absolute;
   top:170px;
   left:14%;
-  width:340px;
+  width:345px;
   height:375px;
   background-color: white;
   border: none;
   outline:none;
   font-size:20px;
   margin: auto;
-
-
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
 }
+
+
+
+
 #games img{
   background-color:white;
   border: none;
   border-radius: 500px;
   margin: auto;
+  margin-top: 35px;
 }
 
 #baby{
   position: absolute;
   top:170px;
-  left:32%;
-  width:340px;
+  left:645px;
+  width:345px;
   height:375px;
   background-color: white;
   border:none;
   outline:none;
   font-size:20px;
-
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #baby img{
   border-radius: 500px;
   border: none;
   background: none;
   margin: auto;
+  margin-top: 35px;
 }
 
 #patio{
-  position: absolute;
-  top:170px;
-  left: 68%;
-  width:340px;
+  position: relative;
+  top: 20px;
+  left: 550px;
+  width:345px;
   height:375px;
   background-color: white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #patio img{
   border-radius: 500px;
   border: none;
   margin: auto;
-
+  margin-top: 35px;
 }
 
 #patio1{
   position: absolute;
   top:170px;
-  left:50%;
-  width:340px;
+  left:1010px;
+  width:345px;
   height:375px;
   background-color: white;
   border:none;
   outline:none;
-  font-size:20px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #patio1 img{
   border-radius: 500px;
   border: none;
   margin: auto;
-
+  margin-top: 35px;
 }
 
 
@@ -600,47 +620,58 @@ text-align: left;
   position: absolute;
   top:565px;
   left:14%;
-  width:340px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #pets img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 #pharmacy{
   position: absolute;
   top:565px;
-  left:32%;
-  width:340px;
+  left:645px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #pharmacy img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 
 #pharmacy1{
   position: absolute;
   top:565px;
-  left:50%;
-  width:340px;
+  left: 1010px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 
 #pharmacy1 img{
@@ -648,52 +679,64 @@ text-align: left;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 
 #beauty{
   position: absolute;
   top:565px;
-  left:68%;
-  width:340px;
+  left:1375px;
+  width:345px;
   height:375px;
   background-color: white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #beauty img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 #sports{
   position: absolute;
   top:960px;
   left:14%;
-  width:340px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #sports img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 #auto{
   position: absolute;
   top:960px;
-  left:32%;
-  width:340px;
+  left:645px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 
 }
 #auto img{
@@ -701,42 +744,51 @@ text-align: left;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 #music{
   position: absolute;
   top:960px;
-  left:68%;
-  width:340px;
+  left:1375px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #music img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 
 
 #music1 {
   position: absolute;
   top:960px;
-  left:50%;
-  width:340px;
+  left:1010px;
+  width:345px;
   height:375px;
   background-color:white;
   border:none;
   outline:none;
   font-size:20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
 }
 #music1 img{
   border-radius: 500px;
   border: none;
   background:none;
   margin: auto;
+  margin-top: 35px;
 }
 
 .letterpic{
@@ -789,15 +841,15 @@ text-align: left;
 .titleBox{
   position: relative;
   top: 0px;
-  margin-left: 14%;
-  width: 700px;
+  margin-left: 280px;
+  width: 710px;
   height:150px;
   background-color: white;
 }
 
 .category h1{
   padding-top: 40px;
-  padding-left: 15%;
+  padding-left: 5%;
   text-align: left;
   font-size: 30px;
 }
@@ -805,7 +857,6 @@ text-align: left;
 .category p{
   text-align: left;
   padding-left: 15%;
-
 }
 
 .site-footer h1{
