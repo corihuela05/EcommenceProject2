@@ -355,7 +355,7 @@ function App() {
                 <div className="slider">
                   <div className="images">
                     <div className="imageBackground1">
-                        
+
                         <div className="imageBackground2">
                             <img src="Electronics.jpg" class="img2" alt="image2" />
                         </div>
