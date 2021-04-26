@@ -231,42 +231,48 @@ function Termofservice() {
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
     </label>
-                  <div className="sidebar">
-                      <form onSubmit={handleHome}>
-                          <button>Home</button>
-                      </form>
-                      <form onSubmit={handleProduct}>
-                          <button>Products</button>
-                      </form>
-                      <form onSubmit={handleProfile}>
-                          <button>Profile</button>
-                      </form>
-                      <form onSubmit={handleShop}>
-                          <button>Shop</button>
-                      </form>
-                      <form onSubmit={handleNonprofit}>
-                          <button>Non Profits</button>
-                      </form>
-                      <form onSubmit={handlevideogame}>
-                          <button>Toys, Games and Video Games</button>
-                      </form>
-                      <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-                      <form onSubmit={handleHomeandfurnitures}>
-                          <button>Home, Furniture & Appliances</button>
-                      </form>
-                      <button onClick={handlemusic} >Music</button>
-                      <button onClick={handlepatio} >Patio & Garden</button>
-                      <button onClick={handlefoodProducts} >Food</button>
-                      <button onClick={handlepets} >Pets</button>
-                      <button onClick={handlepharmacy}>Pharmacy, Health & Personal Care</button>
-                      <form onSubmit={handlesports}>
-                          <button>Sports, Fitness & Outdoors</button>
-                      </form>
-                      <button onClick={handlebeautyProducts} >Beauty</button>
-                      <button onClick={handleauto}>Auto & Tire</button>
-                      <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
-                  </div> 
-    </div>
+                    <div className="sidebar">
+                        <form onSubmit={handleHome}>
+                            <button class="homex" > Home</button>
+                        </form>
+                        <form onSubmit={handleProduct}>
+                            <button class="productx" >Products</button>
+                        </form>
+                        <form onSubmit={handleProfile}>
+                            <button class="profilex" >Profile</button>
+                        </form>
+                        <form onSubmit={handleShop}>
+                            <button class="shopx" >Shop</button>
+                        </form>
+                        <form onSubmit={handleNonprofit}>
+                            <button class="homex" >Non Profits</button>
+                        </form>
+                        <form onSubmit={handlevideogame}>
+                            <button class="toysandgamesx" >Toys, Games and Video Games</button>
+                        </form>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
+
+                        <form onSubmit={handleHomeandfurnitures}>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
+                        </form>
+
+                        <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
+                        <button onClick={handlefoodProducts} >Food</button>
+                        <button class="petsx" >Pets</button>
+                        <button class="pharmarcyandcarex" >Pharmacy, Health & Personal Care</button>
+
+                        <form onSubmit={handlesports}>
+                            <button class="sportsx" >Sports, Fitness & Outdoors</button>
+                        </form>
+
+                        <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
+
+
+                        <button class="autox" >Auto & Tire</button>
+                        <button onClick={handleartProducts} class="artproductsx">Art, Craft, Sewing & Party Supplies</button>
+                    </div>
+                </div>
     <div className="tabs">
       <button>Best Sellers</button>
       <button>Today's Deals</button>
