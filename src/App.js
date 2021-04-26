@@ -370,26 +370,26 @@ function App() {
                 <div className="threebox" >
                   <div className="boxHolder">
               <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
+                        <button className="church"><img class="churchin" src="church.png" alt='church' width="300" height="200" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="350" height="250" /><b> School</b><p>1,023 videos</p></button>
+                        <button className="school"><img class="schoolin" src="school.png" alt='school' width="300" height="200" /><b> School</b><p>1,023 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img class="nonprofitin" src="nonprofit.png" alt='organization' width="300" height="200" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="300" height="200" /><b> Non-Profits</b><p>2,416 videos</p></button>
                     </form>
                 </div>
                 </div>
                 <div className="category">
                   <div className="addspace">
-                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
+                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="150" height="100" />ADD SPACE</button>
                     </div>
                   <div className="catContainer">
 
