@@ -383,13 +383,13 @@ function App() {
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="320" height="230" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="320" height="230" /><b> Partners</b><p>1,504 videos</p></button>
                     </form>
                 </div>
                 </div>
                 <div className="category">
                   <div className="addspace">
-                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="150" height="100" />ADD SPACE</button>
+                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="150" height="100" />AD SPACE</button>
                     </div>
                   <div className="catContainer">
 
