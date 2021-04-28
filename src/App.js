@@ -47,10 +47,10 @@ import { useState } from "react";
 
 
 
-/*
+
 window.onload = function(){
    const handleScroll=()=>{
-        var animation_elements = document.getElementsByClassName("fade");
+        var animation_elements = document.getElementsByClassName("notfade");
         //console.log(animation_elements)
         for(var i = 0; i < animation_elements.length;i++){
             var element=animation_elements[i]
@@ -69,7 +69,7 @@ window.onload = function(){
     }
     document.getElementById("sliderslide").addEventListener('scroll', handleScroll);
 }
-*/
+
 
 
 function App() {
@@ -416,47 +416,47 @@ function App() {
                 </div>
 
                     <form onSubmit={handlevideogame}>
-                        <button id="games" >VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
+                        <button id="games" className="notfade">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
                         </form>
                     <form onSubmit={handlebaby}>
-                        <button  id="baby" >BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="baby" className="notfade">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button  id="patio" >PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button  id="patio" className="notfade">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlepatio}>
-                        <button  id="patio1" >PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button  id="patio1" className="notfade">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
                     </form>
 
 
                     <form onSubmit={handlepets}>
-                        <button  id="pets"  >PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pets"  className="notfade">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy" >PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pharmacy" className="notfade">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
-                    <button  id="beauty" >BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                    <button  id="beauty" className="notfade">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy1" >PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="pharmacy1" className="notfade">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlesports}>
-                        <button  id="sports" >SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                        <button  id="sports" className="notfade">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button  id="auto" >AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="auto" className="notfade">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music" >MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="music" className="notfade">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music1" >MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button  id="music1" className="notfade">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
                     </form>
 
                 </div>

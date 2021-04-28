@@ -1218,10 +1218,10 @@ p {
 }
 
 
-.fade{
+.notfade{
   opacity:1
 }
-/*
+
 .in-view {
   animation:fade-in;
   animation-fill-mode: forwards;
@@ -1235,4 +1235,3 @@ p {
       opacity:1
     }
 }
-*/
