@@ -1217,13 +1217,15 @@ p {
   margin-right: 0;
 }
 
+
 .fade{
-  opacity:0
+  opacity:1
 }
+/*
 .in-view {
   animation:fade-in;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 @keyframes fade-in{
     from{
@@ -1233,3 +1235,4 @@ p {
       opacity:1
     }
 }
+*/
