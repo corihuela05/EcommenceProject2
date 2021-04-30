@@ -91,7 +91,7 @@ function Payment() {
      <p12 className="total">TOTAL  $852.97</p12>
      <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
       <p77 className="contri">Total contribution to Special Strides</p77>
-     <p78 className="contriNum1">$70</p78>
+     <p78 className="contriNum1">$70.00</p78>
     </div>
     
   {/*  <div className="productfooter">
