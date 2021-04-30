@@ -35,15 +35,40 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 import AnimatedButton from 'react-animated-button';
+import 'animate.css/animate.min.css';
 
-
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useState } from "react";
 
 //import CAPrivacyRights from '/CAPrivacyRights';
 //import DoNotSellMyInformation from '/DoNotSellMyInformation';
 //import TaxExemptProgram from 'TaxExemptProgram';
+
+
+
+
+window.onload = function(){
+   const handleScroll=()=>{
+        var animation_elements = document.getElementsByClassName("notfade");
+        //console.log(animation_elements)
+        for(var i = 0; i < animation_elements.length;i++){
+            var element=animation_elements[i]
+
+            var use =element.getBoundingClientRect();
+
+
+            if (use.top <= 860 && use.bottom>133) {
+                element.classList.add('in-view');
+            } 
+            else {
+                element.classList.remove('in-view'); 
+            }
+        }
+        console.log("here")
+    }
+    document.getElementById("sliderslide").addEventListener('scroll', handleScroll);
+}
 
 
 
@@ -231,7 +256,7 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" id="App">
             <div className="Appheader">
                 <img src="logo.png" alt="company logo" className="companylogo" />
                 <img
@@ -284,60 +309,44 @@ function App() {
                     </label>
                      <div className="sidebar">
                         <form onSubmit={handleHome}>
-                            <button>Home</button>
+                            <button class="homex" > Home</button>
                         </form>
                         <form onSubmit={handleProduct}>
-                            <button>Products</button>
+                            <button class="productx" >Products</button>
                         </form>
                         <form onSubmit={handleProfile}>
-                            <button>Profile</button>
+                            <button class="profilex" >Profile</button>
                         </form>
                         <form onSubmit={handleShop}>
-                            <button>Shop</button>
+                            <button class="shopx" >Shop</button>
                         </form>
                         <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
+                            <button class="homex" >Non Profits</button>
                         </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
-
-
-
-
                         <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
+                            <button class="toysandgamesx" >Toys, Games and Video Games</button>
                         </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
 
                         <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
 
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
+                        <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
                         <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
+                        <button class="petsx" >Pets</button>
+                        <button class="pharmarcyandcarex" >Pharmacy, Health & Personal Care</button>
 
                         <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
+                            <button class="sportsx" >Sports, Fitness & Outdoors</button>
                         </form>
 
-                        <button onClick={handlebeautyProducts} >Beauty</button>
+                        <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
 
 
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                        <button class="autox" >Auto & Tire</button>
+                        <button onClick={handleartProducts} class="artproductsx">Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
                 <div className="tabs">
@@ -351,7 +360,7 @@ function App() {
                     <button>Gift Cards</button>
                 </div>
             </div>
-            <div className="sliderslide">
+            <div className="sliderslide" id="sliderslide">
                 <div className="slider">
                   <div className="images">
                     <div className="imageBackground1">
@@ -410,6 +419,7 @@ function App() {
                 </div>
 
                     <form onSubmit={handlevideogame}>
+
                         <button id="games">    VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="240" height="240" /></button>
                     </form>
                     <form onSubmit={handlebaby}>
@@ -421,10 +431,12 @@ function App() {
 
                     <form onSubmit={handlepatio}>
                         <button id="patio1">CLOTHING<img src="ayyeclothes.jpeg" class="thumbnail" alt='clothes' width="240" height="240" /></button>
+
                     </form>
 
 
                     <form onSubmit={handlepets}>
+
                         <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="240" height="240" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
@@ -451,6 +463,7 @@ function App() {
 
                     <form onSubmit={handlemusic}>
                         <button id="music1">BOOKS<img src="ayyebooks.jpg" alt='music' class="thumbnail" width="240" height="240" /></button>
+
                     </form>
 
                 </div>
