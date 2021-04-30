@@ -256,7 +256,7 @@ function Videogames () {
      <p className="total1">TOTAL  $804.88</p>
      <p className="voucher1">HAVE A DISCOUNT CODE?</p>
      <p77 className="contri36">Total contribution to Special Strides</p77>
-     <p78 className="contriNum3690">$70</p78>
+     <p78 className="contriNum3690">$70.00</p78>
     </div>
     
     <input type="text10" id="fname" name="copoun" placeholder="Coupon Code"/>
