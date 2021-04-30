@@ -41,6 +41,7 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 
+
 function Shipping() {
     
     function handlePaynext(){
@@ -301,12 +302,13 @@ function Shipping() {
                     <button>Gift Cards</button>
                 </div>
             </div>
-      <div className="sliderslide">
-      <div className="threesteps">
-      <button className="b1">1.Shopping Cart</button>
-      <button className="b2">2.Shipping Details</button>
-      <button className="b3">3.Payment Options</button>
-      </div>
+      <div className="shippingsliderslide">
+    <div className="threesteps">
+      <button className="b41">1.Shopping Cart</button>
+      <button className="b5">2.Shipping Details</button>
+      <button className="b12">3.Payment Options</button>
+    </div>
+  
       
       <div className="details">
       <h1>Shipping Details</h1>
@@ -326,16 +328,16 @@ function Shipping() {
       <input type="text6" id="lname" name="city" placeholder="City"/>
       <input type="text7" id="lname" name="zip/postal code" placeholder="Zip/Postal Code"/>
       <input type="text8" id="lname" name="phone number" placeholder="Phone Number"/>
-      <input type="text9" id="fname" name="copoun" placeholder="Voucher #"/>
+      <input type="text9" id="fname" name="copoun" placeholder="Coupon Code"/>
       
       <div class="horline2"></div>
       
       <div className="bottom">
       <form onSubmit={handlePaynext}>
-        <button className="n1">Next</button>
+        <button className="n1" id="shippingthumbnail">Next</button>
       </form>
       <form onSubmit={handleShipcancel}>
-        <button className="n2">Cancel</button>
+        <button className="n2" id="shippingthumbnail1" >Cancel</button>
        </form>
       </div>
       
@@ -360,95 +362,14 @@ function Shipping() {
      <div class="amount">
      <p4 className="sub">SUBTOTAL $799.98</p4>
      <p2 className="ship">SHIPPING  FREE</p2>
-     <p3 className="tax">TAXES  $4.90</p3>
-     <p12 className="total">TOTAL  $804.88</p12>
+     <p3 className="tax">TAXES  $52.99</p3>
+     <p12 className="total">TOTAL  $852.97</p12>
      <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
+     <p77 className="contri">Total contribution to Special Strides</p77>
+     <p78 className="contriNum">$70</p78>
      </div>
     
-    <footer class="shipping-site-footer">
-                    <h1>About Greyson</h1>
-                    <div className="footer1">
-                        <button><img src="logo.png" alt='logo' width="150" height="150" />1717 Harrison St. Newark, NJ 07028,USA</button>
-                    
-                    </div>
-                    <div className="footer2">
-
-                        <form onSubmit={handleGetknowus}>
-                            <button>GET TO KNOW US</button>
-                        </form>
-
-
-                        
-                        <form onSubmit={handleOurcompany}>
-                        <button>OUR COMPANY</button>
-                        </form>                        
-                        
-                        <button> VENDOR DIRECTORY</button>
-                        <button>HELP CENTER</button>
-                        <button>CONTACT US</button>
-                    
-                    </div>
-                    <div className="footer3">
-                    
-                   
-                            
-                            
-                        <form onSubmit={handleReturnpage}>
-                        <button>RETURNS</button>
-                        </form>         
-                        
-                        <button>PRODUCT RECALLS</button>
-                        
-                        <form onSubmit={handleAccessibility}>
-                        <button>ACCESSIBILITY</button>
-                        </form>                        
-                        
-                        <button>ADVERTISE WITH US</button>
-                         </div>
-                          <div className="footer4">
-                          
-                          
-                        <button>GREYSON'S</button>
-
-                        <form onSubmit={handleOurads}>
-                        <button>OUR ADS</button>
-                        </form>
-                    
-                        <form onSubmit ={handleTermofservices}>
-                        <button>TERMS OF SERVICE </button>
-                        </form>
-                       
-                        <form onSubmit={handlePrivacyandsecurity}>
-                        <button>PRIVACY & SECURITY</button>
-                        </form>
-                        
-                        
-                        <form onSubmit={handleCaprivacy}>
-                        <button>CA PRIVACY RIGHTS</button>
-                        </form>
-                        
-                        <form onSubmit={handleDonotsellmyinfo}>
-                        <button>Do Not Sell My Information</button>
-                        </form>
-                        
-                            
-                         
-                            
-                        
-                        
-                        <form onSubmit={handleTaxExcemptpage}>
-                        <button>Tax Exempt Program</button>
-                        </form>                        
-                        
-                    </div>   
-                        <div className="footer5">
-                        <hr />
-                        <p> Copyright © 2021 All Rights Reserved by Greyson</p>
-                    </div>
-                
-                </footer>
     </div>
-
     </div>
     
   );

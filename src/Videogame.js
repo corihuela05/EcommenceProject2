@@ -218,17 +218,18 @@ function Videogames () {
     ReactDOM.render(
         <div className="App">
         <Header/>
-         <div className="sliderslide">
-    <div className="threesteps">
-      <button className="b7">1.Shopping Cart</button>
-      <button className="b8">2.Shipping Details</button>
-      <button className="b9">3.Payment Options</button>
+        <div className="videogamesliderslide">
+     <div className="vthreesteps">
+      <button className="v7">1.Shopping Cart</button>
+      <button className="v8">2.Shipping Details</button>
+      <button className="v9">3.Payment Options</button>
     </div>
+  
 
     
     <div className="detailsinfo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <h1>Shopping Cart</h1>
+      <h1 className="rk">Shopping Cart</h1>
       {cart.map((product,index) =>(
     <div class="prod" key={index}>
         <img src={product.image} alt="Xbox one" height="130" width="180"/>
@@ -238,10 +239,10 @@ function Videogames () {
     ))}
     
     <form onSubmit={handleNext}>
-        <button className="cn12">Next</button>
+        <button className="cn16" id="yuva">Next</button>
     </form>
     <form onSubmit={handleCancle}>
-      <button className="cn22">Cancel</button>
+      <button className="cn39" id="yuva369">Cancel</button>
     </form>
     </div>
       
@@ -255,10 +256,12 @@ function Videogames () {
      <p className="ship1">SHIPPING  FREE</p>
      <p className="tax1">TAXES  $4.90</p>
      <p className="total1">TOTAL  $804.88</p>
-     <p className="voucher1">HAVE A DISCOUNT CODE??</p>
+     <p className="voucher1">HAVE A DISCOUNT CODE?</p>
+     <p77 className="contri36">Total contribution to Special Strides</p77>
+     <p78 className="contriNum3690">$70</p78>
     </div>
     
-    <input type="text10" id="fname" name="copoun" placeholder="Voucher #"/>
+    <input type="text10" id="fname" name="copoun" placeholder="Coupon Code"/>
     
     <div class="verticalline7"></div>
     
