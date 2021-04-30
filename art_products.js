@@ -208,61 +208,44 @@ function Art() {
       <i class="fa fa-close" id="cancelbutton"></i>
     </label>
     <div className="sidebar">
-                        <form onSubmit={handleHome}>
-                            <button>Home</button>
+                         <button class="homex" > Home</button>
                         </form>
                         <form onSubmit={handleProduct}>
-                            <button>Products</button>
+                            <button class="productx" >Products</button>
                         </form>
                         <form onSubmit={handleProfile}>
-                            <button>Profile</button>
+                            <button class="profilex" >Profile</button>
                         </form>
                         <form onSubmit={handleShop}>
-                            <button>Shop</button>
+                            <button class="shopx" >Shop</button>
                         </form>
                         <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
+                            <button class="homex" >Non Profits</button>
                         </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
-
-
-
-
                         <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
+                            <button class="toysandgamesx" >Toys, Games and Video Games</button>
                         </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
 
                         <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
 
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
+                        <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
                         <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
+                        <button class="petsx" >Pets</button>
+                        <button class="pharmarcyandcarex" >Pharmacy, Health & Personal Care</button>
 
                         <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
+                            <button class="sportsx" >Sports, Fitness & Outdoors</button>
                         </form>
 
-                        <button onClick={handlebeautyProducts} >Beauty</button>
+                        <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
 
 
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                        <button class="autox" >Auto & Tire</button>
+                        <button onClick={handleartProducts} class="artproductsx">Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
                 <div className="tabs">
