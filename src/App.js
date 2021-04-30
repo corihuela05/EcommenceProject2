@@ -14,7 +14,7 @@ import Videog from './Videogame';
 import Sportpro from './Sports';
 import Baby from './Baby';
 import Patio from './Patio';
-import Auto from './Partnerapplication';
+import Auto from './Auto';
 import Pets from './Pets';
 import Pharmacy from './Pharmacy';
 import Music from './Music';
@@ -35,6 +35,7 @@ import Accessibilitty from './accessibility';
 import Returnpage from './returnpage';
 import TaxExcemptpage from './taxExcemptpage';
 import AnimatedButton from 'react-animated-button';
+import Partner from './Partnerapplication';
 import 'animate.css/animate.min.css';
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -244,6 +245,9 @@ function App() {
     function handleGetknowus(){
          ReactDOM.render(<Gettoknowus/>, document.getElementById('root'));
     }
+     function handlePartner(){
+         ReactDOM.render(<Partner/>, document.getElementById('root'));
+    }
     var url=""
     if (username==="admin"){
         url="ownerdashboard.html"
@@ -391,7 +395,7 @@ function App() {
                         <button className="organization"><img class="nonprofitin" src="nonprofit.png" alt='organization' width="320" height="230" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
-                    <form onSubmit={handleNonprofit}>
+                    <form onSubmit={handlePartner}>
                         <button className="organization1"><img class="nonprofitin1" src="potentialpart.jpg" alt='organization' width="320" height="230" /><b> Partners</b><p>1,504 videos</p></button>
                     </form>
                 </div>
