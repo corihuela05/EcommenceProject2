@@ -383,7 +383,7 @@ function App() {
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img class="nonprofitin1" src="nonprofit.png" alt='organization' width="320" height="230" /><b> Partners</b><p>1,504 videos</p></button>
+                        <button className="organization1"><img class="nonprofitin1" src="potentialpart.jpg" alt='organization' width="320" height="230" /><b> Partners</b><p>1,504 videos</p></button>
                     </form>
                 </div>
                 </div>
