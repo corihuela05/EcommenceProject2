@@ -364,7 +364,7 @@ function App() {
                 <div className="slider">
                   <div className="images">
                     <div className="imageBackground1">
-                        
+
                         <div className="imageBackground2">
                             <img src="Electronics.jpg" class="img2" alt="image2" />
                         </div>
@@ -379,28 +379,31 @@ function App() {
                 <div className="threebox" >
                   <div className="boxHolder">
               <form onSubmit={handleChurch}>
-                        <button className="church"><img src="church.png" alt='church' width="350" height="250" /><b>Church</b><p>1,782 videos</p></button>
+                        <button className="church"><img class="churchin" src="church.png" alt='church' width="320" height="230" /><b>Church</b><p>1,782 videos</p></button>
                     </form>
 
 
                     <form onSubmit={handleSchoolst}>
-                        <button className="school"><img src="school.png" alt='school' width="350" height="250" /><b> School</b><p>1,023 videos</p></button>
+                        <button className="school"><img class="schoolin" src="school.png" alt='school' width="320" height="230" /><b> School</b><p>1,023 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b>Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization"><img class="nonprofitin" src="nonprofit.png" alt='organization' width="320" height="230" /><b>Non-Profits</b><p>2,416 videos</p></button>
                     </form>
 
                     <form onSubmit={handleNonprofit}>
-                        <button className="organization1"><img src="nonprofit.png" alt='organization' width="350" height="250" /><b> Non-Profits</b><p>2,416 videos</p></button>
+                        <button className="organization1"><img class="nonprofitin1" src="potentialpart.jpg" alt='organization' width="320" height="230" /><b> Partners</b><p>1,504 videos</p></button>
                     </form>
                 </div>
-                </div>
-                <div className="addspace">
-                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="250" height="180" />ADD SPACE</button>
                 </div>
                 <div className="category">
+                  <div className="addspace">
+                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="150" height="100" />AD SPACE</button>
+                    </div>
+                <div className="Missionbanner"><img class="missionban" src="EditedBanner.PNG" alt='mission statement' width="1440px" height="500px"/>
+                </div>
                   <div className="catContainer">
+
                 <div className="titleBox">
                 <h1> Currently available to you: </h1>
                 <p> Choose from one of our categories to begin shopping </p>
@@ -416,47 +419,51 @@ function App() {
                 </div>
 
                     <form onSubmit={handlevideogame}>
-                        <button id="games" className="notfade">VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="280" height="280" /></button>
-                        </form>
+
+                        <button id="games">    VIDEO GAMES<img src="VideoGames.png" alt='games' class="thumbnail" width="240" height="240" /></button>
+                    </form>
                     <form onSubmit={handlebaby}>
-                        <button  id="baby" className="notfade">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="280" height="280" /></button>
+                        <button id="baby">BABY<img src="Baby.png" alt='baby' class="thumbnail" width="240" height="240" /></button>
                     </form>
                     <form onSubmit={handlepatio}>
-                        <button  id="patio" className="notfade">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="240" height="240" /></button>
                     </form>
 
                     <form onSubmit={handlepatio}>
-                        <button  id="patio1" className="notfade">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="280" height="280" /></button>
+                        <button id="patio1">CLOTHING<img src="ayyeclothes.jpeg" class="thumbnail" alt='clothes' width="240" height="240" /></button>
+
                     </form>
 
 
                     <form onSubmit={handlepets}>
-                        <button  id="pets"  className="notfade">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="280" height="280" /></button>
+
+                        <button id="pets">PETS<img src="Pets.png" alt='pets' class="thumbnail" width="240" height="240" /></button>
                     </form>
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy" className="notfade">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button id="pharmacy">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
-                    <button  id="beauty" className="notfade">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                    <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="240" height="240" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlepharmacy}>
-                        <button  id="pharmacy1" className="notfade">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="280" height="280" /></button>
+                        <button id="pharmacy1">LUGGAGE<img src="bluelug.jpg" alt='pharmacy' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
                     <form onSubmit={handlesports}>
-                        <button  id="sports" className="notfade">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="280" height="280" onClick={handlebeautyProducts} /></button>
+                        <button id="sports">SPORTS<img src="sports.jpg" alt='beauty' class="thumbnail" width="240" height="240" onClick={handlebeautyProducts} /></button>
                     </form>
 
                     <form onSubmit={handleauto}>
-                        <button  id="auto" className="notfade">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="280" height="280" /></button>
+                        <button id="auto">AUTO<img src="Auto.png" alt='auto' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music" className="notfade">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button id="music">MUSIC<img src="music.png" alt='music' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button  id="music1" className="notfade">MUSIC<img src="music.png" alt='music' class="thumbnail" width="280" height="280" /></button>
+                        <button id="music1">BOOKS<img src="ayyebooks.jpg" alt='music' class="thumbnail" width="240" height="240" /></button>
+
                     </form>
 
                 </div>
@@ -465,6 +472,8 @@ function App() {
                 <div className="newsletter">
                     <input type="input" id="email" placeholder="  Email Address" />
                     <button id="subscribe">Subscribe</button>
+                </div>
+                <div class="contentFill"><h1> Help us make a difference! </h1>
                 </div>
 
 
