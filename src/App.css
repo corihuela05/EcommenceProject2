@@ -187,7 +187,7 @@ button[type=submitsearch]{
     opacity: 0%;
     animation-name: sidebar2;
     animation-duration: 1.5s;
-    animation-delay: .8s;
+    animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }  
@@ -206,7 +206,7 @@ button[type=submitsearch]{
     opacity: 0%;
     animation-name: sidebar3;
     animation-duration: 1.5s;
-    animation-delay: 1.1s;
+    animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }  
@@ -225,7 +225,7 @@ button[type=submitsearch]{
     opacity: 0%;
     animation-name: sidebar4;
     animation-duration: 1.5s;
-    animation-delay: 1.4s;
+    animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }  
@@ -244,7 +244,7 @@ button[type=submitsearch]{
     opacity: 0%;
     animation-name: sidebar5;
     animation-duration: 1.5s;
-    animation-delay: 1.7s;
+    animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }  
@@ -264,7 +264,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar6;
   animation-duration: 1.5s;
-  animation-delay:2.0s ;
+  animation-delay:.1s ;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -283,7 +283,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar7;
   animation-duration: 1.5s;
-  animation-delay: 2.3s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -302,7 +302,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar8;
   animation-duration: 1.5s;
-  animation-delay: 2.6s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -321,7 +321,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar9;
   animation-duration: 1.5s;
-  animation-delay: 2.6s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -340,7 +340,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar10;
   animation-duration: 1.5s;
-  animation-delay: 2.9s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -362,7 +362,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar11;
   animation-duration: 1.5s;
-  animation-delay: 3.2s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -382,7 +382,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar12;
   animation-duration: 1.5s;
-  animation-delay: 3.5s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -403,7 +403,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar13;
   animation-duration: 1.5s;
-  animation-delay: 3.8s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -423,7 +423,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar14;
   animation-duration: 1.5s;
-  animation-delay: 4.1s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -445,7 +445,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar15;
   animation-duration: 1.5s;
-  animation-delay: 4.3s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
@@ -466,7 +466,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar16;
   animation-duration: 1.5s;
-  animation-delay: 4.6s;
+  animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }  
