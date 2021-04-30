@@ -225,16 +225,17 @@ label #cancelbutton{
 
 .Missionbanner{
   position: relative;
-  height: 400px;
+  height: 500px;
+  top: 20px;
 }
 
 
 .catContainer{
-  height: 1800px;
+  height: 2000px;
   position: relative;
   width: 2000px;
   margin: auto;
-  top: 0px;
+  top: 20px;
 }
 
 .boxHolder{
@@ -459,7 +460,7 @@ text-align: left;
   background-color: white;
   position: relative;
   margin: auto;
-  top: 1665px;
+  top: 2000px;
 }
 
 .contentFill h1 {
@@ -830,9 +831,9 @@ text-align: left;
 }
 
 .letterpic{
-  position: absolute;
-  top:2750px;
-  left:37%;
+  position: relative;
+  top:2450px;
+  left: -170px;
   border:1px solid black;
   border-radius: 20px;
   width:250px;
@@ -840,7 +841,7 @@ text-align: left;
 }
 
 #email{
-  position:absolute;
+  position:relative;
   top:60px;
   left:90px;
   width:300px;
@@ -849,9 +850,9 @@ text-align: left;
 
 }
 #subscribe{
-  position:absolute;
+  position:relative;
   top:60px;
-  left:388px;
+  left: 90px;
   height:35px;
   background-color:black;
   border:none;
@@ -859,15 +860,15 @@ text-align: left;
   color:white;
 }
 .newsletter{
-  position: absolute;
-  top:2750px;
-  left:46%;
+  position: relative;
+  top: 2300px;
+  left: 100px;
 }
 
 .site-footer
 {
   position:absolute;
-  top:3200px;
+  top:3400px;
   width:100%;
   height:430px;
   background-color:#0065ff;
