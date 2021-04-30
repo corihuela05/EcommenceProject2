@@ -315,18 +315,7 @@ function App() {
                         <form onSubmit={handleHome}>
                             <button class="homex" > Home</button>
                         </form>
-                        <form onSubmit={handleProduct}>
-                            <button class="productx" >Products</button>
-                        </form>
-                        <form onSubmit={handleProfile}>
-                            <button class="profilex" >Profile</button>
-                        </form>
-                        <form onSubmit={handleShop}>
-                            <button class="shopx" >Shop</button>
-                        </form>
-                        <form onSubmit={handleNonprofit}>
-                            <button class="homex" >Non Profits</button>
-                        </form>
+                   
                         <form onSubmit={handlevideogame}>
                             <button class="toysandgamesx" >Toys, Games and Video Games</button>
                         </form>
@@ -335,22 +324,30 @@ function App() {
                         <form onSubmit={handleHomeandfurnitures}>
                             <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
+                      
 
-                        <button class="musicx" >Music</button>
-                        <button class="patiox" >Patio & Garden</button>
+                        <form onSubmit={handlevideogame}>
+
+                        <button class="video games" >Video Games</button>                  
+                        </form>
                         <button onClick={handlefoodProducts} >Food</button>
-                        <button class="petsx" >Pets</button>
-                        <button class="pharmarcyandcarex" >Pharmacy, Health & Personal Care</button>
-
-                        <form onSubmit={handlesports}>
+                       <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
+                        <button onClick={handleartProducts} class="artproductsx">Sewing & Party Supplies</button>
+                         <form onSubmit={handlesports}>
                             <button class="sportsx" >Sports, Fitness & Outdoors</button>
                         </form>
+                        <button class="petsx" >Pets</button>
+                         <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
+                        <button class="pharmarcyandcarex" >Health & Personal Care</button>
 
-                        <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
+                         <button>Books</button>
+                    <button>Fashion</button>
+                    <button>Gift Cards</button>
+                       
 
 
                         <button class="autox" >Auto & Tire</button>
-                        <button onClick={handleartProducts} class="artproductsx">Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
                 <div className="tabs">

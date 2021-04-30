@@ -1313,20 +1313,3 @@ p {
 }
 
 
-.notfade{
-  opacity:1
-}
-
-.in-view {
-  animation:fade-in;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-@keyframes fade-in{
-    from{
-      opacity:0
-    }
-    to{
-      opacity:1
-    }
-}
