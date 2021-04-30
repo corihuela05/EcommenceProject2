@@ -260,11 +260,31 @@ button[type=submitsearch]{
    }
 }
 
+.homex{
+  opacity: 0%;
+  animation-name: homesidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes homesidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
+   }
+}
+
 .toysandgamesx{
   opacity: 0%;
   animation-name: sidebar6;
   animation-duration: 1.5s;
-  animation-delay:.1s ;
+  animation-delay: .15s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -283,7 +303,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar7;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -302,7 +322,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar8;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .25s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -322,7 +342,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: vgamesidebar;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .3s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -344,7 +364,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar9;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .6s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -363,7 +383,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar10;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .65s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -385,7 +405,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar11;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .35s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -405,7 +425,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar12;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .55s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -426,7 +446,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar13;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -446,7 +466,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar14;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -468,7 +488,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar15;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .4s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -489,7 +509,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: sidebar16;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .45s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -510,7 +530,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: booksidebar;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .75s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -532,7 +552,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: fashionsidebar;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .8s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -553,7 +573,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: giftcardsidebar;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .85s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -574,7 +594,7 @@ button[type=submitsearch]{
   opacity: 0%;
   animation-name: autosidebar;
   animation-duration: 1.5s;
-  animation-delay: .1s;
+  animation-delay: .9s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -655,7 +675,7 @@ label #cancelbutton{
 
 .Missionbanner{
   position: relative;
-  height: 600px;
+  height: 580px;
   top: 80px;
 }
 
@@ -665,7 +685,7 @@ label #cancelbutton{
   position: relative;
   width: 2000px;
   margin: auto;
-  top: 20px;
+  top: 0px;
 }
 
 .boxHolder{
@@ -721,7 +741,7 @@ text-align: left;
 }
 
 .category{
-  margin-top: 50px;
+  margin-top: 20px;
   height: 1200px;
   width: 100%;
   justify-content: center;
@@ -890,7 +910,7 @@ text-align: left;
   background-color: white;
   position: relative;
   margin: auto;
-  top: 2000px;
+  top: 1720px;
 }
 
 .contentFill h1 {
@@ -1262,12 +1282,10 @@ text-align: left;
 
 .letterpic{
   position: relative;
-  top:2450px;
-  left: -170px;
-  border:1px solid black;
-  border-radius: 20px;
-  width:250px;
-  height:150px;
+  top:2320px;
+  left: -200px;
+  width:320px;
+  height:200px;
 }
 
 #email{
@@ -1276,22 +1294,24 @@ text-align: left;
   left:90px;
   width:300px;
   height:35px;
-  outline:none;
+  border: none;
 
 }
 #subscribe{
   position:relative;
-  top:60px;
+  top:59px;
   left: 90px;
   height:35px;
-  background-color:black;
+  background-color:#ffc220;
   border:none;
   outline:none;
-  color:white;
+  color:black;
 }
+
+
 .newsletter{
   position: relative;
-  top: 2300px;
+  top: 2150px;
   left: 100px;
 }
 

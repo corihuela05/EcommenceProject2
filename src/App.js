@@ -473,6 +473,7 @@ function App() {
                     <input type="input" id="email" placeholder="  Email Address" />
                     <button id="subscribe">Subscribe</button>
                 </div>
+            
                 <div class="contentFill"><h1> Help us make a difference! </h1>
                 </div>
 
