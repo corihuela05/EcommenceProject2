@@ -174,12 +174,12 @@ button[type=submitsearch]{
 @keyframes sidebar{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 
@@ -190,16 +190,16 @@ button[type=submitsearch]{
     animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar2{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
   .profilex{
@@ -209,16 +209,16 @@ button[type=submitsearch]{
     animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar3{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
   .shopx{
@@ -228,16 +228,16 @@ button[type=submitsearch]{
     animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar4{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .nonprofitx{
@@ -247,16 +247,16 @@ button[type=submitsearch]{
     animation-delay: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar5{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 
@@ -267,16 +267,16 @@ button[type=submitsearch]{
   animation-delay:.1s ;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar6{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .clothingx{
@@ -286,16 +286,16 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar7{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .appliancesx{
@@ -305,18 +305,41 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar8{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
+
+.videogamesx {
+  opacity: 0%;
+  animation-name: vgamesidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes vgamesidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
+   }
+}
+
+
 .musicx{
   opacity: 0%;
   animation-name: sidebar9;
@@ -324,16 +347,16 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 @keyframes sidebar9{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .patiox{
@@ -343,18 +366,18 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 
 @keyframes sidebar10{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 
@@ -365,17 +388,17 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 @keyframes sidebar11{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .petsx{
@@ -391,12 +414,12 @@ button[type=submitsearch]{
 @keyframes sidebar12{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .pharmarcyandcarex{
@@ -406,17 +429,17 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 @keyframes sidebar13{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 .sportsx{
@@ -426,17 +449,17 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 @keyframes sidebar14{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 
@@ -448,17 +471,17 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 @keyframes sidebar15{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
    }
 }
 
@@ -469,17 +492,102 @@ button[type=submitsearch]{
   animation-delay: .1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}  
+}
 
 @keyframes sidebar16{
   0%{
   opacity: 0%;
-  
-  
+
+
   }
    100%{
   opacity: 100%;
-  
+
+   }
+}
+
+.booksx{
+  opacity: 0%;
+  animation-name: booksidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes booksidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
+   }
+}
+
+
+.fashionx{
+  opacity: 0%;
+  animation-name: fashionsidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fashionsidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
+   }
+}
+
+.giftcardx{
+  opacity: 0%;
+  animation-name: giftcardsidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes giftcardsidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
+   }
+}
+
+.autox{
+  opacity: 0%;
+  animation-name: autosidebar;
+  animation-duration: 1.5s;
+  animation-delay: .1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes autosidebar{
+  0%{
+  opacity: 0%;
+
+
+  }
+   100%{
+  opacity: 100%;
+
    }
 }
 
@@ -487,7 +595,7 @@ button[type=submitsearch]{
   background-color: #ffc220;
   opacity: 0.8;
   color: black;
-  
+
 }
 label #openbutton{
   position: fixed;
