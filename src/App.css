@@ -169,14 +169,7 @@ button[type=submitsearch]{
   border-top:2px solid #041e42;
   outline:none;
 }
-.homex{
-    opacity: 0%;
-    animation-name: sidebar;
-    animation-duration: 1.5s;
-    animation-delay: .5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
+
 
 @keyframes sidebar{
   0%{
@@ -554,8 +547,8 @@ label #cancelbutton{
 
 .Missionbanner{
   position: relative;
-  height: 500px;
-  top: 20px;
+  height: 600px;
+  top: 80px;
 }
 
 
@@ -1313,3 +1306,20 @@ p {
 }
 
 
+.notfade{
+  opacity:1
+}
+
+.in-view {
+  animation:fade-in;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+@keyframes fade-in{
+    from{
+      opacity:0
+    }
+    to{
+      opacity:1
+    }
+}

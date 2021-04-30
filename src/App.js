@@ -399,7 +399,6 @@ function App() {
                 </div>
                 <div className="category">
                   <div className="addspace">
-                    <button className="spaces"><img src="addspace.jpg" alt='add spaces' width="150" height="100" />AD SPACE</button>
                     </div>
                 <div className="Missionbanner"><img class="missionban" src="EditedBanner.PNG" alt='mission statement' width="1440px" height="500px"/>
                 </div>
