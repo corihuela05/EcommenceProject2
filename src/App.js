@@ -420,7 +420,7 @@ function App() {
                     </form>
 
                     <form onSubmit={handlepatio}>
-                        <button id="patio1">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="240" height="240" /></button>
+                        <button id="patio1">CLOTHING<img src="ayyeclothes.jpeg" class="thumbnail" alt='clothes' width="240" height="240" /></button>
                     </form>
 
 
@@ -434,7 +434,7 @@ function App() {
                     <button id="beauty">BEAUTY<img src="https://www.dermstore.com/blog/wp-content/uploads/2015/10/Generic-Beauty-Product-Bottles-1.jpg" alt='beauty' class="thumbnail" width="240" height="240" onClick={handlebeautyProducts} /></button>
 
                     <form onSubmit={handlepharmacy}>
-                        <button id="pharmacy1">PHARMACY<img src="pharmacy.png" alt='pharmacy' class="thumbnail" width="240" height="240" /></button>
+                        <button id="pharmacy1">LUGGAGE<img src="bluelug.jpg" alt='pharmacy' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
                     <form onSubmit={handlesports}>
@@ -450,7 +450,7 @@ function App() {
                     </form>
 
                     <form onSubmit={handlemusic}>
-                        <button id="music1">MUSIC<img src="music.png" alt='music' class="thumbnail" width="240" height="240" /></button>
+                        <button id="music1">BOOKS<img src="ayyebooks.jpg" alt='music' class="thumbnail" width="240" height="240" /></button>
                     </form>
 
                 </div>
