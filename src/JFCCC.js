@@ -209,7 +209,7 @@ function JFCCC () {
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
 
-     </label>
+      </label>
                      <div className="sidebar">
                         <form onSubmit={handleHome}>
                             <button class="homex" > Home</button>
@@ -247,48 +247,6 @@ function JFCCC () {
 
 
                         <button class="autox" >Auto & Tire</button>
-                    </div>
-                </div>
-    <div className="tabs">
-      <button  onClick={handleartProducts} >Best Sellers</button>
-      <button  onClick={handleartProducts} >Today's Deals</button>
-      <button  onClick={handleartProducts} >Customer Service</button>
-      <button  onClick={handleartProducts} >New Releases</button>
-      <button  onClick={handleartProducts} >Near Me</button>
-      <button  onClick={handleartProducts} >Books</button>
-      <button  onClick={handleartProducts} >Fashion</button>
-      <button  onClick={handleartProducts} >Gift Cards</button>
-    </div>
-    </div>
-
-
-
-                        <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
-                        </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
-
-                        <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
-                        </form>
-
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
-                        <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
-
-                        <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
-                        </form>
-
-                        <button onClick={handlebeautyProducts} >Beauty</button>
-
-
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
                     </div>
                 </div>
                 <div className="tabs">
