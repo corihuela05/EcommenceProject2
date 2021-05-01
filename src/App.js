@@ -61,9 +61,9 @@ window.onload = function(){
 
             if (use.top <= 860 && use.bottom>133) {
                 element.classList.add('in-view');
-            } 
+            }
             else {
-                element.classList.remove('in-view'); 
+                element.classList.remove('in-view');
             }
         }
         console.log("here")
@@ -318,7 +318,7 @@ function handleClothing() {
                         <form onSubmit={handleHome}>
                             <button class="homex" > Home</button>
                         </form>
-                   
+
                         <form onSubmit={handlevideogame}>
                             <button class="toysandgamesx" >Toys, Games and Video Games</button>
                         </form>
@@ -327,13 +327,13 @@ function handleClothing() {
                         <form onSubmit={handleHomeandfurnitures}>
                             <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
-                      
+
 
                         <form onSubmit={handlevideogame}>
 
-                        <button class="video games" >Video Games</button>                  
+                        <button class="videogamesx" >Video Games</button>
                         </form>
-                        <button onClick={handlefoodProducts} >Food</button>
+                        <button onClick={handlefoodProducts} class="foodx" >Food</button>
                        <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
                         <button onClick={handleartProducts} class="artproductsx">Sewing & Party Supplies</button>
                          <form onSubmit={handlesports}>
@@ -344,10 +344,10 @@ function handleClothing() {
                         <button class="patiox" >Patio & Garden</button>
                         <button class="pharmarcyandcarex" >Health & Personal Care</button>
 
-                         <button>Books</button>
-                    <button>Fashion</button>
-                    <button>Gift Cards</button>
-                       
+                         <button class="booksx">Books</button>
+                    <button class="fashionx">Fashion</button>
+                    <button class="giftcardx">Gift Cards</button>
+
 
 
                         <button class="autox" >Auto & Tire</button>
@@ -476,6 +476,7 @@ function handleClothing() {
                     <input type="input" id="email" placeholder="  Email Address" />
                     <button id="subscribe">Subscribe</button>
                 </div>
+            
                 <div class="contentFill"><h1> Help us make a difference! </h1>
                 </div>
 
