@@ -72,7 +72,7 @@
             <li class="nav-header">Management</li>
             <li><a href="owner-allsellers.html">All Sellers</a></li>
             <li><a href="owner-allskus.html">All Items</a></li>
-            <li class="active"><a href="owner-allpartners.html">All Partners</a></li>
+            <li class="active"><a href="owner-allpartners.html">All Non profits</a></li>
 
           </ul>
         </div><!--/.well -->
@@ -94,18 +94,91 @@
            </thead>
            <tbody>
              <tr v-for="item in currentPageItems" :key="item.id">
-              <td>{{item.id}}</td>
+              <td>St. Lucy's Church</td>
               <td><a onclick="myFunction()">Disable</a></td>
-              <td>{{item.type}}</td>
-              <td>{{item.sales}}</td>
-              <td>{{item.contributions}}</td>
+              <td>Church</td>
+              <td>$4,000</td>
+              <td>$400</td>
+              
+            </tr>
+                <tr v-for="item in currentPageItems" :key="item.id">
+              <td>St Antoninus Catholic Church</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$4221.22</td>
+              <td>$290</td>
+              
+            </tr>
+                <tr v-for="item in currentPageItems" :key="item.id">
+              <td>Cathedral Basilica of the Sacred Heart</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$3,0210</td>
+              <td>$230</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>Boy's and Girl's Club</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$3,450</td>
+              <td>$450</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>The Girl Scouts</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$1,634</td>
+              <td>$340</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>The Boy Scouts</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$6,120</td>
+              <td>$200</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>St. Dominics Prep School</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$2,403</td>
+              <td>$800</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>Sain Peter's Prep School</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$7,450</td>
+              <td>$650</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>Hudson County Technology School</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$2,200</td>
+              <td>$120</td>
+              
+            </tr>
+            <tr v-for="item in currentPageItems" :key="item.id">
+              <td>Young Innovators</td>
+              <td><a onclick="myFunction()">Disable</a></td>
+              <td>Church</td>
+              <td>$9,450</td>
+              <td>$810</td>
+              
             </tr>
           </tbody>
         </table>
         <div>
           <span>Page:</span>
           <button v-for="i in paginatedItems.length" class="btn btn-secondary mr-1" :class="{'btn-success' : currentPage === i }" @click="changePage(i)">
-           {{i}}
+           1
          </button>
        </div>
      </div>

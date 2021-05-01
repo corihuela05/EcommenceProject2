@@ -15,7 +15,7 @@ c. addded `pip instal flask`
 d. install lastest version of python
 e. `import flask`
 f. `flask_nysqldb import MySQL`
-e . 'npm install --save react-animated-buttons'
+
 ## Database Setup
 a.Xampp was used to run PHPMYAdmin the local drive making it easier to access, when the code is accessed by my collaborators.  Download your respective operating system and the latest version, and follow the steps on the screen.
  

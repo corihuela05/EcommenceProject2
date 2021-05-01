@@ -74,7 +74,7 @@ input[type=text10]{
 
 .ship1{
   position: absolute;
-  top:320px;
+  top:367px;
   left: 67%;
   font-size: 17px;
   word-spacing:265px;
@@ -82,7 +82,7 @@ input[type=text10]{
 
 .tax1{
   position: absolute;
-  top:350px;
+  top:341px;
   left: 67%;
   font-size: 17px;
   word-spacing:290px;
@@ -117,17 +117,19 @@ input[type=text10]{
 
 .contri36{
   position: absolute;
-  top:380px;
+  top:315px;
   left: 67%;
   font-size: 17px;
+  font-weight: bold;
 
 }
 
 .contriNum369{
   position: absolute;
-  top:380px;
-  left: 87.2%;
+  top:315px;
+  left: 85.75%;
   font-size: 17px;
+  font-weight: bold;
 
 
 }

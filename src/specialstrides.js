@@ -208,34 +208,58 @@ function specialstrides () {
     <label for="check">
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
-    </label>
-    <div className="sidebar">
-                        <form onSubmit={handleHome}>
-                            <button>Home</button>
-                        </form>
-                        <form onSubmit={handleProduct}>
-                            <button>Products</button>
-                        </form>
-                        <form onSubmit={handleProfile}>
-                            <button>Profile</button>
-                        </form>
-                        <form onSubmit={handleShop}>
-                            <button>Shop</button>
-                        </form>
-                        <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
-                        </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
 
+   </label>
+                     <div className="sidebar">
+                        <form onSubmit={handleHome}>
+                            <button class="homex" > Home</button>
+                        </form>
+                   
+                        <form onSubmit={handlevideogame}>
+                            <button class="toysandgamesx" >Toys, Games and Video Games</button>
+                        </form>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
+
+                        <form onSubmit={handleHomeandfurnitures}>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
+                        </form>
+                      
+
+                        <form onSubmit={handlevideogame}>
+
+                        <button class="video games" >Video Games</button>                  
+                        </form>
+                        <button onClick={handlefoodProducts} >Food</button>
+                       <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
+                        <button onClick={handleartProducts} class="artproductsx">Sewing & Party Supplies</button>
+                         <form onSubmit={handlesports}>
+                            <button class="sportsx" >Sports, Fitness & Outdoors</button>
+                        </form>
+                        <button class="petsx" >Pets</button>
+                         <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
+                        <button class="pharmarcyandcarex" >Health & Personal Care</button>
+
+                         <button>Books</button>
+                    <button>Fashion</button>
+                    <button>Gift Cards</button>
+                       
+
+
+                        <button class="autox" >Auto & Tire</button>
+                    </div>
+                </div>
+    <div className="tabs">
+      <button  onClick={handleartProducts} >Best Sellers</button>
+      <button  onClick={handleartProducts} >Today's Deals</button>
+      <button  onClick={handleartProducts} >Customer Service</button>
+      <button  onClick={handleartProducts} >New Releases</button>
+      <button  onClick={handleartProducts} >Near Me</button>
+      <button  onClick={handleartProducts} >Books</button>
+      <button  onClick={handleartProducts} >Fashion</button>
+      <button  onClick={handleartProducts} >Gift Cards</button>
+    </div>
+    </div>
 
 
 

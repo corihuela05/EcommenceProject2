@@ -120,9 +120,10 @@ function Videogames () {
   }
   
   const renderProducts = () => (
-    <div className="vproduct">
+    <div className="vproduct" >
     {products.map((product,index) =>(
     <div class="product" key={index}>
+    <div class="thumbnails">
         <img src={product.image} alt="Xbox one" height="130" width="180"/>
         <h1>{product.name}</h1>
         <p class="price">{product.cost}</p>
@@ -130,6 +131,8 @@ function Videogames () {
         <div className='addtocarts'>
             <button onClick={()=>addToCart(product)}>Add to Cart</button>
         </div>
+        </div>
+        
     </div>
     ))}
      </div>  
@@ -146,7 +149,6 @@ function Videogames () {
        <p class="productinfo">{product.text}</p>
         {/*<button onClick={() => removeFromCart(product)}>Remove</button>*/}
         <hr />
-    
     </div>
     ))
     //<h5>Select which Non Profit organization you want to donate to:</h5>
@@ -406,63 +408,44 @@ function Videogames () {
     <label for="check">
       <i class="fa fa-bars" id="openbutton"></i>
       <i class="fa fa-close" id="cancelbutton"></i>
-    </label>
-    <div className="sidebar">
+  </label>
+                     <div className="sidebar">
                         <form onSubmit={handleHome}>
-                            <button>Home</button>
+                            <button class="homex" > Home</button>
                         </form>
-                        <form onSubmit={handleProduct}>
-                            <button>Products</button>
-                        </form>
-                        <form onSubmit={handleProfile}>
-                            <button>Profile</button>
-                        </form>
-                        <form onSubmit={handleShop}>
-                            <button>Shop</button>
-                        </form>
-                        <form onSubmit={handleNonprofit}>
-                            <button>Non Profits</button>
-                        </form>
-                        <button>Buy Again</button>
-                        <button>List</button>
-                        <button>Registry</button>
-                        <button>Gift Finder</button>
-                        <button>Gift Card</button>
-                        <button>Black Owned Businesses</button>
-                        <button>Women Owned Businesses</button>
-                        <button>Help</button>
-                        <button>Departments</button>
-                        <button>Electronics & Office</button>
-
-
-
-
+                   
                         <form onSubmit={handlevideogame}>
-                            <button>Toys, Games and Video Games</button>
+                            <button class="toysandgamesx" >Toys, Games and Video Games</button>
                         </form>
-                        <button onClick={handleclothingProducts} >Clothing, Shoes, & Accessories</button>
+                        <button onClick={handleclothingProducts} class="clothingx" >Clothing, Shoes, & Accessories</button>
 
                         <form onSubmit={handleHomeandfurnitures}>
-                            <button>Home, Furniture & Appliances</button>
+                            <button class="appliancesx"> Home, Furniture & Appliances</button>
                         </form>
+                      
 
-                        <button>Home Improvement</button>
-                        <button>Music</button>
-                        <button>Patio & Garden</button>
+                        <form onSubmit={handlevideogame}>
+
+                        <button class="video games" >Video Games</button>                  
+                        </form>
                         <button onClick={handlefoodProducts} >Food</button>
-                        <button>Pets</button>
-                        <button>Pharmacy, Health & Personal Care</button>
-
-                        <form onSubmit={handlesports}>
-                            <button>Sports, Fitness & Outdoors</button>
+                       <button onClick={handlebeautyProducts} class="beautyx" >Beauty</button>
+                        <button onClick={handleartProducts} class="artproductsx">Sewing & Party Supplies</button>
+                         <form onSubmit={handlesports}>
+                            <button class="sportsx" >Sports, Fitness & Outdoors</button>
                         </form>
+                        <button class="petsx" >Pets</button>
+                         <button class="musicx" >Music</button>
+                        <button class="patiox" >Patio & Garden</button>
+                        <button class="pharmarcyandcarex" >Health & Personal Care</button>
 
-                        <button onClick={handlebeautyProducts} >Beauty</button>
+                         <button>Books</button>
+                    <button>Fashion</button>
+                    <button>Gift Cards</button>
+                       
 
 
-                        <button>Auto & Tire</button>
-                        <button>Photos</button>
-                        <button onClick={handleartProducts} >Art, Craft, Sewing & Party Supplies</button>
+                        <button class="autox" >Auto & Tire</button>
                     </div>
                 </div>
                 <div className="tabs">
@@ -631,6 +614,7 @@ function Videogames () {
         <p>Step up your game with this Logitech HERO Core wired gaming mouse. Easy to enhance your performance.</p>
         <p><button onClick={()=>itemDisplay(24)}>Add to Cart</button></p>
     </div>
+<<<<<<< HEAD
   
     <footer class="videogame-site-footer1">
     <h1>About Greyson</h1>

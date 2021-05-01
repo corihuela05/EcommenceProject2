@@ -1,7 +1,7 @@
 
 .vproduct{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 10px;
   padding: 10px;
 }
@@ -29,20 +29,25 @@
 }
 
 .product{
-  padding:40px;
   font-size: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 220px;
     margin: auto;
     text-align: center;
     font-family: arial;
     background-color: white;
+    margin-bottom:15px;
 }
 .product h1{
   font-size: 25px;
   font-weight: bold;
 }
-
+.thumbnails:hover {
+    position:relative;
+    display:block;
+    z-index:999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8);
+    background:#b0c4de;
+}
 .price {
   color: grey;
   font-size: 22px;
@@ -83,7 +88,7 @@
 .vsite-footer
 {
   position:absolute;
-  top:1360px;
+  top:780px;
   width:100%;
   height:430px;
   background-color:#0065ff;

@@ -491,3 +491,91 @@
     padding:5px 5px;
     outline:none;
   }
+  
+  .cvsite-footer
+{
+  position:absolute;
+  top:840px;
+  width:100%;
+  height:430px;
+  background-color:#0065ff;
+  color:white;
+  padding:15px;
+  
+}
+.cvsite-footer h1{
+  position:absolute;
+  left:560px;
+}
+
+.cvsite-footer h1{
+  position:absolute;
+  left:42%;
+}
+  
+.cvsite-footer .footer1 button{
+  position:absolute;
+  left:21%;
+  top:80px;
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  outline:none;
+}
+
+.cvsite-footer .footer2 {
+  position:absolute;
+  top:110px;
+  left:37%;
+  width:180px;
+}
+.cvsite-footer .footer2 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.cvsite-footer .footer3 {
+  position:absolute;
+  top:110px;
+  left:51%;
+  width:180px;
+}
+.cvsite-footer .footer3 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.cvsite-footer .footer4 {
+  position:absolute;
+  top:110px;
+  left:66%;
+  width:180px;
+}
+.cvsite-footer .footer4 button{
+  width:180px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
+
+.cvsite-footer .footer5 {
+  position:absolute;
+  top:350px;
+  left:15%;
+  width:70%;
+  text-align:left;
+}
+.cvsite-footer .footer5 button{
+  width:400px;
+  background-color:#0065ff;
+  border:none;
+  padding:5px 5px;
+  outline:none;
+}
