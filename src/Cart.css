@@ -125,9 +125,9 @@ input[type=text10]{
 }
 
 .contriNum369{
-  position: absolute;
-  top:315px;
-  left: 85.75%;
+  position: fixed;
+  top:445px;
+  left: 85%;
   font-size: 17px;
   font-weight: bold;
 

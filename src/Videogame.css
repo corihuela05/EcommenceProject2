@@ -438,9 +438,10 @@ label #cancelbutton1{
 }
 
 .contriNum3690{
-  position: absolute;
-  top:380px;
-  left: 83%;
+  position: fixed;
+  top:445px;
+  left:81.4%;
   font-size: 17px;
+  font-weight: bold;
 
 }
