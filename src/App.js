@@ -110,6 +110,9 @@ function App() {
         ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
     }
 
+function handleClothing() {
+        ReactDOM.render(<ClothingProducts />, document.getElementById('root'));
+    }
 
 
     function handlePrivacyandsecurity() {
@@ -429,7 +432,7 @@ function App() {
                         <button id="patio">PATIO<img src="patio.jpg" class="thumbnail" alt='patio' width="240" height="240" /></button>
                     </form>
 
-                    <form onSubmit={handlepatio}>
+                    <form onSubmit={handleClothing}>
                         <button id="patio1">CLOTHING<img src="ayyeclothes.jpeg" class="thumbnail" alt='clothes' width="240" height="240" /></button>
 
                     </form>
