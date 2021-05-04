@@ -90,7 +90,7 @@ function Payment() {
      <p3 className="tax">TAXES  $52.99</p3>
      <p12 className="total">TOTAL  $852.97</p12>
      <p11 className="voucher">HAVE A DISCOUNT CODE?</p11>
-      <p77 className="contri">Total contribution to Special Strides</p77>
+      <p77 className="contri">TOTAL CONTRIBUTION TO SPECIAL STRIDES</p77>
      <p78 className="contriNum1">$70.00</p78>
     </div>
     

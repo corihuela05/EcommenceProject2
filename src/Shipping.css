@@ -222,7 +222,7 @@ input[type=text8]{
 
 .ship{
   position: absolute;
-  top:700px;
+  top: 745px;
   left: 67%;
   font-size: 17px;
   word-spacing:265px;
@@ -230,7 +230,7 @@ input[type=text8]{
 
 .tax{
   position: absolute;
-  top:730px;
+  top:720px;
   left: 67%;
   font-size: 17px;
   word-spacing:289px;
@@ -265,16 +265,18 @@ input[type=text8]{
 
 .contri{
   position: absolute;
-  top:760px;
+  top:695px;
   left: 67%;
   font-size: 17px;
+   font-weight: bold;
 }
 
 .contriNum{
-  position: absolute;
-  top:760px;
-  left: 83%;
+  position: fixed;
+  top:822px;
+  left: 1860px;
   font-size: 17px;
+  font-weight: bold;
 }
 
 
